@@ -14,7 +14,7 @@ dorthin, wo das gerade Gezeigte nachlesbar ist. Du musst nichts mitschreiben.
 :::
 
 ::: {.bp-qr .bp-qr--gross}
-![](assets/qr/hub.svg)
+![](../assets/qr/hub.svg)
 
 [Der Hub, Startseite]{.bp-qr__cap}
 :::

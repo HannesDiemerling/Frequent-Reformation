@@ -2,7 +2,7 @@
 title: "Jenseits des p-Werts. Besser forschen."
 subtitle: "Kurzfassung · Workshops, Methoden und Werkzeuge für eine bessere Forschungspraxis"
 author: "Beyond p-values · HMU Health and Medical University Erfurt"
-logo: assets/qr/hub.svg
+logo: ../assets/qr/hub.svg
 footer: "Beyond p-values · gefördert durch die VolkswagenStiftung"
 title-slide-attributes:
   data-background-color: "#F7F2EA"
@@ -24,19 +24,19 @@ Zeitgerüst: Titel 1 · Mitlesen 0,5 · Quiz 4 · Kennzahlen 2 · Wende 1 ·
 drei Antworten 3 · Angebot 2 · Schluss 1,5.
 -->
 
-{{< include _shared/_mitlesen.qmd >}}
+{{< include ../_shared/_mitlesen.qmd >}}
 
-{{< include _ueber/_01-quiz.qmd >}}
+{{< include ../_ueber/_01-quiz.qmd >}}
 
-{{< include _ueber/_03-zahlen.qmd >}}
+{{< include ../_ueber/_03-zahlen.qmd >}}
 
-{{< include _ueber/_06-wende.qmd >}}
+{{< include ../_ueber/_06-wende.qmd >}}
 
-{{< include _ueber/_kurz-antworten.qmd >}}
+{{< include ../_ueber/_kurz-antworten.qmd >}}
 
-{{< include _ueber/_12-website-tour.qmd >}}
+{{< include ../_ueber/_12-website-tour.qmd >}}
 
-{{< include _ueber/_13-weiterarbeiten.qmd >}}
+{{< include ../_ueber/_13-weiterarbeiten.qmd >}}
 
 ## Danke
 
@@ -55,7 +55,7 @@ Geführte Sessions für Institute und Teams sind **in Planung**.
 :::
 
 ::: {.bp-qr .bp-qr--gross}
-![](assets/qr/hub.svg)
+![](../assets/qr/hub.svg)
 
 [Alles zum Nachlesen]{.bp-qr__cap}
 :::

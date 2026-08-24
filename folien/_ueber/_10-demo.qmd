@@ -34,7 +34,7 @@ Wer will, kann den QR auf der nächsten Folie scannen und selbst mitschieben. Da
 lohnt sich, weil dann jemand im Raum eine Zahl ruft, die ich nicht kontrolliere.
 :::
 
-{{< include _demo/power2.qmd >}}
+{{< include ../_demo/power2.qmd >}}
 
 ## Was wir gerade gesehen haben {data-qr="ch-power2" data-qr-cap="Kapitel 2 selbst öffnen"}
 

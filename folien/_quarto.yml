@@ -5,13 +5,16 @@ project:
   # raeumt alte Dateien nicht auf. Der Kopierschritt nach docs/folien passiert
   # deshalb explizit, siehe .github/workflows/deploy.yml.
   output-dir: _site
+  # Ein Verzeichnis je Deck, damit die Adressen ohne .html auskommen:
+  # /folien/ueber/, /folien/power/ usw. Eine einzelne Folie ist unter
+  # /folien/ueber/#/7 direkt erreichbar.
   render:
     - index.qmd
-    - 00-ueber.qmd
-    - 00-ueber-kurz.qmd
-    - 01-power.qmd
-    - 02-reliability.qmd
-    - 03-thinking.qmd
+    - ueber/index.qmd
+    - ueber-kurz/index.qmd
+    - power/index.qmd
+    - reliability/index.qmd
+    - thinking/index.qmd
 
 # Erzeugt von gen-assets.py aus mkdocs.yml. Liefert links.*, workshops.*,
 # ch.*, contact.* und questions.* als {{< meta ... >}} in jede Folie.

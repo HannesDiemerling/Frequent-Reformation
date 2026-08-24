@@ -2,7 +2,7 @@
 title: "Denke Bayesianisch"
 subtitle: "Bayesianische Intuition aufbauen · Workshop 03 von 03"
 author: "Beyond p-values · HMU Health and Medical University Erfurt"
-logo: assets/qr/ws-thinking.svg
+logo: ../assets/qr/ws-thinking.svg
 footer: "Workshop 03 · Denke Bayesianisch · gefördert durch die VolkswagenStiftung"
 title-slide-attributes:
   data-background-color: "#2A3F66"
@@ -28,7 +28,7 @@ die Zeiten hier abweichen.
 Adressen kommen aus mkdocs.yml, hier steht keine ausgeschriebene Adresse.
 -->
 
-{{< include _shared/_mitlesen.qmd >}}
+{{< include ../_shared/_mitlesen.qmd >}}
 
 ## Wo wir stehen
 
@@ -295,7 +295,7 @@ Drei Schieber, eine Intuition, die kippt.
 :::
 
 ::: {.bp-qr .bp-qr--gross}
-![](assets/qr/ch-thinking2.svg)
+![](../assets/qr/ch-thinking2.svg)
 
 [Kapitel 2 auf deinem Gerät]{.bp-qr__cap}
 :::
@@ -319,7 +319,7 @@ Zeitrahmen ernst nehmen, hier läuft es gern über. Nach 15 Minuten Arbeit
 konsequent einsammeln.
 :::
 
-{{< include _demo/thinking2.qmd >}}
+{{< include ../_demo/thinking2.qmd >}}
 
 # Pause {.bp-trenner background-color="#2A3F66"}
 
@@ -596,7 +596,7 @@ Wann gewinnen die Daten?
 :::
 
 ::: {.bp-qr .bp-qr--gross}
-![](assets/qr/ch-thinking5.svg)
+![](../assets/qr/ch-thinking5.svg)
 
 [Kapitel 5 auf deinem Gerät]{.bp-qr__cap}
 :::
@@ -617,7 +617,7 @@ liegt sie über der Relevanzschwelle von 3 Minuten."
 Dieser Satz ist das Endprodukt aller drei Workshops. Ihn ausdrücklich so benennen.
 :::
 
-{{< include _demo/thinking5.qmd >}}
+{{< include ../_demo/thinking5.qmd >}}
 
 # Block C: Anwendung {.bp-trenner background-color="#2A3F66"}
 
@@ -849,7 +849,7 @@ Der Schlusssatz im Kasten ist bewusst der letzte inhaltliche Satz des Decks.
 Danach nur noch der Abschluss-Block.
 :::
 
-{{< include _shared/_abschluss.qmd >}}
+{{< include ../_shared/_abschluss.qmd >}}
 
 ## Wo du das alles wiederfindest {data-qr="hub_bayesian" data-qr-cap="Bayesianische Datenanalyse"}
 

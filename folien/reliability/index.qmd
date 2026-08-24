@@ -2,7 +2,7 @@
 title: "Repräsentativität & Stichprobengröße"
 subtitle: "Wie verlässlich verallgemeinert deine Studie? · Workshop 02 von 03"
 author: "Beyond p-values · HMU Health and Medical University Erfurt"
-logo: assets/qr/ws-reliability.svg
+logo: ../assets/qr/ws-reliability.svg
 footer: "Workshop 02 · Repräsentativität & Stichprobengröße · gefördert durch die VolkswagenStiftung"
 title-slide-attributes:
   data-background-color: "#4FA8A0"
@@ -24,7 +24,7 @@ eigentliche Nutzen einer geführten Session.
 Adressen kommen aus mkdocs.yml, hier steht keine ausgeschriebene Adresse.
 -->
 
-{{< include _shared/_mitlesen.qmd >}}
+{{< include ../_shared/_mitlesen.qmd >}}
 
 ## Wo wir stehen
 
@@ -84,7 +84,7 @@ Fünf Kapitel, dazu drei Vertiefungsblöcke, die über das Selbstlern-Material
 hinausgehen.
 :::
 
-{{< include _shared/_ablauf.qmd >}}
+{{< include ../_shared/_ablauf.qmd >}}
 
 # Block A {.bp-trenner background-color="#4FA8A0"}
 
@@ -245,7 +245,7 @@ Verzerrung selbst herstellen.
 :::
 
 ::: {.bp-qr .bp-qr--gross}
-![](assets/qr/ch-reliability2.svg)
+![](../assets/qr/ch-reliability2.svg)
 
 [Kapitel 2 auf deinem Gerät]{.bp-qr__cap}
 :::
@@ -265,7 +265,7 @@ Wenn die Gruppe aus einem Feld kommt, lohnt es, Schritt 4 als Sammlung an der Ta
 zu führen. Das Chalkboard ist mit b zu öffnen.
 :::
 
-{{< include _demo/reliability2.qmd >}}
+{{< include ../_demo/reliability2.qmd >}}
 
 # Pause {.bp-trenner background-color="#2A3F66"}
 
@@ -498,7 +498,7 @@ Im Garten der sich verzweigenden Pfade.
 :::
 
 ::: {.bp-qr .bp-qr--gross}
-![](assets/qr/ch-reliability3.svg)
+![](../assets/qr/ch-reliability3.svg)
 
 [Kapitel 3 auf deinem Gerät]{.bp-qr__cap}
 :::
@@ -519,7 +519,7 @@ Wettbewerbselement funktioniert hier gut: wer findet das kleinste p? Das lockert
 auf und treibt die Exploration.
 :::
 
-{{< include _demo/reliability3.qmd >}}
+{{< include ../_demo/reliability3.qmd >}}
 
 # Block C {.bp-trenner background-color="#4FA8A0"}
 
@@ -650,7 +650,7 @@ Schritt 4 laut einsammeln, mindestens drei Personen. Ausgesprochene Vorsätze we
 eher umgesetzt als gedachte.
 :::
 
-{{< include _shared/_abschluss.qmd >}}
+{{< include ../_shared/_abschluss.qmd >}}
 
 ## Wo du das alles wiederfindest {data-qr="hub_stichproben" data-qr-cap="Stichproben und Präzision"}
 

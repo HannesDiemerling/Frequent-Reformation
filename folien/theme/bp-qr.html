@@ -27,7 +27,12 @@ referenziert.
       var logo = document.querySelector(".reveal .slide-logo");
       if (!logo) return;
 
+      // Der Standard-QR aus dem logo-Feld liefert gleich das Basisverzeichnis
+      // der QR-Codes mit. So funktioniert das Skript unabhaengig davon, wie tief
+      // das Deck im Verzeichnisbaum liegt.
       var fallback = logo.getAttribute("src");
+      var base = fallback.replace(/[^/]+$/, "");
+
       var caption = document.createElement("div");
       caption.className = "bp-qr-cap";
       caption.style.display = "none";
@@ -46,7 +51,7 @@ referenziert.
           cap = cap || slide.parentElement.getAttribute("data-qr-cap");
         }
 
-        logo.setAttribute("src", key ? "assets/qr/" + key + ".svg" : fallback);
+        logo.setAttribute("src", key ? base + key + ".svg" : fallback);
         caption.textContent = cap || "";
         caption.style.display = cap ? "block" : "none";
       }

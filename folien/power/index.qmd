@@ -2,7 +2,7 @@
 title: "Beyond Significance"
 subtitle: "Effekte verstehen statt p-Werte ablesen · Workshop 01 von 03"
 author: "Beyond p-values · HMU Health and Medical University Erfurt"
-logo: assets/qr/ws-power.svg
+logo: ../assets/qr/ws-power.svg
 footer: "Workshop 01 · Beyond Significance · gefördert durch die VolkswagenStiftung"
 title-slide-attributes:
   data-background-color: "#E27C5C"
@@ -24,7 +24,7 @@ des Hubs.
 Adressen kommen aus mkdocs.yml, hier steht keine ausgeschriebene Adresse.
 -->
 
-{{< include _shared/_mitlesen.qmd >}}
+{{< include ../_shared/_mitlesen.qmd >}}
 
 ## Wo wir stehen
 
@@ -83,7 +83,7 @@ Sechs Kapitel, dazu drei Vertiefungsblöcke, die über das Selbstlern-Material
 hinausgehen.
 :::
 
-{{< include _shared/_ablauf.qmd >}}
+{{< include ../_shared/_ablauf.qmd >}}
 
 # Block A {.bp-trenner background-color="#E27C5C"}
 
@@ -224,7 +224,7 @@ Jetzt du. Am eigenen Gerät, im interaktiven Kapitel 2.
 :::
 
 ::: {.bp-qr .bp-qr--gross}
-![](assets/qr/ch-power2.svg)
+![](../assets/qr/ch-power2.svg)
 
 [Kapitel 2 auf deinem Gerät]{.bp-qr__cap}
 :::
@@ -255,7 +255,7 @@ Auflösung: zwei oder drei Paare berichten, welches n sie gefunden haben. Die Za
 werden auseinanderliegen, das ist selbst schon ein Befund.
 :::
 
-{{< include _demo/power2.qmd >}}
+{{< include ../_demo/power2.qmd >}}
 
 # Pause {.bp-trenner background-color="#2A3F66"}
 
@@ -471,7 +471,7 @@ Zwei Skalen, ein d.
 :::
 
 ::: {.bp-qr .bp-qr--gross}
-![](assets/qr/ch-power4.svg)
+![](../assets/qr/ch-power4.svg)
 
 [Kapitel 4 auf deinem Gerät]{.bp-qr__cap}
 :::
@@ -491,7 +491,7 @@ Meta-Analyse bekommt d, Publikation bekommt beides.
 Wenn Zeit knapp wird, Schritt 2 streichen, nicht Schritt 3.
 :::
 
-{{< include _demo/power4.qmd >}}
+{{< include ../_demo/power4.qmd >}}
 
 # Block C {.bp-trenner background-color="#E27C5C"}
 
@@ -677,7 +677,7 @@ Beim Vorlesen nichts korrigieren, sondern fragen: "Was weiß der Leser jetzt, wa
 er vorher nicht wusste?" Das beantwortet der Raum selbst.
 :::
 
-{{< include _shared/_abschluss.qmd >}}
+{{< include ../_shared/_abschluss.qmd >}}
 
 ## Wo du das alles wiederfindest {data-qr="hub_methoden" data-qr-cap="Alle Methoden-Seiten"}
 

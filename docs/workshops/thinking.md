@@ -92,6 +92,7 @@ korrekt interpretierst und warum MCMC die Brücke von Theorie zur praktischen An
 
 - **Workshop-Seite (Quarto):** [{{ w.base }}/]({{ w.base }}/)
 - **Quellcode &amp; Issues:** [{{ w.repo }}]({{ w.repo }})
+- **Foliensatz für Vortragende:** [Vortrag zu diesem Workshop]({{ links['folien_' + w.key] }}), ca. 2 Stunden, mit Ablaufplan und Sprechernotizen
 
 <div class="bp-soon">
   <span class="bp-pill bp-pill--soon">In Vorbereitung</span>

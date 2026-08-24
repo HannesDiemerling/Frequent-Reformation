@@ -54,7 +54,7 @@ sie kommen mit "wie viele Probanden brauche ich". Deshalb gibt es die Fragen-Sei
 Die nächste Folie zeigt die Seite live, hier also nicht zu lange bleiben.
 :::
 
-{{< include _demo/site-hub_fragen.qmd >}}
+{{< include ../_demo/site-hub_fragen.qmd >}}
 
 ## Die drei Workshops {data-qr="hub_workshops" data-qr-cap="Alle Workshops"}
 

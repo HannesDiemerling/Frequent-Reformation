@@ -22,12 +22,12 @@ mit Quellenangabe in Lehre und Schulung verwendet werden.
 
 ::: {.bp-liste}
 
-[**Jenseits des p-Werts. Besser forschen.**](00-ueber.html){.bp-titel}
+[**Jenseits des p-Werts. Besser forschen.**](ueber/){.bp-titel}
 [ca. 30 Minuten · für Kolloquien, Tagungen, Auftaktveranstaltungen]{.bp-meta}
 Das Problem, die drei Antworten, das Projekt und das Angebot. Mit zwei
 Mitmach-Runden und einer Live-Demo.
 
-[**Kurzfassung**](00-ueber-kurz.html){.bp-titel}
+[**Kurzfassung**](ueber-kurz/){.bp-titel}
 [ca. 15 Minuten · als Aufschlag oder Vorstellung]{.bp-meta}
 Dieselben Inhalte, verdichtet auf das Wesentliche.
 
@@ -41,15 +41,15 @@ Literatur und die Übersetzung in die eigene Arbeit.
 
 ::: {.bp-liste}
 
-[**{{< meta workshops.power.number >}} · {{< meta workshops.power.title >}}**](01-power.html){.bp-titel}
+[**{{< meta workshops.power.number >}} · {{< meta workshops.power.title >}}**](power/){.bp-titel}
 [{{< meta workshops.power.chapters_count >}} Kapitel · {{< meta workshops.power.subtitle >}}]{.bp-meta}
 {{< meta workshops.power.tagline >}}
 
-[**{{< meta workshops.reliability.number >}} · {{< meta workshops.reliability.title >}}**](02-reliability.html){.bp-titel}
+[**{{< meta workshops.reliability.number >}} · {{< meta workshops.reliability.title >}}**](reliability/){.bp-titel}
 [{{< meta workshops.reliability.chapters_count >}} Kapitel · {{< meta workshops.reliability.subtitle >}}]{.bp-meta}
 {{< meta workshops.reliability.tagline >}}
 
-[**{{< meta workshops.thinking.number >}} · {{< meta workshops.thinking.title >}}**](03-thinking.html){.bp-titel}
+[**{{< meta workshops.thinking.number >}} · {{< meta workshops.thinking.title >}}**](thinking/){.bp-titel}
 [{{< meta workshops.thinking.chapters_count >}} Kapitel · {{< meta workshops.thinking.subtitle >}}]{.bp-meta}
 {{< meta workshops.thinking.tagline >}}
 

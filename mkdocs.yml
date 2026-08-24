@@ -167,7 +167,15 @@ extra:
     # umbenennt, aendert sie hier einmal, dann ziehen Folien und QR-Codes nach.
     hub:                 "https://hannesdiemerling.github.io/Frequent-Reformation/"
     hub_workshops:       "https://hannesdiemerling.github.io/Frequent-Reformation/workshops/"
+    # Folien. Jedes Deck hat ein eigenes Verzeichnis, die Adressen kommen ohne
+    # .html aus. Eine einzelne Folie ist per Anker erreichbar, z. B.
+    # .../folien/ueber/#/7 fuer Folie 7.
     hub_folien:          &hub_folien "https://hannesdiemerling.github.io/Frequent-Reformation/folien/"
+    folien_ueber:        "https://hannesdiemerling.github.io/Frequent-Reformation/folien/ueber/"
+    folien_ueber_kurz:   "https://hannesdiemerling.github.io/Frequent-Reformation/folien/ueber-kurz/"
+    folien_power:        "https://hannesdiemerling.github.io/Frequent-Reformation/folien/power/"
+    folien_reliability:  "https://hannesdiemerling.github.io/Frequent-Reformation/folien/reliability/"
+    folien_thinking:     "https://hannesdiemerling.github.io/Frequent-Reformation/folien/thinking/"
     hub_fragen:          "https://hannesdiemerling.github.io/Frequent-Reformation/fragen/"
     hub_methoden:        "https://hannesdiemerling.github.io/Frequent-Reformation/methoden/"
     hub_pwerte:          "https://hannesdiemerling.github.io/Frequent-Reformation/methoden/p-werte/"

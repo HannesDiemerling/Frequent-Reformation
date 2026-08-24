@@ -2,7 +2,7 @@
 title: "Jenseits des p-Werts. Besser forschen."
 subtitle: "Workshops · Methoden · Werkzeuge für eine bessere Forschungspraxis"
 author: "Beyond p-values · HMU Health and Medical University Erfurt"
-logo: assets/qr/hub.svg
+logo: ../assets/qr/hub.svg
 footer: "Beyond p-values · gefördert durch die VolkswagenStiftung"
 title-slide-attributes:
   data-background-color: "#F7F2EA"
@@ -23,33 +23,33 @@ meta-Shortcodes. Die eingebetteten Vollflächen-Folien liegen in _demo/ und werd
 von gen-assets.py erzeugt. In dieser Datei steht keine ausgeschriebene Adresse.
 -->
 
-{{< include _shared/_mitlesen.qmd >}}
+{{< include ../_shared/_mitlesen.qmd >}}
 
-{{< include _ueber/_01-quiz.qmd >}}
+{{< include ../_ueber/_01-quiz.qmd >}}
 
-{{< include _ueber/_02-pwert.qmd >}}
+{{< include ../_ueber/_02-pwert.qmd >}}
 
-{{< include _ueber/_03-zahlen.qmd >}}
+{{< include ../_ueber/_03-zahlen.qmd >}}
 
-{{< include _ueber/_04-folgekette.qmd >}}
+{{< include ../_ueber/_04-folgekette.qmd >}}
 
-{{< include _ueber/_05-mitmachen.qmd >}}
+{{< include ../_ueber/_05-mitmachen.qmd >}}
 
-{{< include _ueber/_06-wende.qmd >}}
+{{< include ../_ueber/_06-wende.qmd >}}
 
-{{< include _ueber/_07-effekte.qmd >}}
+{{< include ../_ueber/_07-effekte.qmd >}}
 
-{{< include _ueber/_08-stichprobe.qmd >}}
+{{< include ../_ueber/_08-stichprobe.qmd >}}
 
-{{< include _ueber/_09-bayes.qmd >}}
+{{< include ../_ueber/_09-bayes.qmd >}}
 
-{{< include _ueber/_10-demo.qmd >}}
+{{< include ../_ueber/_10-demo.qmd >}}
 
-{{< include _ueber/_11-projekt.qmd >}}
+{{< include ../_ueber/_11-projekt.qmd >}}
 
-{{< include _ueber/_12-website-tour.qmd >}}
+{{< include ../_ueber/_12-website-tour.qmd >}}
 
-{{< include _ueber/_13-weiterarbeiten.qmd >}}
+{{< include ../_ueber/_13-weiterarbeiten.qmd >}}
 
 ## Danke
 
@@ -69,7 +69,7 @@ wesentlich bessere Alternativen zur Verfügung stehen.
 :::
 
 ::: {.bp-qr .bp-qr--gross}
-![](assets/qr/hub.svg)
+![](../assets/qr/hub.svg)
 
 [Alles zum Nachlesen]{.bp-qr__cap}
 :::
@@ -94,4 +94,4 @@ Danach folgt der Anhang. Nicht weiterklicken, sondern über das Menü (Taste o o
 m) gezielt zur passenden Folie springen, wenn eine Frage darauf zielt.
 :::
 
-{{< include _ueber/_99-anhang.qmd >}}
+{{< include ../_ueber/_99-anhang.qmd >}}
