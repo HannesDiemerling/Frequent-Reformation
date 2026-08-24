@@ -1,0 +1,97 @@
+---
+title: "Jenseits des p-Werts. Besser forschen."
+subtitle: "Workshops · Methoden · Werkzeuge für eine bessere Forschungspraxis"
+author: "Beyond p-values · HMU Health and Medical University Erfurt"
+logo: assets/qr/hub.svg
+footer: "Beyond p-values · gefördert durch die VolkswagenStiftung"
+title-slide-attributes:
+  data-background-color: "#F7F2EA"
+---
+
+<!--
+Der Überblicks-Vortrag, ca. 30 Minuten.
+
+Aufbau: das Problem am eigenen Leib (Quiz), die Zahlen, die Folgekette, die drei
+Antworten, eine Live-Demo, dann Projekt und Angebot.
+
+Die Abschnitte liegen einzeln in _ueber/ und werden hier zusammengesetzt. Die
+Kurzfassung 00-ueber-kurz.qmd nutzt dieselben Dateien, nur eine Teilmenge. Wer
+eine Zahl korrigiert, korrigiert sie deshalb genau einmal.
+
+Alle Adressen kommen aus mkdocs.yml, über folien/_data.yml und die
+meta-Shortcodes. Die eingebetteten Vollflächen-Folien liegen in _demo/ und werden
+von gen-assets.py erzeugt. In dieser Datei steht keine ausgeschriebene Adresse.
+-->
+
+{{< include _shared/_mitlesen.qmd >}}
+
+{{< include _ueber/_01-quiz.qmd >}}
+
+{{< include _ueber/_02-pwert.qmd >}}
+
+{{< include _ueber/_03-zahlen.qmd >}}
+
+{{< include _ueber/_04-folgekette.qmd >}}
+
+{{< include _ueber/_05-mitmachen.qmd >}}
+
+{{< include _ueber/_06-wende.qmd >}}
+
+{{< include _ueber/_07-effekte.qmd >}}
+
+{{< include _ueber/_08-stichprobe.qmd >}}
+
+{{< include _ueber/_09-bayes.qmd >}}
+
+{{< include _ueber/_10-demo.qmd >}}
+
+{{< include _ueber/_11-projekt.qmd >}}
+
+{{< include _ueber/_12-website-tour.qmd >}}
+
+{{< include _ueber/_13-weiterarbeiten.qmd >}}
+
+## Danke
+
+::: {.bp-zwei}
+
+::: {}
+::: {.bp-quote}
+Das übergeordnete Ziel ist, zu zeigen und zu erklären, dass der Signifikanztest
+für die Beurteilung der Evidenz von Forschungsergebnissen ungeeignet ist und dass
+wesentlich bessere Alternativen zur Verfügung stehen.
+:::
+[Aus dem Antrag zum Pioniervorhaben]{.bp-quote__author}
+
+**Fragen, Rückmeldungen, Kooperation:**
+{{< meta contact.name >}},
+[{{< meta contact.email >}}](mailto:{{< meta contact.email >}})
+:::
+
+::: {.bp-qr .bp-qr--gross}
+![](assets/qr/hub.svg)
+
+[Alles zum Nachlesen]{.bp-qr__cap}
+:::
+
+:::
+
+::: {.bp-quelle}
+In Trägerschaft der HMU Health and Medical University Erfurt, gefördert durch die
+VolkswagenStiftung im Rahmen der Förderlinie Pioniervorhaben. Inhalte unter
+Creative Commons CC BY 4.0.
+:::
+
+::: notes
+Die Schlussfolie stehen lassen, solange diskutiert wird. Der QR ist groß, damit
+noch jemand scannen kann, während die ersten Fragen kommen.
+
+Das Zitat aus dem Antrag ist absichtlich das letzte Wort: es macht klar, dass das
+hier kein Meinungsbeitrag ist, sondern ein gefördertes Vorhaben mit einem klaren
+Ziel.
+
+Danach folgt der Anhang. Nicht weiterklicken, sondern über das Menü (Taste o oder
+m) gezielt zur passenden Folie springen, wenn eine Frage darauf zielt.
+:::
+
+{{< include _ueber/_99-anhang.qmd >}}

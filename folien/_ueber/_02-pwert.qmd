@@ -1,0 +1,55 @@
+## Was der p-Wert tatsächlich ist {data-qr="hub_pwerte" data-qr-cap="Probleme des p-Werts"}
+
+::: {.bp-callout}
+Der p-Wert ist die Wahrscheinlichkeit, **ein mindestens so extremes Ergebnis wie
+das beobachtete zu sehen, wenn die Nullhypothese wahr wäre und alle
+Modellannahmen zutreffen**.
+:::
+
+Er beschreibt also eine Eigenschaft der **Daten** unter einer Annahme. Nicht eine
+Eigenschaft der **Hypothese**.
+
+Das klingt nach einer Feinheit. Es ist der ganze Unterschied.
+
+::: notes
+Langsam vorlesen, wörtlich. Dann den Kern zweimal sagen: bedingte
+Wahrscheinlichkeit der Daten gegeben die Hypothese, nicht der Hypothese gegeben
+die Daten.
+
+Analogie, die gut funktioniert: "Die Wahrscheinlichkeit, nass zu sein, wenn es
+regnet, ist hoch. Die Wahrscheinlichkeit, dass es regnet, wenn ich nass bin, ist
+etwas völlig anderes." Genau diese Verwechslung steckt in Aussage 1 des Quiz.
+
+Die Formulierung "und alle Modellannahmen zutreffen" nicht unterschlagen. Sie ist
+der Teil, der in Lehrbüchern meist fehlt, und sie ist praktisch relevant: bei
+verletzten Annahmen ist der p-Wert nicht nur ungenau, er ist bedeutungslos.
+:::
+
+## Er sagt nichts darüber, {.bp-plain data-qr="hub_pwerte" data-qr-cap="Nachlesen im Hub"}
+
+::: {.incremental}
+- wie wahrscheinlich die Nullhypothese ist,
+- wie wahrscheinlich deine Alternativhypothese ist,
+- wie **groß** der gefundene Effekt ist,
+- wie **wichtig** oder bedeutsam der Effekt ist,
+- wie wahrscheinlich es ist, das Ergebnis zu **replizieren**,
+- oder ob ein Effekt überhaupt existiert.
+:::
+
+::: {.bp-quelle}
+Genau das sind aber die sechs Fragen, die wir eigentlich stellen wollen.
+:::
+
+::: notes
+Diese Liste Punkt für Punkt einblenden, das ist der Rhythmus der Folie. Bei jedem
+Punkt eine Sekunde Pause.
+
+Der Schlusssatz ist die Pointe: die Liste dessen, was der p-Wert nicht kann, ist
+identisch mit der Liste dessen, was wir wissen wollen. Ruhig kurz stehen lassen,
+bevor es weitergeht.
+
+Wenn Widerstand kommt ("der p-Wert ist doch nicht nutzlos"): zustimmen. Er ist
+nicht nutzlos, er ist ein Maß für Überraschung unter einer Annahme. Das Problem
+ist nicht der p-Wert, das Problem ist, dass wir ihn zum einzigen Kriterium
+gemacht haben. Diese Nuance ist wichtig, sonst wirkt der Vortrag ideologisch.
+:::

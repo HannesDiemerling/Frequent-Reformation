@@ -1,0 +1,696 @@
+---
+title: "Repräsentativität & Stichprobengröße"
+subtitle: "Wie verlässlich verallgemeinert deine Studie? · Workshop 02 von 03"
+author: "Beyond p-values · HMU Health and Medical University Erfurt"
+logo: assets/qr/ws-reliability.svg
+footer: "Workshop 02 · Repräsentativität & Stichprobengröße · gefördert durch die VolkswagenStiftung"
+title-slide-attributes:
+  data-background-color: "#4FA8A0"
+  data-background-opacity: "0.12"
+---
+
+<!--
+Workshop 02, geführte Session, ca. 2 Stunden.
+
+Gerüst-Status: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser und die
+Vertiefungsblöcke stehen. Die Kapitelfolien tragen die echten Zahlen aus den
+Workshop-Kapiteln. Was noch entsteht, ist der ausformulierte Vortragstext in den
+Sprechernotizen der Kapitelfolien.
+
+Dieser Workshop hat nur fünf Kapitel und dadurch mehr Luft im Transferteil. Das
+ist Absicht: bei diesem Thema ist die Übertragung auf eigene Studiendesigns der
+eigentliche Nutzen einer geführten Session.
+
+Adressen kommen aus mkdocs.yml, hier steht keine ausgeschriebene Adresse.
+-->
+
+{{< include _shared/_mitlesen.qmd >}}
+
+## Wo wir stehen
+
+::: {.bp-drei}
+
+::: {.bp-pillar}
+[Workshop 01]{.bp-pillar__num}
+
+### Beyond Significance
+
+Was wir berichten sollten: Effekte statt Signifikanz.
+:::
+
+::: {.bp-pillar .tone-teal}
+[Heute · Workshop 02]{.bp-pillar__num}
+
+### Repräsentativität und Stichprobengröße
+
+Ob die berichteten Zahlen überhaupt für die Population gelten.
+:::
+
+::: {.bp-pillar}
+[Workshop 03]{.bp-pillar__num}
+
+### Denke Bayesianisch
+
+Die Alternative: Wahrscheinlichkeiten für Hypothesen.
+:::
+
+:::
+
+::: {.bp-callout}
+Workshop 01 hat gezeigt, **was** zu berichten ist. Heute geht es darum, **ob die
+Zahlen tragen**. Ein perfekt berichteter Effekt aus einer verzerrten Stichprobe
+ist perfekt berichtet und falsch.
+:::
+
+::: notes
+Der Anschluss an Workshop 01 in einem Satz: dort ging es um Berichtsqualität, hier
+um Datenqualität. Beides zusammen ist die Antwort, einzeln nicht.
+
+Wer nur heute dabei ist: der Workshop steht für sich, es wird nichts aus 01
+vorausgesetzt außer der Grundidee, dass Effektgrößen wichtiger sind als p-Werte.
+:::
+
+## Was du heute mitnimmst {data-qr="ws-reliability" data-qr-cap="Der Workshop im eigenen Tempo"}
+
+- **Repräsentativität** einer Stichprobe bewerten und Grenzen der
+  Verallgemeinerung benennen.
+- Drop-outs und Missings als **Auswahlmechanismus** lesen, nicht als Datenverlust.
+- **p-Hacking** erkennen und die Folgen für die Falsch-positiv-Rate einschätzen.
+- Stichprobenpläne über das **Wurzelgesetz** und über Simulation aufstellen.
+- **Unsicherheit ehrlich kommunizieren**, über das binäre signifikant hinaus.
+
+::: {.bp-quelle}
+Fünf Kapitel, dazu drei Vertiefungsblöcke, die über das Selbstlern-Material
+hinausgehen.
+:::
+
+{{< include _shared/_ablauf.qmd >}}
+
+# Block A {.bp-trenner background-color="#4FA8A0"}
+
+[00:08 · 22 Minuten]{.bp-eyebrow}
+
+Kapitel 1 und 2: von der Stichprobe zur Population, und was auf dem Weg verloren
+geht.
+
+## Kapitel 1: Die Suche nach der Wahrheit {data-qr="ch-reliability1" data-qr-cap="Kapitel 1 öffnen"}
+
+[Kapitel 1 · 15 min]{.bp-zeit}
+
+**Die trügerische Stichprobe.** Der wahre netzweite Effekt von SmartRail ist
+**2,5 Minuten**. Niemand kennt ihn, alle schätzen ihn.
+
+::: {.bp-zwei}
+
+::: {}
+| Stichprobe | gemessener Effekt |
+|---|---|
+| n = 20, Team A | **0,8 min** |
+| n = 20, Team B | **4,2 min** |
+| n = 500 | nahe 2,5 min |
+| n = 1000 | noch näher |
+:::
+
+::: {.bp-warn}
+Eine systematisch verzerrte Stichprobe liefert immer falsche Ergebnisse, egal wie
+groß sie ist.
+:::
+
+:::
+
+**Zwei verschiedene Probleme:** zufällige Streuung schrumpft mit n. Systematische
+Verzerrung nicht.
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: zwei Fehlerquellen unterscheiden, und nur eine davon lässt sich mit
+Fallzahl bekämpfen.
+
+Stichpunkte:
+- Erst die beiden n = 20 Teams zeigen. Beide haben korrekt gerechnet, beide kommen
+  zu unvereinbaren Ergebnissen. Das ist keine Schlamperei, das ist Streuung.
+- Dann n hochziehen und das Gesetz der großen Zahlen zeigen.
+- Dann der Bruch: die App simuliert 100 Studien parallel. Man sieht die ganze
+  Verteilung, nicht nur die eine Studie, die man selbst gemacht hat. Genau das ist
+  der Blick, den man in der Praxis nie hat.
+- Merksatz: eine publizierte Studie ist eine Ziehung aus dieser Verteilung. Welche,
+  weiß niemand.
+:::
+
+## Kapitel 2: Drop-out ist ein Auswahlmechanismus {data-qr="ch-reliability2" data-qr-cap="Kapitel 2 öffnen"}
+
+[Kapitel 2 · 15 min]{.bp-zeit}
+
+**Die verschwundenen Problemfahrten.** 100 Fahrten. Die Sensoren fallen genau dort
+aus, wo es schwierig wird: Baustellen, Weichenstörungen, schlechtes Wetter.
+
+::: {.bp-zwei}
+
+::: {}
+- Übrig bleiben die **einfachen** Strecken.
+- Dort wirkt SmartRail besser.
+- Der berichtete Effekt wird **künstlich aufgebläht**.
+- Kein Rechenfehler ist passiert.
+:::
+
+::: {.bp-quote}
+Die Daten lügen nicht, aber sie zeigen nur noch die verzerrte halbe Wahrheit.
+:::
+
+:::
+
+::: {.bp-callout}
+Entscheidend ist nicht, **wie viele** ausfallen, sondern **wer**. Wenn 30 % deiner
+Stichprobe abbricht und das nicht zufällig geschieht, hast du keine
+repräsentative Stichprobe mehr.
+:::
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: fehlende Daten sind eine Information über den Auswahlprozess, nicht
+nur ein Loch in der Tabelle.
+
+Stichpunkte:
+- Das SmartRail-Beispiel ist bewusst technisch, weil es die Absichtslosigkeit
+  zeigt: kein Mensch hat entschieden, wer wegfällt, ein Sensor hat es getan.
+- Übertragung auf die eigene Domäne sofort anschließen: wer bricht eine
+  Therapiestudie ab? Meist die, denen es schlechter geht. Wer beantwortet einen
+  Fragebogen nicht? Meist die, die das Thema betrifft.
+- Der Effekt geht immer in dieselbe Richtung: die Intervention sieht besser aus als
+  sie ist.
+- Vorbereitung für Übung 1, also die App nur andeuten.
+:::
+
+## Vertiefung A: Missing-Mechanismen benennen {data-qr="hub_stichproben" data-qr-cap="Stichproben und Präzision"}
+
+Das Kapitel zeigt einen Fall. Es gibt drei, und sie haben sehr
+unterschiedliche Konsequenzen.
+
+| | Bedeutung | Was rettbar ist |
+|---|---|---|
+| **MCAR** | völlig zufällig fehlend | unproblematisch, nur Präzisionsverlust |
+| **MAR** | fehlend abhängig von **beobachteten** Variablen | korrigierbar, etwa durch multiple Imputation |
+| **MNAR** | fehlend abhängig von **unbeobachteten** Werten selbst | nicht aus den Daten korrigierbar |
+
+::: {.bp-warn}
+Das SmartRail-Beispiel ist **MNAR**: die Ausfälle hängen an der Streckenkomplexität,
+und die fehlt genau dort. Das ist der Fall, der sich nicht wegrechnen lässt. Man
+kann ihn nur benennen und in der Diskussion offenlegen.
+:::
+
+**Dazu die Frage der Verallgemeinerung:** WEIRD-Stichproben (Western, Educated,
+Industrialised, Rich, Democratic) dominieren die Forschung bis heute. Auch eine
+perfekt vollständige Stichprobe von Psychologie-Studierenden im zweiten Semester
+verallgemeinert nur auf Psychologie-Studierende im zweiten Semester.
+
+::: notes
+Vertiefung, nicht im Selbstlern-Kapitel enthalten. Die Begriffe MCAR, MAR und MNAR
+kommen dort nicht vor, obwohl das Kapitel einen MNAR-Fall zeigt.
+
+Praktisch relevant ist genau diese Einordnung: Imputation ist verbreitet und wird
+oft angewandt, ohne zu prüfen, ob der Mechanismus sie überhaupt zulässt. Bei MNAR
+erzeugt Imputation Scheingenauigkeit.
+
+Die ehrliche Botschaft: MNAR lässt sich nicht reparieren, nur berichten. Ein
+Limitations-Absatz, der den vermuteten Mechanismus benennt, ist mehr wert als jede
+Korrekturrechnung.
+
+WEIRD kurz, aber nicht weglassen. Es ist der Fall, in dem die Stichprobe vollständig
+und trotzdem nicht verallgemeinerbar ist.
+:::
+
+# Übung 1 {.bp-trenner background-color="#E27C5C"}
+
+[00:30 · 20 Minuten]{.bp-eyebrow}
+
+Verzerrung selbst herstellen.
+
+## Übung 1: den Effekt künstlich aufblähen
+
+::: {.bp-zwei}
+
+::: {.bp-aufgabe}
+**Kapitel 2, Schieber für die Drop-out-Schwelle.**
+
+1. Setze die Schwelle so, dass **alle** Fahrten sichtbar sind. Notiere den
+   mittleren Effekt.
+2. Schiebe die Schwelle hoch, bis der berichtete Effekt sich **verdoppelt** hat.
+   Wie viele Fahrten hast du dafür entfernt?
+3. Schau auf die Punktwolke: **welche** Fahrten sind verschwunden? Beschreibe den
+   Mechanismus in einem Satz.
+4. Übertrage: in **deiner** Forschung, wer fällt systematisch aus? Und in welche
+   Richtung verzerrt das?
+:::
+
+::: {.bp-qr .bp-qr--gross}
+![](assets/qr/ch-reliability2.svg)
+
+[Kapitel 2 auf deinem Gerät]{.bp-qr__cap}
+:::
+
+:::
+
+::: notes
+Schritt 2 ist quantitativ und erzeugt den Aha-Moment: es braucht überraschend
+wenige entfernte Fälle für eine Verdopplung.
+
+Schritt 4 ist der wichtigste und sollte eingesammelt werden. Erfahrungsgemäß kommen
+hier die besten Beispiele des ganzen Workshops, weil sie aus echten Projekten
+stammen. Zwei oder drei laut besprechen und jeweils die Richtung der Verzerrung
+gemeinsam bestimmen.
+
+Wenn die Gruppe aus einem Feld kommt, lohnt es, Schritt 4 als Sammlung an der Tafel
+zu führen. Das Chalkboard ist mit b zu öffnen.
+:::
+
+{{< include _demo/reliability2.qmd >}}
+
+# Pause {.bp-trenner background-color="#2A3F66"}
+
+[00:50 · 10 Minuten]{.bp-eyebrow}
+
+Weiter um **01:00**.
+
+Danach: der Garten der sich verzweigenden Pfade.
+
+# Block B {.bp-trenner background-color="#4FA8A0"}
+
+[01:00 · 22 Minuten]{.bp-eyebrow}
+
+Kapitel 3 und 4: wie Freiheitsgrade Befunde erzeugen, und wie man Stichproben
+plant.
+
+## Kapitel 3: Der manipulierte Streckentest {data-qr="ch-reliability3" data-qr-cap="Kapitel 3 öffnen"}
+
+[Kapitel 3 · 15 min]{.bp-zeit}
+
+Strecke **Köln–Düsseldorf**, 30 Fahrten pro Bedingung. Der wahre Effekt ist
+**exakt null**.
+
+::: {.bp-zwei}
+
+::: {}
+| Analyseschritt | p |
+|---|---|
+| Alle Daten | **0.35** |
+| ohne „Sonderfälle" | sinkt |
+| ohne „Messfehler" | sinkt weiter |
+| Endergebnis | **0.04** |
+:::
+
+::: {.bp-warn}
+Der Effekt wurde nicht entdeckt. Er wurde durch selektives Löschen künstlich
+erzeugt.
+:::
+
+:::
+
+::: {.bp-callout}
+Simmons, Nelson und Simonsohn (2011): durch übliche fragwürdige
+Forschungspraktiken (QRPs) steigt die Falsch-positiv-Rate **von 5 % auf bis zu
+61 %**.
+:::
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren. Das ist das längste und wichtigste
+Kapitel des Workshops, es trägt den ganzen Block.
+
+Roter Faden: jede einzelne Entscheidung ist begründbar, die Kombination ist das
+Problem.
+
+Stichpunkte:
+- Betonen, dass der wahre Effekt null ist. Alles, was gefunden wird, ist per
+  Konstruktion falsch.
+- Jeden Schritt einzeln plausibel machen. Ausreißer entfernen steht in Lehrbüchern.
+  Defekte Messungen ausschließen ist korrekt. Werktage betrachten ist sinnvoll.
+- Der Begriff verborgene Freiheitsgrade einführen: nicht die einzelne
+  Entscheidung, sondern die Zahl der möglichen Entscheidungen ist das Problem.
+- Der Garten der sich verzweigenden Pfade: die App zählt alle Kombinationen aus und
+  zeigt, wie viele davon signifikant sind. Das ist der Blick, den man beim
+  Analysieren nie hat, weil man nur einen Pfad geht.
+- Wichtig für die Stimmung: das ist kein Betrugsvorwurf. Der Punkt ist, dass gute
+  Absicht nicht schützt.
+:::
+
+## Kapitel 4: Wie genau willst du schätzen? {data-qr="ch-reliability4" data-qr-cap="Kapitel 4 öffnen"}
+
+[Kapitel 4 · 15 min]{.bp-zeit}
+
+**Der Vorstand fordert eine Genauigkeit von ± 1,5 Minuten.** Wie viele Testfahrten
+braucht es dafür?
+
+::: {.bp-callout}
+Um den Fehler zu **halbieren**, musst du die Stichprobengröße
+**vervierfachen**.
+:::
+
+::: {.bp-zwei}
+
+::: {}
+Das ist das Wurzelgesetz, und es ist die praktische Ernüchterung jeder
+Studienplanung: Genauigkeit skaliert nicht linear mit Aufwand.
+:::
+
+::: {}
+**Der Vorteil dieser Frage:** sie ist inhaltlich beantwortbar. Wie genau du
+schätzen willst, weißt du. Wie groß der Effekt ist, weißt du nicht, das willst du
+ja erst herausfinden.
+:::
+
+:::
+
+**Abnehmender Grenznutzen zusätzlicher Testfahrten:** irgendwann kostet jede
+weitere Verbesserung mehr, als sie wert ist. Das ist eine legitime Entscheidung,
+sie muss nur bewusst getroffen werden.
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: die Präzisionsfrage ist beantwortbar, die Effektfrage nicht. Deshalb
+planen wir Präzision.
+
+Stichpunkte:
+- Das Wurzelgesetz an einer konkreten Zahl vorführen: von ± 3 auf ± 1,5 heißt vier
+  mal so viele Fälle.
+- Den entscheidenden Vorteil hervorheben: klassische Power-Analyse braucht den
+  wahren Effekt als Eingabe, und den kennt niemand. Meist wird eingesetzt, was man
+  sich wünscht, und daraus folgen systematisch zu kleine Stichproben.
+- Die Kurve des abnehmenden Grenznutzens ist gut zum Argumentieren gegenüber
+  Geldgebern und Ethikkommissionen.
+- Übergang zu Vertiefung B: es gibt drei Planungswege, das hier ist einer.
+:::
+
+## Vertiefung B: drei Wege, systematisch {data-qr="hub_stichproben" data-qr-cap="Die drei Wege im Detail"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-sand}
+[Weg 01, verbreitet]{.bp-pillar__num}
+
+### Power-Analyse
+
+*Wie viele brauche ich, um mit 80 % Wahrscheinlichkeit einen signifikanten p-Wert
+zu finden, wenn d = 0.5?*
+
+**Annahme:** der wahre Effekt ist bekannt.
+**Grenze:** ist er nicht. Also wird geraten.
+:::
+
+::: {.bp-pillar .tone-teal}
+[Weg 02, empfohlen]{.bp-pillar__num}
+
+### Präzisionsplanung
+
+*Wie viele brauche ich, damit mein Intervall schmaler wird als ± 0.15?*
+
+**Annahme:** nur die Streuung.
+**Stärke:** die Frage ist inhaltlich entscheidbar.
+:::
+
+::: {.bp-pillar .tone-navy}
+[Weg 03, bayesianisch]{.bp-pillar__num}
+
+### Bayes-Faktor-Design
+
+*Wie viele brauche ich, damit BF ≥ 10 wird, falls H₁ stimmt?*
+
+**Stärke:** erlaubt sequenzielles Testen ohne Alpha-Inflation.
+:::
+
+:::
+
+::: {.bp-quelle}
+Maxwell, Kelley & Rausch (2008) zur Präzisionsplanung ·
+Schönbrodt & Wagenmakers (2018) zur Bayes-Faktor-Design-Analyse ·
+Cumming (2014) zur „new statistics".
+:::
+
+::: notes
+Vertiefung, nicht im Selbstlern-Kapitel. Das Kapitel zeigt nur den zweiten Weg.
+
+Weg 03 verdient einen eigenen Satz, weil er ein praktisches Problem löst, das den
+meisten aus eigener Erfahrung bekannt ist: man würde gern zwischendurch schauen,
+ob die Daten schon reichen. Beim p-Wert ist das Alpha-Inflation und damit verboten.
+Beim Bayes-Faktor ist sequenzielles Auswerten unproblematisch, weil er ein
+Evidenzverhältnis ist und keine Fehlerrate.
+
+Das verbindet diesen Workshop mit Workshop 03, und man kann es hier als Ausblick
+setzen.
+:::
+
+## Vertiefung B: Simulation statt Tabelle {data-qr="hub_stichproben" data-qr-cap="Code-Skizze im Hub"}
+
+::: {.bp-aufgabe}
+**Der Weg, der immer funktioniert:** simuliere deine eigene Studie, tausendmal.
+
+1. Datengenerierenden Prozess aufschreiben: Effekt, Streuung, Fallzahl,
+   Drop-out-Rate.
+2. Eine Studie simulieren, auswerten, Ergebnis speichern.
+3. Das tausendmal wiederholen.
+4. Anschauen, wie oft du bei welcher Fallzahl zu welchem Schluss kommst.
+:::
+
+::: {.bp-callout}
+Mit **10 bis 20 Zeilen Code** bekommst du eine ehrlichere Antwort als aus jeder
+Tabelle. Und du kannst Drop-outs, Missings und Messfehler direkt mitmodellieren,
+was keine Formel für dich tut.
+:::
+
+**Der eigentliche Gewinn:** du musst deine Annahmen explizit hinschreiben. Damit
+sind sie diskutierbar, prüfbar und für die Präregistrierung dokumentiert.
+
+::: notes
+Vertiefung, nicht im Selbstlern-Kapitel. Auf der Methoden-Seite im Hub steht eine
+lauffähige R-Skizze mit replicate, die ich hier zeigen kann.
+
+Kernbotschaft: Simulation ist keine Spezialistentechnik. Es ist eine
+Schleife um die eigene Auswertung.
+
+Der Nebeneffekt ist der wichtigere und wird meist übersehen: um zu simulieren, muss
+man alle Annahmen benennen. Genau daran scheitern Studienplanungen sonst, weil die
+Annahmen implizit bleiben.
+
+Wenn Zeit ist und der Raum Code-affin ist, hier die Skizze zeilenweise durchgehen.
+Wenn nicht, nur die vier Schritte und den QR.
+:::
+
+# Übung 2 {.bp-trenner background-color="#E27C5C"}
+
+[01:22 · 18 Minuten]{.bp-eyebrow}
+
+Im Garten der sich verzweigenden Pfade.
+
+## Übung 2: finde den kleinsten p-Wert
+
+::: {.bp-zwei}
+
+::: {.bp-aufgabe}
+**Kapitel 3.** Der wahre Effekt ist null. Trotzdem:
+
+1. Notiere den p-Wert **ohne** jede Anpassung.
+2. Probiere Kombinationen aus den drei Filtern und der Subgruppen-Auswahl. **Wie
+   klein bekommst du p?**
+3. Lies ab: **wie viele** der möglichen Pfade sind bereits signifikant?
+4. Begründe **jeden** deiner Filter in einem Satz, so wie du es in einem
+   Methodenteil schreiben würdest. Klingt die Begründung unseriös?
+:::
+
+::: {.bp-qr .bp-qr--gross}
+![](assets/qr/ch-reliability3.svg)
+
+[Kapitel 3 auf deinem Gerät]{.bp-qr__cap}
+:::
+
+:::
+
+::: notes
+Schritt 4 ist die eigentliche Aufgabe, und sie ist unangenehm im richtigen Sinn.
+Die Begründungen klingen nämlich nicht unseriös, sie klingen gut. Genau das ist die
+Lektion.
+
+Auflösung im Plenum: zwei Personen lesen ihre Begründungen vor. Dann die Frage
+stellen, die niemand beantworten kann: "Woran hättest du als Gutachten gemerkt,
+dass das nachträglich entschieden wurde?" Antwort: an nichts. Deshalb braucht es
+Präregistrierung, und das führt direkt in Vertiefung C.
+
+Wettbewerbselement funktioniert hier gut: wer findet das kleinste p? Das lockert
+auf und treibt die Exploration.
+:::
+
+{{< include _demo/reliability3.qmd >}}
+
+# Block C {.bp-trenner background-color="#4FA8A0"}
+
+[01:40 · 15 Minuten]{.bp-eyebrow}
+
+Kapitel 5, der strukturelle Gegenzug, und Transfer auf eigene Designs.
+
+## Kapitel 5: Unsicherheit quantifizieren {data-qr="ch-reliability5" data-qr-cap="Kapitel 5 öffnen"}
+
+[Kapitel 5 · 15 min]{.bp-zeit}
+
+**Die gefährliche Illusion der Präzision.** Punktschätzer: **2,5 Minuten**.
+
+::: {.bp-warn}
+Das Intervall reicht von **5,0 Minuten** bis **0,1 Minuten**. Beides ist mit den
+Daten verträglich: ein großer Erfolg und ein Nichts.
+:::
+
+::: {.bp-quote}
+Die Betrachtung dieser Intervalle zwingt uns, die fehlerhafte und reduktive binäre
+Logik von signifikant und nicht signifikant zu überwinden. Anstatt eine künstliche
+Schwelle anzubeten, bewerten wir die gesamte Spanne der plausiblen Wahrheiten.
+:::
+
+**Der Punktschätzer ist die unwahrscheinlichste Aussage, die du machen kannst.**
+Er ist genau ein Wert aus einer ganzen Spanne.
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: das Intervall ist die eigentliche Aussage, der Punktschätzer ist nur
+seine Mitte.
+
+Stichpunkte:
+- Zuerst nur 2,5 Minuten zeigen und den Raum fragen, ob SmartRail ausgerollt werden
+  soll. Meist Zustimmung.
+- Dann das Intervall einblenden und die Frage wiederholen. Die Antwort ändert sich.
+- Der Merksatz zum Mitnehmen: berichte nie einen Punktschätzer ohne Intervall.
+- Ehrlich anschließen: ein Konfidenzintervall erlaubt trotzdem nicht die
+  intuitive Lesart. Das ist die Brücke zu Workshop 03 und dem
+  Glaubwürdigkeitsintervall. Hier nicht wegwischen, sondern als offene Rechnung
+  stehen lassen.
+:::
+
+## Vertiefung C: der strukturelle Gegenzug {data-qr="hub_journals" data-qr-cap="Registered Reports und Journals"}
+
+Gegen den Garten der Pfade hilft keine Statistik, sondern eine Reihenfolge:
+**erst festlegen, dann schauen.**
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-teal}
+[Leichtgewichtig]{.bp-pillar__num}
+
+### Präregistrierung
+
+Analyseplan vor der Erhebung festschreiben und mit Zeitstempel ablegen. Auf
+AsPredicted in unter zehn Minuten.
+:::
+
+::: {.bp-pillar .tone-teal}
+[Vollständig]{.bp-pillar__num}
+
+### OSF
+
+Projekt, Daten, Code, Materialien und Präregistrierung an einem Ort, versioniert
+und zitierbar.
+:::
+
+::: {.bp-pillar .tone-coral}
+[Strukturell]{.bp-pillar__num}
+
+### Registered Reports
+
+Begutachtung **vor** der Erhebung. Die Zusage hängt am Design, nicht am Ergebnis.
+Damit ist auch ein Nullbefund publizierbar.
+:::
+
+:::
+
+::: {.bp-callout}
+Präregistrierung verbietet dir nichts. Sie trennt nur, was **geplant** war, von
+dem, was du **entdeckt** hast. Beides ist erlaubt, beides ist wertvoll, es muss
+nur unterscheidbar bleiben.
+:::
+
+::: notes
+Vertiefung, nicht im Selbstlern-Kapitel enthalten.
+
+Der Kasten unten ist der Satz, der den häufigsten Widerstand auflöst.
+Präregistrierung wird als Fessel wahrgenommen, die exploratives Arbeiten verbietet.
+Sie tut das nicht. Sie zwingt nur zur Kennzeichnung.
+
+Bei AsPredicted die Niederschwelligkeit betonen: neun Fragen, unter zehn Minuten.
+Der häufigste Grund, es nicht zu tun, ist die Annahme, es sei aufwendig.
+
+Registered Reports sind die stärkste Maßnahme, aber sie hängen am Journal. Wer
+Einfluss auf eine Redaktion hat, kann hier ansetzen. Das ist genau die Stufe 02 der
+Projekt-Wirkungslogik.
+:::
+
+## Transfer: dein eigenes Design
+
+::: {.bp-aufgabe}
+**Nimm eine Studie, die du gerade planst oder kürzlich abgeschlossen hast.**
+
+1. **Präzision statt Power:** Wie genau musst du den Effekt schätzen, damit die
+   Antwort für die Praxis brauchbar ist? Nenne eine Zahl mit Einheit.
+2. **Auswahlmechanismus:** Wer fällt bei dir systematisch aus? MCAR, MAR oder
+   MNAR?
+3. **Freiheitsgrade:** Zähle die Analyseentscheidungen, die du noch nicht
+   festgelegt hast. Wie groß ist dein Garten?
+4. **Ein konkreter nächster Schritt.** Ein Satz, den du diese Woche umsetzt.
+:::
+
+::: notes
+Das ist der Kern der geführten Session bei diesem Thema, und dieser Workshop hat
+dafür bewusst mehr Zeit als die anderen beiden. Nicht kürzen.
+
+Schritt 1 ist am schwersten und am wertvollsten. Viele haben nie eine Zahl mit
+Einheit genannt. Bei Widerstand hilft die Rückfrage: "Ab welchem Unterschied würde
+sich eure Praxis ändern?" Das ist beantwortbar.
+
+Schritt 3 überrascht regelmäßig. Wenn jemand zwölf offene Entscheidungen zählt, ist
+das ein Garten mit sehr vielen Pfaden, und das lässt sich ausrechnen.
+
+Schritt 4 laut einsammeln, mindestens drei Personen. Ausgesprochene Vorsätze werden
+eher umgesetzt als gedachte.
+:::
+
+{{< include _shared/_abschluss.qmd >}}
+
+## Wo du das alles wiederfindest {data-qr="hub_stichproben" data-qr-cap="Stichproben und Präzision"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-teal}
+[Vertiefung A und B]{.bp-pillar__num}
+
+### Stichproben und Präzision
+
+WEIRD, Drop-outs, die drei Planungswege, Simulations-Skizze,
+Schlüsselliteratur.
+:::
+
+::: {.bp-pillar .tone-coral}
+[Vertiefung A]{.bp-pillar__num}
+
+### Probleme des p-Werts
+
+p-Hacking, QRPs, Publikationsbias und die 61-Prozent-Rechnung.
+:::
+
+::: {.bp-pillar .tone-navy}
+[Vertiefung C]{.bp-pillar__num}
+
+### Journals und Werkzeuge
+
+Registered Reports, OSF, AsPredicted, die aktuelle Debatte.
+:::
+
+:::
+
+::: {.bp-callout}
+**Der nächste Schritt:** Workshop 03 löst die offene Rechnung von Kapitel 5 ein.
+Das Glaubwürdigkeitsintervall sagt genau das, was wir vom Konfidenzintervall immer
+erwartet haben.
+:::
+
+::: notes
+Der Verweis auf Workshop 03 ist hier besonders sauber, weil Kapitel 5 tatsächlich
+eine Frage offenlässt, die erst dort beantwortet wird. Das ausdrücklich so sagen,
+es ist ein ehrlicher Cliffhanger und kein Verkaufsargument.
+:::

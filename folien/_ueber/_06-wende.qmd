@@ -1,0 +1,58 @@
+# Die gute Nachricht {.bp-trenner background-color="#4FA8A0"}
+
+[Die Wende]{.bp-eyebrow}
+
+Bessere Alternativen existieren seit Jahrzehnten. Sie sind technisch ausgereift,
+didaktisch gut beschrieben und in moderner Software niederschwellig verfügbar.
+
+**Was fehlt, ist die flächendeckende Anwendung.**
+
+## Drei Fragen, die jede Studie beantworten sollte {data-qr="hub_methoden" data-qr-cap="Die drei Säulen"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-coral}
+[Frage 01]{.bp-pillar__num}
+
+### Gibt es einen Effekt, und wie groß?
+
+Antwort: **Effekte und Effektgrößen.** Der p-Wert kann das prinzipbedingt nicht.
+:::
+
+::: {.bp-pillar .tone-teal}
+[Frage 02]{.bp-pillar__num}
+
+### Wie verlässlich ist die Schätzung?
+
+Antwort: **Stichprobenqualität und Stichprobengröße.** Nicht jede pauschale
+Power-Tabelle.
+:::
+
+::: {.bp-pillar .tone-navy}
+[Frage 03]{.bp-pillar__num}
+
+### Was sagen die Daten über die Hypothese?
+
+Antwort: **Bayesianische Datenanalyse.** Wahrscheinlichkeiten für Hypothesen
+statt Sieger-Verlierer-Schema.
+:::
+
+:::
+
+::: {.bp-callout}
+Praktisch jede empirische Studie versucht, eine dieser drei Fragen zu beantworten.
+Der klassische Signifikanztest beantwortet keine davon vollständig.
+:::
+
+::: notes
+Das ist die Scharnierfolie des Vortrags und gleichzeitig die Gliederung der
+nächsten Minuten. Auch die Website ist genau so aufgebaut, das erwähne ich hier
+kurz, weil es später beim Zurechtfinden hilft.
+
+Der Satz unten ist der wichtigste des ganzen Vortrags. Ihn wörtlich sagen, nicht
+paraphrasieren.
+
+Die drei Farben sind nicht dekorativ: coral, teal und navy sind die Farben der
+drei Workshops. Wer die Website danach besucht, erkennt sie wieder. Das darf man
+ruhig einmal explizit machen.
+:::

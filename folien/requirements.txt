@@ -1,0 +1,4 @@
+# Nur fuer folien/gen-assets.py. Das Rendern der Folien selbst braucht
+# ausschliesslich Quarto, keine Python-Umgebung.
+pyyaml>=6.0
+segno>=1.6

@@ -1,0 +1,82 @@
+## Antwort 03: Die Frage umdrehen {data-qr="hub_bayesian" data-qr-cap="Bayesianische Datenanalyse"}
+
+Statt *„wie wahrscheinlich sind meine Daten, wenn nichts los ist?"* fragen wir:
+
+::: {.bp-callout}
+**Was glaube ich über die Welt, und wie ändert sich dieser Glaube, sobald neue
+Daten eintreffen?**
+:::
+
+$$P(\theta \mid D) = \frac{P(D \mid \theta)\, P(\theta)}{P(D)}$$
+
+In Worten: **Posterior = (Likelihood × Prior) / Evidenz.**
+
+Vorwissen wird nicht versteckt, sondern explizit gemacht und damit angreifbar.
+
+::: notes
+Die Formel steht da, aber sie ist nicht der Punkt. Der Punkt ist der Satz im
+Kasten. Deshalb erst den Satz, dann die Formel, nicht umgekehrt.
+
+Prior, Likelihood, Posterior je in einem Halbsatz: Prior ist, was ich vorher für
+plausibel hielt. Likelihood ist, wie gut die Daten zu einer Annahme passen.
+Posterior ist, was danach übrig bleibt.
+
+Der Einwand "Priors sind subjektiv" kommt fast immer. Antwort: jede Analyse trifft
+Annahmen. Der Prior macht sie sichtbar. Eine unsichtbare Annahme ist nicht
+objektiver, sie ist nur unkritisierbar. Falls die Diskussion aufkommt, gibt es im
+Anhang eine Folie dazu.
+:::
+
+## Was du dadurch sagen darfst {data-qr="hub_bayesian" data-qr-cap="Bayes-Faktor und HDI"}
+
+::: {.bp-zwei}
+
+::: {}
+**Beim Konfidenzintervall** ist die intuitive Lesart falsch. Es beschreibt die
+langfristige Erfolgsquote des Verfahrens, nicht die Lage des wahren Werts.
+
+**Beim Glaubwürdigkeitsintervall** ist genau die intuitive Lesart richtig:
+
+> Mit 95 % Wahrscheinlichkeit liegt der wahre Wert in diesem Bereich.
+
+Oder direkt entscheidungsnah:
+
+> Mit **87 %** Wahrscheinlichkeit ist der Effekt mindestens d = 0.3.
+:::
+
+::: {}
+**Bayes-Faktor: Evidenzstärke statt Schwelle**
+
+| BF₁₀ | Evidenz für H₁ |
+|---|---|
+| 1 – 3 | anekdotisch |
+| 3 – 10 | moderat |
+| 10 – 30 | stark |
+| 30 – 100 | sehr stark |
+| > 100 | extrem |
+
+Dieselben Stufen gelten symmetrisch für **BF₀₁**, also Evidenz **für** die
+Nullhypothese. Genau das kann der Signifikanztest nicht.
+:::
+
+:::
+
+::: {.bp-quelle}
+Stufen nach Lee & Wagenmakers (2013).
+:::
+
+::: notes
+Diese Folie ist der Nutzen-Beweis. Zwei Punkte hervorheben.
+
+Erstens die Sprache. Die bayesianische Formulierung ist die, die Forschende,
+Anwendende und Öffentlichkeit ohnehin hören wollen. Wir mussten sie bisher nur
+verbieten, weil das Verfahren sie nicht hergab.
+
+Zweitens die Symmetrie des Bayes-Faktors. Nicht signifikant heißt beim
+Signifikanztest nur "wir wissen nichts". Der Bayes-Faktor unterscheidet zwischen
+"keine Evidenz" und "Evidenz für die Nullhypothese". Für Wirksamkeitsnachweise und
+Nicht-Unterlegenheitsstudien ist das der praktisch wichtigste Unterschied.
+
+Warnung an mich selbst: die Stufentabelle nicht als neue .05-Schwelle verkaufen.
+Sie ist eine Sprachhilfe, kein Entscheidungsautomat.
+:::

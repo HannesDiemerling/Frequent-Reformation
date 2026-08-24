@@ -1,0 +1,724 @@
+---
+title: "Beyond Significance"
+subtitle: "Effekte verstehen statt p-Werte ablesen · Workshop 01 von 03"
+author: "Beyond p-values · HMU Health and Medical University Erfurt"
+logo: assets/qr/ws-power.svg
+footer: "Workshop 01 · Beyond Significance · gefördert durch die VolkswagenStiftung"
+title-slide-attributes:
+  data-background-color: "#E27C5C"
+  data-background-opacity: "0.12"
+---
+
+<!--
+Workshop 01, geführte Session, ca. 2 Stunden.
+
+Gerüst-Status: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser und die
+Vertiefungsblöcke stehen. Die Kapitelfolien tragen die echten Zahlen aus den
+Workshop-Kapiteln. Was noch entsteht, ist der ausformulierte Vortragstext in den
+Sprechernotizen der Kapitelfolien, dort steht bisher jeweils ein Gerüst.
+
+Wichtig: die Vertiefungsblöcke A, B und C sind der Grund, live dabei zu sein. Sie
+stehen NICHT in den Selbstlern-Kapiteln, sondern kommen von den Methoden-Seiten
+des Hubs.
+
+Adressen kommen aus mkdocs.yml, hier steht keine ausgeschriebene Adresse.
+-->
+
+{{< include _shared/_mitlesen.qmd >}}
+
+## Wo wir stehen
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-coral}
+[Heute · Workshop 01]{.bp-pillar__num}
+
+### Beyond Significance
+
+Warum der p-Wert nichts über Bedeutsamkeit sagt, und was stattdessen zu berichten
+ist.
+:::
+
+::: {.bp-pillar}
+[Workshop 02]{.bp-pillar__num}
+
+### Repräsentativität und Stichprobengröße
+
+Wie verlässlich verallgemeinert eine Studie überhaupt?
+:::
+
+::: {.bp-pillar}
+[Workshop 03]{.bp-pillar__num}
+
+### Denke Bayesianisch
+
+Die Alternative: Wahrscheinlichkeiten für Hypothesen.
+:::
+
+:::
+
+::: {.bp-callout}
+Die Reihenfolge ist didaktisch: **vom Problem zur Lösung.** Heute klären wir das
+Problem und den ersten, sofort umsetzbaren Teil der Lösung.
+:::
+
+::: notes
+Einordnung in 60 Sekunden. Wer nur heute dabei ist, verpasst nichts, der Workshop
+steht für sich. Wer alle drei macht, sollte in dieser Reihenfolge gehen.
+
+Kurz abfragen, wer schon mit dem Material im eigenen Tempo gearbeitet hat. Danach
+richtet sich, wie schnell die Kapitelteile laufen können.
+:::
+
+## Was du heute mitnimmst {data-qr="ws-power" data-qr-cap="Der Workshop im eigenen Tempo"}
+
+- Den **p-Wert** sauber lesen und die sieben verbreiteten Fehlannahmen vermeiden.
+- Erkennen, wann Signifikanz vor allem **Stichprobengröße** widerspiegelt.
+- Effekte **unstandardisiert und standardisiert** berichten, immer mit Intervall.
+- Praktische Bedeutsamkeit von statistischer Signifikanz abgrenzen.
+- **Publikationsbias** verstehen und seine Folgen für Reviews einschätzen.
+
+::: {.bp-quelle}
+Sechs Kapitel, dazu drei Vertiefungsblöcke, die über das Selbstlern-Material
+hinausgehen.
+:::
+
+{{< include _shared/_ablauf.qmd >}}
+
+# Block A {.bp-trenner background-color="#E27C5C"}
+
+[00:08 · 22 Minuten]{.bp-eyebrow}
+
+Kapitel 1 und 2: die harte Grenze und was sie wirklich misst.
+
+## Kapitel 1: Die Illusion der harten Grenze {data-qr="ch-power1" data-qr-cap="Kapitel 1 öffnen"}
+
+[Kapitel 1 · 15 min]{.bp-zeit}
+
+**SmartRail auf zwei Strecken.** Je 30 Fahrten, beide Strecken sparen rund
+**2,1 Minuten**.
+
+| Strecke | Ersparnis | p | Urteil |
+|---|---|---|---|
+| München–Frankfurt | ~ 2,1 min | **0.047** | signifikant, Erfolg |
+| Hamburg–Berlin | ~ 2,1 min | **0.053** | nicht signifikant, Misserfolg |
+
+::: {.bp-warn}
+Zwei faktisch gleich starke Effekte. Zwei konträre Entscheidungen.
+:::
+
+::: {.bp-quote}
+Die Natur zieht keine magische Grenze zwischen p = 0.049 und p = 0.051.
+:::
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: die Schwelle ist eine Konvention, die wir zu einer
+Naturgesetzgrenze gemacht haben.
+
+Stichpunkte:
+- Beide Strecken erst ohne p-Werte zeigen, nur die Ersparnis. Der Raum sieht: das
+  ist dasselbe Ergebnis.
+- Dann die p-Werte einblenden und die Urteilsspalte. Der Bruch entsteht erst hier.
+- Anschlussfrage: was unterscheidet die beiden Strecken tatsächlich? Antwort: die
+  Streuung, nicht der Effekt. Das führt direkt zur App, die genau daran dreht.
+- Übergang zu Kapitel 2: wenn nicht der Effekt entscheidet, was dann?
+:::
+
+## Kapitel 2: Signifikanz misst vor allem n {data-qr="ch-power2" data-qr-cap="Kapitel 2 öffnen"}
+
+[Kapitel 2 · 15 min]{.bp-zeit}
+
+**Der irrelevante Rekord.** SmartRail verbessert die Pünktlichkeit um
+**12 Sekunden**. Dieser Effekt bleibt im Folgenden konstant.
+
+::: {.bp-zwei}
+
+::: {}
+| Stichprobe | p-Wert | Urteil |
+|---|---|---|
+| n = 20 | deutlich über .05 | nichts gefunden |
+| n = 5000 | weit unter .05 | hochsignifikant |
+:::
+
+::: {.bp-warn}
+Die Signifikanz testet primär deine **Stichprobengröße**, nicht die Größe oder
+Wichtigkeit des Effekts.
+
+Die statistische Signifikanz verdeckt die praktische Irrelevanz.
+:::
+
+:::
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: p ist eine Funktion von Effekt UND n, und bei großem n dominiert n.
+
+Stichpunkte:
+- 12 Sekunden erst einordnen lassen: ist das viel? Der Raum antwortet meist "nein".
+- Dann zeigen, dass genau dieser Effekt hochsignifikant werden kann.
+- Umkehrschluss betonen, er ist der praktisch wichtigere: bei kleinem n kann ein
+  großer, wichtiger Effekt unentdeckt bleiben. Nicht signifikant heißt nicht
+  "kein Effekt".
+- Diese Folie ist die Vorbereitung für Übung 1, also nicht schon alles verraten.
+:::
+
+## Vertiefung A: alle sieben Fehlannahmen {data-qr="hub_pwerte" data-qr-cap="Die sieben Fehlannahmen nachlesen"}
+
+Das Kapitel behandelt das binäre Denken. Hier die vollständige Liste.
+
+| | Aussage | Status |
+|---|---|---|
+| 1 | p ist die Wahrscheinlichkeit, dass H₀ wahr ist | falsch |
+| 2 | p < .05 heißt, der Effekt ist real | falsch, 5 % Fehlalarme per Konstruktion |
+| 3 | p < .05 heißt, der Effekt ist groß oder wichtig | falsch, hängt an n |
+| 4 | 1 − p ist die Replikationswahrscheinlichkeit | falsch, und besonders schädlich |
+| 5 | p ist die Wahrscheinlichkeit, dass es Zufall war | falsch |
+| 6 | Nicht signifikant heißt kein Effekt | falsch |
+| 7 | Konfidenzintervalle sind der bessere p-Wert | **halb richtig** |
+
+::: {.bp-callout}
+Nummer 7 ist der interessante Fall: das Intervall zeigt wenigstens die
+Effektgröße. Aber die intuitive Lesart, der wahre Wert liege mit 95 %
+Wahrscheinlichkeit darin, ist auch falsch. Diese Lesart erlaubt erst das
+Glaubwürdigkeitsintervall, und das kommt in Workshop 03.
+:::
+
+::: notes
+Das ist Vertiefung, sie steht nicht im Selbstlern-Kapitel. Genau deshalb lohnt die
+geführte Session.
+
+Die Tabelle nicht durchlesen. Stattdessen zwei Zeilen herausgreifen:
+
+Nummer 4, weil sie die schädlichste ist. Wer glaubt, ein p von .01 bedeute 99 %
+Replikationschance, wundert sich zu Recht über die Replikationskrise. Die
+Replizierbarkeit hängt an wahrer Effektstärke und Stichprobenqualität, nicht am p
+der Originalstudie.
+
+Nummer 6, weil sie die häufigste Fehlentscheidung in der Praxis erzeugt. "Absence
+of evidence is not evidence of absence."
+
+Nummer 7 als Cliffhanger für Workshop 03 stehen lassen.
+:::
+
+# Übung 1 {.bp-trenner background-color="#4FA8A0"}
+
+[00:30 · 20 Minuten]{.bp-eyebrow}
+
+Jetzt du. Am eigenen Gerät, im interaktiven Kapitel 2.
+
+## Übung 1: den Schieber selbst bewegen
+
+::: {.bp-zwei}
+
+::: {.bp-aufgabe}
+**Kapitel 2, Schieber „Anzahl Testfahrten".**
+
+1. Stelle **n = 20** ein. Notiere den p-Wert und die Breite des Intervalls.
+2. Schiebe hoch, bis p erstmals unter **.05** fällt. Bei welchem n passiert das?
+3. Gehe auf **n = 5000**. Was ist mit dem Effekt passiert? Was mit dem Intervall?
+4. Diskutiere mit der Person neben dir: **Ab welcher Ersparnis würdest du
+   SmartRail ausrollen?** Und braucht du dafür den p-Wert?
+:::
+
+::: {.bp-qr .bp-qr--gross}
+![](assets/qr/ch-power2.svg)
+
+[Kapitel 2 auf deinem Gerät]{.bp-qr__cap}
+:::
+
+:::
+
+::: {.bp-quelle}
+15 Minuten Arbeit, dann 5 Minuten Auflösung im Plenum. Der Effekt bleibt die
+ganze Zeit bei 12 Sekunden.
+:::
+
+::: notes
+Ablauf: QR zeigen, warten bis die Hälfte des Raums die Seite offen hat, erst dann
+die Aufgabe vorlesen. Sonst hören alle nur halb zu.
+
+Die Ladezeit ansprechen, bevor Unruhe entsteht: bis zu 30 Sekunden beim ersten
+Aufruf, das ist normal.
+
+Herumgehen. Schritt 2 ist die Stelle, an der es klickt, dort gezielt fragen "und
+der Effekt?".
+
+Schritt 4 ist der eigentliche Kern und braucht Zeit. Wenn die Gruppe schnell ist,
+zusätzlich fragen: welche Information bräuchtest du, um das zu entscheiden? Antwort
+ist immer Kosten und Nutzen, also unstandardisierte Effekte. Das ist die Brücke zu
+Block B.
+
+Auflösung: zwei oder drei Paare berichten, welches n sie gefunden haben. Die Zahlen
+werden auseinanderliegen, das ist selbst schon ein Befund.
+:::
+
+{{< include _demo/power2.qmd >}}
+
+# Pause {.bp-trenner background-color="#2A3F66"}
+
+[00:50 · 10 Minuten]{.bp-eyebrow}
+
+Weiter um **01:00**.
+
+Danach: wie man Effekte tatsächlich berichtet.
+
+# Block B {.bp-trenner background-color="#E27C5C"}
+
+[01:00 · 22 Minuten]{.bp-eyebrow}
+
+Kapitel 3 und 4: von der Statistik zurück in die Realität.
+
+## Kapitel 3: Unstandardisierte Effekte {data-qr="ch-power3" data-qr-cap="Kapitel 3 öffnen"}
+
+[Kapitel 3 · 15 min]{.bp-zeit}
+
+::: {.bp-quote}
+Ein Effekt ist, je nach Forschungsfrage, der Unterschied in der Ausprägung der
+interessierenden Variable zwischen Gruppen oder Bedingungen oder die Stärke des
+Zusammenhangs zwischen zwei oder mehr Variablen.
+:::
+
+**Er ist die Brücke von der Statistik in die Realität.**
+
+::: {.bp-zwei}
+
+::: {}
+**0,5 Minuten oder 12 Minuten?** Dieselbe Analyse, völlig verschiedene
+Konsequenz. Der p-Wert unterscheidet sie nicht zuverlässig, die Zahl schon.
+:::
+
+::: {}
+**Zwei Perspektiven, die das Kapitel anbietet:**
+
+- **Alltagsrechner:** Minuten pro Fahrt, hochgerechnet auf 230 Arbeitstage. Aus
+  Sekunden werden Stunden pro Jahr.
+- **Einzelfahrt:** wie viel Prozent der Fahrten sind tatsächlich pünktlicher?
+:::
+
+:::
+
+::: {.bp-quelle}
+Baguley (2009) zur Bedeutung unstandardisierter Effektmaße.
+:::
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: die unstandardisierte Zahl ist die, mit der Entscheidungen getroffen
+werden. Sie kommt zuerst, nicht das d.
+
+Stichpunkte:
+- Definition vorlesen, sie ist präzise und deckt beide Fälle ab, Unterschied und
+  Zusammenhang.
+- Der Alltagsrechner ist der Moment, in dem Nicht-Statistikpersonen andocken. Die
+  Hochrechnung auf ein Jahr macht aus einer abstrakten Zahl eine Größe, über die
+  man entscheiden kann.
+- Die Einzelfahrt-Perspektive ist die honestere Variante: nicht "im Mittel
+  besser", sondern "in wie viel Prozent der Fälle besser". Diese Umrechnung
+  überrascht meist, weil der Anteil viel näher an 50 Prozent liegt als erwartet.
+- Übergang: warum brauchen wir dann überhaupt standardisierte Maße?
+:::
+
+## Kapitel 4: Standardisierte Effektgrößen {data-qr="ch-power4" data-qr-cap="Kapitel 4 öffnen"}
+
+[Kapitel 4 · 20 min]{.bp-zeit}
+
+$$d = \frac{|M_1 - M_2|}{SD}$$
+
+::: {.bp-zwei}
+
+::: {.bp-pillar .tone-coral}
+[Aspekt 01]{.bp-pillar__num}
+
+### Entdeckbarkeit
+
+Eine Ersparnis von 5 Minuten bei **SD = 2** ist ein klares Signal. Dieselben
+5 Minuten bei **SD = 20** verschwinden im Rauschen.
+
+d ist ein Signal-Rausch-Verhältnis.
+:::
+
+::: {.bp-pillar .tone-teal}
+[Aspekt 02]{.bp-pillar__num}
+
+### Vergleichbarkeit
+
+**Team Nord** misst auf einer 5-Punkt-Skala, **+0,5** Punkte.
+**Team Süd** misst auf einer 100-Punkt-Skala, **+10** Punkte.
+
+Verschiedene Skalen, identisches d. Erst das macht sie vergleichbar.
+:::
+
+:::
+
+::: {.bp-warn}
+**Wichtiger Vorbehalt.** Die Richtwerte von Cohen (0.2, 0.5, 0.8) sind grobe
+Orientierungen, keine inhaltlichen Kriterien. Ein d = 0.3 kann in einem Kontext
+wichtig und in einem anderen trivial sein.
+:::
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: d leistet zwei Dinge, und beide sind nützlich. Aber es verliert die
+Einheit, und damit die Entscheidungsgrundlage.
+
+Stichpunkte:
+- Die Formel ist harmlos, sie ist eine Division. Das laut sagen, es entspannt.
+- Aspekt 1: d ist Signal durch Rauschen. Deshalb sinkt d, wenn die Streuung
+  steigt, obwohl der Effekt gleich bleibt.
+- Aspekt 2 ist der eigentliche Grund für die Existenz von d: Meta-Analysen
+  brauchen eine gemeinsame Skala.
+- Der Preis: 0,5 Punkte auf einer 5er-Skala und 10 Punkte auf einer 100er-Skala
+  haben dasselbe d, aber möglicherweise völlig verschiedene praktische Bedeutung.
+  Deshalb immer beides berichten.
+- Der Vorbehalt-Kasten ist die Brücke zu Vertiefung B.
+:::
+
+## Vertiefung B: der Werkzeugkasten hinter d {data-qr="hub_effektgroessen" data-qr-cap="Alle Maße mit Entscheidungshilfe"}
+
+Die Kapitel zeigen d. In Manuskripten begegnen dir mehr Maße.
+
+| Maß | Wofür | Orientierung |
+|---|---|---|
+| **Cohen's d** | Mittelwertsvergleich zweier Gruppen | 0.2 · 0.5 · 0.8 |
+| **Hedges' g** | wie d, korrigiert für kleine Stichproben | ≈ d ab n > 50 |
+| **η² / ω²** | Varianzaufklärung, ANOVA | .01 · .06 · .14 |
+| **Pearson's r** | Zusammenhang zweier stetiger Variablen | .10 · .30 · .50 |
+| **CLES** | Wahrscheinlichkeit, dass ein zufälliger Fall besser ist | 0.50 = Zufall, 0.71 ≈ d 0.8 |
+| **Odds / Risk Ratio** | binäre Ergebnisse, Medizin und Epidemiologie | 1 = kein Unterschied |
+
+::: {.bp-callout}
+**CLES ist der Kommunikations-Tipp.** „In 71 % der Vergleiche geht es der
+behandelten Person besser" versteht jede Person sofort. „d = 0.8" nicht.
+:::
+
+::: notes
+Vertiefung, nicht im Selbstlern-Kapitel enthalten.
+
+Nicht die ganze Tabelle durchgehen, das wird zäh. Statt dessen: fragen, welche
+Maße die Anwesenden in ihren Feldern tatsächlich berichten, und nur die
+besprechen. Die Tabelle bleibt als Nachschlagewerk stehen, dafür ist der QR da.
+
+CLES ist der Punkt, der am meisten mitgenommen wird. Es rechnet ein
+standardisiertes Maß in eine Aussage über Einzelfälle um, und das ist genau, was
+Praxis und Öffentlichkeit hören wollen.
+
+Bei Odds Ratio kurz warnen: sie werden systematisch als Risiken fehlgelesen. Bei
+häufigen Ereignissen liegen OR und RR weit auseinander.
+:::
+
+## Vertiefung B: so berichtest du es {data-qr="hub_effektgroessen" data-qr-cap="Reporting und Benchmarks"}
+
+::: {.bp-aufgabe}
+**Der Minimalstandard für jeden Ergebnissatz:**
+
+1. **Unstandardisiert**, in der Einheit der Sache. *4,2 Punkte im BDI-II.*
+2. **Standardisiert**, für die Einordnung. *d = 0.42.*
+3. **Ein Intervall**, immer. *95 % CI [0.18, 0.66]* oder bayesianisch
+   *HDI [0.20, 0.65]*.
+4. **Ein Vergleich mit dem Feld**, nicht mit Cohens Faustregel.
+:::
+
+::: {.bp-warn}
+**Domänenwissen schlägt Faustregel.** Ein d = 0.2 für eine
+Suizidpräventions-Intervention ist riesig. Ein d = 0.5 für ein neues Lernformat
+in einem etablierten Feld ist eher mittelmäßig.
+:::
+
+::: {.bp-quelle}
+Schäfer & Schwarz (2019). *The meaningfulness of effect sizes in psychological
+research.* Frontiers in Psychology. Liefert empirische Verteilungen von
+Effektstärken als Vergleichsmaßstab.
+:::
+
+::: notes
+Das ist die praktisch nützlichste Folie des ganzen Workshops. Hier darf man
+langsam werden.
+
+Die vier Punkte als Checkliste vorstellen, die man an ein Manuskript anlegen kann.
+Punkt 4 ist der, der am häufigsten fehlt und am wenigsten Arbeit macht: einmal
+nachschauen, welche Effekte im eigenen Feld publiziert werden.
+
+Warnung wiederholen, die schon im Über-Vortrag steht: wer nur Cohens Faustregel
+benutzt, hat das Ritual ersetzt, nicht überwunden.
+:::
+
+# Übung 2 {.bp-trenner background-color="#4FA8A0"}
+
+[01:22 · 18 Minuten]{.bp-eyebrow}
+
+Zwei Skalen, ein d.
+
+## Übung 2: was d leistet und was es verliert
+
+::: {.bp-zwei}
+
+::: {.bp-aufgabe}
+**Kapitel 4, Ansicht „Vergleichbarkeit".**
+
+1. Stelle ein d ein, das dir plausibel erscheint. Lies ab, welche
+   **Rohwert-Differenz** das bei Team Nord und bei Team Süd bedeutet.
+2. Wechsle auf „Entdeckbarkeit" und schiebe die **Streuung** hoch. Der Effekt
+   bleibt bei 5 Minuten. Was passiert mit d?
+3. **Formuliere zu zweit einen Ergebnissatz** für Team Süd, der beides enthält:
+   Rohwert und d, plus eine Einordnung.
+4. Diskutiert: **Welche der beiden Zahlen würdet ihr dem Vorstand nennen?** Und
+   welche einer Meta-Analyse?
+:::
+
+::: {.bp-qr .bp-qr--gross}
+![](assets/qr/ch-power4.svg)
+
+[Kapitel 4 auf deinem Gerät]{.bp-qr__cap}
+:::
+
+:::
+
+::: notes
+Schritt 3 ist der Kern und wird oft übersprungen, also explizit Zeit dafür
+einräumen und einsammeln. Zwei oder drei Sätze vorlesen lassen. Aus den
+Formulierungen des Raums lässt sich meist gemeinsam ein guter Satz bauen, das ist
+lehrreicher als eine Musterlösung von mir.
+
+Schritt 4 ist die Pointe: die Antwort ist nicht "eine von beiden", sondern
+"unterschiedliche Zahlen für unterschiedliche Zwecke". Vorstand bekommt Rohwerte,
+Meta-Analyse bekommt d, Publikation bekommt beides.
+
+Wenn Zeit knapp wird, Schritt 2 streichen, nicht Schritt 3.
+:::
+
+{{< include _demo/power4.qmd >}}
+
+# Block C {.bp-trenner background-color="#E27C5C"}
+
+[01:40 · 15 Minuten]{.bp-eyebrow}
+
+Kapitel 5 und 6, dann Transfer auf die eigene Arbeit.
+
+## Kapitel 5: Praktische Bedeutsamkeit {data-qr="ch-power5" data-qr-cap="Kapitel 5 öffnen"}
+
+[Kapitel 5 · 15 min]{.bp-zeit}
+
+**Das hochsignifikante Nichts.**
+
+::: {.bp-zwei}
+
+::: {}
+| | |
+|---|---|
+| Investition | **180 Mio €** |
+| Fahrten pro Jahr | **500.000** |
+| p-Wert | **< 0.001** |
+| Realer Gewinn | **4 Sekunden** pro Fahrt |
+:::
+
+::: {.bp-warn}
+Statistisch gesehen ein Triumph. Praktisch gesehen ein teures Nichts.
+:::
+
+:::
+
+::: {.bp-callout}
+Die Frage ist nicht *„Ist der Effekt von null verschieden?"*, sondern
+*„Ist der Effekt groß genug, um die Kosten zu rechtfertigen?"*
+:::
+
+**Die Relevanzschwelle ist eine inhaltliche Entscheidung, keine statistische.**
+Sie muss vorher festgelegt und begründet werden.
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: Relevanz lässt sich ausschließlich an Effekten beurteilen, und die
+Schwelle kommt von außen, nicht aus den Daten.
+
+Stichpunkte:
+- Die Tabelle Zeile für Zeile aufbauen, den Gewinn zuletzt. Der Kontrast wirkt nur
+  in dieser Reihenfolge.
+- Den Kernsatz betonen: die Relevanz einer Maßnahme kann ausschließlich anhand
+  der Effekte oder Effektgrößen beurteilt werden.
+- Die App hat einen Schieber für die eigene Relevanzschwelle. Das ist didaktisch
+  der wichtigste Regler des ganzen Workshops, weil er sichtbar macht, dass diese
+  Zahl eine Setzung ist.
+- Anschluss an die eigene Arbeit: wer legt in euren Projekten die Relevanzschwelle
+  fest? Meist niemand. Das ist der Punkt.
+:::
+
+## Kapitel 6: Publikationsbias {data-qr="ch-power6" data-qr-cap="Kapitel 6 öffnen"}
+
+[Kapitel 6 · 15 min]{.bp-zeit}
+
+**40 Teams** untersuchen unabhängig dasselbe. Der wahre Effekt ist **2,0 Minuten**.
+Publiziert wird nur, was signifikant wurde.
+
+::: {.bp-zwei}
+
+::: {}
+- Die Literatur zeigt einen **größeren** Effekt als die Realität.
+- Meta-Analysen erben die Verzerrung.
+- Replikationen scheitern, weil sie mit realistischeren Effekten arbeiten.
+:::
+
+::: {.bp-quote}
+Kein Betrug, kein Vorsatz. Nur ein System, das die falsche Frage belohnt: Ist es
+signifikant? statt Wie groß ist der Effekt wirklich?
+:::
+
+:::
+
+::: {.bp-callout}
+Niemand hat gelogen, aber das Bild ist verzerrt.
+:::
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: die Verzerrung entsteht durch Selektion beim Publizieren, nicht durch
+Fehlverhalten beim Analysieren.
+
+Stichpunkte:
+- Die 40 Teams sind der Trick der Darstellung: man sieht alle 40, auch die, die es
+  in der Realität nie in ein Journal geschafft hätten.
+- Dann die Einreichungslücke aufziehen und beobachten, wie der Mittelwert
+  wegwandert.
+- Wichtig: die einzelnen Studien sind alle korrekt gerechnet. Der Fehler liegt in
+  der Auswahl, die wir als Literatur bezeichnen.
+- Übergang zu Vertiefung C: was tun wir dagegen?
+:::
+
+## Vertiefung C: Bias erkennen und dagegenhalten {data-qr="hub_journals" data-qr-cap="Journals und Debatte"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-teal}
+[Diagnose]{.bp-pillar__num}
+
+### Funnel-Plot
+
+Effekt gegen Präzision auftragen. Symmetrischer Trichter heißt unverzerrt,
+fehlende Ecke heißt Publikationslücke.
+:::
+
+::: {.bp-pillar .tone-teal}
+[Diagnose]{.bp-pillar__num}
+
+### p-Curve
+
+Die Verteilung der p-Werte knapp unter .05. Häuft sie sich dort, deutet das auf
+selektives Reporting.
+:::
+
+::: {.bp-pillar .tone-coral}
+[Struktur]{.bp-pillar__num}
+
+### Registered Reports
+
+Begutachtung **vor** der Datenerhebung. Die Annahme hängt am Design, nicht am
+Ergebnis. Damit verschwindet der Anreiz.
+:::
+
+:::
+
+**Auf Journal-Ebene ist die Debatte längst offen:**
+
+| | |
+|---|---|
+| **BASP, seit 2015** | publiziert vollständig ohne p-Werte und ohne Konfidenzintervalle |
+| **Benjamin et al. (2018)** | Vorschlag, die Schwelle auf .005 zu senken, kontrovers |
+| **McShane et al. (2019)** | Vorschlag, Signifikanztests ganz abzuschaffen |
+| **Wasserstein et al. (2019)** | „Moving to a world beyond p < 0.05" |
+
+::: notes
+Vertiefung, nicht im Selbstlern-Kapitel enthalten.
+
+Die drei Karten unterscheiden Diagnose von Struktur. Funnel-Plot und p-Curve
+erkennen das Problem im Nachhinein. Registered Reports verhindern es. Nur das
+Zweite löst es wirklich.
+
+Bei Registered Reports das entscheidende Detail nennen: die Zusage kommt vor der
+Erhebung, und sie gilt unabhängig vom Ergebnis. Damit ist ein Nullbefund
+publizierbar, und der Anreiz zum p-Hacking fällt weg.
+
+Die Journal-Tabelle zeigt, dass die Fachgemeinschaft uneins ist, und das ist
+ehrlich so zu sagen. .005 statt .05 ist eine Verschärfung derselben Logik, nicht
+ihre Überwindung. Meine Position dazu offen sagen, aber als Position kennzeichnen.
+:::
+
+## Transfer: dein eigener Ergebnissatz
+
+::: {.bp-aufgabe}
+**Nimm einen Satz aus einem eigenen Manuskript, Abstract oder Bericht.** Falls du
+nichts dabei hast, nimm einen Satz aus einem Paper, das du kennst.
+
+1. Steht dort **nur** ein p-Wert oder eine Signifikanzaussage?
+2. Schreibe ihn um: **Rohwert · standardisiertes Maß · Intervall · Einordnung.**
+3. Was fehlt dir dafür an Information? Notiere es. Genau das ist ab jetzt Teil
+   deiner Auswertungsroutine.
+:::
+
+**Wer mag, liest vor.** Vorher und nachher.
+
+::: notes
+Das ist der wichtigste Teil der letzten Viertelstunde. Nicht kürzen, lieber
+Kapitel 6 straffen.
+
+Erfahrungswerte: Schritt 3 ist der produktive Moment. Meist fehlt die
+Standardabweichung der Vergleichsgruppe oder die Fallzahl pro Zelle. Beides steht
+in eigenen Auswertungen fast immer zur Verfügung, es wurde nur nie berichtet.
+
+Wenn niemand etwas dabei hat, habe ich zwei anonymisierte Beispielsätze in der
+Tasche. Die vorher vorbereiten.
+
+Beim Vorlesen nichts korrigieren, sondern fragen: "Was weiß der Leser jetzt, was
+er vorher nicht wusste?" Das beantwortet der Raum selbst.
+:::
+
+{{< include _shared/_abschluss.qmd >}}
+
+## Wo du das alles wiederfindest {data-qr="hub_methoden" data-qr-cap="Alle Methoden-Seiten"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-coral}
+[Vertiefung A]{.bp-pillar__num}
+
+### Probleme des p-Werts
+
+Die sieben Fehlannahmen, Publikationsbias, QRPs, Schlüsselliteratur.
+:::
+
+::: {.bp-pillar .tone-teal}
+[Vertiefung B]{.bp-pillar__num}
+
+### Effekte und Effektgrößen
+
+Alle Maße, Benchmarks im Kontext, Entscheidungstabelle, Reporting-Vorlagen.
+:::
+
+::: {.bp-pillar .tone-navy}
+[Vertiefung C]{.bp-pillar__num}
+
+### Journals und Debatte
+
+BASP, Registered Reports, die aktuelle Diskussion um die Schwelle.
+:::
+
+:::
+
+::: {.bp-callout}
+**Der nächste Schritt:** Workshop 02 klärt, wie verlässlich deine Stichprobe
+überhaupt verallgemeinert. Das ist die andere Hälfte der Antwort.
+:::
+
+::: notes
+Diese Folie ist der Wegweiser und ersetzt ein Handout. Jede Vertiefung von heute
+hat eine dauerhafte Adresse im Hub.
+
+Am Ende auf Workshop 02 verweisen und einen Satz sagen, warum er anschließt: heute
+ging es darum, was wir berichten. Beim nächsten Mal geht es darum, ob die Zahlen
+überhaupt für die Population gelten.
+:::

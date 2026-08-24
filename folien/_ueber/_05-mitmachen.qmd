@@ -1,0 +1,37 @@
+## Kurze Selbstprüfung
+
+[Mitmachen, ehrlich und ohne Konsequenzen]{.bp-eyebrow}
+
+Welche dieser Praktiken kennst du aus eigener Arbeit, aus einem Projekt oder aus
+einem Gutachten?
+
+::: {.bp-aufgabe}
+- Nach dem ersten Blick in die Daten **noch ein paar Fälle erheben**.
+- **Auffällige Werte entfernen**, weil sie ja offensichtlich Messfehler sind.
+- Von mehreren erhobenen Maßen **das berichten, das funktioniert hat**.
+- Eine Kovariate **aufnehmen oder weglassen**, je nachdem was passt.
+- Die Hypothese **nachträglich** an das Ergebnis anpassen.
+:::
+
+**Handzeichen. Oder auch nicht, das ist gleich gültig.**
+
+::: notes
+Diese Runde ist heikel und deshalb sorgfältig moderieren. Sie funktioniert nur,
+wenn ich zuerst selbst die Hand hebe. Das mache ich, und ich sage auch, bei
+welchen Punkten.
+
+Der Rahmensatz: "Jeder Punkt hier ist einmal jemandem als gute
+wissenschaftliche Praxis beigebracht worden. Ausreißer entfernen steht in
+Lehrbüchern. Das ist keine Anklage."
+
+Was der Raum begreifen soll: keine einzelne dieser Entscheidungen ist Betrug.
+Jede ist lokal begründbar. Das Problem entsteht daraus, dass es viele sind und
+dass sie nach dem Blick in die Daten getroffen werden.
+
+Wenn niemand die Hand hebt, ist das auch ein Ergebnis. Dann sage ich: "Dann seid
+ihr entweder disziplinierter als der Durchschnitt, oder wir haben alle gerade
+gemerkt, wie unangenehm die Frage ist." Beides bringt das Gespräch weiter.
+
+Nicht länger als drei Minuten. Danach unbedingt die Wende einleiten, sonst kippt
+die Stimmung.
+:::

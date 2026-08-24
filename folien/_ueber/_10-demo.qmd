@@ -1,0 +1,75 @@
+## Genug Theorie. Schauen wir zu.
+
+[Live-Demo]{.bp-eyebrow}
+
+Die Workshops laufen vollständig im Browser. Kein Konto, keine Installation,
+Python läuft direkt auf deinem Rechner in der Webseite.
+
+Was wir gleich sehen, ist Kapitel 2 aus dem ersten Workshop:
+
+::: {.bp-aufgabe}
+SmartRail verbessert die Pünktlichkeit um **12 Sekunden**. Der Effekt ändert sich
+im Folgenden nicht. Nur die Stichprobengröße wird verschoben, von 20 Fahrten auf
+5000.
+
+**Frage an den Raum, bevor ich den Schieber bewege:** Was passiert mit dem
+p-Wert? Und was passiert mit dem Effekt?
+:::
+
+::: {.bp-quelle}
+SmartRail ist ein fiktives Pilot-System der Deutschen Bahn und zieht sich als
+durchgängiges Beispiel durch alle Kapitel.
+:::
+
+::: notes
+Diese Folie hat eine technische Funktion: sie kauft der nächsten Folie Ladezeit.
+Also hier bewusst nicht hetzen, mindestens 30 bis 45 Sekunden reden. Die
+Anwendung im Hintergrund startet währenddessen.
+
+Die Frage an den Raum wirklich stellen und eine Antwort abwarten. Meist kommt
+"der p-Wert wird kleiner". Nachfragen: "Und der Effekt?" Dann wird es still, und
+genau das ist der Lerneffekt.
+
+Wer will, kann den QR auf der nächsten Folie scannen und selbst mitschieben. Das
+lohnt sich, weil dann jemand im Raum eine Zahl ruft, die ich nicht kontrolliere.
+:::
+
+{{< include _demo/power2.qmd >}}
+
+## Was wir gerade gesehen haben {data-qr="ch-power2" data-qr-cap="Kapitel 2 selbst öffnen"}
+
+::: {.bp-zwei}
+
+::: {}
+**Der Effekt hat sich nie geändert.** 12 Sekunden, von Anfang bis Ende.
+
+**Der p-Wert hat sich völlig geändert.** Bei n = 20 unauffällig, bei n = 5000
+hochsignifikant.
+:::
+
+::: {.bp-warn}
+Die Signifikanz testet primär deine **Stichprobengröße**, nicht die Größe oder
+Wichtigkeit des Effekts.
+
+Mit genug Daten wird jeder beliebig kleine Effekt signifikant.
+:::
+
+:::
+
+::: {.bp-callout}
+Und die praktische Frage bleibt völlig unbeantwortet: **sind 12 Sekunden pro
+Fahrt es wert?** Das entscheidet kein p-Wert, das entscheidet der Kontext.
+:::
+
+::: notes
+Die Auflösung ist der Kern des ersten Workshops in einem Satz: Signifikanz ist
+eine Funktion von Effekt und Stichprobengröße, und bei großem n dominiert das n.
+
+Der Schlusskasten führt zum fünften Kapitel: praktische Bedeutsamkeit. Wenn Zeit
+ist, hier kurz das 180-Millionen-Beispiel andeuten: ein Rollout für 180 Millionen
+Euro, hochsignifikant, realer Gewinn vier Sekunden pro Fahrt. Statistisch ein
+Triumph, praktisch ein teures Nichts.
+
+Danach umschalten auf das Projekt. Der Vortrag hat jetzt gezeigt, dass es ein
+Problem gibt und dass es Antworten gibt. Jetzt kommt, wer das aufbaut.
+:::

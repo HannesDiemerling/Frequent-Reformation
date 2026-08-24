@@ -1,0 +1,85 @@
+## Die Folgekette {data-qr="hub_pwerte" data-qr-cap="Warum das wichtig ist"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-coral}
+[Schritt 01]{.bp-pillar__num}
+
+### Publikationsbias
+
+Signifikante Ergebnisse werden bevorzugt publiziert. Die Literatur verzerrt sich
+systematisch, Effekte werden im Mittel überschätzt.
+:::
+
+::: {.bp-pillar .tone-coral}
+[Schritt 02]{.bp-pillar__num}
+
+### Fragwürdige Praktiken
+
+Die Jagd nach p < .05 belohnt p-Hacking, optionales Weitertesten, selektives
+Reporting und HARKing.
+:::
+
+::: {.bp-pillar .tone-coral}
+[Schritt 03]{.bp-pillar__num}
+
+### Replikationen scheitern
+
+Weil sie mit realistischeren, also kleineren Effekten arbeiten als die
+Originalstudien behaupten.
+:::
+
+:::
+
+::: {.bp-warn}
+Simmons et al. (2011): durch übliche QRPs steigt die effektive
+Falsch-positiv-Rate **von 5 % auf bis zu 61 %**. Im Extremfall ein zwölffach
+erhöhter Falsch-positiv-Anteil.
+:::
+
+::: notes
+Die drei Schritte als Kreislauf erzählen, nicht als Liste. Publikationsbias
+erzeugt Anreize für QRPs, QRPs erzeugen falsche Befunde, falsche Befunde
+scheitern in der Replikation, und weil Nullbefunde nicht publiziert werden,
+bleibt der Kreislauf unsichtbar.
+
+Wichtig für die Glaubwürdigkeit: keine Betrugsvorwürfe. Alle drei Schritte
+funktionieren vollständig ohne böse Absicht. Das ist das eigentlich Beunruhigende.
+
+HARKing kurz erklären, falls nötig: Hypothesizing After the Results are Known.
+Also die Hypothese nachträglich so formulieren, dass sie zum gefundenen Ergebnis
+passt.
+:::
+
+## Und das bleibt nicht im Journal {data-qr="hub_literatur" data-qr-cap="Schlüsselliteratur"}
+
+::: {.bp-quote}
+The Cult of Statistical Significance: How the Standard Error Costs Us Jobs,
+Justice, and Lives.
+:::
+[Ziliak und McCloskey, 2008]{.bp-quote__author}
+
+Therapien, Maßnahmen und politische Entscheidungen stützen sich auf signifikante
+Ergebnisse, die in Wahrheit Zufallsbefunde sind oder Effekte beschreiben, die für
+die Praxis irrelevant klein sind.
+
+::: {.bp-quote}
+… one of the worst things that ever happened in the history of psychology.
+:::
+[Paul Meehl über den Signifikanztest, 1978]{.bp-quote__author}
+
+::: notes
+Diese Folie ist der emotionale Tiefpunkt des Vortrags, und das ist beabsichtigt.
+Danach dreht es.
+
+Der Ziliak-und-McCloskey-Titel wirkt am besten, wenn man ihn einfach vorliest und
+dann eine Sekunde schweigt. Besonders "Jobs, Justice, and Lives".
+
+Wenn das Publikum aus dem Gesundheitsbereich kommt, hier ein eigenes Beispiel
+einsetzen: eine Intervention, die als wirksam gilt, deren Effektstärke aber
+praktisch bedeutungslos ist. Das trifft dann direkt.
+
+Meehl 1978 ist deshalb stark, weil es kein Aktivist von heute ist, sondern einer
+der einflussreichsten Methodiker der Psychologie, und weil es fast 50 Jahre alt
+ist. Der Satz "wir wissen das seit Jahrzehnten" ist die Brücke zum Projektteil.
+:::

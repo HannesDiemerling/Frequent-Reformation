@@ -1,0 +1,900 @@
+---
+title: "Denke Bayesianisch"
+subtitle: "Bayesianische Intuition aufbauen · Workshop 03 von 03"
+author: "Beyond p-values · HMU Health and Medical University Erfurt"
+logo: assets/qr/ws-thinking.svg
+footer: "Workshop 03 · Denke Bayesianisch · gefördert durch die VolkswagenStiftung"
+title-slide-attributes:
+  data-background-color: "#2A3F66"
+  data-background-opacity: "0.12"
+---
+
+<!--
+Workshop 03, geführte Session, ca. 2 Stunden.
+
+Gerüst-Status: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser und die
+Vertiefungsblöcke stehen. Die Kapitelfolien tragen die echten Zahlen aus den
+Workshop-Kapiteln. Was noch entsteht, ist der ausformulierte Vortragstext in den
+Sprechernotizen der Kapitelfolien.
+
+Sieben Kapitel, deshalb die Blockaufteilung 2 / 3 / 2 nach der Dreiteilung, die der
+Workshop auf seiner eigenen Startseite vorgibt: Grundlagen, die drei Zutaten,
+Anwendung. Der Zeitplan ist gegenüber den anderen Decks leicht verschoben, siehe
+die Ablauf-Folie in diesem Deck.
+
+Achtung: das Deck nutzt eine eigene Ablauf-Folie, nicht _shared/_ablauf.qmd, weil
+die Zeiten hier abweichen.
+
+Adressen kommen aus mkdocs.yml, hier steht keine ausgeschriebene Adresse.
+-->
+
+{{< include _shared/_mitlesen.qmd >}}
+
+## Wo wir stehen
+
+::: {.bp-drei}
+
+::: {.bp-pillar}
+[Workshop 01]{.bp-pillar__num}
+
+### Beyond Significance
+
+Effekte berichten statt Signifikanz ablesen.
+:::
+
+::: {.bp-pillar}
+[Workshop 02]{.bp-pillar__num}
+
+### Repräsentativität und Stichprobengröße
+
+Ob die Zahlen für die Population tragen.
+:::
+
+::: {.bp-pillar .tone-navy}
+[Heute · Workshop 03]{.bp-pillar__num}
+
+### Denke Bayesianisch
+
+Die Frage umdrehen und endlich die Antwort bekommen, die wir wollten.
+:::
+
+:::
+
+::: {.bp-callout}
+Zwei offene Rechnungen aus den ersten beiden Workshops werden heute eingelöst:
+**echte Evidenz für die Nullhypothese**, und ein Intervall, das man so lesen darf,
+wie man es intuitiv liest.
+:::
+
+::: notes
+Der Anschluss ist inhaltlich, nicht organisatorisch. Zwei konkrete Versprechen aus
+den vorherigen Workshops werden heute erfüllt.
+
+Erstens: in Workshop 01 blieb Fehlannahme 6 offen, nicht signifikant heißt nicht
+kein Effekt. Der Bayes-Faktor löst das.
+
+Zweitens: in Workshop 02 Kapitel 5 blieb offen, dass man ein Konfidenzintervall
+nicht so lesen darf, wie man will. Das Glaubwürdigkeitsintervall löst das.
+
+Falls Leute nur heute dabei sind: kein Problem, es wird nichts vorausgesetzt.
+:::
+
+## Was du heute mitnimmst {data-qr="ws-thinking" data-qr-cap="Der Workshop im eigenen Tempo"}
+
+- Den Unterschied zwischen **frequentistischer** und **bayesianischer**
+  Wahrscheinlichkeit benennen.
+- Das **Bayes-Theorem** an einem konkreten Fall nachvollziehen.
+- **Prior, Likelihood und Posterior** auseinanderhalten und ihr Zusammenspiel
+  erklären.
+- Ein **Glaubwürdigkeitsintervall** korrekt interpretieren und formulieren.
+- **Vorhersagen** treffen, die Unsicherheit ehrlich ausweisen.
+- Die Rolle von **MCMC** verstehen, wenn analytische Lösungen versagen.
+
+::: {.bp-quelle}
+Sieben Kapitel in drei Blöcken, dazu drei Vertiefungen, die über das
+Selbstlern-Material hinausgehen. Darunter der Bayes-Faktor, der in den Kapiteln
+gar nicht vorkommt.
+:::
+
+## Der Ablauf heute
+
+::: {.bp-ablauf}
+`00:00`  Ankommen und Einordnung  ·  **5 min**
+`00:05`  **Block A** Grundlagen, Kapitel 1 und 2, plus Vertiefung  ·  22 min
+`00:27`  **Übung 1** Basisraten, Kapitel 2  ·  20 min
+`00:47`  Pause  ·  10 min
+`00:57`  **Block B** Die drei Zutaten, Kapitel 3 bis 5, plus Vertiefung  ·  25 min
+`01:22`  **Übung 2** Prior gegen Daten, Kapitel 5  ·  18 min
+`01:40`  **Block C** Anwendung, Kapitel 6 und 7, plus Workflow  ·  15 min
+`01:55`  Abschluss und Wegweiser  ·  5 min
+:::
+
+::: {.bp-callout}
+Sieben Kapitel in zwei Stunden heißt: zügig durch die Theorie, dafür zwei richtige
+Arbeitsphasen am eigenen Gerät.
+:::
+
+::: notes
+Der Zeitplan ist enger als in den anderen beiden Workshops, weil es sieben statt
+fünf oder sechs Kapitel sind. Das offen sagen und die Konsequenz benennen: die
+Theorie läuft schneller, die Übungen bleiben unangetastet.
+
+Die Dreiteilung Grundlagen, Zutaten, Anwendung stammt aus dem Workshop selbst. Sie
+ist eine gute Landkarte, weil man an jedem Punkt weiß, wo man ist.
+:::
+
+# Block A: Grundlagen {.bp-trenner background-color="#2A3F66"}
+
+[00:05 · 22 Minuten]{.bp-eyebrow}
+
+Kapitel 1 und 2: zwei Begriffe von Wahrscheinlichkeit, und die Regel, die sie
+verbindet.
+
+## Kapitel 1: Zwei Welten der Wahrscheinlichkeit {data-qr="ch-thinking1" data-qr-cap="Kapitel 1 öffnen"}
+
+[Kapitel 1 · 10 min]{.bp-zeit}
+
+::: {.bp-zwei}
+
+::: {.bp-pillar .tone-sand}
+[Frequentistisch]{.bp-pillar__num}
+
+### Grenzwert relativer Häufigkeiten
+
+Wahrscheinlichkeit ist der Grenzwert relativer Häufigkeiten bei unendlich vielen
+Wiederholungen.
+
+Aussagen gelten über **Verfahren**, nicht über einzelne Fälle.
+:::
+
+::: {.bp-pillar .tone-navy}
+[Bayesianisch]{.bp-pillar__num}
+
+### Grad der Überzeugung
+
+Wahrscheinlichkeit ist ein Maß für den Grad der persönlichen Überzeugung, basierend
+auf dem aktuellen Informationsstand.
+
+Aussagen gelten über **Hypothesen**.
+:::
+
+:::
+
+::: {.bp-warn}
+Ein 95-%-Konfidenzintervall bedeutet **nicht**, dass der wahre Wert mit 95 %
+Wahrscheinlichkeit darin liegt. Es beschreibt die langfristige Erfolgsquote des
+Verfahrens.
+:::
+
+**SmartRail, München–Stuttgart.** Wahre Pünktlichkeit **85 %**, niemand weiß das.
+Stichprobe 1: **7 von 10**. Stichprobe 2: **9 von 10**.
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: es sind zwei verschiedene Fragen, nicht eine bessere und eine
+schlechtere Methode.
+
+Stichpunkte:
+- Beide Definitionen wörtlich bringen, sie sind präzise.
+- Der Warnkasten ist der wichtigste Satz der Folie und knüpft direkt an Workshop 02
+  Kapitel 5 an.
+- Das SmartRail-Beispiel zeigt das Kernproblem: eine Stichprobe von zehn Fahrten
+  liefert 70 oder 90 Prozent, und der wahre Wert ist 85. Frequentistisch bekomme ich
+  einen Punktschätzer plus eine Aussage über das Verfahren. Bayesianisch bekomme ich
+  eine Verteilung über plausible Werte.
+- Die App zeigt beides nebeneinander und aktualisiert live mit jedem Klick. Der
+  bayesianische Teil ist eine Beta-Verteilung mit flachem Prior.
+- Die DB-Aussage "80 Prozent pünktlich" als Aufhänger: was für eine Aussage ist das
+  eigentlich? Darüber lässt sich gut zwei Minuten diskutieren.
+:::
+
+## Kapitel 2: Das Bayes-Theorem {data-qr="ch-thinking2" data-qr-cap="Kapitel 2 öffnen"}
+
+[Kapitel 2 · 10 min]{.bp-zeit}
+
+$$P(\theta \mid D) = \frac{P(D \mid \theta)\, P(\theta)}{P(D)}$$
+
+| Teil | Bedeutung |
+|---|---|
+| **Prior** $P(\theta)$ | Deine anfängliche Überzeugung, bevor du neue Daten kennst |
+| **Likelihood** $P(D \mid \theta)$ | Wahrscheinlichkeit, genau diese Daten zu beobachten, falls die Hypothese wahr ist |
+| **Evidenz** $P(D)$ | Totale Wahrscheinlichkeit dieser Daten, unabhängig von der Hypothese |
+| **Posterior** $P(\theta \mid D)$ | Deine aktualisierte Überzeugung, nachdem du die Evidenz integriert hast |
+
+::: {.bp-callout}
+Das Bayes-Theorem ist eine mathematische Anleitung dafür, aus neuen Informationen
+klüger zu werden.
+:::
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: vier Bestandteile, jeder mit einer klaren Rolle. Die Formel ist nur
+die Buchführung.
+
+Stichpunkte:
+- Die Tabelle Zeile für Zeile, und bei jeder Zeile eine Sekunde Pause. Diese vier
+  Begriffe tragen den ganzen Rest des Workshops.
+- Die Evidenz im Nenner ist die Zeile, bei der Leute aussteigen. Kurzform: sie
+  normiert, damit am Ende eine Wahrscheinlichkeitsverteilung herauskommt. Später in
+  Kapitel 7 ist genau dieser Nenner das Problem, das MCMC löst. Das hier schon
+  ankündigen.
+- Dann direkt in das Diagnosemodul-Beispiel, das ist die eigentliche Substanz und
+  Grundlage von Übung 1.
+:::
+
+## Vertiefung A: das Diagnosemodul {data-qr="ch-thinking2" data-qr-cap="Selbst durchrechnen"}
+
+**SmartRail-Diagnose meldet eine Weichenstörung.** Wie wahrscheinlich liegt
+wirklich eine vor?
+
+::: {.bp-zwei}
+
+::: {}
+| | |
+|---|---|
+| Basisrate einer Störung | **3 %** |
+| Erkennungsrate bei echter Störung | **95 %** |
+| Fehlalarmrate ohne Störung | **8 %** |
+:::
+
+::: {.bp-warn}
+Die Intuition sagt: über 90 %.
+
+Die Rechnung sagt: **deutlich unter 30 %.**
+:::
+
+:::
+
+::: {.bp-callout}
+Ein System mit vielen Fehlalarmen entwertet jeden einzelnen Alarm.
+:::
+
+**Warum:** von 1000 Fahrten haben 30 eine Störung, davon werden 28 erkannt. Von
+den 970 ohne Störung schlagen 78 falsch Alarm. Also 28 echte gegen 78 falsche
+Alarme.
+
+::: notes
+Die Basisraten-Vernachlässigung ist der wirksamste Einzeleffekt, den man in einem
+Statistik-Workshop zeigen kann. Deshalb bekommt sie eine eigene Folie und danach
+eine ganze Übung.
+
+Ablauf, der am besten funktioniert: erst die drei Zahlen zeigen, dann den Raum
+schätzen lassen, per Handzeichen in Bändern (über 90, 50 bis 90, unter 50). Die
+Mehrheit landet zu hoch. Erst dann die Auflösung.
+
+Die 1000-Fahrten-Rechnung in absoluten Häufigkeiten ist entscheidend. In
+Prozentangaben versteht sie fast niemand, in absoluten Zahlen fast jeder. Genau das
+ist das Prinzip der Faktenboxen des Harding-Zentrums, das im Projekt in Stufe 03
+aufgegriffen wird. Diesen Bezug kann man hier herstellen.
+
+Übertragung anschließen: Screening-Programme, Dopingtests, KI-Detektoren,
+Sicherheitskontrollen. Überall dasselbe Muster, überall dieselbe Fehlintuition.
+:::
+
+# Übung 1 {.bp-trenner background-color="#4FA8A0"}
+
+[00:27 · 20 Minuten]{.bp-eyebrow}
+
+Drei Schieber, eine Intuition, die kippt.
+
+## Übung 1: an der Basisrate drehen
+
+::: {.bp-zwei}
+
+::: {.bp-aufgabe}
+**Kapitel 2, drei Schieber: Basisrate, Erkennungsrate, Fehlalarmrate.**
+
+1. Stelle die Ausgangswerte ein: **3 %**, **95 %**, **8 %**. Notiere den Posterior.
+2. Verdopple die **Basisrate** auf 6 %. Wie ändert sich der Posterior?
+3. Setze die Basisrate zurück und halbiere stattdessen die **Fehlalarmrate** auf
+   4 %. Was ist stärker?
+4. **Welcher der drei Regler ist der wichtigste?** Und was heißt das für ein
+   Screening auf eine seltene Erkrankung?
+:::
+
+::: {.bp-qr .bp-qr--gross}
+![](assets/qr/ch-thinking2.svg)
+
+[Kapitel 2 auf deinem Gerät]{.bp-qr__cap}
+:::
+
+:::
+
+::: notes
+Schritt 3 ist der Kern: die Fehlalarmrate schlägt die Erkennungsrate deutlich,
+sobald die Basisrate klein ist. Das ist kontraintuitiv, weil Hersteller mit
+Erkennungsraten werben.
+
+Schritt 4 ist die Übertragung und die eigentliche Pointe. Bei seltenen Ereignissen
+ist die Basisrate der dominierende Faktor, und sie ist genau die Zahl, die im
+Alltag weggelassen wird.
+
+Auflösung im Plenum: nach Beispielen aus dem Raum fragen. Wer im
+Gesundheitsbereich arbeitet, hat sofort eins. Der Fall Mammographie-Screening ist
+ein Klassiker und gut dokumentiert.
+
+Zeitrahmen ernst nehmen, hier läuft es gern über. Nach 15 Minuten Arbeit
+konsequent einsammeln.
+:::
+
+{{< include _demo/thinking2.qmd >}}
+
+# Pause {.bp-trenner background-color="#2A3F66"}
+
+[00:47 · 10 Minuten]{.bp-eyebrow}
+
+Weiter um **00:57**.
+
+Danach: Prior, Likelihood, Posterior.
+
+# Block B: Die drei Zutaten {.bp-trenner background-color="#2A3F66"}
+
+[00:57 · 25 Minuten]{.bp-eyebrow}
+
+Kapitel 3, 4 und 5. Drei Bausteine, ein Ergebnis.
+
+## Kapitel 3: Der Prior {data-qr="ch-thinking3" data-qr-cap="Kapitel 3 öffnen"}
+
+[Kapitel 3 · 10 min]{.bp-zeit}
+
+Der Prior beschreibt, welche Werte eines unbekannten Parameters wir **vor**
+Beobachtung der neuen Daten für plausibel halten.
+
+::: {.bp-zwei}
+
+::: {}
+**Uninformativ.** Alle Werte gleich plausibel. Klingt neutral, ist es nicht: er
+erlaubt auch absurde Werte, etwa eine Verspätungsreduktion von **30 Minuten** auf
+einer Strecke, die keine 30 Minuten Verspätung hat.
+
+**Informativ.** Nutzt Vorwissen aus früheren Studien oder Logik, um Unsinn
+auszuschließen.
+
+**Schwach informativ.** Der praktische Mittelweg: schließt Unsinn aus, lässt aber
+den Daten alle Freiheit.
+:::
+
+::: {.bp-callout}
+Der Prior macht inhärente und ohnehin vorhandene subjektive Annahmen mathematisch
+angreifbar und transparent.
+:::
+
+:::
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: uninformativ ist nicht neutral. Das ist die zentrale Einsicht des
+Kapitels.
+
+Stichpunkte:
+- Das 30-Minuten-Argument ist stark und konkret. Ein flacher Prior sagt: eine
+  Reduktion um 30 Minuten ist genauso plausibel wie eine um 2 Minuten. Das ist keine
+  Neutralität, das ist eine Behauptung, und zwar eine falsche.
+- Der rote Bereich links der Null in der App ist gut zum Zeigen: der Prior sagt
+  auch etwas darüber, wie plausibel es ist, dass SmartRail alles schlimmer macht.
+- Der Kernsatz im Kasten ist die Antwort auf den Subjektivitätsvorwurf. Er kommt
+  gleich noch ausführlich in der Vertiefung.
+- Zeit im Auge behalten, dieser Block hat drei Kapitel.
+:::
+
+## Kapitel 4: Die Likelihood {data-qr="ch-thinking4" data-qr-cap="Kapitel 4 öffnen"}
+
+[Kapitel 4 · 10 min]{.bp-zeit}
+
+*Wie wahrscheinlich ist es, exakt die vorliegenden Daten zu beobachten, falls die
+spezifische Hypothese wahr wäre?*
+
+**Fünf Testfahrten, gemessene Ersparnis:** 3 · 7 · 5 · 9 · 6 Minuten.
+
+::: {.bp-zwei}
+
+::: {}
+| Hypothese | Likelihood |
+|---|---|
+| θ = 0 min | praktisch null |
+| θ = 3 min | gering |
+| θ = 6 min | **Maximum** |
+| θ = 12 min | gering |
+:::
+
+::: {}
+Die Likelihood ist der **Filter**, durch den die Daten auf den Prior wirken. Sie
+ist keine Wahrscheinlichkeitsverteilung über θ, sondern eine Bewertung jeder
+Hypothese anhand derselben Daten.
+:::
+
+:::
+
+::: {.bp-callout}
+Beim Maximum-Likelihood-Verfahren endet man hier: man nimmt den besten Wert.
+Bayesianisch geht es weiter, die Likelihood wird mit dem Prior verrechnet.
+:::
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: die Likelihood bewertet Hypothesen an festen Daten. Die Daten sind
+fix, die Hypothese wandert. Das ist genau umgekehrt zur Intuition.
+
+Stichpunkte:
+- Die fünf Zahlen 3, 7, 5, 9, 6 an die Tafel oder auf die Folie und betonen: die
+  ändern sich nie mehr. Beweglich ist nur die Hypothese.
+- In der App wandert die Normalkurve über die fünf festen Datenpunkte. Genau dieses
+  Bild ist die Likelihood.
+- Die Abgrenzung zu Maximum Likelihood ist wichtig, weil viele Anwesende ML aus der
+  Regression kennen. Der Übergang zu Bayes ist dann klein: statt nur des Maximums
+  behält man die ganze Kurve und multipliziert sie mit dem Prior.
+- Wenn die Zeit drängt, dieses Kapitel am kürzesten halten. Es ist das technischste
+  und das am wenigsten überraschende.
+:::
+
+## Kapitel 5: Der Posterior {data-qr="ch-thinking5" data-qr-cap="Kapitel 5 öffnen"}
+
+[Kapitel 5 · 10 min]{.bp-zeit}
+
+**Prior gegen Daten.** Herstellerangaben und Simulationen sagen **8 Minuten**. Die
+fünf Testfahrten sagen **6 Minuten**.
+
+::: {.bp-zwei}
+
+::: {}
+Der Posterior landet **dazwischen**. Wie nah an den Daten, hängt davon ab, wie
+sicher der Prior formuliert war:
+
+- **Breiter Prior** heißt: die Daten dominieren.
+- **Schmaler Prior** heißt: es braucht viele Daten, um ihn zu bewegen.
+- **Viele Daten** heißt: der Prior wird irrelevant.
+:::
+
+::: {.bp-callout}
+Das bayesianische Glaubwürdigkeitsintervall liefert exakt die Aussage, die
+Menschen intuitiv suchen:
+
+**Mit 95 % Wahrscheinlichkeit liegt der wahre Wert in genau diesem Bereich.**
+:::
+
+:::
+
+**Damit ist die offene Rechnung aus Workshop 02 beglichen.**
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: der Posterior ist ein Kompromiss, dessen Gewichtung sichtbar und
+begründbar ist.
+
+Stichpunkte:
+- In der App liegen drei Kurven übereinander: Prior grau, Likelihood rot, Posterior
+  violett. Dieses Bild ist der Höhepunkt des Workshops, hier Zeit lassen.
+- Die drei Regeln zum Zusammenspiel wörtlich sagen, sie beantworten den
+  Subjektivitätsvorwurf praktisch: mit genug Daten ist es egal, was du vorher
+  geglaubt hast.
+- Der Kasten mit dem Glaubwürdigkeitsintervall ist der Moment, auf den beide
+  vorherigen Workshops hinauslaufen. Wenn Teilnehmende Workshop 02 gemacht haben,
+  hier ausdrücklich zurückverweisen.
+- Das führt direkt in Übung 2, also den Prior-Regler nur ankündigen, nicht schon
+  ausreizen.
+:::
+
+## Vertiefung B: HDI, ETI und ROPE {data-qr="hub_bayesian" data-qr-cap="HDI und ROPE nachlesen"}
+
+Aus einer Verteilung eine Entscheidung machen, ohne eine neue Schwelle zu
+ritualisieren.
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-navy}
+[Intervall]{.bp-pillar__num}
+
+### ETI
+
+Equal-Tailed Interval: schneidet unten und oben je 2,5 % ab. Einfach, aber bei
+schiefen Verteilungen unglücklich.
+:::
+
+::: {.bp-pillar .tone-navy}
+[Intervall]{.bp-pillar__num}
+
+### HDI
+
+Highest Density Interval: der schmalste Bereich, der 95 % enthält. Jeder Wert
+darin ist plausibler als jeder Wert außerhalb.
+:::
+
+::: {.bp-pillar .tone-coral}
+[Entscheidung]{.bp-pillar__num}
+
+### ROPE
+
+Region of Practical Equivalence: ein Bereich um Null, der als praktisch
+bedeutungslos gilt. Liegt das HDI außerhalb, ist die Sache klar.
+:::
+
+:::
+
+::: {.bp-callout}
+**ROPE ist die Brücke zu Workshop 01.** Die Relevanzschwelle, die dort inhaltlich
+festgelegt wurde, wird hier zum statistischen Kriterium. Nicht *„ist der Effekt
+von null verschieden"*, sondern *„liegt er außerhalb dessen, was mir egal ist"*.
+:::
+
+::: notes
+Vertiefung, nicht im Selbstlern-Kapitel enthalten. Die Kapitel zeigen ein
+Glaubwürdigkeitsintervall, aber nicht die Unterscheidung und nicht ROPE.
+
+Der Kasten unten ist der stärkste Punkt der ganzen Session, weil er die drei
+Workshops zusammenbindet: die Relevanzschwelle aus Workshop 01 ist genau die ROPE.
+Das explizit machen, wer alle drei gemacht hat, bekommt hier den Abschluss.
+
+Bei HDI gegen ETI nicht zu tief einsteigen. Der praktische Merksatz reicht: bei
+symmetrischen Verteilungen fast identisch, bei schiefen HDI nehmen.
+
+Warnung anbringen: ROPE kann selbst zum Ritual werden, wenn die Grenzen nicht
+begründet sind. Die Begründung ist inhaltlich, wie in Workshop 01.
+:::
+
+## Vertiefung B: Prior-Sensitivität berichten {data-qr="hub_bayesian" data-qr-cap="Bayesianischer Workflow"}
+
+Die Kapitel zeigen, **dass** der Prior wirkt. Offen bleibt, wie man damit in einer
+Publikation umgeht.
+
+::: {.bp-aufgabe}
+**Sensitivitätsanalyse, in vier Schritten:**
+
+1. Rechne dasselbe Modell mit **mehreren** Priors: einem skeptischen, einem
+   schwach informativen, einem am Vorwissen orientierten.
+2. Stelle die Posteriors nebeneinander.
+3. Berichte, **ob sich die Schlussfolgerung ändert**, nicht nur die Zahlen.
+4. Wenn sie sich ändert, ist das ein Ergebnis: die Daten allein reichen nicht.
+:::
+
+::: {.bp-callout}
+Damit dreht sich der Subjektivitätsvorwurf. Wer eine Sensitivitätsanalyse
+berichtet, hat seine Annahmen offengelegt und geprüft. Eine frequentistische
+Analyse tut das für ihre Annahmen in der Regel nicht.
+:::
+
+::: notes
+Vertiefung, nicht im Selbstlern-Kapitel. Sie ist der praktisch wichtigste Teil des
+Workshops für alle, die publizieren.
+
+Punkt 3 ist der Kern: berichtet wird die Robustheit der Schlussfolgerung, nicht
+eine Tabelle mit Zahlen. Ein Gutachten will wissen, ob das Ergebnis vom Prior
+abhängt.
+
+Punkt 4 als positive Botschaft rahmen. Ein prior-abhängiges Ergebnis ist kein
+Scheitern, sondern eine ehrliche Aussage über die Datenlage. Genau das kann ein
+p-Wert nicht sagen.
+
+Wenn der Subjektivitätseinwand vorher schon kam, hier darauf zurückkommen und ihn
+abschließen.
+:::
+
+# Übung 2 {.bp-trenner background-color="#4FA8A0"}
+
+[01:22 · 18 Minuten]{.bp-eyebrow}
+
+Wann gewinnen die Daten?
+
+## Übung 2: Prior gegen Daten
+
+::: {.bp-zwei}
+
+::: {.bp-aufgabe}
+**Kapitel 5, Schieber für Prior-Mittelwert und Prior-Streuung.**
+
+1. Setze den Prior auf **8 Minuten** mit großer Streuung. Wo liegt der Posterior?
+2. Verkleinere die Streuung schrittweise. Ab wann **gewinnt der Prior** gegen die
+   Daten?
+3. Setze einen bewusst **falschen** Prior, etwa 20 Minuten. Wie schmal muss er
+   sein, damit der Posterior unsinnig wird?
+4. Formuliere einen Ergebnissatz mit **Glaubwürdigkeitsintervall**, so wie du ihn
+   publizieren würdest.
+:::
+
+::: {.bp-qr .bp-qr--gross}
+![](assets/qr/ch-thinking5.svg)
+
+[Kapitel 5 auf deinem Gerät]{.bp-qr__cap}
+:::
+
+:::
+
+::: notes
+Schritt 3 ist absichtlich destruktiv. Wer selbst gesehen hat, wie ein
+überzeugter falscher Prior das Ergebnis verbiegt, versteht die Notwendigkeit der
+Sensitivitätsanalyse ohne weitere Argumente. Das ist besser als jede Warnung von
+mir.
+
+Schritt 4 einsammeln und laut vergleichen. Häufiger Fehler: die Leute schreiben
+wieder eine Signifikanzaussage. Dann gemeinsam umformulieren. Zielsatz etwa: "Die
+Reduktion beträgt 6,4 Minuten, 95 % HDI [4,1; 8,6]. Mit 96 % Wahrscheinlichkeit
+liegt sie über der Relevanzschwelle von 3 Minuten."
+
+Dieser Satz ist das Endprodukt aller drei Workshops. Ihn ausdrücklich so benennen.
+:::
+
+{{< include _demo/thinking5.qmd >}}
+
+# Block C: Anwendung {.bp-trenner background-color="#2A3F66"}
+
+[01:40 · 15 Minuten]{.bp-eyebrow}
+
+Kapitel 6 und 7, dann der Weg in die eigene Analyse.
+
+## Kapitel 6: Vorhersagen {data-qr="ch-thinking6" data-qr-cap="Kapitel 6 öffnen"}
+
+[Kapitel 6 · 10 min]{.bp-zeit}
+
+**Die Prognose für morgen.** Der Posterior sagt: θ liegt bei etwa **6 Minuten**.
+Aber was macht die **nächste einzelne Fahrt**?
+
+::: {.bp-zwei}
+
+::: {.bp-pillar .tone-navy}
+[Unsicherheit 01]{.bp-pillar__num}
+
+### Epistemisch
+
+Wie sicher bin ich mir über den wahren Parameter θ? Diese Unsicherheit schrumpft
+mit mehr Daten.
+:::
+
+::: {.bp-pillar .tone-coral}
+[Unsicherheit 02]{.bp-pillar__num}
+
+### Aleatorisch
+
+Das natürliche Rauschen der realen Welt. Diese Unsicherheit **bleibt**, egal wie
+viele Daten du sammelst.
+:::
+
+:::
+
+::: {.bp-callout}
+Deshalb ist die **Posterior-Predictive** immer breiter als der Posterior. Wer eine
+Einzelvorhersage mit der Genauigkeit des Mittelwerts angibt, verspricht zu viel.
+:::
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: zwei Arten von Unsicherheit, und nur eine schrumpft mit Daten.
+
+Stichpunkte:
+- Der Unterschied zwischen "wo liegt der Mittelwert" und "was passiert morgen" ist
+  im Alltag ständig relevant und wird ständig verwechselt. Wettervorhersage ist ein
+  gutes Beispiel, Lieferzeiten ein besseres.
+- In der App liegen zwei Kurven übereinander, Posterior violett und
+  Posterior-Predictive orange. Die orange ist immer breiter. Dieses Bild reicht als
+  Begründung.
+- Praktische Konsequenz nennen: bei Prognosen für Einzelfälle, etwa
+  Behandlungserfolg für eine Person, ist die Posterior-Predictive die richtige
+  Größe. Sie wird fast immer weggelassen, weil sie unangenehm breit ist.
+:::
+
+## Kapitel 7: Wenn die Mathematik aufgibt {data-qr="ch-thinking7" data-qr-cap="Kapitel 7 öffnen"}
+
+[Kapitel 7 · 10 min]{.bp-zeit}
+
+Erinnerung an Kapitel 2: der Nenner $P(D)$ normiert. Bei realistischen Modellen
+ist dieses Integral **nicht analytisch lösbar**.
+
+::: {.bp-zwei}
+
+::: {}
+**Der blinde Optimierer.** MCMC ist ein Verfahren, das die Verteilung abläuft,
+statt sie zu berechnen:
+
+- Start bei θ = 0, Vorschlag θ = 3, annehmen.
+- Immer wieder vorschlagen, meist bergauf annehmen.
+- Gelegentlich **bergab** gehen, um lokale Maxima zu verlassen.
+- Nach 10.000 Schritten ist die Verteilung abgebildet.
+:::
+
+::: {.bp-callout}
+MCMC ist die Brücke von der Theorie zur praktischen Anwendbarkeit. Ohne sie wäre
+bayesianische Statistik auf Lehrbuchbeispiele beschränkt geblieben.
+:::
+
+:::
+
+**Und deshalb gibt es Diagnostik:** wer approximiert, muss prüfen, ob die
+Approximation getaugt hat.
+
+::: notes
+GERÜST, hier den Vortragstext ausformulieren.
+
+Roter Faden: MCMC ist kein Trick, sondern der Grund, warum Bayes heute praktikabel
+ist.
+
+Stichpunkte:
+- Zurückverweisen auf Kapitel 2 und den Nenner. Dort wurde er angekündigt, hier
+  wird er eingelöst. Dieser Bogen ist didaktisch wertvoll.
+- Das Bild des blinden Wanderers trägt weit. Wichtig ist der Punkt mit dem
+  gelegentlichen Bergabgehen: ohne ihn bliebe die Kette in einem lokalen Maximum
+  hängen.
+- In der App gibt es Trace-Plot und Histogramm. Der Trace-Plot ist die Diagnostik,
+  auf die es ankommt: eine gesunde Kette sieht aus wie Rauschen um einen Wert, eine
+  kranke sieht aus wie ein Trend oder wie Stufen.
+- Das führt direkt in Vertiefung C.
+:::
+
+## Vertiefung C: der vollständige Workflow {data-qr="hub_bayesian" data-qr-cap="Workflow im Detail"}
+
+::: {.bp-aufgabe}
+1. **Modell spezifizieren.** Likelihood und Priors explizit hinschreiben.
+2. **Prior-Predictive-Check.** Erzeugt das Modell vor jedem Datenkontakt plausible
+   Daten? Wenn nicht, sind die Priors falsch.
+3. **Inferenz.** MCMC laufen lassen.
+4. **Diagnostik.** $\hat{R}$ nahe 1, ausreichende ESS, Trace-Plots ohne Trend und
+   ohne Stufen.
+5. **Posterior-Predictive-Check.** Sehen die vom Modell erzeugten Daten aus wie
+   die echten?
+6. **Schlüsse ziehen.** Posterior, HDI, ROPE, Bayes-Faktor, Sensitivität.
+:::
+
+::: {.bp-warn}
+Schritt 4 ist nicht optional. Ein nicht konvergiertes Modell liefert Zahlen, und
+sie sehen genauso aus wie richtige.
+:::
+
+::: notes
+Vertiefung, nicht im Selbstlern-Kapitel enthalten. Die Kapitel zeigen die
+Bestandteile, nicht den Prozess.
+
+Die Schritte 2 und 5 sind die, die am meisten unterschätzt werden. Ein
+Prior-Predictive-Check kostet fünf Minuten und findet die meisten Modellfehler,
+bevor Daten im Spiel sind.
+
+Der Warnkasten ist wichtig. Software gibt keine Fehlermeldung, wenn die Kette
+nicht konvergiert ist, sie gibt Zahlen. Deshalb ist Diagnostik Pflicht, nicht
+Kür.
+
+Wenn der Raum wenig Rechenerfahrung hat, diesen Workflow als Landkarte
+präsentieren, nicht als Anleitung. Die Botschaft ist: es gibt einen etablierten
+Ablauf, du musst ihn nicht erfinden.
+:::
+
+## Vertiefung C: dasselbe dreimal {data-qr="hub_tools" data-qr-cap="Tools und Software"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-teal}
+[Ohne Code]{.bp-pillar__num}
+
+### JASP und Jamovi
+
+Klick-Oberfläche. Bayesianischer t-Test, ANOVA, Regression und Korrelation
+direkt neben den klassischen Verfahren. Gibt Bayes-Faktoren aus.
+
+**Der Einstieg für heute Abend.**
+:::
+
+::: {.bp-pillar}
+[Mit R]{.bp-pillar__num}
+
+### brms
+
+`brm(y ~ x + (1|id), ...)`
+
+Formel-Syntax wie lme4, darunter Stan. Wer lme4 kennt, kann brms.
+:::
+
+::: {.bp-pillar .tone-navy}
+[Volle Kontrolle]{.bp-pillar__num}
+
+### Stan und PyMC
+
+Modell selbst schreiben, moderne Sampler, ArviZ für die Diagnostik. Für alles,
+was keine Standardform hat.
+:::
+
+:::
+
+::: {.bp-callout}
+**Empfehlung:** rechne deine letzte Analyse noch einmal in JASP, bayesianisch,
+und vergleiche. Das dauert eine halbe Stunde und ist lehrreicher als jedes weitere
+Kapitel.
+:::
+
+::: {.bp-quelle}
+Alle genannten Werkzeuge sind Open Source und kostenfrei.
+:::
+
+::: notes
+Vertiefung, nicht im Selbstlern-Kapitel. Das ist die Folie, die den Workshop
+anwendbar macht.
+
+Die Empfehlung im Kasten wörtlich aussprechen und um eine Zusage bitten. Wer eine
+eigene Analyse einmal bayesianisch nachgerechnet hat, kommt nicht zurück. Das ist
+der wirksamste einzelne Vorsatz, den man aus diesem Workshop mitnehmen kann.
+
+Bei JASP betonen, dass die bayesianischen Verfahren dort gleichberechtigt neben den
+klassischen stehen. Man muss nichts installieren, konfigurieren oder
+programmieren.
+
+Bei brms den Satz für R-Nutzende bringen: wenn du lme4 kennst, kennst du brms. Die
+Syntax ist fast identisch, es ändert sich nur, was hinten herauskommt.
+:::
+
+## Transfer: dein Satz
+
+::: {.bp-aufgabe}
+**Nimm ein eigenes Ergebnis und formuliere es dreimal:**
+
+1. Wie du es **bisher** geschrieben hättest. Meist eine Signifikanzaussage.
+2. Mit **Effekt und Intervall**, so wie in Workshop 01 gelernt.
+3. **Bayesianisch:** Punktschätzer, HDI, und eine Aussage über die
+   Wahrscheinlichkeit, dass der Effekt praktisch relevant ist.
+:::
+
+::: {.bp-callout}
+Satz 3 ist der, den du eigentlich immer sagen wolltest. Er war nur nicht erlaubt.
+:::
+
+::: notes
+Der Abschluss der ganzen Workshop-Reihe. Drei Versionen desselben Ergebnisses
+nebeneinander machen den Fortschritt sichtbar, und zwar am eigenen Material.
+
+Mindestens zwei Personen alle drei Sätze vorlesen lassen. Der Kontrast zwischen
+Satz 1 und Satz 3 trägt die Botschaft besser als jede Folie.
+
+Falls Zeit fehlt, nur Satz 1 und Satz 3, das genügt für den Effekt.
+
+Der Schlusssatz im Kasten ist bewusst der letzte inhaltliche Satz des Decks.
+Danach nur noch der Abschluss-Block.
+:::
+
+{{< include _shared/_abschluss.qmd >}}
+
+## Wo du das alles wiederfindest {data-qr="hub_bayesian" data-qr-cap="Bayesianische Datenanalyse"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-navy}
+[Vertiefung A bis C]{.bp-pillar__num}
+
+### Bayesianische Datenanalyse
+
+Bayes-Faktor-Stufen, HDI und ROPE, der sechsstufige Workflow, häufige Sorgen.
+:::
+
+::: {.bp-pillar .tone-teal}
+[Werkzeuge]{.bp-pillar__num}
+
+### Tools und Software
+
+JASP, Jamovi, brms, Stan, PyMC, mit Einstiegshinweisen.
+:::
+
+::: {.bp-pillar .tone-coral}
+[Weiterlesen]{.bp-pillar__num}
+
+### Literatur
+
+McElreath, Kruschke, Gelman, Lee und Wagenmakers, plus die frei verfügbare
+Vorlesungsreihe.
+:::
+
+:::
+
+::: {.bp-callout}
+**Damit ist die Reihe komplett.** Effekte berichten, Stichproben ehrlich planen,
+Hypothesen bewerten. Drei Fragen, drei Antworten.
+:::
+
+::: notes
+Wenn dies die dritte Session mit derselben Gruppe ist, hier den Bogen über alle
+drei schlagen: die drei Fragen von der ersten Folie des Über-Vortrags sind jetzt
+beantwortet.
+
+Die Literaturkarte kurz kommentieren: McElreath ist der Einstieg, den ich am
+häufigsten empfehle, und die Vorlesungsreihe dazu ist frei verfügbar.
+
+Zum Schluss auf die Fragen-Seite des Hubs verweisen. Sie ist der Weg zurück ins
+Material, wenn in einigen Wochen ein konkretes Problem auftaucht.
+:::

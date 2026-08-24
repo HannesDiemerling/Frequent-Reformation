@@ -1,0 +1,58 @@
+## Drei Fragen, drei Antworten {data-qr="hub_methoden" data-qr-cap="Die drei Säulen im Detail"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-coral}
+[Frage 01]{.bp-pillar__num}
+
+### Wie groß ist der Effekt?
+
+**Effektgrößen berichten.** Unstandardisiert für die Entscheidung, standardisiert
+für den Vergleich, immer mit Intervall.
+
+> 4,2 Punkte im BDI-II · d = 0.42, 95 % CI [0.18, 0.66]
+
+Und immer im Vergleich zum eigenen Feld, nicht zu Cohens Faustregel.
+:::
+
+::: {.bp-pillar .tone-teal}
+[Frage 02]{.bp-pillar__num}
+
+### Wie verlässlich ist die Schätzung?
+
+**Erst Qualität, dann Größe.** Mehr Fälle heilen keine Verzerrung. Drop-out ist
+ein Auswahlmechanismus.
+
+Und statt Power planen wir Präzision: wie schmal soll das Intervall werden?
+
+> Fehler halbieren heißt vierfache Stichprobe.
+:::
+
+::: {.bp-pillar .tone-navy}
+[Frage 03]{.bp-pillar__num}
+
+### Was sagen die Daten über die Hypothese?
+
+**Bayesianisch rechnen.** Posterior = Likelihood × Prior / Evidenz.
+
+> Mit 87 % Wahrscheinlichkeit ist der Effekt mindestens d = 0.3.
+
+Der Bayes-Faktor liefert auch Evidenz **für** die Nullhypothese. Das kann der
+Signifikanztest nicht.
+:::
+
+:::
+
+::: notes
+Diese Folie ersetzt in der Kurzfassung drei ausführliche Folien. Sie ist dicht,
+also strukturiert vortragen: eine Spalte, ein Gedanke, ungefähr eine Minute.
+
+Pro Spalte einen Satz auswählen, der hängen bleiben soll. Meine Wahl:
+Spalte 1 "der p-Wert kann die Größe prinzipbedingt nicht liefern".
+Spalte 2 "mehr Fälle heilen keine Verzerrung".
+Spalte 3 "der Bayes-Faktor kann auch für die Nullhypothese sprechen".
+
+Nicht versuchen, hier alles zu erklären. Die Folie soll neugierig machen, nicht
+ausbilden. Für die Ausbildung gibt es die Workshops, und darauf verweist die
+nächste Folie.
+:::

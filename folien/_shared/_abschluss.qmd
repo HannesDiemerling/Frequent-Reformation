@@ -1,0 +1,69 @@
+# Weiterarbeiten {.bp-trenner background-color="#2A3F66"}
+
+## Wie du weiterkommst {data-qr="hub_fragen" data-qr-cap="Starte mit deiner Frage"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-teal}
+[Im eigenen Tempo]{.bp-pillar__num}
+
+### Die Kapitel noch einmal
+
+Alle Kapitel bleiben offen zugänglich, jederzeit, ohne Anmeldung. Sie laufen
+vollständig im Browser.
+:::
+
+::: {.bp-pillar}
+[Nachlesen]{.bp-pillar__num}
+
+### Die Methoden-Seiten
+
+Die Vertiefungen von heute stehen als Text im Hub: p-Werte, Effektgrößen,
+Stichproben, bayesianische Analyse.
+:::
+
+::: {.bp-pillar .tone-coral}
+[Einstieg über Fragen]{.bp-pillar__num}
+
+### Zehn konkrete Fragen
+
+Jede Frage führt direkt in das passende Kapitel. Gut, wenn du später mit einem
+konkreten Problem zurückkommst.
+:::
+
+:::
+
+::: notes
+Hier den Bogen zum Anfang schließen: die Session war der Einstieg, das Material
+bleibt. Besonders die Fragen-Seite betonen, sie ist der Weg zurück ins Material,
+wenn Wochen später ein konkretes Problem auftaucht.
+:::
+
+## Mitnehmen und weitergeben {data-qr="repo_issues" data-qr-cap="Fehler melden"}
+
+- Alle Inhalte stehen unter **Creative Commons CC BY 4.0**. Du darfst sie in
+  eigener Lehre verwenden, umbauen und weitergeben, mit Quellenangabe.
+- Auch diese Folien. Sie liegen im Hub unter *Folien*.
+- Geführte Workshops sind **in Planung** und noch nicht buchbar. Verfügbar ist
+  alles im eigenen Tempo.
+
+::: {.bp-callout}
+**Fragen, Rückmeldungen, Kooperation:** {{< meta contact.name >}},
+[{{< meta contact.email >}}](mailto:{{< meta contact.email >}})
+
+**Fehler gefunden?** Bitte als Issue melden, das hilft am meisten.
+:::
+
+::: {.bp-quelle}
+In Trägerschaft der HMU Health and Medical University Erfurt, gefördert durch die
+VolkswagenStiftung im Rahmen der Förderlinie Pioniervorhaben.
+:::
+
+::: notes
+Wichtig und ehrlich bleiben: geführte Workshops sind noch nicht buchbar. Wenn
+jemand fragt, ob man das Format für sein Institut bekommen kann, ist die Antwort
+"noch nicht, aber schreib uns, wir sammeln Interesse".
+
+Der Hinweis auf Fehlermeldungen ist keine Floskel. Das Material ist neu, und
+Rückmeldungen aus echten Sessions sind die beste Qualitätssicherung.
+:::

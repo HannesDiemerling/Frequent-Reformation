@@ -1,0 +1,61 @@
+<!--
+QR-Code oben rechts, einer pro Deck, Inhalt je Folie.
+
+Reveal setzt den logo-Slot genau einmal fuer das ganze Deck und positioniert ihn
+im Viewport, waehrend Folieninhalte in der skalierten .slides-Ebene liegen. Ein
+zweiter QR-Code im Folieninhalt kann den ersten deshalb nicht sauber verdecken,
+er landet daneben.
+
+Loesung: es gibt nur ein QR-Element, das des logo-Slots. Dieses Skript tauscht
+bei jedem Folienwechsel Bild und Beschriftung aus, gesteuert ueber die Attribute
+der Folie:
+
+  ## Ueberschrift {data-qr="hub_pwerte" data-qr-cap="Probleme des p-Werts"}
+
+Ohne data-qr zeigt die Folie den Deck-Standard aus dem logo-Feld im Frontmatter.
+Faellt das Skript aus, bleibt der Standard-QR sichtbar. Die SVG-Dateien werden
+ueber resources: in _quarto.yml mitkopiert, sie sind hier nicht als Markdown-Bild
+referenziert.
+-->
+<script>
+  (function () {
+    function init() {
+      if (!window.Reveal || typeof window.Reveal.on !== "function") {
+        return setTimeout(init, 50);
+      }
+
+      var logo = document.querySelector(".reveal .slide-logo");
+      if (!logo) return;
+
+      var fallback = logo.getAttribute("src");
+      var caption = document.createElement("div");
+      caption.className = "bp-qr-cap";
+      caption.style.display = "none";
+      logo.parentNode.insertBefore(caption, logo.nextSibling);
+
+      function update() {
+        var slide = window.Reveal.getCurrentSlide();
+        if (!slide) return;
+
+        // Vertikale Unterfolien erben den QR ihrer Sektion, falls sie keinen
+        // eigenen setzen.
+        var key = slide.getAttribute("data-qr");
+        var cap = slide.getAttribute("data-qr-cap");
+        if (!key && slide.parentElement && slide.parentElement.tagName === "SECTION") {
+          key = slide.parentElement.getAttribute("data-qr");
+          cap = cap || slide.parentElement.getAttribute("data-qr-cap");
+        }
+
+        logo.setAttribute("src", key ? "assets/qr/" + key + ".svg" : fallback);
+        caption.textContent = cap || "";
+        caption.style.display = cap ? "block" : "none";
+      }
+
+      window.Reveal.on("ready", update);
+      window.Reveal.on("slidechanged", update);
+      update();
+    }
+
+    init();
+  })();
+</script>

@@ -1,0 +1,94 @@
+## Antwort 02: Die Stichprobe ehrlich planen {data-qr="hub_stichproben" data-qr-cap="Stichproben und Präzision"}
+
+::: {.bp-zwei}
+
+::: {}
+**Erst Qualität, dann Größe.**
+
+Eine systematisch verzerrte Stichprobe liefert falsche Ergebnisse, egal wie groß
+sie ist. Mehr Fälle heilen keine Verzerrung, sie machen den falschen Wert nur
+präziser.
+
+WEIRD-Stichproben (Western, Educated, Industrialised, Rich, Democratic)
+dominieren die Forschung bis heute.
+:::
+
+::: {.bp-warn}
+**Drop-out ist ein Auswahlmechanismus.**
+
+Wenn 30 % deiner Stichprobe abbrechen und das nicht zufällig geschieht, hast du
+keine repräsentative Stichprobe mehr. Egal wie sorgfältig du gezogen hast.
+:::
+
+:::
+
+::: notes
+Der Kernsatz ist "mehr Fälle heilen keine Verzerrung". Er widerspricht der
+Intuition, dass eine große Stichprobe automatisch gut ist, und er ist der Grund,
+warum Repräsentativität vor Größe kommt.
+
+Beim Drop-out den Mechanismus betonen: entscheidend ist nicht, wie viele
+wegfallen, sondern wer. Wenn genau die schwierigen Fälle wegfallen, sieht die
+Intervention besser aus als sie ist. Das ist im zweiten Workshop das
+Kernbeispiel.
+
+WEIRD nur kurz, das kennen die meisten. Falls nicht: Henrich, Heine und Norenzayan
+(2010).
+:::
+
+## Drei Wege zur Stichprobengröße {data-qr="hub_stichproben" data-qr-cap="Die drei Wege im Detail"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-sand}
+[Weg 01, verbreitet]{.bp-pillar__num}
+
+### Power-Analyse
+
+*Wie viele brauche ich, um mit 80 % Wahrscheinlichkeit einen signifikanten p-Wert
+zu finden, wenn der wahre Effekt d = 0.5 ist?*
+
+Setzt genau das voraus, was man wissen will.
+:::
+
+::: {.bp-pillar .tone-teal}
+[Weg 02, empfohlen]{.bp-pillar__num}
+
+### Präzisionsplanung
+
+*Wie viele brauche ich, damit mein Intervall schmaler wird als ± 0.15?*
+
+Direkter, ehrlicher, planbarer.
+:::
+
+::: {.bp-pillar .tone-navy}
+[Weg 03, bayesianisch]{.bp-pillar__num}
+
+### Bayes-Faktor-Design
+
+*Wie viele brauche ich, damit der Bayes-Faktor mit hoher Wahrscheinlichkeit ≥ 10
+wird, falls H₁ stimmt?*
+:::
+
+:::
+
+::: {.bp-callout}
+Und in allen drei Fällen gilt: **mit 10 bis 20 Zeilen Simulationscode bekommst du
+eine ehrlichere Antwort als aus jeder Tabelle.** Um den Fehler zu halbieren,
+brauchst du die vierfache Stichprobe.
+:::
+
+::: notes
+Die drei Wege als drei Fragen vortragen, nicht als drei Verfahren. Die Frage ist
+jeweils der Inhalt.
+
+Zu Weg 1 der entscheidende Einwand: die klassische Power-Analyse braucht den
+wahren Effekt als Input. Den kennt man nicht, deshalb setzt man meist ein, was
+man sich wünscht. Das erzeugt systematisch zu kleine Stichproben.
+
+Weg 2 ist die eigentliche Empfehlung. Die Frage "wie genau will ich schätzen"
+lässt sich inhaltlich beantworten, ohne den Effekt vorher zu kennen.
+
+Das Wurzelgesetz am Schluss ist die praktische Ernüchterung: Genauigkeit ist
+teuer. Vierfache Stichprobe für halben Fehler.
+:::

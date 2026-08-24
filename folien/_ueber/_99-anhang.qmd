@@ -1,0 +1,123 @@
+# Anhang {.bp-trenner background-color="#2A3F66"}
+
+[Reserve für Fragen]{.bp-eyebrow}
+
+Diese Folien gehören nicht in den Durchlauf. Sie sind für die Diskussion da.
+
+## „Aber Priors sind doch subjektiv"
+
+::: {.bp-zwei}
+
+::: {}
+**Der Einwand ist berechtigt und trifft zu kurz.**
+
+Jede statistische Analyse trifft Annahmen: Verteilungsform, Linearität,
+Unabhängigkeit, Wahl des Tests, Umgang mit Ausreißern. Priors machen eine dieser
+Annahmen explizit.
+
+Eine unsichtbare Annahme ist nicht objektiver. Sie ist nur nicht kritisierbar.
+:::
+
+::: {}
+**Was die Praxis daraus macht**
+
+- Schwach informative Priors schließen Unsinn aus, ohne das Ergebnis zu
+  bestimmen.
+- Bei ausreichend Daten dominieren die Daten den Prior.
+- **Sensitivitätsanalyse:** dasselbe Modell mit mehreren Priors rechnen und
+  berichten, ob sich die Schlussfolgerung ändert.
+:::
+
+:::
+
+::: notes
+Der häufigste Einwand überhaupt. Die Antwort in drei Zügen: erstens, ja, der Prior
+ist eine Annahme. Zweitens, alles andere auch. Drittens, es gibt ein Verfahren
+dafür, nämlich die Sensitivitätsanalyse.
+
+Wenn jemand hartnäckig bleibt, ist die stärkste Erwiderung eine Rückfrage: "Mit
+welcher Begründung hast du in deiner letzten Analyse den t-Test gewählt und nicht
+Mann-Whitney?" Das war auch eine Annahme, sie stand nur nirgends.
+:::
+
+## „Kann ich beides berichten?" {data-qr="hub_bayesian" data-qr-cap="Häufige Sorgen"}
+
+**Ja.** Es ist sogar oft sinnvoll, gerade in einem Umfeld, das p-Werte erwartet.
+
+::: {.bp-callout}
+Wenn beide Ergebnisse einander widersprechen, liegt das meist daran, dass der
+p-Wert die Frage falsch beantwortet, nicht der Bayes-Faktor.
+:::
+
+Weitere häufige Fragen und die ausführlichen Antworten stehen auf der
+Methoden-Seite zur bayesianischen Datenanalyse.
+
+::: notes
+Diese Antwort ist strategisch wichtig. Wer gerade einen Artikel im Review hat,
+kann nicht einfach aufhören, p-Werte zu berichten. Die Botschaft ist nicht
+"entweder oder", sondern "Effektgröße und Intervall gehören immer dazu".
+:::
+
+## Schlüsselliteratur {data-qr="hub_literatur" data-qr-cap="Kuratierte Literaturliste"}
+
+| Quelle | Worum es geht |
+|---|---|
+| Cohen (1994). The earth is round (p < .05) | Klassische Polemik gegen die Schwellen-Logik |
+| Wasserstein & Lazar (2016) | Offizieller ASA-Konsens zu p-Werten |
+| Simmons, Nelson & Simonsohn (2011) | Wie QRPs die Falsch-positiv-Rate sprengen |
+| Haller & Krauss (2002) | Selbst Methoden-Lehrende interpretieren falsch |
+| Meehl (1978) | Der Signifikanztest als historischer Irrweg |
+| Schäfer & Schwarz (2019) | Bedeutsamkeit von Effektgrößen, empirisch |
+| Schönbrodt & Wagenmakers (2018) | Bayes-Faktor-Design-Analyse |
+| Lee & Wagenmakers (2013) | Bayesianische Modellierung, inklusive BF-Stufen |
+| McElreath, Statistical Rethinking | Wahrscheinlich der beste Bayes-Einstieg |
+
+::: notes
+Nicht vorlesen. Nur zeigen, wenn nach Quellen gefragt wird, und dann auf den QR
+verweisen. Die vollständige, kommentierte Liste steht im Hub.
+:::
+
+## Werkzeuge, mit denen es sofort geht {data-qr="hub_tools" data-qr-cap="Tools und Software"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-teal}
+[Ohne Code]{.bp-pillar__num}
+
+### JASP und Jamovi
+
+Grafische Oberfläche, klassische und bayesianische Tests nebeneinander. Ideal für
+Lehre und den ersten eigenen Versuch.
+:::
+
+::: {.bp-pillar}
+[Mit R]{.bp-pillar__num}
+
+### brms
+
+Formel-Syntax wie lme4, darunter Stan. `brm(y ~ x + (1|id), ...)` und du hast ein
+bayesianisches Mehrebenenmodell.
+:::
+
+::: {.bp-pillar .tone-navy}
+[Mit Python]{.bp-pillar__num}
+
+### PyMC und Stan
+
+Volle Kontrolle über das Modell, moderne Sampler, ArviZ für die Diagnostik.
+:::
+
+:::
+
+::: {.bp-quelle}
+Alle genannten Werkzeuge sind Open Source und kostenfrei.
+:::
+
+::: notes
+Diese Folie beantwortet die praktische Anschlussfrage "und womit rechne ich das
+jetzt". Wenn das Publikum eher anwendungsorientiert ist, kann sie auch in den
+Hauptteil wandern, direkt nach Antwort 03.
+
+Der Hinweis, dass alles Open Source ist, ist bei Kliniken und Schulen relevant:
+keine Lizenzkosten, keine Beschaffung.
+:::

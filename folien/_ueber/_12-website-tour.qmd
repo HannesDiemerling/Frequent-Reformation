@@ -1,0 +1,123 @@
+# Das Angebot {.bp-trenner background-color="#4FA8A0"}
+
+[Website-Tour]{.bp-eyebrow}
+
+Alles, was jetzt kommt, ist offen zugänglich. Kostenfrei, ohne Anmeldung,
+vollständig im Browser.
+
+## Drei Wege ins Material {data-qr="hub" data-qr-cap="Der Hub"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-navy}
+[Weg 01]{.bp-pillar__num}
+
+### Workshops
+
+Strukturiert lernen. Drei Workshops, 18 Kapitel, jedes mit Theorie und einer
+interaktiven Anwendung.
+:::
+
+::: {.bp-pillar .tone-coral}
+[Weg 02]{.bp-pillar__num}
+
+### Fragen
+
+Themenzentriert einsteigen. Zehn konkrete Fragen, jede führt direkt ins passende
+Kapitel.
+:::
+
+::: {.bp-pillar .tone-teal}
+[Weg 03]{.bp-pillar__num}
+
+### Methoden
+
+Vertiefen und nachlesen. p-Werte, Effektgrößen, Stichproben, bayesianische
+Analyse.
+:::
+
+:::
+
+::: {.bp-callout}
+Wähle den Einstieg, der zu dir passt. Wer ein konkretes Problem hat, nimmt die
+Fragen. Wer systematisch lernen will, nimmt die Workshops.
+:::
+
+::: notes
+Diese Folie ist die Landkarte. Wer sie verstanden hat, findet sich auf der
+Website zurecht, und genau das ist ein Ziel dieses Vortrags.
+
+Den Unterschied zwischen Weg 01 und Weg 02 betonen. Das ist die eigentliche
+Designentscheidung der Seite: Menschen kommen selten mit "ich will Bayes lernen",
+sie kommen mit "wie viele Probanden brauche ich". Deshalb gibt es die Fragen-Seite.
+
+Die nächste Folie zeigt die Seite live, hier also nicht zu lange bleiben.
+:::
+
+{{< include _demo/site-hub_fragen.qmd >}}
+
+## Die drei Workshops {data-qr="hub_workshops" data-qr-cap="Alle Workshops"}
+
+::: {.bp-drei}
+
+::: {.bp-card}
+[{{< meta workshops.power.eyebrow >}}]{.bp-card__tag}
+[{{< meta workshops.power.number >}}]{.bp-card__num}
+
+### {{< meta workshops.power.title >}}
+
+{{< meta workshops.power.tagline >}}
+
+::: {.bp-card__meta}
+[{{< meta workshops.power.chapters_count >}} Kapitel]{}
+[{{< meta workshops.power.duration_self >}}]{}
+:::
+:::
+
+::: {.bp-card}
+[{{< meta workshops.reliability.eyebrow >}}]{.bp-card__tag}
+[{{< meta workshops.reliability.number >}}]{.bp-card__num}
+
+### {{< meta workshops.reliability.title >}}
+
+{{< meta workshops.reliability.tagline >}}
+
+::: {.bp-card__meta}
+[{{< meta workshops.reliability.chapters_count >}} Kapitel]{}
+[{{< meta workshops.reliability.duration_self >}}]{}
+:::
+:::
+
+::: {.bp-card}
+[{{< meta workshops.thinking.eyebrow >}}]{.bp-card__tag}
+[{{< meta workshops.thinking.number >}}]{.bp-card__num}
+
+### {{< meta workshops.thinking.title >}}
+
+{{< meta workshops.thinking.tagline >}}
+
+::: {.bp-card__meta}
+[{{< meta workshops.thinking.chapters_count >}} Kapitel]{}
+[{{< meta workshops.thinking.duration_self >}}]{}
+:::
+:::
+
+:::
+
+::: {.bp-quelle}
+Die Reihenfolge ist didaktisch: vom Problem (Effekte) über die Methodik
+(Stichproben) zur Alternative (Bayes). Jeder Workshop steht aber auch für sich.
+:::
+
+::: notes
+Die drei Nummern und die Reihenfolge erklären, das ist der didaktische Bogen: erst
+verstehen, warum der p-Wert die Frage nicht beantwortet, dann klären, wie
+verlässlich eine Stichprobe überhaupt ist, dann die bayesianische Alternative als
+Vertiefung.
+
+Wenn jemand nur einen Workshop machen kann, empfehle ich Workshop 01. Er hat den
+größten Effekt pro investierter Stunde.
+
+Wichtig und ehrlich: geführte Sessions sind in Planung, noch nicht buchbar. Im
+eigenen Tempo ist alles sofort verfügbar.
+:::

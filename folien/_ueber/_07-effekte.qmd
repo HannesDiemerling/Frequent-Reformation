@@ -1,0 +1,74 @@
+## Antwort 01: Effekte berichten {data-qr="hub_effektgroessen" data-qr-cap="Effekte und Effektgrößen"}
+
+::: {.bp-zwei}
+
+::: {}
+**Unstandardisiert.** Die Größe in der Einheit der Sache:
+
+> die Therapie reduziert Depressionswerte im BDI-II um **4,2 Punkte**
+
+Das versteht die Praxis sofort. Es ist die Brücke von der Statistik in die
+Realität.
+
+**Standardisiert.** Die Größe auf gemeinsamer Skala:
+
+> **d = 0.42**, 95 % CI [0.18, 0.66]
+
+Vergleichbar über Studien und Skalen hinweg. Immer mit Intervall.
+:::
+
+::: {}
+::: {.bp-quote}
+The primary product of a research inquiry is one or more measures of effect
+size, not p values.
+:::
+[Jacob Cohen, 1994]{.bp-quote__author}
+:::
+
+:::
+
+::: notes
+Beide Formen zeigen, und zwar in dieser Reihenfolge: erst unstandardisiert, dann
+standardisiert. Die Reihenfolge ist didaktisch wichtig, weil die unstandardisierte
+Form die ist, die für Entscheidungen zählt.
+
+Der 4,2-Punkte-Satz funktioniert, weil man sofort weiterfragen will: ist das viel?
+Genau diese Frage ist die richtige, und sie ist beim p-Wert nicht möglich.
+
+Das Intervall nicht als Beiwerk behandeln. Ein Punktschätzer ohne Intervall ist
+eine Behauptung ohne Fehlerangabe.
+:::
+
+## Aber Vorsicht mit den Faustregeln {data-qr="hub_effektgroessen" data-qr-cap="Benchmarks im Kontext"}
+
+Cohen schlug 1988 **klein 0.2 · mittel 0.5 · groß 0.8** vor, als grobe
+Orientierung, wenn keine fachspezifischen Vergleichswerte vorliegen.
+
+In der Praxis wird das häufig als Naturgesetz gelesen.
+
+::: {.bp-warn}
+**Domänenwissen schlägt Faustregel.** Ein d = 0.2 für eine
+Suizidpräventions-Intervention ist riesig. Ein d = 0.5 für ein neues Lernformat
+in einem etablierten Feld ist eher mittelmäßig.
+
+Vergleiche immer mit publizierten Effekten in deiner Subdisziplin.
+:::
+
+::: {.bp-quelle}
+Schäfer & Schwarz (2019). *The meaningfulness of effect sizes in psychological
+research.* Frontiers in Psychology.
+:::
+
+::: notes
+Diese Folie ist wichtiger als sie aussieht. Wer gerade gelernt hat, Effektgrößen
+zu berichten, ersetzt sonst nur ein Ritual durch ein anderes: statt p < .05
+sagt man dann "mittlerer Effekt nach Cohen". Das wäre nichts gewonnen.
+
+Das Suizidpräventions-Beispiel wirkt am stärksten. Ein kleiner Effekt auf eine
+Kennzahl, bei der jeder Prozentpunkt Menschenleben bedeutet, ist alles andere als
+klein.
+
+Schäfer und Schwarz haben empirische Verteilungen von Effektstärken in der
+Psychologie ausgewertet. Nebenbei: Thomas Schäfer ist der Projektleiter dieses
+Vorhabens. Das kann man erwähnen, es macht den Bezug konkret.
+:::

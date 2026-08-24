@@ -1,0 +1,47 @@
+## Kein Randproblem {data-qr="hub_pwerte" data-qr-cap="Zahlen und Quellen"}
+
+::: {.bp-stats}
+::: {.bp-stat}
+[61 %]{.bp-stat__num}
+[Falsch-positiv-Rate, wenn übliche fragwürdige Forschungspraktiken (QRPs)
+zusammenkommen. *Simmons et al. (2011)*]{.bp-stat__label}
+:::
+::: {.bp-stat}
+[~ 90 %]{.bp-stat__num}
+[der Forschenden interpretieren mindestens eine Aussage zum p-Wert falsch.
+*Haller & Krauss (2002)*]{.bp-stat__label}
+:::
+::: {.bp-stat}
+[.05]{.bp-stat__num}
+[eine willkürliche Schwelle, die zur Trennung von wahr und falsch geworden
+ist.]{.bp-stat__label}
+:::
+::: {.bp-stat}
+[2015]{.bp-stat__num}
+[verzichtet *Basic and Applied Social Psychology* als erstes Journal vollständig
+auf p-Werte.]{.bp-stat__label}
+:::
+:::
+
+::: {.bp-quote}
+The earth is round (p < .05).
+:::
+[Jacob Cohen, 1994]{.bp-quote__author}
+
+::: notes
+Die vier Zahlen einzeln durchgehen, nicht als Block überfliegen.
+
+61 Prozent: das ist der Wert, den Simmons, Nelson und Simonsohn erreichen, wenn
+sie vier übliche Freiheitsgrade kombinieren. Nominal 5 Prozent, faktisch 61. Diese
+Zahl kommt später im Detail, wenn wir p-Hacking behandeln.
+
+.05: kurz erwähnen, dass Fisher die Schwelle als pragmatische Konvention
+vorgeschlagen hat, nicht als Naturkonstante. Er selbst hat sie flexibel gehandhabt.
+
+2015 BASP: das ist der Punkt, an dem der Vortrag von Kritik zu Machbarkeit
+kippt. Es gibt ein Journal, das seit über zehn Jahren ohne p-Werte publiziert. Es
+funktioniert. Das ist keine Theorie.
+
+Das Cohen-Zitat ist der Titel eines Aufsatzes von 1994. Die Pointe: dass die Erde
+rund ist, würde niemand mit einem p-Wert belegen wollen.
+:::

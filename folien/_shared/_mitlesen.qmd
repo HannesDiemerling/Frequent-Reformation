@@ -1,0 +1,32 @@
+## Alles zum Mitlesen {.bp-plain}
+
+::: {.bp-zwei}
+
+::: {}
+[Alles, was heute kommt, steht dauerhaft online.]{.bp-eyebrow}
+
+[**{{< meta links.hub >}}**]{.bp-url}
+
+Kostenfrei, ohne Anmeldung, unter Creative Commons CC BY 4.0.
+
+Ab der nächsten Folie steht oben rechts immer ein QR-Code. Er zeigt jeweils
+dorthin, wo das gerade Gezeigte nachlesbar ist. Du musst nichts mitschreiben.
+:::
+
+::: {.bp-qr .bp-qr--gross}
+![](assets/qr/hub.svg)
+
+[Der Hub, Startseite]{.bp-qr__cap}
+:::
+
+:::
+
+::: notes
+Kurz halten, 30 bis 45 Sekunden. Der Punkt ist Entlastung: niemand muss
+mitschreiben, niemand muss URLs abtippen. Bitte einmal explizit sagen, dass der
+QR oben rechts mitwandert und immer auf die passende Stelle zeigt. Wer will,
+scannt jetzt einmal und hat den Hub für den Rest der Session offen.
+
+Die ausgeschriebene Adresse steht nur auf dieser einen Folie. Danach nie wieder,
+das ist Absicht.
+:::

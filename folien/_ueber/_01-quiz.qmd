@@ -1,0 +1,76 @@
+# Ein Test zum Aufwärmen {.bp-trenner background-color="#E27C5C"}
+
+[Mitmachen]{.bp-eyebrow}
+
+Eine Studie berichtet **p = .01**. Sechs Aussagen. Handzeichen bei jeder, die
+richtig ist.
+
+## Welche dieser Aussagen ist richtig?
+
+Eine Studie vergleicht zwei Gruppen und berichtet **p = .01**.
+
+::: {.bp-aufgabe}
+1. Die Nullhypothese ist mit 1 % Wahrscheinlichkeit wahr.
+2. Der Effekt ist real, denn p liegt unter .05.
+3. Der Effekt ist groß, jedenfalls größer als bei p = .04.
+4. Die Wahrscheinlichkeit, dass sich der Befund replizieren lässt, ist 99 %.
+5. Die Wahrscheinlichkeit, dass das Ergebnis reiner Zufall war, ist 1 %.
+6. Wäre p größer als .05, gäbe es keinen Effekt.
+:::
+
+**Handzeichen bitte. Bei jeder Aussage einzeln.**
+
+::: notes
+Das ist der wichtigste Moment des Vortrags. Nicht überspringen, und nicht
+abkürzen.
+
+Ablauf: jede Aussage einzeln vorlesen, dann Handzeichen abwarten. Ruhig etwas
+Zeit lassen, auch wenn es still wird. Erfahrungsgemäß gehen bei 2, 4 und 5 viele
+Hände hoch.
+
+Wichtig ist der Ton. Das ist kein Test, bei dem jemand durchfällt. Ich sage
+vorher: "Ich habe das selbst jahrelang falsch gehabt, und die Leute, die
+Methoden unterrichten, haben es auch falsch." Das nimmt den Druck raus und macht
+den Raum ehrlich.
+
+Wenn niemand die Hand hebt, weil alle den Trick ahnen: dann frage ich stattdessen
+"Welche davon habt ihr schon einmal so in einem Paper gelesen?" Das funktioniert
+immer.
+:::
+
+## Alle sechs sind falsch {data-qr="hub_pwerte" data-qr-cap="Die sieben Fehlannahmen"}
+
+::: {.bp-warn}
+Keine einzige der sechs Aussagen trifft zu. Sie sind nicht ungenau, sie sind
+falsch.
+:::
+
+::: {.bp-stats}
+::: {.bp-stat}
+[~ 90 %]{.bp-stat__num}
+[der Forschenden interpretieren mindestens eine Aussage zum p-Wert falsch.
+*Haller & Krauss (2002)*]{.bp-stat__label}
+:::
+::: {.bp-stat}
+[auch die Lehrenden]{.bp-stat__num}
+[Dieselbe Untersuchung zeigt: auch Personen, die Methoden unterrichten, liegen
+daneben.]{.bp-stat__label}
+:::
+:::
+
+Das ist kein Wissensproblem einzelner Personen. Es ist ein strukturelles Problem
+der Ausbildung.
+
+::: notes
+Die Auflösung ohne Triumph vortragen. Der Satz, der sitzen muss: das ist kein
+individuelles Versäumnis, sondern ein Ausbildungsproblem. Genau deshalb gibt es
+dieses Projekt.
+
+Haller und Krauss (2002) haben Studierende, wissenschaftliche Mitarbeitende und
+Methoden-Lehrende befragt. In allen drei Gruppen lagen die Fehlerquoten hoch. Der
+Befund ist mehrfach replizierbar und gilt bis heute.
+
+Wenn jemand nach Aussage 3 nachfragt: p = .01 gegen p = .04 sagt nichts über die
+Effektgröße, weil der p-Wert von Effekt UND Stichprobengröße abhängt. Das kommt
+auf der nächsten Folie.
+:::

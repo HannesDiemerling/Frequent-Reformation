@@ -1,0 +1,163 @@
+# Das Projekt {.bp-trenner background-color="#2A3F66"}
+
+::: {.bp-quote}
+Wir vollziehen die Wende: von einem überholten statistischen Ritual zu einer
+Wissenschaft, die Evidenz wirklich beurteilt.
+:::
+
+[Beyond p-values, gefördert durch die VolkswagenStiftung]{.bp-quote__author}
+
+## Warum jetzt? {data-qr="hub_ueber" data-qr-cap="Mission und Wirkungslogik"}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-coral}
+[Faktor 01]{.bp-pillar__num}
+
+### Reproduzierbarkeitskrise
+
+Seit den 2000er-Jahren ist die Bereitschaft, methodische Praxis ehrlich zu
+hinterfragen, so hoch wie nie.
+:::
+
+::: {.bp-pillar .tone-teal}
+[Faktor 02]{.bp-pillar__num}
+
+### Software-Reife
+
+JASP, Jamovi, brms und Stan haben bayesianische Analysen massentauglich gemacht.
+:::
+
+::: {.bp-pillar .tone-navy}
+[Faktor 03]{.bp-pillar__num}
+
+### Erste Vorreiter
+
+Journals wie *Basic and Applied Social Psychology* zeigen seit 2015, dass
+Publizieren ohne p-Werte funktioniert.
+:::
+
+:::
+
+::: {.bp-callout}
+Das Wissen ist alt. Die Werkzeuge sind neu. Der Moment ist jetzt.
+:::
+
+::: notes
+Drei Faktoren, einer pro Atemzug. Der wichtigste ist Faktor 02: die Kritik am
+Signifikanztest ist Jahrzehnte alt, aber früher war die Alternative
+Spezialistenwissen. Heute klickt man sie in JASP zusammen. Das ist der eigentliche
+Unterschied zu allen früheren Reformversuchen.
+
+Faktor 03 nimmt das Argument "das geht doch nicht" vorweg. Es geht, seit über zehn
+Jahren, in einem echten Journal.
+:::
+
+## Was wir tun
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-teal}
+[Stufe 01]{.bp-pillar__num}
+
+### Aufklärung und Training
+
+Workshops, Train-the-Trainer-Programme und offene Materialien. Niederschwellig
+und während der Förderphase kostenfrei.
+:::
+
+::: {.bp-pillar .tone-coral}
+[Stufe 02]{.bp-pillar__num}
+
+### Strukturelle Reform
+
+Mit Verlagen, Journals und Fachgesellschaften Richtlinien für Studienberichte
+ohne p-Werte entwickeln.
+:::
+
+::: {.bp-pillar .tone-sand}
+[Stufe 03]{.bp-pillar__num}
+
+### Öffentlichkeitsarbeit
+
+Fact-Sheets nach Vorbild der Faktenboxen des Harding-Zentrums, verständlich für
+die Praxis.
+:::
+
+:::
+
+::: {.bp-pillars}
+::: {.bp-pillar .tone-navy}
+[Stufe 04]{.bp-pillar__num}
+
+### Netzwerk und Verstetigung
+
+Eine Online-Plattform und ein Kooperationsnetz halten die Bewegung über das
+Förderende hinaus aktiv und skalieren auf weitere Disziplinen sowie in den
+englischsprachigen Raum.
+:::
+:::
+
+::: notes
+Die vier Stufen sind bewusst als Wirkungslogik gebaut, nicht als Aktivitätenliste.
+Training allein ändert das System nicht, solange die Anreize gleich bleiben. Genau
+deshalb gibt es Stufe 02.
+
+Wenn Vertretende von Journals oder Verlagen im Raum sind, ist Stufe 02 der
+Anknüpfungspunkt. Dann hier länger bleiben.
+
+Bei Stufe 03 kurz erklären, was eine Faktenbox ist: ein standardisiertes Format,
+das Nutzen und Schaden einer medizinischen Maßnahme in absoluten Zahlen darstellt.
+Etabliert vom Harding-Zentrum für Risikokompetenz.
+:::
+
+## Wer dahintersteht {data-qr="hub_team" data-qr-cap="Team und Förderung"}
+
+::: {.bp-drei}
+
+::: {.bp-card}
+[Projektleitung]{.bp-card__tag}
+
+### Prof. Dr. Thomas Schäfer
+
+Initiator des Vorhabens und wissenschaftliche Leitung. Verantwortlich für
+Konzeption und Antragstellung.
+:::
+
+::: {.bp-card}
+[Umsetzung]{.bp-card__tag}
+
+### Hannes Diemerling
+
+Wissenschaftlicher Mitarbeiter. Entwicklung der Workshops und Materialien, Aufbau
+und Pflege der Plattform.
+:::
+
+::: {.bp-card}
+[Unterstützung]{.bp-card__tag}
+
+### Nina Isaac
+
+Studentische Hilfskraft, Bachelor-Studentin an der HMU Erfurt. Web, Materialien
+und Datensätze.
+:::
+
+:::
+
+::: {.bp-quelle}
+In Trägerschaft der **HMU Health and Medical University Erfurt**, gefördert durch
+die **VolkswagenStiftung** im Rahmen der Förderlinie Pioniervorhaben. Die
+Verantwortung für den Inhalt liegt bei den Autorinnen und Autoren.
+:::
+
+::: notes
+Kurz halten, das ist eine Legitimationsfolie, keine Inhaltsfolie. Zwei Sätze pro
+Person genügen.
+
+Der Förderhinweis ist eine Auflage und gehört auf jede Präsentation. Nicht
+weglassen, auch nicht bei Zeitdruck.
+
+Partner sind bewusst nicht auf dieser Folie: es ist bisher nichts angefragt oder
+zugesagt, alle geplanten Kooperationen sind Absicht, nicht Zusage. Wenn danach
+gefragt wird, ehrlich so sagen.
+:::

@@ -1,0 +1,30 @@
+## Der Ablauf heute
+
+::: {.bp-ablauf}
+`00:00`  Ankommen und Einordnung  ·  **8 min**
+`00:08`  **Block A** Kapitel plus Vertiefung  ·  22 min
+`00:30`  **Übung 1** am interaktiven Kapitel, dann Auflösung  ·  20 min
+`00:50`  Pause  ·  10 min
+`01:00`  **Block B** Kapitel plus Vertiefung  ·  22 min
+`01:22`  **Übung 2**, dann Auflösung  ·  18 min
+`01:40`  **Vertiefung C** Praxis und Transfer auf eigene Studien  ·  15 min
+`01:55`  Abschluss und Wegweiser  ·  5 min
+:::
+
+::: {.bp-callout}
+Die beiden Übungsblöcke laufen an deinem eigenen Gerät, im interaktiven Kapitel.
+Bring also etwas mit, auf dem ein Browser läuft. Installieren musst du nichts.
+:::
+
+::: notes
+Diese Folie ist der Vertrag mit dem Raum. Zwei Dinge ansprechen:
+
+Erstens, es gibt zwei echte Arbeitsphasen. Wer nur zuhören will, kann das, aber
+die Übungen sind der Teil, der hängen bleibt.
+
+Zweitens, die Pause ist eingeplant und wird eingehalten. Das nimmt Unruhe raus.
+
+Wenn die Gruppe klein ist (unter zehn Personen), lohnt es, die Übungen zu Paaren
+zu machen: eine Person bedient, eine kommentiert. Das erzeugt mehr Gespräch als
+Einzelarbeit.
+:::

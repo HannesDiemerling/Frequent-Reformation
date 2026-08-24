@@ -43,6 +43,31 @@ hide:
 
 </div>
 
+## Für Lehrende: die Foliensätze
+
+Du willst die Inhalte selbst vortragen, in einem Seminar, einem Kolloquium oder einer
+internen Schulung? Dafür gibt es fertige Foliensätze: einen Überblicks-Vortrag in zwei
+Längen und je einen Vortrag pro Workshop, ausgelegt auf etwa zwei Stunden mit
+interaktiven Runden.
+
+Die Folien ersetzen die Workshops nicht. Sie rahmen sie ein: die interaktiven Kapitel
+werden live gezeigt und von den Teilnehmenden selbst bedient, dazu kommen Vertiefungen,
+die über das Selbstlern-Material hinausgehen. Alles unter
+[Creative Commons CC BY 4.0]({{ links.cc_by }}), nutzbar mit Quellenangabe.
+
+<div class="bp-pillars">
+
+  <a class="bp-pillar" href="{{ links.hub_folien }}" style="text-decoration:none;color:inherit;display:block;">
+    <div class="bp-pillar__num">→ FOLIEN</div>
+    <h3>Alle Foliensätze ansehen</h3>
+    <p>
+      Überblicks-Vortrag (ca. 30 min und ca. 15 min) sowie drei Workshop-Vorträge mit
+      Ablaufplan, Übungen und Sprechernotizen.
+    </p>
+  </a>
+
+</div>
+
 <div class="bp-section-head">
   <div>
     <span class="bp-section-head__eyebrow">Inhalte</span>

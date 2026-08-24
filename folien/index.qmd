@@ -1,0 +1,82 @@
+---
+title: "Folien"
+subtitle: "Vortragsmaterial zu Beyond p-values"
+format:
+  html:
+    theme: none
+    embed-resources: true
+    css: theme/uebersicht.css
+    toc: false
+    anchor-sections: false
+---
+
+Diese Foliensätze sind für geführte Sessions gedacht: als Vortragsmaterial für
+Lehrende und Vortragende. Sie ersetzen die Workshops nicht, sie rahmen sie ein.
+Die interaktiven Kapitel bleiben der Kern, die Folien führen hin, ordnen ein und
+vertiefen.
+
+Alles steht unter [Creative Commons CC BY 4.0]({{< meta links.cc_by >}}) und darf
+mit Quellenangabe in Lehre und Schulung verwendet werden.
+
+## Der Überblicks-Vortrag
+
+::: {.bp-liste}
+
+[**Jenseits des p-Werts. Besser forschen.**](00-ueber.html){.bp-titel}
+[ca. 30 Minuten · für Kolloquien, Tagungen, Auftaktveranstaltungen]{.bp-meta}
+Das Problem, die drei Antworten, das Projekt und das Angebot. Mit zwei
+Mitmach-Runden und einer Live-Demo.
+
+[**Kurzfassung**](00-ueber-kurz.html){.bp-titel}
+[ca. 15 Minuten · als Aufschlag oder Vorstellung]{.bp-meta}
+Dieselben Inhalte, verdichtet auf das Wesentliche.
+
+:::
+
+## Die Workshop-Vorträge
+
+Je ca. 2 Stunden, ausgelegt auf eine geführte Session zum jeweiligen Workshop.
+Sie greifen die interaktiven Kapitel direkt auf und ergänzen sie um Systematik,
+Literatur und die Übersetzung in die eigene Arbeit.
+
+::: {.bp-liste}
+
+[**{{< meta workshops.power.number >}} · {{< meta workshops.power.title >}}**](01-power.html){.bp-titel}
+[{{< meta workshops.power.chapters_count >}} Kapitel · {{< meta workshops.power.subtitle >}}]{.bp-meta}
+{{< meta workshops.power.tagline >}}
+
+[**{{< meta workshops.reliability.number >}} · {{< meta workshops.reliability.title >}}**](02-reliability.html){.bp-titel}
+[{{< meta workshops.reliability.chapters_count >}} Kapitel · {{< meta workshops.reliability.subtitle >}}]{.bp-meta}
+{{< meta workshops.reliability.tagline >}}
+
+[**{{< meta workshops.thinking.number >}} · {{< meta workshops.thinking.title >}}**](03-thinking.html){.bp-titel}
+[{{< meta workshops.thinking.chapters_count >}} Kapitel · {{< meta workshops.thinking.subtitle >}}]{.bp-meta}
+{{< meta workshops.thinking.tagline >}}
+
+:::
+
+## Bedienung
+
+| Taste | Wirkung |
+|---|---|
+| `s` | Sprechernotizen in einem zweiten Fenster |
+| `f` | Vollbild |
+| `o` | Übersicht über alle Folien |
+| `b` | Tafel zum Annotieren, `c` für den Stift |
+| `e` | Druckansicht, danach über den Browser als PDF speichern |
+| `?` | alle Tastenkürzel |
+
+Die Decks sind je eine einzelne HTML-Datei. Sie laufen auch offline, etwa vom
+USB-Stick. Nur die eingebetteten Live-Demos brauchen eine Internetverbindung.
+
+::: {.bp-hinweis}
+**Zur Vorbereitung:** Die interaktiven Kapitel brauchen beim ersten Aufruf bis zu
+30 Sekunden, bis sie im Browser gestartet sind. Öffne die Kapitel, die du zeigen
+willst, vor dem Vortrag einmal in einem zweiten Fenster. Dann läuft die Demo
+sofort, und du hast gleichzeitig einen Rückfallweg, falls das eingebettete
+Fenster streikt.
+:::
+
+[Zurück zum Hub]({{< meta links.hub >}}) ·
+[Workshops]({{< meta links.hub_workshops >}}) ·
+[Fehler melden]({{< meta links.repo_issues >}})

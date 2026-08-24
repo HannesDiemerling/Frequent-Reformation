@@ -1,0 +1,76 @@
+project:
+  title: "Beyond p-values, Folien"
+  # Innerhalb des Projekts rendern. Ein output-dir ausserhalb (etwa
+  # ../docs/folien) funktioniert zwar, aber Quarto warnt dann bei jedem Lauf und
+  # raeumt alte Dateien nicht auf. Der Kopierschritt nach docs/folien passiert
+  # deshalb explizit, siehe .github/workflows/deploy.yml.
+  output-dir: _site
+  render:
+    - index.qmd
+    - 00-ueber.qmd
+    - 00-ueber-kurz.qmd
+    - 01-power.qmd
+    - 02-reliability.qmd
+    - 03-thinking.qmd
+
+# Erzeugt von gen-assets.py aus mkdocs.yml. Liefert links.*, workshops.*,
+# ch.*, contact.* und questions.* als {{< meta ... >}} in jede Folie.
+# Kein https:// gehoert in eine .qmd, alle Ziele kommen von hier.
+metadata-files:
+  - _data.yml
+
+# Die QR-Codes werden per Skript in den logo-Slot getauscht, nicht als
+# Markdown-Bild referenziert. Deshalb muessen sie hier explizit als Ressource
+# angemeldet werden, sonst kopiert Quarto sie nicht mit.
+resources:
+  - assets/qr
+
+lang: de
+
+format:
+  revealjs:
+    theme: [default, theme/bp-slides.scss]
+    width: 1280
+    height: 720
+    margin: 0.06
+
+    # Tauscht den QR-Code oben rechts je Folie aus, gesteuert ueber die
+    # Folien-Attribute data-qr und data-qr-cap.
+    include-after-body: theme/bp-qr.html
+
+    # Bewusst NICHT embed-resources: true. Das Chalkboard-Plugin ist mit
+    # self-contained-Ausgabe unvereinbar, und Live-Annotation ist in einer
+    # zweistuendigen Session mehr wert als eine einzelne HTML-Datei. Jedes Deck
+    # bekommt daher ein <name>_files-Verzeichnis daneben. Offline laeuft es
+    # weiterhin, dann muss der ganze Ordner mit.
+    embed-resources: false
+
+    # Navigation und Vortragswerkzeuge
+    slide-number: "c/t"
+    hash-type: number
+    progress: true
+    controls: true
+    touch: true
+    menu:
+      numbers: true
+    # Tafel zum Annotieren: b oeffnet sie, c aktiviert den Stift.
+    chalkboard: true
+
+    # Ein Link auf eine Hub-Seite oeffnet sich als Overlay im Vortrag, ohne
+    # den Praesentationsmodus zu verlassen. Kern der Website-Verzahnung.
+    preview-links: true
+
+    # Reveal laedt Iframes fuer die naechste Folie mit vor. Genau eine Folie
+    # Vorlauf ist gewollt: die Shinylive-Apps brauchen bis zu 30 Sekunden zum
+    # Starten, mehrere Pyodide-Instanzen parallel wuerden den Rechner ausbremsen.
+    view-distance: 2
+
+    center: false
+    auto-stretch: false
+    transition: fade
+    background-transition: fade
+    transition-speed: fast
+    incremental: false
+    fig-align: center
+    link-external-icon: false
+    history: true

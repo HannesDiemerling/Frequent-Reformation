@@ -162,6 +162,30 @@ extra:
     github_privacy:  "https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
     cc_by:           "https://creativecommons.org/licenses/by/4.0/deed.de"
 
+    # Hub-Seiten als absolute URLs. Die Website selbst verlinkt intern relativ,
+    # aber Folien und QR-Codes brauchen vollstaendige Adressen. Wer eine Seite
+    # umbenennt, aendert sie hier einmal, dann ziehen Folien und QR-Codes nach.
+    hub:                 "https://hannesdiemerling.github.io/Frequent-Reformation/"
+    hub_workshops:       "https://hannesdiemerling.github.io/Frequent-Reformation/workshops/"
+    hub_folien:          &hub_folien "https://hannesdiemerling.github.io/Frequent-Reformation/folien/"
+    hub_fragen:          "https://hannesdiemerling.github.io/Frequent-Reformation/fragen/"
+    hub_methoden:        "https://hannesdiemerling.github.io/Frequent-Reformation/methoden/"
+    hub_pwerte:          "https://hannesdiemerling.github.io/Frequent-Reformation/methoden/p-werte/"
+    hub_effektgroessen:  "https://hannesdiemerling.github.io/Frequent-Reformation/methoden/effektgroessen/"
+    hub_stichproben:     "https://hannesdiemerling.github.io/Frequent-Reformation/methoden/stichproben/"
+    hub_bayesian:        "https://hannesdiemerling.github.io/Frequent-Reformation/methoden/bayesian/"
+    hub_ressourcen:      "https://hannesdiemerling.github.io/Frequent-Reformation/ressourcen/"
+    hub_tools:           "https://hannesdiemerling.github.io/Frequent-Reformation/ressourcen/tools/"
+    hub_literatur:       "https://hannesdiemerling.github.io/Frequent-Reformation/ressourcen/literatur/"
+    hub_journals:        "https://hannesdiemerling.github.io/Frequent-Reformation/ressourcen/journals/"
+    hub_datensaetze:     "https://hannesdiemerling.github.io/Frequent-Reformation/ressourcen/datensaetze/"
+    hub_ueber:           "https://hannesdiemerling.github.io/Frequent-Reformation/ueber/"
+    hub_team:            "https://hannesdiemerling.github.io/Frequent-Reformation/ueber/team/"
+    hub_partner:         "https://hannesdiemerling.github.io/Frequent-Reformation/ueber/partner/"
+    hub_methodik:        "https://hannesdiemerling.github.io/Frequent-Reformation/ueber/methodik/"
+    hub_kontakt:         "https://hannesdiemerling.github.io/Frequent-Reformation/kontakt/"
+    hub_nutzung:         "https://hannesdiemerling.github.io/Frequent-Reformation/rechtliches/nutzung/"
+
   # Drei Workshops als GitHub-Pages-Sites (Quarto). Self-paced
   # Bedienung direkt im Browser; geführt = Buchung über Kontakt.
   workshops:
@@ -362,6 +386,10 @@ nav:
       - Beyond Significance: workshops/power.md
       - Repräsentativität & Stichprobengröße: workshops/reliability.md
       - Denke Bayesianisch: workshops/thinking.md
+      # Die Folien sind von Quarto gerendertes HTML, keine MkDocs-Seite.
+      # Der Anker verweist auf extra.links.hub_folien, damit die Adresse auch
+      # hier nur an einer Stelle steht.
+      - Folien für Vortragende: *hub_folien
   - Fragen: fragen/index.md
   - Methoden:
       - Übersicht: methoden/index.md
@@ -387,3 +415,4 @@ nav:
       - Impressum: rechtliches/impressum.md
       - Datenschutz: rechtliches/datenschutz.md
       - Nutzungshinweise: rechtliches/nutzung.md
+

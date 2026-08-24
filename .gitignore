@@ -209,3 +209,10 @@ CLAUDE.md
 andereWorkshops/
 .claude/
 CLAUDETODO.md
+# Folien: alles unterhalb wird von folien/gen-assets.py und Quarto erzeugt.
+# Quellen sind die .qmd-Dateien, mkdocs.yml und theme/.
+folien/_site/
+folien/_data.yml
+folien/_demo/
+folien/assets/qr/
+docs/folien/

@@ -1,0 +1,79 @@
+---
+title: "Jenseits des p-Werts. Besser forschen."
+subtitle: "Kurzfassung · Workshops, Methoden und Werkzeuge für eine bessere Forschungspraxis"
+author: "Beyond p-values · HMU Health and Medical University Erfurt"
+logo: assets/qr/hub.svg
+footer: "Beyond p-values · gefördert durch die VolkswagenStiftung"
+title-slide-attributes:
+  data-background-color: "#F7F2EA"
+---
+
+<!--
+Kurzfassung des Überblicks-Vortrags, ca. 15 Minuten. Als Aufschlag vor einem
+Workshop-Tag oder zur Vorstellung gegenüber Institutionen.
+
+Es sind dieselben Include-Dateien wie in 00-ueber.qmd, nur eine Teilmenge, plus
+eine einzige eigene Folie (_kurz-antworten.qmd), die die drei Antworten
+verdichtet. Keine Inhalte werden doppelt gepflegt.
+
+Weggelassen gegenüber der Langfassung: Folgekette, zweite Mitmach-Runde,
+Live-Demo, Projektteil und Anhang. Die Förderung läuft über Titel- und
+Schlussfolie mit.
+
+Zeitgerüst: Titel 1 · Mitlesen 0,5 · Quiz 4 · Kennzahlen 2 · Wende 1 ·
+drei Antworten 3 · Angebot 2 · Schluss 1,5.
+-->
+
+{{< include _shared/_mitlesen.qmd >}}
+
+{{< include _ueber/_01-quiz.qmd >}}
+
+{{< include _ueber/_03-zahlen.qmd >}}
+
+{{< include _ueber/_06-wende.qmd >}}
+
+{{< include _ueber/_kurz-antworten.qmd >}}
+
+{{< include _ueber/_12-website-tour.qmd >}}
+
+{{< include _ueber/_13-weiterarbeiten.qmd >}}
+
+## Danke
+
+::: {.bp-zwei}
+
+::: {}
+**Alles kostenfrei, ohne Anmeldung, vollständig im Browser.**
+
+Drei Workshops, 18 Kapitel, dazu Methoden-Seiten und kuratierte Ressourcen.
+Inhalte unter Creative Commons CC BY 4.0, nutzbar in eigener Lehre.
+
+Geführte Sessions für Institute und Teams sind **in Planung**.
+
+**Kontakt:** {{< meta contact.name >}},
+[{{< meta contact.email >}}](mailto:{{< meta contact.email >}})
+:::
+
+::: {.bp-qr .bp-qr--gross}
+![](assets/qr/hub.svg)
+
+[Alles zum Nachlesen]{.bp-qr__cap}
+:::
+
+:::
+
+::: {.bp-quelle}
+In Trägerschaft der HMU Health and Medical University Erfurt, gefördert durch die
+VolkswagenStiftung im Rahmen der Förderlinie Pioniervorhaben.
+:::
+
+::: notes
+In der Kurzfassung ist diese Folie wichtiger als in der Langfassung, weil sie die
+einzige Stelle ist, an der das Angebot vollständig benannt wird. Die drei Zahlen
+nennen: drei Workshops, 18 Kapitel, kostenfrei.
+
+Wenn die Kurzfassung als Aufschlag vor einem Workshop-Tag läuft, hier direkt in
+den Tagesablauf überleiten. Wenn sie als Vorstellung gegenüber einer Institution
+läuft, hier die Frage stellen, welcher Bereich für die Einrichtung am
+interessantesten ist.
+:::

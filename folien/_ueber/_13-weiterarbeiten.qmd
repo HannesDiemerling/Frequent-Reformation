@@ -1,0 +1,26 @@
+## Was du morgen anders machen kannst {data-qr="hub_methoden" data-qr-cap="Alles zum Nachlesen"}
+
+::: {.bp-aufgabe}
+1. **Berichte Effektgrößen**, standardisiert und unstandardisiert, immer mit
+   Intervall.
+2. **Plane Präzision statt Power.** Frage, wie schmal dein Intervall werden soll.
+3. **Schreibe auf, was du vorhast**, bevor du in die Daten schaust. Auch ohne
+   formale Präregistrierung.
+4. **Vergleiche deinen Effekt mit deinem Feld**, nicht mit Cohens Faustregel.
+5. **Nutze Nicht-Signifikanz nicht als Beleg für Abwesenheit.** Oder rechne
+   bayesianisch und bekomme eine echte Antwort.
+:::
+
+Nichts davon braucht neue Software oder ein neues Studiendesign. Punkt 1 bis 4
+sind Berichtsentscheidungen.
+
+::: notes
+Das ist die Folie, die den Vortrag praktisch macht. Ohne sie bleibt er Kritik.
+
+Der Satz am Schluss ist wichtig: die ersten vier Punkte kosten nichts außer
+Aufmerksamkeit. Niemand muss auf Bayes umsteigen, um besser zu berichten. Diese
+Zugänglichkeit ist Absicht, sonst schalten die Leute ab.
+
+Wenn Zeit ist, hier eine Frage stellen: "Welchen der fünf Punkte könnt ihr im
+laufenden Projekt noch umsetzen?" Das erzeugt Selbstverpflichtung.
+:::

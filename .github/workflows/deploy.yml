@@ -15,4 +15,21 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install -r requirements.txt
+
+      # ----- Folien -----
+      # gen-assets.py liest mkdocs.yml und erzeugt folien/_data.yml, die
+      # QR-Codes und die eingebetteten Demofolien. Danach rendert Quarto die
+      # Decks nach folien/_site, und das Ergebnis wird nach docs/folien
+      # kopiert, damit MkDocs es mit ausliefert.
+      - run: pip install -r folien/requirements.txt
+      - run: python folien/gen-assets.py
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.8.26
+      - run: quarto render folien
+      - run: |
+          rm -rf docs/folien
+          mkdir -p docs/folien
+          cp -r folien/_site/. docs/folien/
+
       - run: mkdocs gh-deploy --force
