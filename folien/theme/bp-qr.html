@@ -6,16 +6,22 @@ im Viewport, waehrend Folieninhalte in der skalierten .slides-Ebene liegen. Ein
 zweiter QR-Code im Folieninhalt kann den ersten deshalb nicht sauber verdecken,
 er landet daneben.
 
-Loesung: es gibt nur ein QR-Element, das des logo-Slots. Dieses Skript tauscht
-bei jedem Folienwechsel Bild und Beschriftung aus, gesteuert ueber die Attribute
-der Folie:
+Loesung: es gibt nur ein QR-Element, das des logo-Slots. Dieses Skript
+
+  1. haengt es in einen Link, sodass ein Klick die Zielseite in einem neuen Tab
+     oeffnet, als zweiter Weg neben dem Scannen,
+  2. tauscht Bild, Ziel und Beschriftung bei jedem Folienwechsel aus.
+
+Gesteuert wird das ueber die Attribute der Folie:
 
   ## Ueberschrift {data-qr="hub_pwerte" data-qr-cap="Probleme des p-Werts"}
 
 Ohne data-qr zeigt die Folie den Deck-Standard aus dem logo-Feld im Frontmatter.
-Faellt das Skript aus, bleibt der Standard-QR sichtbar. Die SVG-Dateien werden
-ueber resources: in _quarto.yml mitkopiert, sie sind hier nicht als Markdown-Bild
-referenziert.
+Die Zuordnung Schluessel zu Adresse steht in window.BP_QR_URLS, erzeugt von
+gen-assets.py aus mkdocs.yml. Faellt das Skript aus, bleibt der Standard-QR
+sichtbar, nur eben nicht klickbar.
+
+Groesse und Position: die Custom Properties --bp-qr-* in theme/bp-slides.scss.
 -->
 <script>
   (function () {
@@ -30,13 +36,28 @@ referenziert.
       // Der Standard-QR aus dem logo-Feld liefert gleich das Basisverzeichnis
       // der QR-Codes mit. So funktioniert das Skript unabhaengig davon, wie tief
       // das Deck im Verzeichnisbaum liegt.
-      var fallback = logo.getAttribute("src");
-      var base = fallback.replace(/[^/]+$/, "");
+      var fallbackSrc = logo.getAttribute("src");
+      var base = fallbackSrc.replace(/[^/]+$/, "");
+      var fallbackKey = fallbackSrc.replace(/^.*\//, "").replace(/\.svg$/, "");
+      var urls = window.BP_QR_URLS || {};
+
+      // QR in einen Link haengen, falls das nicht schon passiert ist.
+      var link = logo.closest("a.bp-qr-link");
+      if (!link) {
+        link = document.createElement("a");
+        link.className = "bp-qr-link";
+        link.target = "_blank";
+        link.rel = "noopener";
+        // Reveal soll den Link nicht als Vorschau-Overlay abfangen.
+        link.setAttribute("data-preview-link", "false");
+        logo.parentNode.insertBefore(link, logo);
+        link.appendChild(logo);
+      }
 
       var caption = document.createElement("div");
       caption.className = "bp-qr-cap";
       caption.style.display = "none";
-      logo.parentNode.insertBefore(caption, logo.nextSibling);
+      link.parentNode.insertBefore(caption, link.nextSibling);
 
       function update() {
         var slide = window.Reveal.getCurrentSlide();
@@ -51,7 +72,22 @@ referenziert.
           cap = cap || slide.parentElement.getAttribute("data-qr-cap");
         }
 
-        logo.setAttribute("src", key ? base + key + ".svg" : fallback);
+        logo.setAttribute("src", key ? base + key + ".svg" : fallbackSrc);
+
+        var url = urls[key || fallbackKey];
+        if (url) {
+          link.setAttribute("href", url);
+          link.removeAttribute("aria-hidden");
+          link.style.pointerEvents = "";
+        } else {
+          link.removeAttribute("href");
+          link.style.pointerEvents = "none";
+        }
+        link.setAttribute(
+          "title",
+          cap ? cap + ", in neuem Tab öffnen" : "Zielseite in neuem Tab öffnen"
+        );
+
         caption.textContent = cap || "";
         caption.style.display = cap ? "block" : "none";
       }

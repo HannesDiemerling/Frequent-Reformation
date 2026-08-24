@@ -169,13 +169,9 @@ extra:
     hub_workshops:       "https://hannesdiemerling.github.io/Frequent-Reformation/workshops/"
     # Folien. Jedes Deck hat ein eigenes Verzeichnis, die Adressen kommen ohne
     # .html aus. Eine einzelne Folie ist per Anker erreichbar, z. B.
-    # .../folien/ueber/#/7 fuer Folie 7.
+    # .../folien/ueber/#/7 fuer Folie 7. Die Adressen der einzelnen Decks werden
+    # aus hub_folien plus slug gebildet, siehe extra.folien.
     hub_folien:          &hub_folien "https://hannesdiemerling.github.io/Frequent-Reformation/folien/"
-    folien_ueber:        "https://hannesdiemerling.github.io/Frequent-Reformation/folien/ueber/"
-    folien_ueber_kurz:   "https://hannesdiemerling.github.io/Frequent-Reformation/folien/ueber-kurz/"
-    folien_power:        "https://hannesdiemerling.github.io/Frequent-Reformation/folien/power/"
-    folien_reliability:  "https://hannesdiemerling.github.io/Frequent-Reformation/folien/reliability/"
-    folien_thinking:     "https://hannesdiemerling.github.io/Frequent-Reformation/folien/thinking/"
     hub_fragen:          "https://hannesdiemerling.github.io/Frequent-Reformation/fragen/"
     hub_methoden:        "https://hannesdiemerling.github.io/Frequent-Reformation/methoden/"
     hub_pwerte:          "https://hannesdiemerling.github.io/Frequent-Reformation/methoden/p-werte/"
@@ -193,6 +189,33 @@ extra:
     hub_methodik:        "https://hannesdiemerling.github.io/Frequent-Reformation/ueber/methodik/"
     hub_kontakt:         "https://hannesdiemerling.github.io/Frequent-Reformation/kontakt/"
     hub_nutzung:         "https://hannesdiemerling.github.io/Frequent-Reformation/rechtliches/nutzung/"
+
+  # ============================================================
+  # FOLIENSAETZE (Quarto Reveal.js, ausgeliefert unter /folien/)
+  # Reihenfolge, Titel und Kurzhinweis der Decks. Wird von
+  # folien/gen-assets.py gelesen und steuert:
+  #   - die Navigationsleiste in den Folien (Reihenfolge = "Weiter zu")
+  #   - die QR-Codes je Deck
+  # Adresse eines Decks = links.hub_folien + slug + "/"
+  # Neues Deck: hier eintragen, Verzeichnis folien/<slug>/index.qmd anlegen
+  # und in folien/_quarto.yml unter project.render ergaenzen.
+  # ============================================================
+  folien:
+    - slug: "ueber"
+      title: "Überblick"
+      note: "ca. 30 min"
+    - slug: "ueber-kurz"
+      title: "Überblick, Kurzfassung"
+      note: "ca. 15 min"
+    - slug: "power"
+      title: "Beyond Significance"
+      note: "Workshop 01"
+    - slug: "reliability"
+      title: "Repräsentativität & Stichprobengröße"
+      note: "Workshop 02"
+    - slug: "thinking"
+      title: "Denke Bayesianisch"
+      note: "Workshop 03"
 
   # Drei Workshops als GitHub-Pages-Sites (Quarto). Self-paced
   # Bedienung direkt im Browser; geführt = Buchung über Kontakt.

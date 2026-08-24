@@ -37,9 +37,14 @@ format:
     height: 720
     margin: 0.06
 
-    # Tauscht den QR-Code oben rechts je Folie aus, gesteuert ueber die
-    # Folien-Attribute data-qr und data-qr-cap.
-    include-after-body: theme/bp-qr.html
+    # _daten.html wird von gen-assets.py erzeugt und liefert die Adressen.
+    # bp-qr.html tauscht den QR-Code oben rechts je Folie aus und macht ihn
+    # klickbar, bp-nav.html baut die kleine Leiste unten links.
+    # Reihenfolge zaehlt: die Daten muessen vor den Skripten stehen.
+    include-after-body:
+      - _daten.html
+      - theme/bp-qr.html
+      - theme/bp-nav.html
 
     # Bewusst NICHT embed-resources: true. Das Chalkboard-Plugin ist mit
     # self-contained-Ausgabe unvereinbar, und Live-Annotation ist in einer

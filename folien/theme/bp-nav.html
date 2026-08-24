@@ -1,0 +1,86 @@
+<!--
+Kleine Navigationsleiste unten links, neben den Reveal-Schaltflaechen.
+
+Sie zeigt drei Ziele: den Hub, die Folienuebersicht und das jeweils naechste
+Deck. Das aktuelle Deck wird aus dem Verzeichnisnamen in der Adresse bestimmt,
+die Reihenfolge kommt aus window.BP_NAV, erzeugt von gen-assets.py aus
+mkdocs.yml -> extra.folien.
+
+Anpassen:
+  Reihenfolge und Titel der Decks  -> mkdocs.yml, extra.folien
+  Beschriftungen der Leiste        -> LABELS unten
+  Position, Groesse, Farbe         -> --bp-nav-* in theme/bp-slides.scss
+
+Hub und Uebersicht oeffnen in einem neuen Tab, damit der laufende Vortrag nicht
+verloren geht. Das naechste Deck oeffnet im selben Tab, dort will man ja hin.
+-->
+<script>
+  (function () {
+    var LABELS = {
+      hub: "Hub",
+      uebersicht: "Alle Folien",
+      weiter: "Weiter",
+      letztes: "Letztes Deck",
+    };
+
+    function currentSlug() {
+      // .../folien/<slug>/ oder .../folien/<slug>/index.html
+      var parts = window.location.pathname.split("/").filter(Boolean);
+      var last = parts[parts.length - 1];
+      if (last && last.indexOf(".") !== -1) last = parts[parts.length - 2];
+      return last || "";
+    }
+
+    function link(href, text, sameTab) {
+      var a = document.createElement("a");
+      a.className = "bp-nav__link";
+      a.href = href;
+      a.textContent = text;
+      a.setAttribute("data-preview-link", "false");
+      if (!sameTab) {
+        a.target = "_blank";
+        a.rel = "noopener";
+      }
+      return a;
+    }
+
+    function build() {
+      var nav = window.BP_NAV;
+      var reveal = document.querySelector(".reveal");
+      if (!nav || !reveal || document.querySelector(".bp-nav")) return;
+
+      var bar = document.createElement("nav");
+      bar.className = "bp-nav";
+      bar.setAttribute("aria-label", "Sprung zum Hub und zu den anderen Foliensätzen");
+
+      if (nav.hub) bar.appendChild(link(nav.hub, LABELS.hub, false));
+      if (nav.uebersicht) bar.appendChild(link(nav.uebersicht, LABELS.uebersicht, false));
+
+      var decks = nav.decks || [];
+      var slug = currentSlug();
+      var i = decks.findIndex(function (d) {
+        return d.slug === slug;
+      });
+
+      if (i !== -1 && i + 1 < decks.length) {
+        var next = decks[i + 1];
+        bar.appendChild(
+          link(next.url, LABELS.weiter + ": " + next.title + " →", true)
+        );
+      } else if (i !== -1) {
+        var span = document.createElement("span");
+        span.className = "bp-nav__link bp-nav__link--aus";
+        span.textContent = LABELS.letztes;
+        bar.appendChild(span);
+      }
+
+      reveal.appendChild(bar);
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", build);
+    } else {
+      build();
+    }
+  })();
+</script>

@@ -18,7 +18,13 @@ Dieses Skript ueberbrueckt das und schreibt zwei Dinge:
                           background-iframe-Adresse steht in einem Folien-
                           Attribut, dort expandiert kein {{< meta >}}. Deshalb
                           wird die Folie hier erzeugt statt von Hand geschrieben.
-                          Einbinden mit {{< include _demo/power2.qmd >}}.
+                          Einbinden mit {{< include ../_demo/power2.qmd >}}.
+
+  folien/_daten.html      Script-Block mit zwei Objekten fuer die Folien-Skripte
+                          in theme/: BP_QR_URLS (Schluessel -> Adresse, damit der
+                          QR-Code klickbar ist) und BP_NAV (Hub-Adresse und die
+                          Deck-Reihenfolge aus extra.folien fuer die
+                          Navigationsleiste).
 
 Damit gilt: eine URL aendern heisst eine Zeile in mkdocs.yml aendern. In den
 .qmd-Dateien steht nie ein https://.
@@ -28,6 +34,7 @@ Aufruf (aus dem Repo-Root oder von ueberall):  python folien/gen-assets.py
 
 from __future__ import annotations
 
+import json
 import sys
 from pathlib import Path
 
@@ -45,6 +52,7 @@ FOLIEN = Path(__file__).resolve().parent
 ROOT = FOLIEN.parent
 MKDOCS = ROOT / "mkdocs.yml"
 DATA_OUT = FOLIEN / "_data.yml"
+SCRIPT_OUT = FOLIEN / "_daten.html"
 QR_DIR = FOLIEN / "assets" / "qr"
 DEMO_DIR = FOLIEN / "_demo"
 
@@ -94,6 +102,22 @@ def build_data(extra: dict) -> dict:
     return data
 
 
+def decks(extra: dict) -> list[dict]:
+    """Die Foliensaetze aus extra.folien, Adresse aus hub_folien plus slug."""
+    base = ((extra.get("links") or {}).get("hub_folien") or "").rstrip("/")
+    out = []
+    for d in extra.get("folien") or []:
+        out.append(
+            {
+                "slug": d["slug"],
+                "title": d.get("title", d["slug"]),
+                "note": d.get("note", ""),
+                "url": f"{base}/{d['slug']}/",
+            }
+        )
+    return out
+
+
 def collect_targets(extra: dict, data: dict) -> dict[str, str]:
     """Alle Ziele sammeln, fuer die ein QR-Code entsteht: name -> URL."""
     targets: dict[str, str] = {}
@@ -116,6 +140,10 @@ def collect_targets(extra: dict, data: dict) -> dict[str, str]:
     if fragen:
         for q in extra.get("questions") or []:
             targets[f"frage-{q['key']}"] = f"{fragen}#{q['key']}"
+
+    # Die Foliensaetze selbst, Adresse aus hub_folien plus slug
+    for deck in decks(extra):
+        targets[f"folien-{deck['slug']}"] = deck["url"]
 
     # Direktkontakt
     contact = (extra.get("contact") or {}).get("email")
@@ -224,6 +252,27 @@ def write_demo_slides(chapters: dict[str, dict], links: dict) -> None:
         )
 
 
+def write_script_data(extra: dict, targets: dict[str, str]) -> None:
+    """Adressen und Navigationsdaten als Script-Block fuer die Folien ablegen."""
+    links = extra.get("links") or {}
+    nav = {
+        "hub": links.get("hub", ""),
+        "uebersicht": links.get("hub_folien", ""),
+        "decks": decks(extra),
+    }
+    SCRIPT_OUT.write_text(
+        "<!-- Erzeugt von folien/gen-assets.py aus mkdocs.yml. "
+        "Nicht von Hand bearbeiten. -->\n"
+        "<script>\n"
+        "  window.BP_QR_URLS = "
+        + json.dumps(targets, ensure_ascii=False, sort_keys=True, indent=2)
+        + ";\n  window.BP_NAV = "
+        + json.dumps(nav, ensure_ascii=False, indent=2)
+        + ";\n</script>\n",
+        encoding="utf-8",
+    )
+
+
 def main() -> None:
     if not MKDOCS.exists():
         sys.exit(f"mkdocs.yml nicht gefunden unter {MKDOCS}")
@@ -256,6 +305,12 @@ def main() -> None:
     print(
         f"geschrieben: {len(list(DEMO_DIR.glob('*.qmd')))} Demofolien "
         f"in {DEMO_DIR.relative_to(ROOT)}"
+    )
+
+    write_script_data(extra, targets)
+    print(
+        f"geschrieben: {SCRIPT_OUT.relative_to(ROOT)} "
+        f"({len(decks(extra))} Decks in der Navigation)"
     )
 
 

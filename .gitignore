@@ -213,6 +213,7 @@ CLAUDETODO.md
 # Quellen sind die .qmd-Dateien, mkdocs.yml und theme/.
 folien/_site/
 folien/_data.yml
+folien/_daten.html
 folien/_demo/
 folien/assets/qr/
 docs/folien/
