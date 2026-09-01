@@ -42,6 +42,20 @@ Eine kuratierte Quellenauswahl findest du unter [Literatur](../ressourcen/litera
 - Statistische Beispiele werden mit offener Software (JASP, Jamovi, R/brms, PyMC) gerechnet
   und sind dadurch reproduzierbar.
 
+## Einsatz von KI-Werkzeugen
+
+Bei der Erstellung dieser Website und der Workshop-Materialien haben wir KI-gestützte
+Werkzeuge (große Sprachmodelle) unterstützend eingesetzt: für Textentwürfe und redaktionelle
+Überarbeitung, für Code der interaktiven Beispiele und als Recherchehilfe. Der Rahmen dafür:
+
+- Die fachliche Verantwortung für alle Inhalte liegt bei den unter [Team](team.md) genannten
+  Personen.
+- Texte und Code werden vor der Veröffentlichung fachlich geprüft und freigegeben.
+- Methodische Aussagen und Quellenangaben gleichen wir gegen die
+  [Primärliteratur](../ressourcen/literatur.md) ab.
+- Zahlen, Simulationen und statistische Ergebnisse stammen nicht aus Sprachmodellen, sondern
+  aus der oben genannten offenen und reproduzierbaren Software.
+
 ## Versionierung und Reproduzierbarkeit
 
 Sämtliche Inhalte werden in öffentlichen Git-Repositorys versioniert. Jede Änderung ist über
@@ -59,6 +73,7 @@ Commit-Historie der Repositorys.
 
 | Datum     | Änderung                                                              |
 |-----------|-----------------------------------------------------------------------|
+| 09/2026   | Transparenzhinweis zum Einsatz KI-gestützter Werkzeuge ergänzt        |
 | 2026      | Projektstart, Aufbau der Hub-Seite und der drei Workshops             |
 
 ## Fehler und Feedback

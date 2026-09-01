@@ -34,6 +34,13 @@ Das Material gibt den Stand der methodischen Diskussion zum Zeitpunkt der Erstel
 Es wird laufend weiterentwickelt. Hinweise zur methodischen Grundlage und zur Versionierung
 findest du unter [Methodik & Dokumentation](../ueber/methodik.md).
 
+## Einsatz von KI-Werkzeugen
+
+Teile der Texte, des Codes und der Abbildungen sind mit Unterstützung KI-gestützter
+Werkzeuge entstanden. Alle Inhalte werden vor der Veröffentlichung fachlich geprüft und von
+den Projektbeteiligten verantwortet. Näheres unter
+[Methodik & Dokumentation](../ueber/methodik.md#einsatz-von-ki-werkzeugen).
+
 ## Zitation
 
 Wenn du Inhalte in wissenschaftlichen Arbeiten oder in der Lehre verwendest:

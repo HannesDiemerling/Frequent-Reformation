@@ -149,4 +149,14 @@ bearbeiten.
 
 Eine automatisierte Entscheidungsfindung einschließlich Profiling findet nicht statt.
 
-*Stand: Juni 2026.*
+## 14. Einsatz von KI-Systemen
+
+Diese Website enthält keine KI-Anwendung, mit der du interagierst: keinen Chatbot, keinen
+KI-Assistenten, keine KI-gestützte Suche. Deine Eingaben, auch die in den interaktiven
+Workshop-Apps, werden nicht an Anbieter von KI-Diensten übermittelt.
+
+KI-gestützte Werkzeuge nutzen wir ausschließlich intern bei der Erstellung der Inhalte. Dabei
+werden keine personenbezogenen Daten von Besuchenden verarbeitet. Der Transparenzhinweis dazu
+steht unter [Methodik & Dokumentation](../ueber/methodik.md#einsatz-von-ki-werkzeugen).
+
+*Stand: September 2026.*
