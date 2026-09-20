@@ -12,10 +12,14 @@ title-slide-attributes:
 <!--
 Workshop 01, geführte Session, ca. 2 Stunden.
 
-Gerüst-Status: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser und die
-Vertiefungsblöcke stehen. Die Kapitelfolien tragen die echten Zahlen aus den
-Workshop-Kapiteln. Was noch entsteht, ist der ausformulierte Vortragstext in den
-Sprechernotizen der Kapitelfolien, dort steht bisher jeweils ein Gerüst.
+Vollständig: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser, die
+Vertiefungsblöcke und die Sprechernotizen. Die Kapitelfolien tragen die echten
+Zahlen aus den Workshop-Kapiteln.
+
+Die Notizen sind Regie und kein Skript: Roter Faden, Reihenfolge des Aufbaus,
+Kernsätze zum wörtlichen Sagen, Antworten auf die Einwände, die regelmäßig kommen.
+Wer sie vorliest, klingt vorgelesen. Wer sie vorher einmal durchgeht, braucht sie
+in der Session nicht.
 
 Wichtig: die Vertiefungsblöcke A, B und C sind der Grund, live dabei zu sein. Sie
 stehen NICHT in den Selbstlern-Kapiteln, sondern kommen von den Methoden-Seiten
@@ -112,18 +116,31 @@ Die Natur zieht keine magische Grenze zwischen p = 0.049 und p = 0.051.
 :::
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: die Schwelle ist eine Konvention, die wir zu einer
 Naturgesetzgrenze gemacht haben.
 
-Stichpunkte:
-- Beide Strecken erst ohne p-Werte zeigen, nur die Ersparnis. Der Raum sieht: das
-  ist dasselbe Ergebnis.
-- Dann die p-Werte einblenden und die Urteilsspalte. Der Bruch entsteht erst hier.
-- Anschlussfrage: was unterscheidet die beiden Strecken tatsächlich? Antwort: die
-  Streuung, nicht der Effekt. Das führt direkt zur App, die genau daran dreht.
-- Übergang zu Kapitel 2: wenn nicht der Effekt entscheidet, was dann?
+Einstieg mit verdeckter Urteilsspalte. Nur die beiden Strecken und die Ersparnis
+zeigen und fragen, ob das dasselbe Ergebnis ist. Der Raum sagt ja, und er hat
+recht: 2,1 Minuten gegen 2,1 Minuten, bei gleicher Fallzahl.
+
+Dann die p-Werte und das Urteil einblenden. Hier laut mitsprechen, was passiert:
+vier Tausendstel Unterschied, und daraus wird Erfolg gegen Misserfolg, Ausrollen
+gegen Einstellen, Publikation gegen Schublade. Der Bruch steckt nicht in den
+Daten, er entsteht in diesem Moment.
+
+Die Anschlussfrage stellen und wirklich beantworten lassen: was unterscheidet die
+beiden Strecken denn tatsächlich? Die Antwort ist die Streuung, nicht der Effekt.
+Auf der unruhigeren Strecke rauscht dasselbe Signal stärker. Genau daran dreht die
+App im nächsten Kapitel.
+
+Der Einwand „irgendwo muss man doch eine Grenze ziehen" kommt oft, und er ist
+berechtigt. Zustimmen und die Frage verschieben: das Problem ist nicht die Zahl
+.05, das Problem ist die binäre Behandlung. Wer .05 durch .005 ersetzt,
+verschiebt die Grenze und behält das Ritual. Dieser Vorschlag kommt in Kapitel 6
+tatsächlich vor, dort greife ich das wieder auf.
+
+Übergang zu Kapitel 2 als Frage formulieren: wenn nicht der Effekt über die
+Signifikanz entscheidet, was dann?
 :::
 
 ## Kapitel 2: Signifikanz misst vor allem n {data-qr="ch-power2" data-qr-cap="Kapitel 2 öffnen"}
@@ -152,17 +169,31 @@ Die statistische Signifikanz verdeckt die praktische Irrelevanz.
 :::
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
+Roter Faden: p ist eine Funktion aus Effekt und Fallzahl, und bei großem n
+dominiert die Fallzahl.
 
-Roter Faden: p ist eine Funktion von Effekt UND n, und bei großem n dominiert n.
+Mit den 12 Sekunden anfangen und den Raum einordnen lassen: ist das viel? Die
+Antwort ist fast immer nein, und sie ist richtig. 12 Sekunden ändern keine
+Anschlussverbindung und keine Reiseentscheidung.
 
-Stichpunkte:
-- 12 Sekunden erst einordnen lassen: ist das viel? Der Raum antwortet meist "nein".
-- Dann zeigen, dass genau dieser Effekt hochsignifikant werden kann.
-- Umkehrschluss betonen, er ist der praktisch wichtigere: bei kleinem n kann ein
-  großer, wichtiger Effekt unentdeckt bleiben. Nicht signifikant heißt nicht
-  "kein Effekt".
-- Diese Folie ist die Vorbereitung für Übung 1, also nicht schon alles verraten.
+Dann die Tabelle aufziehen und die Pointe langsam setzen. Derselbe Effekt, 12
+Sekunden, einmal unauffällig und einmal hochsignifikant. Verändert wurde nichts
+außer der Zahl der Testfahrten. Der Satz dazu: der Test hat hier nichts über die
+Bahn gelernt, er hat etwas über unser Messbudget gelernt.
+
+Der Umkehrschluss ist der praktisch wichtigere und wird gern übersehen. Bei
+kleiner Fallzahl bleibt ein großer, wichtiger Effekt unentdeckt, und im Bericht
+steht dann „kein Unterschied". Das ist Fehlannahme 6 aus der nächsten Folie, und
+sie kostet in der Praxis mehr als alle anderen. Absence of evidence is not
+evidence of absence.
+
+Wenn sich das anbietet, hier einmal beide Richtungen zusammen sagen: ein
+signifikantes Ergebnis kann trivial sein, ein nicht signifikantes kann wichtig
+sein. Der p-Wert trennt diese vier Fälle nicht, er trennt zwei.
+
+Diese Folie ist die Vorbereitung für Übung 1. Also nicht schon vorführen, bei
+welchem n die Schwelle fällt, das sollen die Leute selbst finden. Nur so weit
+gehen, dass klar ist, welcher Regler gemeint ist.
 :::
 
 ## Vertiefung A: alle sieben Fehlannahmen {data-qr="hub_pwerte" data-qr-cap="Die sieben Fehlannahmen nachlesen"}
@@ -305,21 +336,31 @@ Baguley (2009) zur Bedeutung unstandardisierter Effektmaße.
 :::
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: die unstandardisierte Zahl ist die, mit der Entscheidungen getroffen
-werden. Sie kommt zuerst, nicht das d.
+werden. Sie kommt zuerst, das d kommt danach.
 
-Stichpunkte:
-- Definition vorlesen, sie ist präzise und deckt beide Fälle ab, Unterschied und
-  Zusammenhang.
-- Der Alltagsrechner ist der Moment, in dem Nicht-Statistikpersonen andocken. Die
-  Hochrechnung auf ein Jahr macht aus einer abstrakten Zahl eine Größe, über die
-  man entscheiden kann.
-- Die Einzelfahrt-Perspektive ist die honestere Variante: nicht "im Mittel
-  besser", sondern "in wie viel Prozent der Fälle besser". Diese Umrechnung
-  überrascht meist, weil der Anteil viel näher an 50 Prozent liegt als erwartet.
-- Übergang: warum brauchen wir dann überhaupt standardisierte Maße?
+Die Definition wörtlich vorlesen. Sie ist präzise, und sie deckt beide Fälle ab:
+Unterschied zwischen Gruppen und Stärke eines Zusammenhangs. Danach den Satz
+darunter betonen, er ist der Kern der Folie. Alles, was über den Effekt
+hinausgeht, ist Rechnung. Der Effekt selbst ist die Sache.
+
+Den Kontrast 0,5 gegen 12 Minuten laut ausspielen. Bei einer halben Minute
+diskutiert niemand über eine Milliardeninvestition, bei zwölf Minuten diskutiert
+niemand mehr darüber, ob man sie macht. Dieselbe Analyse, dasselbe p, zwei völlig
+verschiedene Welten.
+
+Der Alltagsrechner ist der Moment, in dem Anwesende ohne Statistik-Hintergrund
+andocken. Die Hochrechnung auf 230 Arbeitstage macht aus einer abstrakten Zahl
+eine Größe, über die man entscheiden kann. Wer pendelt, rechnet im Kopf mit.
+
+Die Einzelfahrt-Perspektive ist die ehrlichere Variante und die, die am meisten
+überrascht. Nicht „im Mittel besser", sondern „in wie viel Prozent der Fahrten
+tatsächlich besser". Dieser Anteil liegt fast immer viel näher an 50 Prozent, als
+der Raum erwartet. Das ist keine Spielerei, es ist die Zahl, die eine einzelne
+reisende Person betrifft. Sie kommt in Vertiefung B als CLES wieder.
+
+Übergang als Frage: wenn die unstandardisierte Zahl so viel nützlicher ist, warum
+gibt es dann überhaupt standardisierte Maße?
 :::
 
 ## Kapitel 4: Standardisierte Effektgrößen {data-qr="ch-power4" data-qr-cap="Kapitel 4 öffnen"}
@@ -361,21 +402,32 @@ wichtig und in einem anderen trivial sein.
 :::
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: d leistet zwei Dinge, und beide sind nützlich. Aber es verliert die
 Einheit, und damit die Entscheidungsgrundlage.
 
-Stichpunkte:
-- Die Formel ist harmlos, sie ist eine Division. Das laut sagen, es entspannt.
-- Aspekt 1: d ist Signal durch Rauschen. Deshalb sinkt d, wenn die Streuung
-  steigt, obwohl der Effekt gleich bleibt.
-- Aspekt 2 ist der eigentliche Grund für die Existenz von d: Meta-Analysen
-  brauchen eine gemeinsame Skala.
-- Der Preis: 0,5 Punkte auf einer 5er-Skala und 10 Punkte auf einer 100er-Skala
-  haben dasselbe d, aber möglicherweise völlig verschiedene praktische Bedeutung.
-  Deshalb immer beides berichten.
-- Der Vorbehalt-Kasten ist die Brücke zu Vertiefung B.
+Zuerst die Formel entschärfen. Sie ist eine Division: Unterschied geteilt durch
+Streuung. Das laut sagen, es nimmt spürbar Druck aus dem Raum, und es ist wahr.
+
+Aspekt 1 als Signal-Rausch-Verhältnis erklären. Die 5 Minuten bleiben in beiden
+Fällen gleich, nur die Umgebung wird unruhiger. Deshalb sinkt d, obwohl der Effekt
+konstant ist. Die Analogie, die gut funktioniert: dieselbe Ansage, einmal im
+leeren Bahnhof und einmal im Feierabendverkehr. Gleich laut gesprochen, nicht
+gleich gut zu hören.
+
+Aspekt 2 ist der eigentliche Grund, warum d existiert. Meta-Analysen müssen
+Studien mit verschiedenen Skalen zusammenrechnen, und dafür brauchen sie eine
+gemeinsame Einheit. Team Nord und Team Süd haben identisches d und lassen sich
+deshalb überhaupt erst vergleichen.
+
+Direkt danach den Preis nennen, sonst bleibt d als Königsweg im Raum stehen. 0,5
+Punkte auf einer 5er-Skala und 10 Punkte auf einer 100er-Skala haben dasselbe d
+und möglicherweise völlig verschiedene praktische Bedeutung. Wer nur d berichtet,
+hat die Entscheidungsgrundlage weggerechnet. Deshalb immer beides.
+
+Der Vorbehalt-Kasten ist die Brücke zu Vertiefung B. Dazu die Einordnung, die den
+meisten neu ist: Cohen hat seine Richtwerte ausdrücklich als Notlösung für Felder
+vorgeschlagen, die keine eigenen Vergleichswerte haben. Als Kriterium waren sie
+nie gedacht. Wer sie wie eine Schwelle benutzt, hat das Ritual nur umbenannt.
 :::
 
 ## Vertiefung B: der Werkzeugkasten hinter d {data-qr="hub_effektgroessen" data-qr-cap="Alle Maße mit Entscheidungshilfe"}
@@ -531,21 +583,34 @@ Die Frage ist nicht *„Ist der Effekt von null verschieden?"*, sondern
 Sie muss vorher festgelegt und begründet werden.
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: Relevanz lässt sich ausschließlich an Effekten beurteilen, und die
 Schwelle kommt von außen, nicht aus den Daten.
 
-Stichpunkte:
-- Die Tabelle Zeile für Zeile aufbauen, den Gewinn zuletzt. Der Kontrast wirkt nur
-  in dieser Reihenfolge.
-- Den Kernsatz betonen: die Relevanz einer Maßnahme kann ausschließlich anhand
-  der Effekte oder Effektgrößen beurteilt werden.
-- Die App hat einen Schieber für die eigene Relevanzschwelle. Das ist didaktisch
-  der wichtigste Regler des ganzen Workshops, weil er sichtbar macht, dass diese
-  Zahl eine Setzung ist.
-- Anschluss an die eigene Arbeit: wer legt in euren Projekten die Relevanzschwelle
-  fest? Meist niemand. Das ist der Punkt.
+Die Tabelle Zeile für Zeile aufbauen und den realen Gewinn zuletzt. Der Kontrast
+wirkt nur in dieser Reihenfolge: 180 Millionen, eine halbe Million Fahrten pro
+Jahr, p unter 0.001, und dann vier Sekunden. Nach der letzten Zeile eine Pause
+machen und nichts sagen. Der Raum macht den Rest.
+
+Den Kernsatz danach wörtlich bringen: die Relevanz einer Maßnahme kann
+ausschließlich anhand der Effekte oder Effektgrößen beurteilt werden. Wichtig
+dabei, dass es nicht wie ein Vorwurf klingt: der p-Wert unter 0.001 ist hier
+vollkommen korrekt gerechnet. Er ist nur irrelevant für die Frage, die zur Debatte
+steht.
+
+Die Frage im Kasten ist die eigentliche Botschaft der Folie, und sie passt auf
+fast jedes Projekt im Raum. Nicht „ist der Effekt von null verschieden", sondern
+„ist er groß genug, um die Kosten zu rechtfertigen".
+
+Die App hat einen Schieber für die eigene Relevanzschwelle. Das ist didaktisch der
+wichtigste Regler des ganzen Workshops, weil er sichtbar macht, dass diese Zahl
+eine Setzung ist und keine Eigenschaft der Daten. Dabei ausdrücklich sagen: sie
+muss vorher festgelegt werden. Wer sie hinterher festlegt, legt sie so fest, dass
+das eigene Ergebnis darüber liegt.
+
+Anschluss an die eigene Arbeit suchen: wer legt in euren Projekten die
+Relevanzschwelle fest? Meist niemand. Genau das ist der Punkt, und es ist eine
+Lücke, die sich in der nächsten Projektbesprechung schließen lässt. In Workshop 03
+wird aus dieser Schwelle die ROPE, also ein richtiges statistisches Kriterium.
 :::
 
 ## Kapitel 6: Publikationsbias {data-qr="ch-power6" data-qr-cap="Kapitel 6 öffnen"}
@@ -575,19 +640,32 @@ Niemand hat gelogen, aber das Bild ist verzerrt.
 :::
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: die Verzerrung entsteht durch Selektion beim Publizieren, nicht durch
 Fehlverhalten beim Analysieren.
 
-Stichpunkte:
-- Die 40 Teams sind der Trick der Darstellung: man sieht alle 40, auch die, die es
-  in der Realität nie in ein Journal geschafft hätten.
-- Dann die Einreichungslücke aufziehen und beobachten, wie der Mittelwert
-  wegwandert.
-- Wichtig: die einzelnen Studien sind alle korrekt gerechnet. Der Fehler liegt in
-  der Auswahl, die wir als Literatur bezeichnen.
-- Übergang zu Vertiefung C: was tun wir dagegen?
+Die 40 Teams sind der Trick der Darstellung, und er ist es wert, erklärt zu
+werden: man sieht hier alle 40, auch die, die es in der Realität nie in ein
+Journal geschafft hätten. Diesen Blick hat in der echten Literatur niemand.
+
+Den wahren Effekt von 2,0 Minuten vorher gut sichtbar festhalten. Dann die
+Einreichungslücke aufziehen und beobachten, wie der Mittelwert der sichtbaren
+Studien wegwandert. Die Zahl dabei laut mitlesen, dieses Wegwandern ist die ganze
+Aussage der Folie.
+
+Der entscheidende Punkt für die Stimmung im Raum: die einzelnen Studien sind alle
+korrekt gerechnet. Niemand hat geschummelt, niemand hat gelogen. Der Fehler liegt
+in der Auswahl, die wir hinterher Literatur nennen.
+
+Daraus die drei Folgen ableiten, die links stehen. Besonders die dritte, weil sie
+die Replikationskrise erklärt: eine Replikation plant ihre Fallzahl auf den
+publizierten, aufgeblähten Effekt und ist dadurch systematisch zu klein. Sie
+scheitert, und dann gilt die Replikation als das Problem.
+
+Wenn der Einwand kommt, das sei ein Problem der Journals: zustimmen und
+weiterdrehen. Es ist ein Anreizproblem, und es betrifft alle im Raum, die schon
+einmal einen Nullbefund nicht aufgeschrieben haben. Diese Frage ruhig offen
+stellen, es melden sich mehr Leute als erwartet. Das ist die Überleitung zu
+Vertiefung C: was tun wir dagegen?
 :::
 
 ## Vertiefung C: Bias erkennen und dagegenhalten {data-qr="hub_journals" data-qr-cap="Journals und Debatte"}

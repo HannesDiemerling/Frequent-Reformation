@@ -12,10 +12,18 @@ title-slide-attributes:
 <!--
 Workshop 03, geführte Session, ca. 2 Stunden.
 
-Gerüst-Status: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser und die
-Vertiefungsblöcke stehen. Die Kapitelfolien tragen die echten Zahlen aus den
-Workshop-Kapiteln. Was noch entsteht, ist der ausformulierte Vortragstext in den
-Sprechernotizen der Kapitelfolien.
+Vollständig: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser, die
+Vertiefungsblöcke und die Sprechernotizen. Die Kapitelfolien tragen die echten
+Zahlen aus den Workshop-Kapiteln.
+
+Die Notizen sind Regie und kein Skript: Roter Faden, Reihenfolge des Aufbaus,
+Kernsätze zum wörtlichen Sagen, Antworten auf die Einwände, die regelmäßig kommen.
+
+Der Bayes-Faktor kommt in keinem der sieben Kapitel vor, wird aber sowohl auf der
+Startfolie als auch im Wegweiser versprochen. Deshalb steht er als erste
+Vertiefung B direkt hinter Kapitel 5. Seine vier Minuten kommen aus Kapitel 4, das
+ist das technischste und verträgt es am besten. Der Ablauf bleibt dadurch
+unverändert.
 
 Sieben Kapitel, deshalb die Blockaufteilung 2 / 3 / 2 nach der Dreiteilung, die der
 Workshop auf seiner eigenen Startseite vorgibt: Grundlagen, die drei Zutaten,
@@ -103,7 +111,7 @@ gar nicht vorkommt.
 `00:05`  **Block A** Grundlagen, Kapitel 1 und 2, plus Vertiefung  ·  22 min
 `00:27`  **Übung 1** Basisraten, Kapitel 2  ·  20 min
 `00:47`  Pause  ·  10 min
-`00:57`  **Block B** Die drei Zutaten, Kapitel 3 bis 5, plus Vertiefung  ·  25 min
+`00:57`  **Block B** Die drei Zutaten, Kapitel 3 bis 5, plus Vertiefungen  ·  25 min
 `01:22`  **Übung 2** Prior gegen Daten, Kapitel 5  ·  18 min
 `01:40`  **Block C** Anwendung, Kapitel 6 und 7, plus Workflow  ·  15 min
 `01:55`  Abschluss und Wegweiser  ·  5 min
@@ -170,23 +178,38 @@ Verfahrens.
 Stichprobe 1: **7 von 10**. Stichprobe 2: **9 von 10**.
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: es sind zwei verschiedene Fragen, nicht eine bessere und eine
 schlechtere Methode.
 
-Stichpunkte:
-- Beide Definitionen wörtlich bringen, sie sind präzise.
-- Der Warnkasten ist der wichtigste Satz der Folie und knüpft direkt an Workshop 02
-  Kapitel 5 an.
-- Das SmartRail-Beispiel zeigt das Kernproblem: eine Stichprobe von zehn Fahrten
-  liefert 70 oder 90 Prozent, und der wahre Wert ist 85. Frequentistisch bekomme ich
-  einen Punktschätzer plus eine Aussage über das Verfahren. Bayesianisch bekomme ich
-  eine Verteilung über plausible Werte.
-- Die App zeigt beides nebeneinander und aktualisiert live mit jedem Klick. Der
-  bayesianische Teil ist eine Beta-Verteilung mit flachem Prior.
-- Die DB-Aussage "80 Prozent pünktlich" als Aufhänger: was für eine Aussage ist das
-  eigentlich? Darüber lässt sich gut zwei Minuten diskutieren.
+Beide Definitionen wörtlich bringen. Sie sind präzise formuliert und verlieren
+beim Paraphrasieren genau das, worauf es ankommt. Der Unterschied steckt darin,
+worüber die Aussage jeweils gilt: links über das Verfahren, rechts über die
+Hypothese.
+
+Dabei einmal klarstellen, dass beides legitim ist, sonst kippt der Vortrag ins
+Ideologische. Frequentistisch gefragt: wie verhält sich mein Verfahren, wenn ich es
+unendlich oft anwende? Bayesianisch gefragt: was soll ich angesichts dieser Daten
+glauben? Die zweite Frage ist die, die wir eigentlich stellen wollen. Die erste ist
+trotzdem keine falsche Frage.
+
+Der Warnkasten ist der wichtigste Satz der Folie. Er knüpft direkt an Workshop 02
+Kapitel 5 an, und wenn Teilnehmende dort waren, hier ausdrücklich zurückverweisen:
+das war die offene Rechnung, und sie wird heute beglichen.
+
+Das SmartRail-Beispiel macht das Kernproblem konkret. Zehn Fahrten liefern 70 oder
+90 Prozent, der wahre Wert ist 85, und niemand weiß das. Frequentistisch bekomme
+ich einen Punktschätzer und eine Aussage über das Verfahren. Bayesianisch bekomme
+ich eine Verteilung über plausible Werte, und die kann ich direkt lesen.
+
+Die App zeigt beides nebeneinander und aktualisiert mit jedem Klick. Der
+bayesianische Teil ist eine Beta-Verteilung mit flachem Prior. Der Name ist
+unwichtig, wichtig ist, dass die Kurve mit jeder Fahrt schmaler wird und dass man
+ihr ansieht, wie unsicher man noch ist.
+
+Als Aufhänger funktioniert die Pünktlichkeitsangabe der Bahn gut: was für eine
+Aussage ist „80 Prozent pünktlich" eigentlich? Eine relative Häufigkeit über eine
+vergangene Menge Fahrten, oder eine Überzeugung über die nächste? Darüber lassen
+sich zwei gute Minuten diskutieren, aber nicht mehr, der Block ist eng.
 :::
 
 ## Kapitel 2: Das Bayes-Theorem {data-qr="ch-thinking2" data-qr-cap="Kapitel 2 öffnen"}
@@ -208,20 +231,33 @@ klüger zu werden.
 :::
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: vier Bestandteile, jeder mit einer klaren Rolle. Die Formel ist nur
 die Buchführung.
 
-Stichpunkte:
-- Die Tabelle Zeile für Zeile, und bei jeder Zeile eine Sekunde Pause. Diese vier
-  Begriffe tragen den ganzen Rest des Workshops.
-- Die Evidenz im Nenner ist die Zeile, bei der Leute aussteigen. Kurzform: sie
-  normiert, damit am Ende eine Wahrscheinlichkeitsverteilung herauskommt. Später in
-  Kapitel 7 ist genau dieser Nenner das Problem, das MCMC löst. Das hier schon
-  ankündigen.
-- Dann direkt in das Diagnosemodul-Beispiel, das ist die eigentliche Substanz und
-  Grundlage von Übung 1.
+Die Formel kurz zeigen und dann sofort auf die Tabelle wechseln. Wer hier in die
+Algebra einsteigt, verliert die Hälfte des Raums an einer Stelle, an der es nichts
+zu gewinnen gibt.
+
+Die Tabelle Zeile für Zeile, und bei jeder Zeile eine Sekunde Pause. Diese vier
+Begriffe tragen den ganzen Rest des Workshops, Block B besteht aus nichts anderem.
+Kurzform, die hängen bleibt: Prior ist, was ich vorher für plausibel hielt.
+Likelihood ist, wie gut die Daten zu einer Annahme passen. Posterior ist, was
+danach übrig bleibt.
+
+Die Evidenz im Nenner ist die Zeile, bei der Leute aussteigen. Kurzform, die
+reicht: sie normiert, damit am Ende eine Wahrscheinlichkeitsverteilung herauskommt
+und keine beliebige Kurve. Mehr braucht es hier nicht.
+
+Diesen Nenner aber ausdrücklich ankündigen, das ist ein Bogen, der sich lohnt: in
+Kapitel 7 ist genau dieses Integral das Problem, das MCMC löst. Wer es hier hört,
+versteht dort in zehn Sekunden, wozu MCMC überhaupt gut ist.
+
+Den Kasten unten als Zusammenfassung sprechen, nicht vorlesen. Das Theorem ist
+eine Anleitung, aus neuen Informationen klüger zu werden. Das ist keine
+Verniedlichung, das ist tatsächlich alles, was es tut.
+
+Dann direkt in das Diagnosemodul auf der nächsten Folie. Das ist die eigentliche
+Substanz des Kapitels und die Grundlage von Übung 1, also hier nicht überziehen.
 :::
 
 ## Vertiefung A: das Diagnosemodul {data-qr="ch-thinking2" data-qr-cap="Selbst durchrechnen"}
@@ -364,20 +400,35 @@ angreifbar und transparent.
 :::
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: uninformativ ist nicht neutral. Das ist die zentrale Einsicht des
 Kapitels.
 
-Stichpunkte:
-- Das 30-Minuten-Argument ist stark und konkret. Ein flacher Prior sagt: eine
-  Reduktion um 30 Minuten ist genauso plausibel wie eine um 2 Minuten. Das ist keine
-  Neutralität, das ist eine Behauptung, und zwar eine falsche.
-- Der rote Bereich links der Null in der App ist gut zum Zeigen: der Prior sagt
-  auch etwas darüber, wie plausibel es ist, dass SmartRail alles schlimmer macht.
-- Der Kernsatz im Kasten ist die Antwort auf den Subjektivitätsvorwurf. Er kommt
-  gleich noch ausführlich in der Vertiefung.
-- Zeit im Auge behalten, dieser Block hat drei Kapitel.
+Mit der Definition oben anfangen, sie ist kurz und sie genügt: der Prior sagt,
+welche Werte wir vor den neuen Daten für plausibel halten. Nicht mehr, nicht
+weniger, und insbesondere nichts über Wünsche.
+
+Das 30-Minuten-Argument ist das stärkste Stück dieser Folie, also Zeit dafür
+nehmen. Ein flacher Prior behauptet, eine Verspätungsreduktion um 30 Minuten sei
+genauso plausibel wie eine um 2 Minuten. Auf einer Strecke, auf der es keine 30
+Minuten Verspätung gibt. Das ist keine Neutralität, das ist eine Behauptung, und
+zwar eine offensichtlich falsche.
+
+Der rote Bereich links der Null in der App eignet sich gut zum Zeigen: der Prior
+sagt auch etwas darüber, für wie plausibel wir es halten, dass SmartRail alles
+schlimmer macht. Beim flachen Prior ist das genauso plausibel wie eine
+Verbesserung. Auch das würde niemand unterschreiben, der das System kennt.
+
+Daraus die Empfehlung ableiten: schwach informativ ist der praktische Standard.
+Unsinn ausschließen, den Daten sonst alle Freiheit lassen. Das ist weder eine
+Konzession noch ein Trick, es ist die ehrlichere Modellierung.
+
+Der Kernsatz im Kasten ist die Antwort auf den Subjektivitätsvorwurf, und der
+Vorwurf kommt fast immer. Kurzform hier: jede Analyse trifft Annahmen, der Prior
+macht sie sichtbar, und eine unsichtbare Annahme ist nicht objektiver, sie ist nur
+unkritisierbar. Ausführlich kommt das in Vertiefung B, also an dieser Stelle nicht
+in die Debatte einsteigen, sondern darauf verweisen.
+
+Zeit im Auge behalten, dieser Block hat drei Kapitel in 25 Minuten.
 :::
 
 ## Kapitel 4: Die Likelihood {data-qr="ch-thinking4" data-qr-cap="Kapitel 4 öffnen"}
@@ -414,21 +465,36 @@ Bayesianisch geht es weiter, die Likelihood wird mit dem Prior verrechnet.
 :::
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: die Likelihood bewertet Hypothesen an festen Daten. Die Daten sind
 fix, die Hypothese wandert. Das ist genau umgekehrt zur Intuition.
 
-Stichpunkte:
-- Die fünf Zahlen 3, 7, 5, 9, 6 an die Tafel oder auf die Folie und betonen: die
-  ändern sich nie mehr. Beweglich ist nur die Hypothese.
-- In der App wandert die Normalkurve über die fünf festen Datenpunkte. Genau dieses
-  Bild ist die Likelihood.
-- Die Abgrenzung zu Maximum Likelihood ist wichtig, weil viele Anwesende ML aus der
-  Regression kennen. Der Übergang zu Bayes ist dann klein: statt nur des Maximums
-  behält man die ganze Kurve und multipliziert sie mit dem Prior.
-- Wenn die Zeit drängt, dieses Kapitel am kürzesten halten. Es ist das technischste
-  und das am wenigsten überraschende.
+Die fünf Zahlen zuerst, ruhig einzeln vorlesen: 3, 7, 5, 9, 6 Minuten. Dazu der
+Satz, auf den es ankommt: diese fünf Zahlen ändern sich ab jetzt nie mehr.
+Beweglich ist nur die Hypothese, die wir an sie anlegen.
+
+Dann die Tabelle als Bewertung lesen, nicht als Verteilung. Für jede Hypothese
+stellen wir dieselbe Frage: wie gut passen genau diese fünf Zahlen dazu? Bei null
+passt es praktisch nicht, bei 6 Minuten passt es am besten, bei 12 passt es wieder
+schlecht. Dass das Maximum beim Mittelwert der Daten liegt, ist kein Zufall.
+
+In der App wandert die Normalkurve über die fünf festen Datenpunkte. Genau dieses
+Bild ist die Likelihood, und es ist besser als jede Formel. Die Kurve bewegt sich,
+die Punkte nicht.
+
+Den Satz aus dem rechten Kasten ernst nehmen: die Likelihood ist keine
+Wahrscheinlichkeitsverteilung über θ. Sie summiert sich nicht zu eins, und genau
+deshalb braucht es den Nenner aus Kapitel 2. Wer das wissen will, bekommt es hier,
+wer nicht, verliert nichts.
+
+Die Abgrenzung zu Maximum Likelihood ist wichtig, weil viele Anwesende ML aus der
+Regression kennen, ohne es so zu nennen. Der Übergang ist dann klein: ML nimmt nur
+das Maximum und wirft den Rest weg. Bayesianisch behält man die ganze Kurve und
+multipliziert sie mit dem Prior. Das ist der einzige Unterschied, und es ist der
+ganze Unterschied.
+
+Wenn die Zeit drängt, dieses Kapitel am kürzesten halten. Es ist das technischste
+und das am wenigsten überraschende, und Kapitel 5 plus die Bayes-Faktor-Vertiefung
+brauchen die Minuten dringender.
 :::
 
 ## Kapitel 5: Der Posterior {data-qr="ch-thinking5" data-qr-cap="Kapitel 5 öffnen"}
@@ -461,22 +527,100 @@ Menschen intuitiv suchen:
 **Damit ist die offene Rechnung aus Workshop 02 beglichen.**
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: der Posterior ist ein Kompromiss, dessen Gewichtung sichtbar und
 begründbar ist.
 
-Stichpunkte:
-- In der App liegen drei Kurven übereinander: Prior grau, Likelihood rot, Posterior
-  violett. Dieses Bild ist der Höhepunkt des Workshops, hier Zeit lassen.
-- Die drei Regeln zum Zusammenspiel wörtlich sagen, sie beantworten den
-  Subjektivitätsvorwurf praktisch: mit genug Daten ist es egal, was du vorher
-  geglaubt hast.
-- Der Kasten mit dem Glaubwürdigkeitsintervall ist der Moment, auf den beide
-  vorherigen Workshops hinauslaufen. Wenn Teilnehmende Workshop 02 gemacht haben,
-  hier ausdrücklich zurückverweisen.
-- Das führt direkt in Übung 2, also den Prior-Regler nur ankündigen, nicht schon
-  ausreizen.
+Die Ausgangslage ist konkret und deshalb gut: der Hersteller sagt 8 Minuten, die
+eigenen fünf Testfahrten sagen 6. Beide Quellen sind legitim, beide sind unsicher.
+Die Frage, die sich der Raum selbst stellt, lautet: wem glaube ich?
+
+Die bayesianische Antwort ist nicht wem, sondern wie viel. Der Posterior landet
+dazwischen, und wo genau, hängt daran, wie sicher der Prior formuliert war. Das ist
+keine Ausrede, das ist die Rechnung.
+
+In der App liegen drei Kurven übereinander: Prior grau, Likelihood rot, Posterior
+violett. Dieses Bild ist der Höhepunkt des Workshops. Hier Zeit lassen und nicht
+weiterklicken, während man redet.
+
+Die drei Regeln zum Zusammenspiel wörtlich sagen, sie beantworten den
+Subjektivitätsvorwurf praktisch. Breiter Prior heißt, die Daten dominieren.
+Schmaler Prior heißt, es braucht viele Daten, um ihn zu bewegen. Viele Daten heißt,
+der Prior wird irrelevant. Der letzte Punkt ist der, der Skeptiker überzeugt: mit
+genug Daten ist es egal, was du vorher geglaubt hast.
+
+Der Kasten mit dem Glaubwürdigkeitsintervall ist der Moment, auf den beide
+vorherigen Workshops hinauslaufen. Den Satz langsam vorlesen und danach eine Pause
+machen. Wer Workshop 02 gemacht hat, bekommt hier den ausdrücklichen Rückverweis:
+das ist genau die Lesart, die beim Konfidenzintervall verboten war.
+
+Das führt direkt in Übung 2. Also den Prior-Regler nur ankündigen und nicht schon
+ausreizen, das Kippen des Posteriors sollen die Leute selbst herstellen.
+:::
+
+## Vertiefung B: Evidenz in beide Richtungen {data-qr="hub_bayesian" data-qr-cap="Bayes-Faktor nachlesen"}
+
+In den sieben Kapiteln kommt er nicht vor. In JASP begegnet er dir zuerst.
+
+::: {.bp-zwei}
+
+::: {}
+| BF₁₀ | Evidenz für H₁ |
+|---|---|
+| 1 – 3 | anekdotisch |
+| 3 – 10 | moderat |
+| 10 – 30 | stark |
+| 30 – 100 | sehr stark |
+| > 100 | extrem |
+:::
+
+::: {}
+Ein **Verhältnis**: wie viel besser hat die eine Hypothese diese Daten
+vorhergesagt als die andere?
+
+Dieselben Stufen gelten symmetrisch für **BF₀₁**, also Evidenz **für** die
+Nullhypothese. BF₀₁ = 12 heißt: die Daten sprechen stark dafür, dass SmartRail
+nichts bringt.
+:::
+
+:::
+
+::: {.bp-callout}
+**Die Antwort auf Fehlannahme 6 aus Workshop 01.** Der Signifikanztest kann
+*keine Evidenz* und *Evidenz für die Null* nicht auseinanderhalten. Der
+Bayes-Faktor kann es.
+:::
+
+::: {.bp-quelle}
+Stufen nach Lee & Wagenmakers (2013).
+:::
+
+::: notes
+Vertiefung, nicht im Selbstlern-Kapitel enthalten. Der Bayes-Faktor kommt in
+keinem der sieben Kapitel vor, obwohl er das Werkzeug ist, dem man in JASP zuerst
+begegnet. Deshalb steht er hier.
+
+Vier Minuten, nicht mehr. Sie kommen aus Kapitel 4, das dafür am kürzesten läuft.
+
+Erst die Idee, dann die Tabelle. Der Bayes-Faktor vergleicht zwei Hypothesen daran,
+wie gut jede die beobachteten Daten vorhergesagt hätte. Das ist ein Verhältnis und
+keine Fehlerrate, und deshalb hat es keine Schwelle.
+
+Die Symmetrie ist der Punkt, für den diese Folie existiert. Beim Signifikanztest
+heißt nicht signifikant nur: wir wissen nichts. Der Bayes-Faktor unterscheidet
+zwischen keiner Evidenz und Evidenz für die Nullhypothese. Für
+Wirksamkeitsnachweise, Nicht-Unterlegenheitsstudien und jede Frage nach
+Unbedenklichkeit ist das der praktisch wichtigste Unterschied überhaupt.
+
+Ein zweiter Vorteil, der in Workshop 02 angekündigt wurde: weil der Bayes-Faktor
+eine Evidenzstärke ist und keine Fehlerrate, darf man zwischendurch hineinschauen.
+Sequenzielles Auswerten erzeugt hier keine Alpha-Inflation. Wer Workshop 02 gemacht
+hat, erkennt das Bayes-Faktor-Design wieder, das dort als dritter Planungsweg
+stand.
+
+Warnung an mich selbst: die Stufentabelle nicht als neue .05-Schwelle verkaufen.
+Sie ist eine Sprachhilfe, kein Entscheidungsautomat. Wer BF ≥ 10 zum Ritual macht,
+hat das Problem nur umbenannt. Derselbe Vorbehalt gilt gleich noch einmal für die
+ROPE-Grenzen.
 :::
 
 ## Vertiefung B: HDI, ETI und ROPE {data-qr="hub_bayesian" data-qr-cap="HDI und ROPE nachlesen"}
@@ -660,20 +804,35 @@ Einzelvorhersage mit der Genauigkeit des Mittelwerts angibt, verspricht zu viel.
 :::
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: zwei Arten von Unsicherheit, und nur eine schrumpft mit Daten.
 
-Stichpunkte:
-- Der Unterschied zwischen "wo liegt der Mittelwert" und "was passiert morgen" ist
-  im Alltag ständig relevant und wird ständig verwechselt. Wettervorhersage ist ein
-  gutes Beispiel, Lieferzeiten ein besseres.
-- In der App liegen zwei Kurven übereinander, Posterior violett und
-  Posterior-Predictive orange. Die orange ist immer breiter. Dieses Bild reicht als
-  Begründung.
-- Praktische Konsequenz nennen: bei Prognosen für Einzelfälle, etwa
-  Behandlungserfolg für eine Person, ist die Posterior-Predictive die richtige
-  Größe. Sie wird fast immer weggelassen, weil sie unangenehm breit ist.
+Die Frage der Folie zuerst scharf stellen. Der Posterior sagt, wo θ liegt. Aber
+niemand fährt mit θ. Die Frage der Praxis lautet, was die nächste einzelne Fahrt
+macht, und das ist eine andere Frage.
+
+Die beiden Begriffe an einem Alltagsbeispiel trennen. Lieferzeiten funktionieren
+besser als das Wetter, weil jeder sie kennt: der Versand sagt, im Mittel drei Tage,
+und das kann sehr präzise geschätzt sein. Wann genau dein Paket kommt, weiß er
+trotzdem nicht, weil einzelne Sendungen streuen. Mehr Daten machen die erste
+Aussage besser und die zweite nicht.
+
+Epistemisch ist die Unsicherheit über den Parameter, sie schrumpft mit jeder
+Beobachtung. Aleatorisch ist das Rauschen der Welt, es bleibt. Wer beides
+zusammenwirft, verspricht zu viel.
+
+In der App liegen zwei Kurven übereinander, Posterior violett und
+Posterior-Predictive orange. Die orange ist immer breiter, und dieses Bild reicht
+als Begründung. Zeigen, nicht erklären.
+
+Die praktische Konsequenz ausdrücklich nennen, denn hier liegt der Nutzen: bei
+Prognosen für Einzelfälle, etwa dem Behandlungserfolg einer konkreten Person, ist
+die Posterior-Predictive die richtige Größe. Sie wird fast immer weggelassen, weil
+sie unangenehm breit ist. Genau deshalb ist sie ehrlich.
+
+Wenn der Einwand kommt, so breite Intervalle könne man nicht kommunizieren: das ist
+ein Kommunikationsproblem und kein statistisches. Die Alternative ist, eine
+Genauigkeit zu behaupten, die es nicht gibt. Und Behandelten gegenüber ist die
+breite Angabe die fairere.
 :::
 
 ## Kapitel 7: Wenn die Mathematik aufgibt {data-qr="ch-thinking7" data-qr-cap="Kapitel 7 öffnen"}
@@ -706,21 +865,36 @@ bayesianische Statistik auf Lehrbuchbeispiele beschränkt geblieben.
 Approximation getaugt hat.
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: MCMC ist kein Trick, sondern der Grund, warum Bayes heute praktikabel
 ist.
 
-Stichpunkte:
-- Zurückverweisen auf Kapitel 2 und den Nenner. Dort wurde er angekündigt, hier
-  wird er eingelöst. Dieser Bogen ist didaktisch wertvoll.
-- Das Bild des blinden Wanderers trägt weit. Wichtig ist der Punkt mit dem
-  gelegentlichen Bergabgehen: ohne ihn bliebe die Kette in einem lokalen Maximum
-  hängen.
-- In der App gibt es Trace-Plot und Histogramm. Der Trace-Plot ist die Diagnostik,
-  auf die es ankommt: eine gesunde Kette sieht aus wie Rauschen um einen Wert, eine
-  kranke sieht aus wie ein Trend oder wie Stufen.
-- Das führt direkt in Vertiefung C.
+Zuerst auf Kapitel 2 zurückverweisen und den Nenner wieder hervorholen. Dort wurde
+er angekündigt, hier wird er eingelöst. Diesen Bogen auch als Bogen benennen: das
+war die Zeile, bei der ich gesagt habe, dass sie später wichtig wird.
+
+Die Aussage selbst ist knapp. Bei realistischen Modellen, also mehreren Parametern
+und hierarchischer Struktur, ist dieses Integral nicht analytisch lösbar. Nicht
+schwierig, sondern nicht lösbar. Deshalb blieb bayesianische Statistik über
+Jahrzehnte auf Lehrbuchbeispiele beschränkt, obwohl die Theorie aus dem 18.
+Jahrhundert stammt.
+
+Das Bild des blinden Wanderers trägt weit, also ausspielen: jemand läuft im Dunkeln
+über ein Gelände und will wissen, wie die Landschaft aussieht. Überblicken kann er
+sie nicht. Aber er kann sie ablaufen und mitschreiben, wo er gewesen ist. Nach
+10.000 Schritten hat er eine Karte.
+
+Der Punkt mit dem gelegentlichen Bergabgehen ist der wichtigste und wird gern
+übersprungen. Ohne ihn bliebe die Kette im ersten lokalen Maximum hängen und würde
+eine falsche Karte liefern, die vollständig aussieht.
+
+In der App gibt es Trace-Plot und Histogramm. Der Trace-Plot ist die Diagnostik,
+auf die es ankommt: eine gesunde Kette sieht aus wie Rauschen um einen Wert, eine
+kranke sieht aus wie ein Trend oder wie Stufen. Beides einmal zeigen, das Auge
+lernt das schnell.
+
+Der Schlusssatz unten ist die Überleitung in Vertiefung C: wer approximiert, muss
+prüfen, ob die Approximation getaugt hat. Und die Software prüft das nicht von
+allein.
 :::
 
 ## Vertiefung C: der vollständige Workflow {data-qr="hub_bayesian" data-qr-cap="Workflow im Detail"}

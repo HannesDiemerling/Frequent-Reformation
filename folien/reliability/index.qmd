@@ -12,10 +12,15 @@ title-slide-attributes:
 <!--
 Workshop 02, geführte Session, ca. 2 Stunden.
 
-Gerüst-Status: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser und die
-Vertiefungsblöcke stehen. Die Kapitelfolien tragen die echten Zahlen aus den
-Workshop-Kapiteln. Was noch entsteht, ist der ausformulierte Vortragstext in den
-Sprechernotizen der Kapitelfolien.
+Vollständig: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser, die
+Vertiefungsblöcke und die Sprechernotizen. Die Kapitelfolien tragen die echten
+Zahlen aus den Workshop-Kapiteln.
+
+Die Notizen sind Regie und kein Skript: Roter Faden, Reihenfolge des Aufbaus,
+Kernsätze zum wörtlichen Sagen, Antworten auf die Einwände, die regelmäßig kommen.
+
+Kapitel 3 ist das Schwergewicht. Wenn der Zeitplan rutscht, dort nicht kürzen,
+sondern bei Kapitel 4 einsparen.
 
 Dieser Workshop hat nur fünf Kapitel und dadurch mehr Luft im Transferteil. Das
 ist Absicht: bei diesem Thema ist die Übertragung auf eigene Studiendesigns der
@@ -122,20 +127,30 @@ groß sie ist.
 Verzerrung nicht.
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: zwei Fehlerquellen unterscheiden, und nur eine davon lässt sich mit
 Fallzahl bekämpfen.
 
-Stichpunkte:
-- Erst die beiden n = 20 Teams zeigen. Beide haben korrekt gerechnet, beide kommen
-  zu unvereinbaren Ergebnissen. Das ist keine Schlamperei, das ist Streuung.
-- Dann n hochziehen und das Gesetz der großen Zahlen zeigen.
-- Dann der Bruch: die App simuliert 100 Studien parallel. Man sieht die ganze
-  Verteilung, nicht nur die eine Studie, die man selbst gemacht hat. Genau das ist
-  der Blick, den man in der Praxis nie hat.
-- Merksatz: eine publizierte Studie ist eine Ziehung aus dieser Verteilung. Welche,
-  weiß niemand.
+Mit den beiden Teams bei n = 20 anfangen. Team A misst 0,8 Minuten, Team B misst
+4,2 Minuten, und beide haben korrekt gerechnet. Das laut sagen, denn der erste
+Reflex im Raum ist, dass jemand einen Fehler gemacht haben muss. Hat niemand. Das
+ist Streuung, und bei 20 Fahrten ist sie genau so groß.
+
+Dann n hochziehen und das Gesetz der großen Zahlen zeigen. Bei 500 und 1000
+Fahrten laufen die Schätzungen auf die wahren 2,5 Minuten zu. Hier kurz
+innehalten, denn das ist die Hälfte der Botschaft, und es ist die Hälfte, die die
+Intuition schon kennt: mehr Daten, präziser.
+
+Die andere Hälfte steht im Warnkasten, und die kennt die Intuition nicht. Eine
+systematische Verzerrung schrumpft nicht mit n. Mehr Fälle heilen keine
+Verzerrung, sie machen den falschen Wert nur präziser. Diesen Satz wörtlich
+bringen, er trägt den ganzen Workshop und kommt in Kapitel 2 sofort zur Anwendung.
+
+Der Bruch kommt mit der App: sie simuliert 100 Studien parallel. Man sieht die
+ganze Verteilung, nicht nur die eine Studie, die man selbst gemacht hat. Genau
+diesen Blick hat man in der Praxis nie.
+
+Merksatz zum Mitnehmen, ruhig zweimal: eine publizierte Studie ist eine Ziehung
+aus dieser Verteilung. Welche, weiß niemand, auch die Autorenschaft nicht.
 :::
 
 ## Kapitel 2: Drop-out ist ein Auswahlmechanismus {data-qr="ch-reliability2" data-qr-cap="Kapitel 2 öffnen"}
@@ -167,20 +182,33 @@ repräsentative Stichprobe mehr.
 :::
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: fehlende Daten sind eine Information über den Auswahlprozess, nicht
 nur ein Loch in der Tabelle.
 
-Stichpunkte:
-- Das SmartRail-Beispiel ist bewusst technisch, weil es die Absichtslosigkeit
-  zeigt: kein Mensch hat entschieden, wer wegfällt, ein Sensor hat es getan.
-- Übertragung auf die eigene Domäne sofort anschließen: wer bricht eine
-  Therapiestudie ab? Meist die, denen es schlechter geht. Wer beantwortet einen
-  Fragebogen nicht? Meist die, die das Thema betrifft.
-- Der Effekt geht immer in dieselbe Richtung: die Intervention sieht besser aus als
-  sie ist.
-- Vorbereitung für Übung 1, also die App nur andeuten.
+Das SmartRail-Beispiel ist bewusst technisch gewählt, weil es die
+Absichtslosigkeit zeigt. Kein Mensch hat entschieden, welche Fahrten wegfallen,
+ein Sensor hat es getan. Und er hat es genau dort getan, wo es schwierig wird.
+
+Die Kette langsam durchgehen: Ausfall bei Baustellen, Störungen und schlechtem
+Wetter, übrig bleiben die einfachen Strecken, auf einfachen Strecken wirkt
+SmartRail besser, der berichtete Effekt steigt. Kein Rechenfehler, kein Vorsatz,
+und trotzdem ein falsches Ergebnis.
+
+Die Übertragung sofort anschließen und nicht aufsparen. Wer bricht eine
+Therapiestudie ab? Meist die, denen es schlechter geht. Wer beantwortet einen
+Fragebogen zur Arbeitsbelastung nicht? Meist die, die zu belastet sind. Wer
+erscheint nicht zum Nachtermin? Meist die mit den unregelmäßigen Arbeitszeiten.
+
+Und jedes Mal geht der Effekt in dieselbe Richtung: die Intervention sieht besser
+aus, als sie ist. Das ist kein Zufall, das ist der Mechanismus. Wer ausfällt, fällt
+aus einem Grund aus, und der Grund hängt meist mit dem Ergebnis zusammen.
+
+Den Kasten unten als Merksatz setzen. Nicht wie viele ausfallen ist entscheidend,
+sondern wer. 30 Prozent zufälliger Ausfall kostet Präzision. 10 Prozent
+systematischer Ausfall kostet die Aussage.
+
+Das ist die Vorbereitung für Übung 1. Also die App nur andeuten und den Regler
+zeigen, die Verdopplung des Effekts nicht schon vorführen.
 :::
 
 ## Vertiefung A: Missing-Mechanismen benennen {data-qr="hub_stichproben" data-qr-cap="Stichproben und Präzision"}
@@ -314,24 +342,41 @@ Forschungspraktiken (QRPs) steigt die Falsch-positiv-Rate **von 5 % auf bis zu
 :::
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren. Das ist das längste und wichtigste
-Kapitel des Workshops, es trägt den ganzen Block.
+Das ist das längste und wichtigste Kapitel des Workshops, es trägt den ganzen
+Block.
 
 Roter Faden: jede einzelne Entscheidung ist begründbar, die Kombination ist das
 Problem.
 
-Stichpunkte:
-- Betonen, dass der wahre Effekt null ist. Alles, was gefunden wird, ist per
-  Konstruktion falsch.
-- Jeden Schritt einzeln plausibel machen. Ausreißer entfernen steht in Lehrbüchern.
-  Defekte Messungen ausschließen ist korrekt. Werktage betrachten ist sinnvoll.
-- Der Begriff verborgene Freiheitsgrade einführen: nicht die einzelne
-  Entscheidung, sondern die Zahl der möglichen Entscheidungen ist das Problem.
-- Der Garten der sich verzweigenden Pfade: die App zählt alle Kombinationen aus und
-  zeigt, wie viele davon signifikant sind. Das ist der Blick, den man beim
-  Analysieren nie hat, weil man nur einen Pfad geht.
-- Wichtig für die Stimmung: das ist kein Betrugsvorwurf. Der Punkt ist, dass gute
-  Absicht nicht schützt.
+Ganz zu Anfang festhalten und stehen lassen: der wahre Effekt ist exakt null.
+Alles, was hier gefunden wird, ist per Konstruktion falsch. Ohne diesen Satz wirkt
+die Folie wie ein Betrugsvorwurf, mit ihm wird sie ein Experiment.
+
+Jeden Schritt einzeln plausibel machen, und zwar ernsthaft, nicht ironisch.
+Ausreißer entfernen steht in jedem Lehrbuch. Defekte Messungen ausschließen ist
+methodisch korrekt. Nur Werktage betrachten ist bei Bahndaten sogar klug. Jede
+dieser Entscheidungen würde ein Gutachten durchgehen lassen, und zwar zu Recht.
+
+Und trotzdem steht am Ende 0.04, wo vorher 0.35 stand. Hier den Begriff einführen:
+verborgene Freiheitsgrade. Nicht die einzelne Entscheidung ist das Problem,
+sondern die Zahl der möglichen Entscheidungen, aus denen erst hinterher ausgewählt
+wird.
+
+Das Bild vom Garten der sich verzweigenden Pfade dazugeben, es stammt von Gelman
+und Loken. Die App zählt alle Kombinationen aus und zeigt, wie viele davon
+signifikant sind. Das ist der Blick, den man beim Analysieren nie hat, weil man
+immer nur einen Pfad geht und die anderen gar nicht sieht.
+
+Die Zahl von Simmons, Nelson und Simonsohn zum Schluss: aus 5 Prozent werden bis
+zu 61 Prozent Falsch-positive. Dazu der Hinweis, dass dieses Paper der Grund ist,
+warum p-Hacking und QRP heute geläufige Begriffe sind. Es ist von 2011, das Problem
+ist also keine neue Mode.
+
+Wichtig für die Stimmung, und mindestens einmal ausdrücklich sagen: das ist kein
+Betrugsvorwurf. Der Punkt ist genau umgekehrt. Gute Absicht schützt nicht, weil
+der Mechanismus unabhängig von der Absicht funktioniert. Wer sich hier angegriffen
+fühlt, hört den Rest des Blocks nicht mehr zu, und der Rest des Blocks ist der
+nützliche Teil.
 :::
 
 ## Kapitel 4: Wie genau willst du schätzen? {data-qr="ch-reliability4" data-qr-cap="Kapitel 4 öffnen"}
@@ -366,20 +411,36 @@ weitere Verbesserung mehr, als sie wert ist. Das ist eine legitime Entscheidung,
 sie muss nur bewusst getroffen werden.
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: die Präzisionsfrage ist beantwortbar, die Effektfrage nicht. Deshalb
 planen wir Präzision.
 
-Stichpunkte:
-- Das Wurzelgesetz an einer konkreten Zahl vorführen: von ± 3 auf ± 1,5 heißt vier
-  mal so viele Fälle.
-- Den entscheidenden Vorteil hervorheben: klassische Power-Analyse braucht den
-  wahren Effekt als Eingabe, und den kennt niemand. Meist wird eingesetzt, was man
-  sich wünscht, und daraus folgen systematisch zu kleine Stichproben.
-- Die Kurve des abnehmenden Grenznutzens ist gut zum Argumentieren gegenüber
-  Geldgebern und Ethikkommissionen.
-- Übergang zu Vertiefung B: es gibt drei Planungswege, das hier ist einer.
+Mit der Forderung des Vorstands anfangen, weil sie so klingt, wie Forderungen in
+echten Projekten klingen: plus minus 1,5 Minuten, bitte. Das ist eine gute
+Forderung, denn sie ist überprüfbar.
+
+Das Wurzelgesetz an konkreten Zahlen vorführen, nicht als Formel. Von plus minus 3
+auf plus minus 1,5 heißt: vier mal so viele Fahrten. Von plus minus 1,5 auf plus
+minus 0,75 heißt: noch einmal vier mal so viele. Wer das einmal ausgerechnet hat,
+plant anders.
+
+Dann den entscheidenden Vorteil hervorheben, und dafür lohnt ein eigener Moment.
+Die klassische Power-Analyse braucht den wahren Effekt als Eingabe. Den kennt
+niemand, deshalb wird eingesetzt, was man sich wünscht. Daraus folgen systematisch
+zu kleine Stichproben, und das ist einer der Hauptgründe dafür, dass so viele
+Befunde nicht replizieren.
+
+Die Präzisionsfrage hat dieses Problem nicht. Wie genau du schätzen willst, kannst
+du inhaltlich entscheiden, ohne den Effekt zu kennen. Die Rückfrage, die dabei
+immer funktioniert: ab welchem Unterschied würde sich die Praxis ändern? So genau
+muss die Schätzung sein, nicht genauer.
+
+Die Kurve des abnehmenden Grenznutzens zum Schluss, mit einem praktischen Hinweis:
+genau dieses Bild ist das beste Argument gegenüber Geldgebern und
+Ethikkommissionen. Es zeigt, dass die gewählte Fallzahl eine begründete
+Entscheidung war und keine Verhandlungsmasse.
+
+Übergang zu Vertiefung B: das hier war ein Planungsweg von drei, und der
+verbreitetste ist es nicht.
 :::
 
 ## Vertiefung B: drei Wege, systematisch {data-qr="hub_stichproben" data-qr-cap="Die drei Wege im Detail"}
@@ -548,20 +609,38 @@ Schwelle anzubeten, bewerten wir die gesamte Spanne der plausiblen Wahrheiten.
 Er ist genau ein Wert aus einer ganzen Spanne.
 
 ::: notes
-GERÜST, hier den Vortragstext ausformulieren.
-
 Roter Faden: das Intervall ist die eigentliche Aussage, der Punktschätzer ist nur
 seine Mitte.
 
-Stichpunkte:
-- Zuerst nur 2,5 Minuten zeigen und den Raum fragen, ob SmartRail ausgerollt werden
-  soll. Meist Zustimmung.
-- Dann das Intervall einblenden und die Frage wiederholen. Die Antwort ändert sich.
-- Der Merksatz zum Mitnehmen: berichte nie einen Punktschätzer ohne Intervall.
-- Ehrlich anschließen: ein Konfidenzintervall erlaubt trotzdem nicht die
-  intuitive Lesart. Das ist die Brücke zu Workshop 03 und dem
-  Glaubwürdigkeitsintervall. Hier nicht wegwischen, sondern als offene Rechnung
-  stehen lassen.
+Diese Folie braucht eine Abstimmung, sonst verpufft sie. Zuerst nur die 2,5
+Minuten zeigen, das Intervall verdeckt lassen, und den Raum fragen: soll SmartRail
+netzweit ausgerollt werden? Meist deutliche Zustimmung, ruhig per Handzeichen
+auszählen.
+
+Dann das Intervall einblenden, 0,1 bis 5,0 Minuten, und dieselbe Frage wortgleich
+wiederholen. Die Antwort ändert sich, und das Umschwenken im Raum ist der
+Lerneffekt. Beides ist mit denselben Daten verträglich: ein großer Erfolg und ein
+teures Nichts.
+
+Den Merksatz danach klar setzen: berichte nie einen Punktschätzer ohne Intervall.
+Der Punktschätzer ist die unwahrscheinlichste Aussage, die du machen kannst, er ist
+genau ein Wert aus einer ganzen Spanne.
+
+Das Zitat auf der Folie ist länger als üblich, also vorlesen und nicht
+paraphrasieren. Der Kern steckt im zweiten Satz: statt eine künstliche Schwelle
+anzubeten, bewerten wir die gesamte Spanne der plausiblen Wahrheiten.
+
+Und dann ehrlich bleiben, auch wenn es die Folie Kraft kostet. Ein
+Konfidenzintervall erlaubt die intuitive Lesart trotzdem nicht. Es heißt nicht,
+dass der wahre Wert mit 95 Prozent Wahrscheinlichkeit zwischen 0,1 und 5,0 liegt.
+Es beschreibt die langfristige Erfolgsquote des Verfahrens.
+
+Diese offene Rechnung nicht wegwischen, sondern ausdrücklich als offene Rechnung
+stehen lassen. Sie ist die Brücke zu Workshop 03 und zum
+Glaubwürdigkeitsintervall, und der Wegweiser am Ende des Decks nimmt sie wieder
+auf. Wenn jemand nachfragt, warum die intuitive Lesart verboten ist: weil die
+frequentistische Wahrscheinlichkeit über Verfahren spricht und nicht über einzelne
+Fälle. Mehr braucht es hier nicht, das ist Kapitel 1 von Workshop 03.
 :::
 
 ## Vertiefung C: der strukturelle Gegenzug {data-qr="hub_journals" data-qr-cap="Registered Reports und Journals"}
