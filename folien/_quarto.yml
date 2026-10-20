@@ -27,6 +27,7 @@ metadata-files:
 # angemeldet werden, sonst kopiert Quarto sie nicht mit.
 resources:
   - assets/qr
+  - assets/fonts
 
 lang: de
 
@@ -41,6 +42,10 @@ format:
     # bp-qr.html tauscht den QR-Code oben rechts je Folie aus und macht ihn
     # klickbar, bp-nav.html baut die kleine Leiste unten links.
     # Reihenfolge zaehlt: die Daten muessen vor den Skripten stehen.
+    # Inter wird lokal eingebunden, siehe theme/bp-fonts.html.
+    include-in-header:
+      - theme/bp-fonts.html
+
     include-after-body:
       - _daten.html
       - theme/bp-qr.html

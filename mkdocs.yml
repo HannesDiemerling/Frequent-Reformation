@@ -11,8 +11,8 @@ exclude_docs: |
 theme:
   name: material
   language: de
-  logo: assets/P.svg
-  favicon: assets/P.svg
+  logo: assets/p_icon.png
+  favicon: assets/p_icon.png
   palette:
     - scheme: default
       primary: custom
