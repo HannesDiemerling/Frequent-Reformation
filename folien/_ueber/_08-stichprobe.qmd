@@ -1,39 +1,35 @@
 ## Antwort 02: Die Stichprobe ehrlich planen {data-qr="hub_stichproben" data-qr-cap="Stichproben und Präzision"}
 
-::: {.bp-zwei}
-
-::: {}
-**Erst Qualität, dann Größe.**
-
-Eine systematisch verzerrte Stichprobe liefert falsche Ergebnisse, egal wie groß
-sie ist. Mehr Fälle heilen keine Verzerrung, sie machen den falschen Wert nur
-präziser.
-
-WEIRD-Stichproben (Western, Educated, Industrialised, Rich, Democratic)
-dominieren die Forschung bis heute.
+::: {.bp-fig .bp-fig--klein}
+{{< include ../assets/fig/f3-wurzelgesetz.svg >}}
 :::
 
 ::: {.bp-warn}
-**Drop-out ist ein Auswahlmechanismus.**
-
-Wenn 30 % deiner Stichprobe abbrechen und das nicht zufällig geschieht, hast du
-keine repräsentative Stichprobe mehr. Egal wie sorgfältig du gezogen hast.
-:::
-
+[{{< fa triangle-exclamation >}}]{.bp-icon} **Mehr Fälle heilen keine
+Verzerrung.** Sie machen den falschen Wert nur präziser.
 :::
 
 ::: notes
-Der Kernsatz ist "mehr Fälle heilen keine Verzerrung". Er widerspricht der
-Intuition, dass eine große Stichprobe automatisch gut ist, und er ist der Grund,
-warum Repräsentativität vor Größe kommt.
+**Typ** Abbildung · **Soll** 23:00 · **Dauer** 1:45 · kürzbar: nein
 
-Beim Drop-out den Mechanismus betonen: entscheidend ist nicht, wie viele
-wegfallen, sondern wer. Wenn genau die schwierigen Fälle wegfallen, sieht die
-Intervention besser aus als sie ist. Das ist im zweiten Workshop das
-Kernbeispiel.
+**Woher** Frage 02: wie verlässlich ist die Schätzung? Zwei Dinge entscheiden
+das, und nur eines davon lässt sich mit Fallzahl kaufen.
 
-WEIRD nur kurz, das kennen die meisten. Falls nicht: Henrich, Heine und Norenzayan
-(2010).
+**Hier** „Erst Qualität, dann Größe. Mehr Fälle heilen keine Verzerrung."
+Zuerst die Kurve: sie zeigt, was Fallzahl kauft, nämlich Präzision, und zu
+welchem Preis. Von 50 auf 200 Fälle halbiert sich die Breite. Vierfache
+Stichprobe für den halben Fehler, das ist das Wurzelgesetz. Dann der Kasten:
+was Fallzahl nicht kauft. Drop-out ist ein Auswahlmechanismus: wenn 30 Prozent
+abbrechen und das nicht zufällig geschieht, ist die Stichprobe verzerrt, egal
+wie groß.
+
+**Wohin** Drei Wege zur Stichprobengröße. Übergang: „Und wie viele brauche ich
+dann? Darauf gibt es drei Antworten."
+
+**Wenn** Nachfrage zur Verallgemeinerung: WEIRD-Stichproben (Western, Educated,
+Industrialised, Rich, Democratic) dominieren bis heute, Henrich, Heine und
+Norenzayan 2010. Pointe, optional: „Psychologie ist zu großen Teilen die
+Wissenschaft von Psychologie-Studierenden im zweiten Semester."
 :::
 
 ## Drei Wege zur Stichprobengröße {data-qr="hub_stichproben" data-qr-cap="Die drei Wege im Detail"}
@@ -41,54 +37,61 @@ WEIRD nur kurz, das kennen die meisten. Falls nicht: Henrich, Heine und Norenzay
 ::: {.bp-drei}
 
 ::: {.bp-pillar .tone-sand}
+[{{< fa table >}}]{.bp-icon}
 [Weg 01, verbreitet]{.bp-pillar__num}
 
 ### Power-Analyse
 
-*Wie viele brauche ich, um mit 80 % Wahrscheinlichkeit einen signifikanten p-Wert
-zu finden, wenn der wahre Effekt d = 0.5 ist?*
-
-Setzt genau das voraus, was man wissen will.
+*Wie viele, damit p mit 80 % signifikant wird, falls d = 0.5?*
 :::
 
 ::: {.bp-pillar .tone-teal}
+[{{< fa ruler-horizontal >}}]{.bp-icon}
 [Weg 02, empfohlen]{.bp-pillar__num}
 
 ### Präzisionsplanung
 
-*Wie viele brauche ich, damit mein Intervall schmaler wird als ± 0.15?*
-
-Direkter, ehrlicher, planbarer.
+*Wie viele, damit mein Intervall schmaler als ± 0.15 wird?*
 :::
 
 ::: {.bp-pillar .tone-navy}
+[{{< fa dice >}}]{.bp-icon}
 [Weg 03, bayesianisch]{.bp-pillar__num}
 
 ### Bayes-Faktor-Design
 
-*Wie viele brauche ich, damit der Bayes-Faktor mit hoher Wahrscheinlichkeit ≥ 10
-wird, falls H₁ stimmt?*
+*Wie viele, damit BF ≥ 10 wird, falls H₁ stimmt?*
 :::
 
 :::
 
-::: {.bp-callout}
-Und in allen drei Fällen gilt: **mit 10 bis 20 Zeilen Simulationscode bekommst du
-eine ehrlichere Antwort als aus jeder Tabelle.** Um den Fehler zu halbieren,
-brauchst du die vierfache Stichprobe.
+::: {.bp-quote .bp-quote--klein}
+Obviously the important thing … is to have a low real error, not to have a
+"significant" result at a particular station. The latter seems to me to be
+nearly valueless in itself.
 :::
+[William Sealy Gosset („Student"), 1937, an Egon Pearson]{.bp-quote__author}
 
 ::: notes
-Die drei Wege als drei Fragen vortragen, nicht als drei Verfahren. Die Frage ist
-jeweils der Inhalt.
+**Typ** Säulen · **Soll** 24:45 · **Dauer** 1:00 · kürzbar: ja
 
-Zu Weg 1 der entscheidende Einwand: die klassische Power-Analyse braucht den
-wahren Effekt als Input. Den kennt man nicht, deshalb setzt man meist ein, was
-man sich wünscht. Das erzeugt systematisch zu kleine Stichproben.
+**Woher** Die Stichprobe muss geplant werden. Drei Wege, und der verbreitetste
+ist der schwächste.
 
-Weg 2 ist die eigentliche Empfehlung. Die Frage "wie genau will ich schätzen"
-lässt sich inhaltlich beantworten, ohne den Effekt vorher zu kennen.
+**Hier** „Die Power-Analyse braucht als Eingabe genau das, was man wissen will:
+den wahren Effekt."
+Die drei Wege als drei Fragen vortragen, nicht als drei Verfahren. Weg 1: man
+kennt den Effekt nicht, also setzt man ein, was man sich wünscht, und bekommt
+systematisch zu kleine Stichproben. Weg 2: die Frage „wie genau will ich
+schätzen" ist inhaltlich beantwortbar. Dann Gosset: der Erfinder des t-Tests
+selbst sagt 1937, ein signifikantes Ergebnis sei „nearly valueless", worauf es
+ankomme, sei ein kleiner wahrer Fehler. Das ist Präzisionsplanung, 90 Jahre alt.
 
-Das Wurzelgesetz am Schluss ist die praktische Ernüchterung: Genauigkeit ist
-teuer. Vierfache Stichprobe für halben Fehler.
+**Wohin** Der Stichprobenrechner, live. Übergang: „Und wie rechnet man das?
+Dafür gibt es ein Werkzeug."
+
+**Wenn** Zeitdruck: Folie überspringen. Quelle für Gosset: Ziliak und McCloskey
+2008. Nachfrage zur Simulation: eine Schleife um die eigene Auswertung,
+tausendmal, mit 10 bis 20 Zeilen Code. Der Gewinn ist, dass man seine Annahmen
+aufschreiben muss.
 :::

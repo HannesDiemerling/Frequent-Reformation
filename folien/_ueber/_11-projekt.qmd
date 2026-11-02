@@ -7,50 +7,69 @@ Wissenschaft, die Evidenz wirklich beurteilt.
 
 [Beyond p-values, gefördert durch die VolkswagenStiftung]{.bp-quote__author}
 
+::: notes
+**Typ** Trenner · **Soll** 33:30 · **Dauer** 0:15 · kürzbar: nein
+
+**Hier** „Das ist der Satz aus dem Antrag. Und das ist, was wir tun."
+Den Satz vorlesen, weiterklicken. Der Wechsel von Inhalt zu Träger ist hier,
+also kurz die Stimme wechseln: weniger Vortrag, mehr Vorstellung.
+:::
+
 ## Warum jetzt? {data-qr="hub_ueber" data-qr-cap="Mission und Wirkungslogik"}
 
 ::: {.bp-drei}
 
 ::: {.bp-pillar .tone-coral}
+[{{< fa magnifying-glass >}}]{.bp-icon}
 [Faktor 01]{.bp-pillar__num}
 
 ### Reproduzierbarkeitskrise
 
-Seit den 2000er-Jahren ist die Bereitschaft, methodische Praxis ehrlich zu
-hinterfragen, so hoch wie nie.
+Die Bereitschaft, Praxis ehrlich zu hinterfragen, ist so hoch wie nie.
 :::
 
 ::: {.bp-pillar .tone-teal}
+[{{< fa laptop-code >}}]{.bp-icon}
 [Faktor 02]{.bp-pillar__num}
 
 ### Software-Reife
 
-JASP, Jamovi, brms und Stan haben bayesianische Analysen massentauglich gemacht.
+JASP, Jamovi, brms, Stan: bayesianisch rechnen ist ein Klick.
 :::
 
 ::: {.bp-pillar .tone-navy}
+[{{< fa newspaper >}}]{.bp-icon}
 [Faktor 03]{.bp-pillar__num}
 
 ### Erste Vorreiter
 
-Journals wie *Basic and Applied Social Psychology* zeigen seit 2015, dass
-Publizieren ohne p-Werte funktioniert.
+*Basic and Applied Social Psychology* publiziert seit 2015 ohne p-Werte.
 :::
 
 :::
 
 ::: {.bp-callout}
-Das Wissen ist alt. Die Werkzeuge sind neu. Der Moment ist jetzt.
+[{{< fa lightbulb >}}]{.bp-icon} Das Wissen ist alt. Die Werkzeuge sind neu. Der
+Moment ist jetzt.
 :::
 
 ::: notes
-Drei Faktoren, einer pro Atemzug. Der wichtigste ist Faktor 02: die Kritik am
-Signifikanztest ist Jahrzehnte alt, aber früher war die Alternative
-Spezialistenwissen. Heute klickt man sie in JASP zusammen. Das ist der eigentliche
-Unterschied zu allen früheren Reformversuchen.
+**Typ** Säulen · **Soll** 33:45 · **Dauer** 1:00 · kürzbar: ja
 
-Faktor 03 nimmt das Argument "das geht doch nicht" vorweg. Es geht, seit über zehn
-Jahren, in einem echten Journal.
+**Woher** Meehl hat es 1978 gesagt, Cohen 1994. Warum sollte es diesmal
+klappen? Drei Gründe, einer pro Atemzug.
+
+**Hier** „Das Wissen ist alt. Die Werkzeuge sind neu. Der Moment ist jetzt."
+Faktor 02 ist der wichtigste: die Kritik ist Jahrzehnte alt, aber früher war
+die Alternative Spezialistenwissen. Heute klickt man sie in JASP zusammen. Das
+unterscheidet diesen Anlauf von allen früheren. Faktor 03 nimmt den Einwand
+„das geht doch nicht" vorweg: es geht, seit über zehn Jahren.
+
+**Wohin** Was wir tun, in vier Stufen. Übergang: „Und so gehen wir es an."
+
+**Wenn** Zeitdruck: Folie überspringen, der Satz im Kasten reicht als
+Überleitung. Wenn Journal- oder Verlagsleute im Raum sind: hier bleiben und
+Faktor 03 ausbauen.
 :::
 
 ## Was wir tun
@@ -58,57 +77,64 @@ Jahren, in einem echten Journal.
 ::: {.bp-drei}
 
 ::: {.bp-pillar .tone-teal}
+[{{< fa graduation-cap >}}]{.bp-icon}
 [Stufe 01]{.bp-pillar__num}
 
 ### Aufklärung und Training
 
-Workshops, Train-the-Trainer-Programme und offene Materialien. Niederschwellig
-und während der Förderphase kostenfrei.
+Workshops, Train-the-Trainer, offene Materialien. Kostenfrei.
 :::
 
 ::: {.bp-pillar .tone-coral}
+[{{< fa building-columns >}}]{.bp-icon}
 [Stufe 02]{.bp-pillar__num}
 
 ### Strukturelle Reform
 
-Mit Verlagen, Journals und Fachgesellschaften Richtlinien für Studienberichte
-ohne p-Werte entwickeln.
+Mit Journals und Fachgesellschaften: Richtlinien für Berichte ohne p-Werte.
 :::
 
 ::: {.bp-pillar .tone-sand}
+[{{< fa bullhorn >}}]{.bp-icon}
 [Stufe 03]{.bp-pillar__num}
 
 ### Öffentlichkeitsarbeit
 
-Fact-Sheets nach Vorbild der Faktenboxen des Harding-Zentrums, verständlich für
-die Praxis.
+Fact-Sheets nach Vorbild der Faktenboxen, verständlich für die Praxis.
 :::
 
 :::
 
 ::: {.bp-pillars}
 ::: {.bp-pillar .tone-navy}
+[{{< fa people-group >}}]{.bp-icon}
 [Stufe 04]{.bp-pillar__num}
 
 ### Netzwerk und Verstetigung
 
-Eine Online-Plattform und ein Kooperationsnetz halten die Bewegung über das
-Förderende hinaus aktiv und skalieren auf weitere Disziplinen sowie in den
-englischsprachigen Raum.
+Plattform und Kooperationsnetz, über das Förderende hinaus und in weitere
+Disziplinen.
 :::
 :::
 
 ::: notes
-Die vier Stufen sind bewusst als Wirkungslogik gebaut, nicht als Aktivitätenliste.
-Training allein ändert das System nicht, solange die Anreize gleich bleiben. Genau
-deshalb gibt es Stufe 02.
+**Typ** Säulen · **Soll** 34:45 · **Dauer** 1:15 · kürzbar: nein
 
-Wenn Vertretende von Journals oder Verlagen im Raum sind, ist Stufe 02 der
-Anknüpfungspunkt. Dann hier länger bleiben.
+**Woher** Die Gründe sind benannt. Jetzt die Wirkungslogik: vier Stufen, die
+aufeinander aufbauen, keine Aktivitätenliste.
 
-Bei Stufe 03 kurz erklären, was eine Faktenbox ist: ein standardisiertes Format,
-das Nutzen und Schaden einer medizinischen Maßnahme in absoluten Zahlen darstellt.
-Etabliert vom Harding-Zentrum für Risikokompetenz.
+**Hier** „Training allein ändert das System nicht, solange die Anreize gleich
+bleiben. Deshalb gibt es Stufe 02."
+Stufe 01 ist das, was ihr heute seht. Stufe 02 greift die Anreize an. Stufe 03
+bringt es in die Praxis: eine Faktenbox zeigt Nutzen und Schaden einer
+Maßnahme in absoluten Zahlen, etabliert vom Harding-Zentrum. Stufe 04 hält es
+am Leben, wenn die Förderung endet.
+
+**Wohin** Das Team. Übergang: „Und das sind die Leute dahinter."
+
+**Wenn** Nachfrage nach Partnern: ehrlich sagen, dass alle Kooperationen
+geplant sind, nichts ist angefragt oder zugesagt. Wenn Journal-Leute im Raum
+sind, ist Stufe 02 der Anknüpfungspunkt, dann hier länger bleiben.
 :::
 
 ## Wer dahintersteht {data-qr="hub_team" data-qr-cap="Team und Förderung"}
@@ -120,8 +146,7 @@ Etabliert vom Harding-Zentrum für Risikokompetenz.
 
 ### Prof. Dr. Thomas Schäfer
 
-Initiator des Vorhabens und wissenschaftliche Leitung. Verantwortlich für
-Konzeption und Antragstellung.
+Initiator und wissenschaftliche Leitung. Konzeption und Antragstellung.
 :::
 
 ::: {.bp-card}
@@ -129,8 +154,7 @@ Konzeption und Antragstellung.
 
 ### Hannes Diemerling
 
-Wissenschaftlicher Mitarbeiter. Entwicklung der Workshops und Materialien, Aufbau
-und Pflege der Plattform.
+Wissenschaftlicher Mitarbeiter. Workshops, Materialien, Plattform.
 :::
 
 ::: {.bp-card}
@@ -138,8 +162,7 @@ und Pflege der Plattform.
 
 ### Nina Isaac
 
-Studentische Hilfskraft, Bachelor-Studentin an der HMU Erfurt. Web, Materialien
-und Datensätze.
+Studentische Hilfskraft, HMU Erfurt. Web, Materialien und Datensätze.
 :::
 
 :::
@@ -151,13 +174,17 @@ Verantwortung für den Inhalt liegt bei den Autorinnen und Autoren.
 :::
 
 ::: notes
-Kurz halten, das ist eine Legitimationsfolie, keine Inhaltsfolie. Zwei Sätze pro
-Person genügen.
+**Typ** Säulen · **Soll** 36:00 · **Dauer** 0:30 · kürzbar: nein
 
-Der Förderhinweis ist eine Auflage und gehört auf jede Präsentation. Nicht
-weglassen, auch nicht bei Zeitdruck.
+**Woher** Die Wirkungslogik steht. Diese Folie legitimiert: wer, wo, mit wessen
+Geld. Kurz halten, keine Inhaltsfolie.
 
-Partner sind bewusst nicht auf dieser Folie: es ist bisher nichts angefragt oder
-zugesagt, alle geplanten Kooperationen sind Absicht, nicht Zusage. Wenn danach
-gefragt wird, ehrlich so sagen.
+**Hier** „Drei Personen, ein Träger, ein Förderer."
+Zwei Sätze pro Person, nicht mehr. Der Förderhinweis unten ist eine Auflage
+und gehört auf jede Präsentation. Nicht weglassen, auch nicht bei Zeitdruck.
+
+**Wohin** Das Angebot. Übergang: „Und das alles könnt ihr ab heute nutzen."
+
+**Wenn** Kein Humor auf dieser Folie. Nachfrage nach der Förderhöhe oder
+Laufzeit: auf die Website verweisen, Seite Über das Projekt.
 :::

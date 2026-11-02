@@ -1,75 +1,74 @@
-## Genug Theorie. Schauen wir zu.
+## [{{< fa play >}}]{.bp-icon} Genug Theorie. Schauen wir zu.
 
 [Live-Demo]{.bp-eyebrow}
 
-Die Workshops laufen vollständig im Browser. Kein Konto, keine Installation,
-Python läuft direkt auf deinem Rechner in der Webseite.
-
-Was wir gleich sehen, ist Kapitel 2 aus dem ersten Workshop:
+Die Workshops laufen vollständig im Browser. Kein Konto, keine Installation.
+Gleich: Kapitel 2 aus dem ersten Workshop.
 
 ::: {.bp-aufgabe}
-SmartRail verbessert die Pünktlichkeit um **12 Sekunden**. Der Effekt ändert sich
-im Folgenden nicht. Nur die Stichprobengröße wird verschoben, von 20 Fahrten auf
+[{{< fa hand >}}]{.bp-icon} SmartRail verbessert die Pünktlichkeit um **12
+Sekunden**. Der Effekt bleibt. Nur die Stichprobe wächst, von 20 Fahrten auf
 5000.
 
-**Frage an den Raum, bevor ich den Schieber bewege:** Was passiert mit dem
-p-Wert? Und was passiert mit dem Effekt?
+**Was passiert mit dem p-Wert? Und was mit dem Effekt?**
 :::
 
 ::: {.bp-quelle}
-SmartRail ist ein fiktives Pilot-System der Deutschen Bahn und zieht sich als
-durchgängiges Beispiel durch alle Kapitel.
+SmartRail ist ein fiktives Pilot-System der Deutschen Bahn und zieht sich durch
+alle Kapitel.
 :::
 
 ::: notes
-Diese Folie hat eine technische Funktion: sie kauft der nächsten Folie Ladezeit.
-Also hier bewusst nicht hetzen, mindestens 30 bis 45 Sekunden reden. Die
-Anwendung im Hintergrund startet währenddessen.
+**Typ** Demo · **Soll** 29:30 · **Dauer** 0:45 · kürzbar: nein
 
-Die Frage an den Raum wirklich stellen und eine Antwort abwarten. Meist kommt
-"der p-Wert wird kleiner". Nachfragen: "Und der Effekt?" Dann wird es still, und
-genau das ist der Lerneffekt.
+**Woher** Drei Antworten sind erklärt. Jetzt der Beweis, dass das kein
+Gedankenspiel ist. Diese Folie kauft der nächsten Ladezeit, also nicht hetzen.
 
-Wer will, kann den QR auf der nächsten Folie scannen und selbst mitschieben. Das
-lohnt sich, weil dann jemand im Raum eine Zahl ruft, die ich nicht kontrolliere.
+**Hier** „Bevor ich den Schieber bewege: Was passiert mit dem p-Wert? Und was
+passiert mit dem Effekt?"
+Die Frage wirklich stellen und eine Antwort abwarten. Meist kommt „p wird
+kleiner". Nachfragen: „Und der Effekt?" Dann wird es still, und genau das ist
+der Lerneffekt. Mindestens 30 Sekunden auf dieser Folie bleiben, die App
+startet im Hintergrund.
+
+**Wohin** Die Demo. Übergang: „Schauen wir nach."
+
+**Wenn** Pointe, optional: „SmartRail ist fiktiv. Die Verspätungen der Bahn
+nicht." Wer will, scannt den QR der nächsten Folie und schiebt selbst mit: dann
+ruft jemand im Raum eine Zahl, die man nicht kontrolliert, das ist gut so.
 :::
 
 {{< include ../_demo/power2.qmd >}}
 
 ## Was wir gerade gesehen haben {data-qr="ch-power2" data-qr-cap="Kapitel 2 selbst öffnen"}
 
-::: {.bp-zwei}
-
-::: {}
-**Der Effekt hat sich nie geändert.** 12 Sekunden, von Anfang bis Ende.
-
-**Der p-Wert hat sich völlig geändert.** Bei n = 20 unauffällig, bei n = 5000
-hochsignifikant.
+::: {.bp-fig .bp-fig--klein}
+{{< include ../assets/fig/f5-p-gegen-n.svg >}}
 :::
 
 ::: {.bp-warn}
-Die Signifikanz testet primär deine **Stichprobengröße**, nicht die Größe oder
-Wichtigkeit des Effekts.
-
-Mit genug Daten wird jeder beliebig kleine Effekt signifikant.
-:::
-
-:::
-
-::: {.bp-callout}
-Und die praktische Frage bleibt völlig unbeantwortet: **sind 12 Sekunden pro
-Fahrt es wert?** Das entscheidet kein p-Wert, das entscheidet der Kontext.
+[{{< fa triangle-exclamation >}}]{.bp-icon} Die Signifikanz testet vor allem
+deine **Stichprobengröße**. Ob 12 Sekunden es wert sind, entscheidet kein
+p-Wert, sondern der Kontext.
 :::
 
 ::: notes
-Die Auflösung ist der Kern des ersten Workshops in einem Satz: Signifikanz ist
-eine Funktion von Effekt und Stichprobengröße, und bei großem n dominiert das n.
+**Typ** Abbildung · **Soll** 32:30 · **Dauer** 1:00 · kürzbar: nein
 
-Der Schlusskasten führt zum fünften Kapitel: praktische Bedeutsamkeit. Wenn Zeit
-ist, hier kurz das 180-Millionen-Beispiel andeuten: ein Rollout für 180 Millionen
-Euro, hochsignifikant, realer Gewinn vier Sekunden pro Fahrt. Statistisch ein
-Triumph, praktisch ein teures Nichts.
+**Woher** Die Demo lief. Jetzt die Auflösung in einem Bild, das auch ohne Demo
+funktioniert.
 
-Danach umschalten auf das Projekt. Der Vortrag hat jetzt gezeigt, dass es ein
-Problem gibt und dass es Antworten gibt. Jetzt kommt, wer das aufbaut.
+**Hier** „Der Effekt hat sich nie geändert. Der p-Wert hat sich völlig
+geändert. Mit genug Daten wird jeder beliebig kleine Effekt signifikant."
+Auf die Kurve zeigen: bei 20 Fahrten unauffällig, bei 5000 hochsignifikant,
+die 12 Sekunden stehen oben drüber und bleiben. Dann die praktische Frage, die
+unbeantwortet bleibt: sind 12 Sekunden pro Fahrt es wert?
+
+**Wohin** Jetzt das Projekt. Übergang: „Es gibt ein Problem, und es gibt
+Antworten. Jetzt, wer das aufbaut."
+
+**Wenn** Demo hat nicht geladen: diese Folie ist Plan C. Sagen: „Die Demo hätte
+genau das gezeigt", die Kurve erklären, weiter. Wenn Zeit ist: 180 Millionen
+Euro Rollout, hochsignifikant, realer Gewinn vier Sekunden pro Fahrt.
+Statistisch ein Triumph, praktisch ein teures Nichts.
 :::

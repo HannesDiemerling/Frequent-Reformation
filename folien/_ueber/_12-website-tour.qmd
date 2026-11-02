@@ -5,53 +5,69 @@
 Alles, was jetzt kommt, ist offen zugänglich. Kostenfrei, ohne Anmeldung,
 vollständig im Browser.
 
+::: notes
+**Typ** Trenner · **Soll** 36:30 · **Dauer** 0:15 · kürzbar: nein
+
+**Hier** „Alles, was jetzt kommt, könnt ihr heute Abend benutzen."
+Weiterklicken. Die Landkarte kommt auf der nächsten Folie.
+:::
+
 ## Drei Wege ins Material {data-qr="hub" data-qr-cap="Der Hub"}
 
 ::: {.bp-drei}
 
 ::: {.bp-pillar .tone-navy}
+[{{< fa graduation-cap >}}]{.bp-icon}
 [Weg 01]{.bp-pillar__num}
 
 ### Workshops
 
-Strukturiert lernen. Drei Workshops, 18 Kapitel, jedes mit Theorie und einer
-interaktiven Anwendung.
+Strukturiert lernen. Drei Workshops, 18 Kapitel, jedes mit einer interaktiven
+Anwendung.
 :::
 
 ::: {.bp-pillar .tone-coral}
+[{{< fa circle-question >}}]{.bp-icon}
 [Weg 02]{.bp-pillar__num}
 
 ### Fragen
 
-Themenzentriert einsteigen. Zehn konkrete Fragen, jede führt direkt ins passende
+Mit dem eigenen Problem einsteigen. Zehn Fragen, jede führt ins passende
 Kapitel.
 :::
 
 ::: {.bp-pillar .tone-teal}
+[{{< fa book-open >}}]{.bp-icon}
 [Weg 03]{.bp-pillar__num}
 
 ### Methoden
 
-Vertiefen und nachlesen. p-Werte, Effektgrößen, Stichproben, bayesianische
-Analyse.
+Nachlesen und vertiefen. p-Werte, Effektgrößen, Stichproben, Bayes.
 :::
 
 :::
 
 ::: {.bp-callout}
-Wähle den Einstieg, der zu dir passt. Wer ein konkretes Problem hat, nimmt die
-Fragen. Wer systematisch lernen will, nimmt die Workshops.
+[{{< fa lightbulb >}}]{.bp-icon} Wer ein konkretes Problem hat, nimmt die Fragen.
+Wer systematisch lernen will, die Workshops.
 :::
 
 ::: notes
-Diese Folie ist die Landkarte. Wer sie verstanden hat, findet sich auf der
-Website zurecht, und genau das ist ein Ziel dieses Vortrags.
+**Typ** Wegweiser · **Soll** 36:45 · **Dauer** 0:45 · kürzbar: nein
 
-Den Unterschied zwischen Weg 01 und Weg 02 betonen. Das ist die eigentliche
-Designentscheidung der Seite: Menschen kommen selten mit "ich will Bayes lernen",
-sie kommen mit "wie viele Probanden brauche ich". Deshalb gibt es die Fragen-Seite.
+**Woher** Das Angebot ist angekündigt. Diese Folie ist die Landkarte: wer sie
+verstanden hat, findet sich auf der Website zurecht.
 
-Die nächste Folie zeigt die Seite live, hier also nicht zu lange bleiben.
+**Hier** „Menschen kommen selten mit ‚ich will Bayes lernen'. Sie kommen mit
+‚wie viele Probanden brauche ich'. Deshalb gibt es die Fragen-Seite."
+Die drei Wege je in einem Satz. Den Unterschied zwischen Weg 01 und Weg 02
+betonen, das ist die Designentscheidung der Seite.
+
+**Wohin** Die Fragen-Seite live. Übergang: „So sieht das aus."
+
+**Wenn** Zeitdruck: die Live-Seite überspringen (nächste Folie), direkt zu den
+drei Workshops. Die Symbole sind dieselben wie auf der Website, das darf man
+einmal sagen.
 :::
 
 {{< include ../_demo/site-hub_fragen.qmd >}}
@@ -61,6 +77,7 @@ Die nächste Folie zeigt die Seite live, hier also nicht zu lange bleiben.
 ::: {.bp-drei}
 
 ::: {.bp-card}
+[{{< fa ruler >}}]{.bp-icon}
 [{{< meta workshops.power.eyebrow >}}]{.bp-card__tag}
 [{{< meta workshops.power.number >}}]{.bp-card__num}
 
@@ -75,6 +92,7 @@ Die nächste Folie zeigt die Seite live, hier also nicht zu lange bleiben.
 :::
 
 ::: {.bp-card}
+[{{< fa users >}}]{.bp-icon}
 [{{< meta workshops.reliability.eyebrow >}}]{.bp-card__tag}
 [{{< meta workshops.reliability.number >}}]{.bp-card__num}
 
@@ -89,6 +107,7 @@ Die nächste Folie zeigt die Seite live, hier also nicht zu lange bleiben.
 :::
 
 ::: {.bp-card}
+[{{< fa dice >}}]{.bp-icon}
 [{{< meta workshops.thinking.eyebrow >}}]{.bp-card__tag}
 [{{< meta workshops.thinking.number >}}]{.bp-card__num}
 
@@ -106,18 +125,24 @@ Die nächste Folie zeigt die Seite live, hier also nicht zu lange bleiben.
 
 ::: {.bp-quelle}
 Die Reihenfolge ist didaktisch: vom Problem (Effekte) über die Methodik
-(Stichproben) zur Alternative (Bayes). Jeder Workshop steht aber auch für sich.
+(Stichproben) zur Alternative (Bayes). Jeder Workshop steht auch für sich.
 :::
 
 ::: notes
-Die drei Nummern und die Reihenfolge erklären, das ist der didaktische Bogen: erst
-verstehen, warum der p-Wert die Frage nicht beantwortet, dann klären, wie
-verlässlich eine Stichprobe überhaupt ist, dann die bayesianische Alternative als
-Vertiefung.
+**Typ** Säulen · **Soll** 38:15 · **Dauer** 0:45 · kürzbar: nein
 
-Wenn jemand nur einen Workshop machen kann, empfehle ich Workshop 01. Er hat den
-größten Effekt pro investierter Stunde.
+**Woher** Die Landkarte und die Live-Seite sind gezeigt. Jetzt das Angebot
+konkret: drei Workshops, dieselben drei Symbole wie bei den drei Fragen.
 
-Wichtig und ehrlich: geführte Sessions sind in Planung, noch nicht buchbar. Im
-eigenen Tempo ist alles sofort verfügbar.
+**Hier** „Wer nur einen Workshop machen kann, nimmt den ersten. Er hat den
+größten Effekt pro investierter Stunde."
+Die Reihenfolge in einem Satz: erst verstehen, warum p die Frage nicht
+beantwortet, dann klären, ob die Stichprobe trägt, dann Bayes als Vertiefung.
+Karten nicht vorlesen, die Zahlen stehen da.
+
+**Wohin** Die Mitnahme-Folie. Übergang: „Und falls ihr keinen Workshop macht:
+fünf Dinge, die ab morgen trotzdem gehen."
+
+**Wenn** Nachfrage nach geführten Sessions: ehrlich sagen, in Planung, noch
+nicht buchbar. Im eigenen Tempo ist alles sofort verfügbar.
 :::

@@ -7,10 +7,23 @@
 
 [**{{< meta links.hub >}}**]{.bp-url}
 
-Kostenfrei, ohne Anmeldung, unter Creative Commons CC BY 4.0.
+::: {.bp-icons}
+::: {}
+[{{< fa gift >}}]{.bp-icon}
+kostenfrei
+:::
+::: {}
+[{{< fa user-slash >}}]{.bp-icon}
+ohne Anmeldung
+:::
+::: {}
+[{{< fa globe >}}]{.bp-icon}
+im Browser
+:::
+:::
 
-Ab der nächsten Folie steht oben rechts immer ein QR-Code. Er zeigt jeweils
-dorthin, wo das gerade Gezeigte nachlesbar ist. Du musst nichts mitschreiben.
+Der QR oben rechts wandert mit. Er zeigt immer dorthin, wo du das Gezeigte
+nachliest.
 :::
 
 ::: {.bp-qr .bp-qr--gross}
@@ -22,11 +35,20 @@ dorthin, wo das gerade Gezeigte nachlesbar ist. Du musst nichts mitschreiben.
 :::
 
 ::: notes
-Kurz halten, 30 bis 45 Sekunden. Der Punkt ist Entlastung: niemand muss
-mitschreiben, niemand muss URLs abtippen. Bitte einmal explizit sagen, dass der
-QR oben rechts mitwandert und immer auf die passende Stelle zeigt. Wer will,
-scannt jetzt einmal und hat den Hub für den Rest der Session offen.
+**Typ** Wegweiser · **Soll** 00:30 · **Dauer** 0:45 · kürzbar: nein
 
-Die ausgeschriebene Adresse steht nur auf dieser einen Folie. Danach nie wieder,
-das ist Absicht.
+**Woher** Titel und Begrüßung sind vorbei. Bevor irgendein Inhalt kommt, nimmt
+diese Folie den Druck raus, mitschreiben zu müssen.
+
+**Hier** „Du musst dir heute nichts notieren. Alles steht online, und der QR
+oben rechts zeigt immer auf die passende Stelle."
+Die Adresse einmal laut lesen. Auf den QR oben rechts zeigen und sagen, dass er
+mitwandert. Die drei Symbole nicht erklären, sie erklären sich selbst.
+
+**Wohin** In den Einstieg des jeweiligen Decks: im Überblick das Quiz, in den
+Workshops die Standortfolie. Übergang im Überblick: „Und weil ihr nichts
+mitschreiben müsst, habt ihr die Hände frei. Die brauchen wir gleich."
+
+**Wenn** Jemand scannt sofort und die Seite lädt nicht: das ist das WLAN, nicht
+die Seite. Kurz sagen, dass alles auch später zu Hause geht, und weitermachen.
 :::

@@ -1,76 +1,112 @@
 # Ein Test zum Aufwärmen {.bp-trenner background-color="#E27C5C"}
 
-[Mitmachen]{.bp-eyebrow}
+[{{< fa square-poll-vertical >}}]{.bp-icon} Mitmachen, anonym
 
-Eine Studie berichtet **p = .01**. Sechs Aussagen. Handzeichen bei jeder, die
-richtig ist.
-
-## Welche dieser Aussagen ist richtig?
-
-Eine Studie vergleicht zwei Gruppen und berichtet **p = .01**.
-
-::: {.bp-aufgabe}
-1. Die Nullhypothese ist mit 1 % Wahrscheinlichkeit wahr.
-2. Der Effekt ist real, denn p liegt unter .05.
-3. Der Effekt ist groß, jedenfalls größer als bei p = .04.
-4. Die Wahrscheinlichkeit, dass sich der Befund replizieren lässt, ist 99 %.
-5. Die Wahrscheinlichkeit, dass das Ergebnis reiner Zufall war, ist 1 %.
-6. Wäre p größer als .05, gäbe es keinen Effekt.
-:::
-
-**Handzeichen bitte. Bei jeder Aussage einzeln.**
+Eine Studie berichtet **p = 0,01**. Sieben Aussagen. Welche davon kannst du
+ableiten? Abstimmung per QR, niemand sieht deine Antwort.
 
 ::: notes
-Das ist der wichtigste Moment des Vortrags. Nicht überspringen, und nicht
-abkürzen.
+**Typ** Trenner · **Soll** 01:30 · **Dauer** 0:15 · kürzbar: nein
 
-Ablauf: jede Aussage einzeln vorlesen, dann Handzeichen abwarten. Ruhig etwas
-Zeit lassen, auch wenn es still wird. Erfahrungsgemäß gehen bei 2, 4 und 5 viele
-Hände hoch.
-
-Wichtig ist der Ton. Das ist kein Test, bei dem jemand durchfällt. Ich sage
-vorher: "Ich habe das selbst jahrelang falsch gehabt, und die Leute, die
-Methoden unterrichten, haben es auch falsch." Das nimmt den Druck raus und macht
-den Raum ehrlich.
-
-Wenn niemand die Hand hebt, weil alle den Trick ahnen: dann frage ich stattdessen
-"Welche davon habt ihr schon einmal so in einem Paper gelesen?" Das funktioniert
-immer.
+**Hier** „Bevor ich irgendetwas erkläre, ein kleiner Test. Anonym, per Handy.
+Niemand sieht, was ihr antwortet, auch ich nicht."
+Die Regel ansagen: QR scannen, sieben Aussagen lesen, ankreuzen, was aus dem
+p-Wert folgt. Dann weiterklicken, der QR steht auf der nächsten Folie oben
+rechts.
 :::
 
-## Alle sechs sind falsch {data-qr="hub_pwerte" data-qr-cap="Die sieben Fehlannahmen"}
+## [{{< fa square-poll-vertical >}}]{.bp-icon} Was folgt aus diesem p-Wert? {data-qr="hub_pwerte" data-qr-cap="Nachlesen im Hub"}
 
-::: {.bp-warn}
-Keine einzige der sechs Aussagen trifft zu. Sie sind nicht ungenau, sie sind
-falsch.
+::: {.bp-zwei .bp-zwei--breit}
+
+::: {.bp-aufgabe .bp-aufgabe--dicht}
+Sie vergleichen in einem Experiment Mittelwerte zwischen Experimental- und
+Kontrollgruppe (je 20 Versuchspersonen). Zweiseitiges Testen der Nullhypothese
+liefert **t = 2,7**, damit **p = 0,01**. Welche der folgenden Aussagen können Sie
+aus diesem p-Wert ableiten?
+
+1. Ihre Nullhypothese (Populationsmittelwerte unterscheiden sich nicht) haben
+   Sie widerlegt.
+2. Sie kennen nun die Wahrscheinlichkeit, mit der Ihre Nullhypothese richtig
+   ist.
+3. Ihre experimentelle Hypothese (Populationsmittelwerte unterscheiden sich)
+   haben Sie bewiesen.
+4. Sie kennen nun die Wahrscheinlichkeit, mit der Ihre Alternativhypothese
+   richtig ist.
+5. Entscheiden Sie, die Nullhypothese zurückzuweisen, kennen Sie die
+   Wahrscheinlichkeit, mit der Ihre Entscheidung falsch ist.
+6. Ihr experimenteller Befund ist reliabel in dem Sinne, dass, falls Sie das
+   Experiment oftmals wiederholen, Sie in 99 % der Wiederholungen ein
+   signifikantes Ergebnis erhalten.
+7. Sie kennen nun die Wahrscheinlichkeit, mit der das gefundene Ergebnis durch
+   Zufall zustande gekommen ist.
 :::
 
-::: {.bp-stats}
-::: {.bp-stat}
-[~ 90 %]{.bp-stat__num}
-[der Forschenden interpretieren mindestens eine Aussage zum p-Wert falsch.
-*Haller & Krauss (2002)*]{.bp-stat__label}
-:::
-::: {.bp-stat}
-[auch die Lehrenden]{.bp-stat__num}
-[Dieselbe Untersuchung zeigt: auch Personen, die Methoden unterrichten, liegen
-daneben.]{.bp-stat__label}
-:::
+::: {.bp-qr .bp-qr--gross}
+![](../assets/fig/umfrage-menti.png)
+
+[Anonym abstimmen]{.bp-qr__cap}
 :::
 
-Das ist kein Wissensproblem einzelner Personen. Es ist ein strukturelles Problem
-der Ausbildung.
+:::
+
+[**8** Alles von 1 bis 7 stimmt. · **9** Alles von 1 bis 7 ist falsch.]{.bp-fig__satz}
 
 ::: notes
-Die Auflösung ohne Triumph vortragen. Der Satz, der sitzen muss: das ist kein
-individuelles Versäumnis, sondern ein Ausbildungsproblem. Genau deshalb gibt es
-dieses Projekt.
+**Typ** Frage · **Soll** 01:45 · **Dauer** 3:30 · kürzbar: nein
 
-Haller und Krauss (2002) haben Studierende, wissenschaftliche Mitarbeitende und
-Methoden-Lehrende befragt. In allen drei Gruppen lagen die Fehlerquoten hoch. Der
-Befund ist mehrfach replizierbar und gilt bis heute.
+**Woher** Der Trenner hat die Regel angesagt. Das ist der wichtigste Moment des
+Vortrags: der Raum merkt am eigenen Leib, dass er p falsch liest, und zwar
+anonym, ohne Konformitäts- und Peinlichkeitseffekte.
 
-Wenn jemand nach Aussage 3 nachfragt: p = .01 gegen p = .04 sagt nichts über die
-Effektgröße, weil der p-Wert von Effekt UND Stichprobengröße abhängt. Das kommt
-auf der nächsten Folie.
+**Hier** „Scannt den QR oben rechts. Lest in Ruhe, kreuzt an. Zwei Minuten."
+Die Aussagen nicht vorlesen, sie stehen in der Umfrage. Währenddessen still
+sein oder leise sagen: das ist die Originalformulierung aus einer Studie, die
+genau das mit Forschenden gemacht hat. Wenn die Antworten eingehen, das
+Ergebnis der Umfrage zeigen (Thomas hat das Werkzeug), erst dann weiter.
+
+**Wohin** Auflösung auf der nächsten Folie. Übergang: „Dann lösen wir auf."
+Kurze Pause davor, die Spannung ist gewollt.
+
+**Wenn** WLAN oder Umfrage fallen aus: kein Handzeichen, das funktioniert bei
+diesem Publikum nicht. Stattdessen die Aussagen vorlesen, jede Person zählt für
+sich, dann auflösen. Aussage 7 ist neu und die schwerste, sie kommt in Haller
+und Krauss nicht vor. Zeitdruck: nach zwei Minuten einsammeln.
+:::
+
+## Alle sieben sind falsch {data-qr="hub_pwerte" data-qr-cap="Die sieben Fehlannahmen"}
+
+::: {.bp-fig}
+{{< include ../assets/fig/f1-haller-krauss.svg >}}
+:::
+
+[Mindestens eine falsche Lesart. Auch bei denen, die es lehren.]{.bp-fig__satz}
+
+::: {.bp-quelle}
+Anteil mit mindestens einer Fehlinterpretation bei sechs dieser Aussagen.
+Haller & Krauss (2002), bis heute mehrfach repliziert.
+:::
+
+::: notes
+**Typ** Abbildung · **Soll** 05:15 · **Dauer** 1:15 · kürzbar: nein
+
+**Woher** Das Umfrage-Ergebnis steht noch im Raum. Jetzt die Auflösung, und
+zwar ohne Triumph: nur Antwort 9 ist richtig.
+
+**Hier** „Keine einzige der sieben Aussagen stimmt. Nicht ungenau, falsch. Und
+damit seid ihr in bester Gesellschaft."
+Die drei Balken von oben nach unten: Studierende hundert Prozent, Forschende
+neunzig, und dann der dritte Balken, kurz Pause: Methoden-Lehrende achtzig
+Prozent. Haller und Krauss haben die ersten sechs Aussagen genau so vorgelegt.
+Der Satz, der sitzen muss: „Das ist kein Wissensproblem einzelner Personen. Das
+ist ein Ausbildungsproblem. Und genau deshalb gibt es dieses Projekt."
+
+**Wohin** Die nächste Folie liefert den Maßstab: was der p-Wert tatsächlich ist.
+Übergang: „Was stimmt denn dann? Das hier, und nur das."
+
+**Wenn** Nachfrage zu Aussage 7 (Zufall): p setzt voraus, dass der Zufall die
+ganze Erklärung ist, und kann deshalb nicht messen, wie wahrscheinlich das ist.
+Kommt auf der übernächsten Folie als eigener Punkt. Pointe, optional: „Achtzig
+Prozent der Lehrenden. Falls jemand von euch Methoden unterrichtet: ich auch.
+Wir sind quitt."
 :::

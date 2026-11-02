@@ -7,27 +7,25 @@ footer: "Workshop 02 · Repräsentativität & Stichprobengröße · gefördert d
 title-slide-attributes:
   data-background-color: "#4FA8A0"
   data-background-opacity: "0.12"
+#
+# Workshop 02, geführte Session, ca. 2 Stunden.
+#
+# Vollständig: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser, die
+# Vertiefungsblöcke und die Sprechernotizen. Die Kapitelfolien tragen die echten
+# Zahlen aus den Workshop-Kapiteln.
+#
+# Die Notizen sind Regie und kein Skript: Roter Faden, Reihenfolge des Aufbaus,
+# Kernsätze zum wörtlichen Sagen, Antworten auf die Einwände, die regelmäßig kommen.
+#
+# Kapitel 3 ist das Schwergewicht. Wenn der Zeitplan rutscht, dort nicht kürzen,
+# sondern bei Kapitel 4 einsparen.
+#
+# Dieser Workshop hat nur fünf Kapitel und dadurch mehr Luft im Transferteil. Das
+# ist Absicht: bei diesem Thema ist die Übertragung auf eigene Studiendesigns der
+# eigentliche Nutzen einer geführten Session.
+#
+# Adressen kommen aus mkdocs.yml, hier steht keine ausgeschriebene Adresse.
 ---
-
-<!--
-Workshop 02, geführte Session, ca. 2 Stunden.
-
-Vollständig: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser, die
-Vertiefungsblöcke und die Sprechernotizen. Die Kapitelfolien tragen die echten
-Zahlen aus den Workshop-Kapiteln.
-
-Die Notizen sind Regie und kein Skript: Roter Faden, Reihenfolge des Aufbaus,
-Kernsätze zum wörtlichen Sagen, Antworten auf die Einwände, die regelmäßig kommen.
-
-Kapitel 3 ist das Schwergewicht. Wenn der Zeitplan rutscht, dort nicht kürzen,
-sondern bei Kapitel 4 einsparen.
-
-Dieser Workshop hat nur fünf Kapitel und dadurch mehr Luft im Transferteil. Das
-ist Absicht: bei diesem Thema ist die Übertragung auf eigene Studiendesigns der
-eigentliche Nutzen einer geführten Session.
-
-Adressen kommen aus mkdocs.yml, hier steht keine ausgeschriebene Adresse.
--->
 
 {{< include ../_shared/_mitlesen.qmd >}}
 

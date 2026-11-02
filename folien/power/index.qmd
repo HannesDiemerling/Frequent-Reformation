@@ -7,26 +7,24 @@ footer: "Workshop 01 · Beyond Significance · gefördert durch die VolkswagenSt
 title-slide-attributes:
   data-background-color: "#E27C5C"
   data-background-opacity: "0.12"
+#
+# Workshop 01, geführte Session, ca. 2 Stunden.
+#
+# Vollständig: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser, die
+# Vertiefungsblöcke und die Sprechernotizen. Die Kapitelfolien tragen die echten
+# Zahlen aus den Workshop-Kapiteln.
+#
+# Die Notizen sind Regie und kein Skript: Roter Faden, Reihenfolge des Aufbaus,
+# Kernsätze zum wörtlichen Sagen, Antworten auf die Einwände, die regelmäßig kommen.
+# Wer sie vorliest, klingt vorgelesen. Wer sie vorher einmal durchgeht, braucht sie
+# in der Session nicht.
+#
+# Wichtig: die Vertiefungsblöcke A, B und C sind der Grund, live dabei zu sein. Sie
+# stehen NICHT in den Selbstlern-Kapiteln, sondern kommen von den Methoden-Seiten
+# des Hubs.
+#
+# Adressen kommen aus mkdocs.yml, hier steht keine ausgeschriebene Adresse.
 ---
-
-<!--
-Workshop 01, geführte Session, ca. 2 Stunden.
-
-Vollständig: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser, die
-Vertiefungsblöcke und die Sprechernotizen. Die Kapitelfolien tragen die echten
-Zahlen aus den Workshop-Kapiteln.
-
-Die Notizen sind Regie und kein Skript: Roter Faden, Reihenfolge des Aufbaus,
-Kernsätze zum wörtlichen Sagen, Antworten auf die Einwände, die regelmäßig kommen.
-Wer sie vorliest, klingt vorgelesen. Wer sie vorher einmal durchgeht, braucht sie
-in der Session nicht.
-
-Wichtig: die Vertiefungsblöcke A, B und C sind der Grund, live dabei zu sein. Sie
-stehen NICHT in den Selbstlern-Kapiteln, sondern kommen von den Methoden-Seiten
-des Hubs.
-
-Adressen kommen aus mkdocs.yml, hier steht keine ausgeschriebene Adresse.
--->
 
 {{< include ../_shared/_mitlesen.qmd >}}
 

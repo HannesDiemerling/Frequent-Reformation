@@ -1,28 +1,50 @@
 ## Was der p-Wert tatsächlich ist {data-qr="hub_pwerte" data-qr-cap="Probleme des p-Werts"}
 
 ::: {.bp-callout}
-Der p-Wert ist die Wahrscheinlichkeit, **ein mindestens so extremes Ergebnis wie
-das beobachtete zu sehen, wenn die Nullhypothese wahr wäre und alle
-Modellannahmen zutreffen**.
+[{{< fa lightbulb >}}]{.bp-icon} Die Wahrscheinlichkeit, **ein mindestens so
+extremes Ergebnis zu sehen, wenn die Nullhypothese wahr wäre** und alle
+Modellannahmen zutreffen.
 :::
 
-Er beschreibt also eine Eigenschaft der **Daten** unter einer Annahme. Nicht eine
-Eigenschaft der **Hypothese**.
+::: {.bp-icons}
+::: {}
+[{{< fa cloud-showers-heavy >}}]{.bp-icon}
+Wenn es regnet, werde ich nass.
+:::
+::: {}
+[{{< fa not-equal >}}]{.bp-icon}
+ist nicht dasselbe wie
+:::
+::: {}
+[{{< fa droplet >}}]{.bp-icon}
+Wenn ich nass bin, regnet es.
+:::
+:::
 
-Das klingt nach einer Feinheit. Es ist der ganze Unterschied.
+**Eine Eigenschaft der Daten unter einer Annahme. Nicht eine Eigenschaft der
+Hypothese.**
 
 ::: notes
-Langsam vorlesen, wörtlich. Dann den Kern zweimal sagen: bedingte
-Wahrscheinlichkeit der Daten gegeben die Hypothese, nicht der Hypothese gegeben
-die Daten.
+**Typ** Aha · **Soll** 06:30 · **Dauer** 1:30 · kürzbar: nein
 
-Analogie, die gut funktioniert: "Die Wahrscheinlichkeit, nass zu sein, wenn es
-regnet, ist hoch. Die Wahrscheinlichkeit, dass es regnet, wenn ich nass bin, ist
-etwas völlig anderes." Genau diese Verwechslung steckt in Aussage 1 des Quiz.
+**Woher** Das Quiz hat gezeigt, dass der Raum p falsch liest. Jetzt der Maßstab,
+an dem die Fehler messbar werden: die Definition.
 
-Die Formulierung "und alle Modellannahmen zutreffen" nicht unterschlagen. Sie ist
-der Teil, der in Lehrbüchern meist fehlt, und sie ist praktisch relevant: bei
-verletzten Annahmen ist der p-Wert nicht nur ungenau, er ist bedeutungslos.
+**Hier** „Der p-Wert beschreibt die Daten unter einer Annahme. Nicht die
+Hypothese."
+Die Definition langsam und wörtlich vorlesen. Dann die drei Symbole: nass zu
+sein, wenn es regnet, ist etwas anderes als Regen, wenn ich nass bin. Genau
+diese Verwechslung steckt in Aussage 1 und 5 des Quiz. Den Halbsatz „und alle
+Modellannahmen zutreffen" nicht unterschlagen: bei verletzten Annahmen ist p
+nicht ungenau, sondern bedeutungslos.
+
+**Wohin** Die nächste Folie zählt auf, was p alles nicht sagt. Übergang: „Das
+ist alles, was er kann. Jetzt, was er nicht kann."
+
+**Wenn** Widerstand („p ist doch nicht nutzlos"): zustimmen. Er ist ein Maß für
+Überraschung unter einer Annahme. Das Problem ist nicht p, sondern p als
+einziges Kriterium. Diese Nuance schützt vor dem Eindruck, der Vortrag sei
+ideologisch.
 :::
 
 ## Er sagt nichts darüber, {.bp-plain data-qr="hub_pwerte" data-qr-cap="Nachlesen im Hub"}
@@ -33,23 +55,32 @@ verletzten Annahmen ist der p-Wert nicht nur ungenau, er ist bedeutungslos.
 - wie **groß** der gefundene Effekt ist,
 - wie **wichtig** oder bedeutsam der Effekt ist,
 - wie wahrscheinlich es ist, das Ergebnis zu **replizieren**,
+- ob der Effekt durch **Zufall** zustande gekommen ist,
 - oder ob ein Effekt überhaupt existiert.
 :::
 
-::: {.bp-quelle}
-Genau das sind aber die sechs Fragen, die wir eigentlich stellen wollen.
+::: {.bp-callout .fragment}
+[{{< fa lightbulb >}}]{.bp-icon} Genau das sind die sieben Fragen, die wir
+eigentlich stellen wollen.
 :::
 
 ::: notes
-Diese Liste Punkt für Punkt einblenden, das ist der Rhythmus der Folie. Bei jedem
-Punkt eine Sekunde Pause.
+**Typ** Aha · **Soll** 08:00 · **Dauer** 1:30 · kürzbar: nein
 
-Der Schlusssatz ist die Pointe: die Liste dessen, was der p-Wert nicht kann, ist
-identisch mit der Liste dessen, was wir wissen wollen. Ruhig kurz stehen lassen,
-bevor es weitergeht.
+**Woher** Die Definition steht. Jetzt die Kehrseite: alles, was in der Definition
+nicht vorkommt, kann p auch nicht liefern.
 
-Wenn Widerstand kommt ("der p-Wert ist doch nicht nutzlos"): zustimmen. Er ist
-nicht nutzlos, er ist ein Maß für Überraschung unter einer Annahme. Das Problem
-ist nicht der p-Wert, das Problem ist, dass wir ihn zum einzigen Kriterium
-gemacht haben. Diese Nuance ist wichtig, sonst wirkt der Vortrag ideologisch.
+**Hier** „Die Liste dessen, was p nicht kann, ist die Liste dessen, was wir
+wissen wollen."
+Punkt für Punkt einblenden, bei jedem eine Sekunde Pause. Erst zum Schluss den
+Kasten einblenden und den Satz oben sagen. Dann kurz schweigen, die Pointe
+trägt allein.
+
+**Wohin** Jetzt die Zahlen: wie verbreitet das Problem ist. Übergang: „Man könnte
+sagen, das sei ein Randproblem. Ist es nicht."
+
+**Wenn** Nachfrage zum Zufall: p ist unter der Annahme gerechnet, dass nur der
+Zufall wirkt. Er kann diese Annahme nicht selbst prüfen, das wäre ein
+Zirkelschluss. Zeitdruck: die Liste in einem Zug einblenden (Taste Ende) und nur
+Punkt 3, 5 und 6 kommentieren, die kommen im Vortrag wieder.
 :::

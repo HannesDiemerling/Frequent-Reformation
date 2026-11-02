@@ -28,6 +28,8 @@ metadata-files:
 resources:
   - assets/qr
   - assets/fonts
+  - assets/fig
+  - assets/p_icon.png
 
 lang: de
 

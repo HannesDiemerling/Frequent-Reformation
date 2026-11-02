@@ -4,18 +4,26 @@
 
 Diese Folien gehören nicht in den Durchlauf. Sie sind für die Diskussion da.
 
+::: notes
+**Typ** Anhang · kein Soll · kürzbar: immer
+
+**Hier** Nicht hierher klicken. Über das Menü (`m`) gezielt zur passenden Folie
+springen, wenn eine Frage darauf zielt. Danach mit `m` zurück zur Danke-Folie.
+:::
+
 ## „Aber Priors sind doch subjektiv"
 
 ::: {.bp-zwei}
 
 ::: {}
-**Der Einwand ist berechtigt und trifft zu kurz.**
+::: {.bp-callout}
+[{{< fa lightbulb >}}]{.bp-icon} **Der Einwand ist berechtigt und greift zu
+kurz.** Jede Analyse trifft Annahmen: Verteilung, Linearität, Testwahl,
+Ausreißer. Der Prior macht eine davon explizit.
+:::
 
-Jede statistische Analyse trifft Annahmen: Verteilungsform, Linearität,
-Unabhängigkeit, Wahl des Tests, Umgang mit Ausreißern. Priors machen eine dieser
-Annahmen explizit.
-
-Eine unsichtbare Annahme ist nicht objektiver. Sie ist nur nicht kritisierbar.
+**Eine unsichtbare Annahme ist nicht objektiver. Sie ist nur nicht
+kritisierbar.**
 :::
 
 ::: {}
@@ -23,7 +31,7 @@ Eine unsichtbare Annahme ist nicht objektiver. Sie ist nur nicht kritisierbar.
 
 - Schwach informative Priors schließen Unsinn aus, ohne das Ergebnis zu
   bestimmen.
-- Bei ausreichend Daten dominieren die Daten den Prior.
+- Bei genug Daten dominieren die Daten.
 - **Sensitivitätsanalyse:** dasselbe Modell mit mehreren Priors rechnen und
   berichten, ob sich die Schlussfolgerung ändert.
 :::
@@ -31,31 +39,37 @@ Eine unsichtbare Annahme ist nicht objektiver. Sie ist nur nicht kritisierbar.
 :::
 
 ::: notes
-Der häufigste Einwand überhaupt. Die Antwort in drei Zügen: erstens, ja, der Prior
-ist eine Annahme. Zweitens, alles andere auch. Drittens, es gibt ein Verfahren
-dafür, nämlich die Sensitivitätsanalyse.
+**Typ** Anhang · bei Frage nach Subjektivität
 
-Wenn jemand hartnäckig bleibt, ist die stärkste Erwiderung eine Rückfrage: "Mit
-welcher Begründung hast du in deiner letzten Analyse den t-Test gewählt und nicht
-Mann-Whitney?" Das war auch eine Annahme, sie stand nur nirgends.
+**Hier** „Mit welcher Begründung hast du in deiner letzten Analyse den t-Test
+gewählt und nicht Mann-Whitney? Das war auch eine Annahme. Sie stand nur
+nirgends."
+Die Antwort in drei Zügen: ja, der Prior ist eine Annahme. Alles andere auch.
+Und es gibt ein Verfahren dafür, die Sensitivitätsanalyse.
+
+**Wenn** Die Rückfrage oben ist die stärkste Erwiderung, wenn jemand hartnäckig
+bleibt. Freundlich stellen, nicht triumphierend.
 :::
 
 ## „Kann ich beides berichten?" {data-qr="hub_bayesian" data-qr-cap="Häufige Sorgen"}
 
-**Ja.** Es ist sogar oft sinnvoll, gerade in einem Umfeld, das p-Werte erwartet.
+**Ja.** Gerade in einem Umfeld, das p-Werte erwartet, ist das oft sinnvoll.
 
 ::: {.bp-callout}
-Wenn beide Ergebnisse einander widersprechen, liegt das meist daran, dass der
-p-Wert die Frage falsch beantwortet, nicht der Bayes-Faktor.
+[{{< fa lightbulb >}}]{.bp-icon} Widersprechen sich beide, liegt das meist
+daran, dass der p-Wert die Frage falsch beantwortet, nicht der Bayes-Faktor.
 :::
 
-Weitere häufige Fragen und die ausführlichen Antworten stehen auf der
-Methoden-Seite zur bayesianischen Datenanalyse.
+Weitere häufige Fragen stehen auf der Methoden-Seite zur bayesianischen
+Datenanalyse.
 
 ::: notes
-Diese Antwort ist strategisch wichtig. Wer gerade einen Artikel im Review hat,
-kann nicht einfach aufhören, p-Werte zu berichten. Die Botschaft ist nicht
-"entweder oder", sondern "Effektgröße und Intervall gehören immer dazu".
+**Typ** Anhang · bei Frage nach Review-Praxis
+
+**Hier** „Niemand verlangt, dass ihr aufhört, p-Werte zu berichten. Effektgröße
+und Intervall gehören immer dazu. Bayes kommt obendrauf."
+Wer gerade einen Artikel im Review hat, kann nicht einfach umsteigen. Die
+Botschaft ist „und", nicht „entweder oder".
 :::
 
 ## Schlüsselliteratur {data-qr="hub_literatur" data-qr-cap="Kuratierte Literaturliste"}
@@ -73,8 +87,11 @@ kann nicht einfach aufhören, p-Werte zu berichten. Die Botschaft ist nicht
 | McElreath, Statistical Rethinking | Wahrscheinlich der beste Bayes-Einstieg |
 
 ::: notes
-Nicht vorlesen. Nur zeigen, wenn nach Quellen gefragt wird, und dann auf den QR
-verweisen. Die vollständige, kommentierte Liste steht im Hub.
+**Typ** Anhang · bei Frage nach Quellen
+
+**Hier** Nicht vorlesen. Auf den QR zeigen: die vollständige, kommentierte
+Liste steht im Hub. Wenn jemand einen Einstieg will: McElreath, dazu gibt es
+die Vorlesungsreihe frei im Netz.
 :::
 
 ## Werkzeuge, mit denen es sofort geht {data-qr="hub_tools" data-qr-cap="Tools und Software"}
@@ -82,29 +99,31 @@ verweisen. Die vollständige, kommentierte Liste steht im Hub.
 ::: {.bp-drei}
 
 ::: {.bp-pillar .tone-teal}
+[{{< fa computer-mouse >}}]{.bp-icon}
 [Ohne Code]{.bp-pillar__num}
 
 ### JASP und Jamovi
 
-Grafische Oberfläche, klassische und bayesianische Tests nebeneinander. Ideal für
-Lehre und den ersten eigenen Versuch.
+Klick-Oberfläche, klassische und bayesianische Tests nebeneinander. Der
+Einstieg für heute Abend.
 :::
 
 ::: {.bp-pillar}
+[{{< fa code >}}]{.bp-icon}
 [Mit R]{.bp-pillar__num}
 
 ### brms
 
-Formel-Syntax wie lme4, darunter Stan. `brm(y ~ x + (1|id), ...)` und du hast ein
-bayesianisches Mehrebenenmodell.
+Formel-Syntax wie lme4, darunter Stan. Wer lme4 kennt, kann brms.
 :::
 
 ::: {.bp-pillar .tone-navy}
-[Mit Python]{.bp-pillar__num}
+[{{< fa terminal >}}]{.bp-icon}
+[Volle Kontrolle]{.bp-pillar__num}
 
-### PyMC und Stan
+### Stan und PyMC
 
-Volle Kontrolle über das Modell, moderne Sampler, ArviZ für die Diagnostik.
+Modell selbst schreiben, moderne Sampler, ArviZ für die Diagnostik.
 :::
 
 :::
@@ -114,10 +133,14 @@ Alle genannten Werkzeuge sind Open Source und kostenfrei.
 :::
 
 ::: notes
-Diese Folie beantwortet die praktische Anschlussfrage "und womit rechne ich das
-jetzt". Wenn das Publikum eher anwendungsorientiert ist, kann sie auch in den
-Hauptteil wandern, direkt nach Antwort 03.
+**Typ** Anhang · bei Frage „und womit rechne ich das"
 
-Der Hinweis, dass alles Open Source ist, ist bei Kliniken und Schulen relevant:
-keine Lizenzkosten, keine Beschaffung.
+**Hier** „Rechne deine letzte Analyse heute Abend in JASP noch einmal,
+bayesianisch, und vergleiche. Eine halbe Stunde, und du kommst nicht zurück."
+Bei JASP betonen: nichts installieren, nichts konfigurieren, bayesianische
+Verfahren stehen gleichberechtigt neben den klassischen.
+
+**Wenn** Bei Kliniken und Schulen: Open Source heißt keine Lizenzkosten, keine
+Beschaffung. Wenn das Publikum sehr anwendungsnah ist, kann diese Folie auch
+in den Hauptteil, direkt nach Antwort 03.
 :::

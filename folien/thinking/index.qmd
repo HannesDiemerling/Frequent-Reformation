@@ -7,34 +7,32 @@ footer: "Workshop 03 · Denke Bayesianisch · gefördert durch die VolkswagenSti
 title-slide-attributes:
   data-background-color: "#2A3F66"
   data-background-opacity: "0.12"
+#
+# Workshop 03, geführte Session, ca. 2 Stunden.
+#
+# Vollständig: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser, die
+# Vertiefungsblöcke und die Sprechernotizen. Die Kapitelfolien tragen die echten
+# Zahlen aus den Workshop-Kapiteln.
+#
+# Die Notizen sind Regie und kein Skript: Roter Faden, Reihenfolge des Aufbaus,
+# Kernsätze zum wörtlichen Sagen, Antworten auf die Einwände, die regelmäßig kommen.
+#
+# Der Bayes-Faktor kommt in keinem der sieben Kapitel vor, wird aber sowohl auf der
+# Startfolie als auch im Wegweiser versprochen. Deshalb steht er als erste
+# Vertiefung B direkt hinter Kapitel 5. Seine vier Minuten kommen aus Kapitel 4, das
+# ist das technischste und verträgt es am besten. Der Ablauf bleibt dadurch
+# unverändert.
+#
+# Sieben Kapitel, deshalb die Blockaufteilung 2 / 3 / 2 nach der Dreiteilung, die der
+# Workshop auf seiner eigenen Startseite vorgibt: Grundlagen, die drei Zutaten,
+# Anwendung. Der Zeitplan ist gegenüber den anderen Decks leicht verschoben, siehe
+# die Ablauf-Folie in diesem Deck.
+#
+# Achtung: das Deck nutzt eine eigene Ablauf-Folie, nicht _shared/_ablauf.qmd, weil
+# die Zeiten hier abweichen.
+#
+# Adressen kommen aus mkdocs.yml, hier steht keine ausgeschriebene Adresse.
 ---
-
-<!--
-Workshop 03, geführte Session, ca. 2 Stunden.
-
-Vollständig: Ablauf, Zeitmarken, Übungen, Demo-Einbettungen, Wegweiser, die
-Vertiefungsblöcke und die Sprechernotizen. Die Kapitelfolien tragen die echten
-Zahlen aus den Workshop-Kapiteln.
-
-Die Notizen sind Regie und kein Skript: Roter Faden, Reihenfolge des Aufbaus,
-Kernsätze zum wörtlichen Sagen, Antworten auf die Einwände, die regelmäßig kommen.
-
-Der Bayes-Faktor kommt in keinem der sieben Kapitel vor, wird aber sowohl auf der
-Startfolie als auch im Wegweiser versprochen. Deshalb steht er als erste
-Vertiefung B direkt hinter Kapitel 5. Seine vier Minuten kommen aus Kapitel 4, das
-ist das technischste und verträgt es am besten. Der Ablauf bleibt dadurch
-unverändert.
-
-Sieben Kapitel, deshalb die Blockaufteilung 2 / 3 / 2 nach der Dreiteilung, die der
-Workshop auf seiner eigenen Startseite vorgibt: Grundlagen, die drei Zutaten,
-Anwendung. Der Zeitplan ist gegenüber den anderen Decks leicht verschoben, siehe
-die Ablauf-Folie in diesem Deck.
-
-Achtung: das Deck nutzt eine eigene Ablauf-Folie, nicht _shared/_ablauf.qmd, weil
-die Zeiten hier abweichen.
-
-Adressen kommen aus mkdocs.yml, hier steht keine ausgeschriebene Adresse.
--->
 
 {{< include ../_shared/_mitlesen.qmd >}}
 

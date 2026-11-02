@@ -1,26 +1,37 @@
 ## Was du morgen anders machen kannst {data-qr="hub_methoden" data-qr-cap="Alles zum Nachlesen"}
 
 ::: {.bp-aufgabe}
-1. **Berichte Effektgrößen**, standardisiert und unstandardisiert, immer mit
-   Intervall.
-2. **Plane Präzision statt Power.** Frage, wie schmal dein Intervall werden soll.
-3. **Schreibe auf, was du vorhast**, bevor du in die Daten schaust. Auch ohne
-   formale Präregistrierung.
-4. **Vergleiche deinen Effekt mit deinem Feld**, nicht mit Cohens Faustregel.
-5. **Nutze Nicht-Signifikanz nicht als Beleg für Abwesenheit.** Oder rechne
-   bayesianisch und bekomme eine echte Antwort.
+::: {.incremental}
+- [{{< fa ruler >}}]{.bp-icon} **Berichte Effektgrößen**, immer mit Intervall.
+- [{{< fa ruler-horizontal >}}]{.bp-icon} **Plane Präzision statt Power.**
+- [{{< fa pen >}}]{.bp-icon} **Schreibe auf, was du vorhast**, bevor du in die
+  Daten schaust.
+- [{{< fa book-open >}}]{.bp-icon} **Vergleiche mit deinem Feld**, nicht mit
+  Cohens Faustregel.
+- [{{< fa dice >}}]{.bp-icon} **Nicht signifikant heißt nicht „kein Effekt".**
+:::
 :::
 
-Nichts davon braucht neue Software oder ein neues Studiendesign. Punkt 1 bis 4
-sind Berichtsentscheidungen.
+::: {.bp-callout .fragment}
+[{{< fa lightbulb >}}]{.bp-icon} Punkt 1 bis 4 kosten nichts außer
+Aufmerksamkeit.
+:::
 
 ::: notes
-Das ist die Folie, die den Vortrag praktisch macht. Ohne sie bleibt er Kritik.
+**Typ** Aha · **Soll** 39:00 · **Dauer** 1:30 · kürzbar: nein
 
-Der Satz am Schluss ist wichtig: die ersten vier Punkte kosten nichts außer
-Aufmerksamkeit. Niemand muss auf Bayes umsteigen, um besser zu berichten. Diese
-Zugänglichkeit ist Absicht, sonst schalten die Leute ab.
+**Woher** Das Angebot ist gezeigt. Ohne diese Folie bleibt der Vortrag Kritik.
+Sie macht ihn praktisch, und sie ist das Letzte, was hängen bleibt.
 
-Wenn Zeit ist, hier eine Frage stellen: "Welchen der fünf Punkte könnt ihr im
-laufenden Projekt noch umsetzen?" Das erzeugt Selbstverpflichtung.
+**Hier** „Die ersten vier Punkte kosten nichts außer Aufmerksamkeit. Niemand
+muss auf Bayes umsteigen, um besser zu berichten."
+Punkt für Punkt einblenden, je ein Satz. Zum Schluss den Kasten. Die Symbole
+sind die aus dem Vortrag: wer sie wiedererkennt, hat die Struktur mitgenommen.
+
+**Wohin** Danke und Fragen. Übergang: „Das war es von mir. Jetzt ihr."
+
+**Wenn** Wenn Zeit ist, eine letzte Frage an den Raum: „Welchen der fünf Punkte
+könnt ihr im laufenden Projekt noch umsetzen?" Das erzeugt
+Selbstverpflichtung. Zeitdruck: alle Punkte auf einmal einblenden (Taste Ende)
+und nur den Kasten sagen.
 :::

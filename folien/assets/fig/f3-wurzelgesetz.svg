@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-label="Breite des Intervalls faellt mit der Wurzel aus n: von n gleich 50 auf n gleich 200 halbiert sie sich">
+<!--
+  F3, Folie Antwort 02. Breite eines Intervalls proportional zu 1/sqrt(n).
+  n von 10 bis 400 linear auf x = 100..860, Breite normiert auf n = 10 -> y = 50, Grundlinie y = 340.
+  Erzeugt mit awk (folien/KONZEPT.md Abschnitt 6), keine Daten, reine Funktion.
+-->
+<defs><marker id="f3-p" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--bp-coral, #E27C5C)"/></marker></defs>
+<g font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="22" fill="var(--bp-ink, #1B2436)">
+  <path d="M 100 50 L 100 340 L 860 340" fill="none" stroke="var(--bp-navy, #2A3F66)" stroke-opacity="0.35" stroke-width="2"/>
+  <path d="M 100.0 50.0 L 103.9 75.3 L 107.8 94.9 L 111.7 110.7 L 115.6 123.8 L 119.5 134.9 L 123.4 144.5 L 127.3 152.8 L 131.2 160.1 L 135.1 166.7 L 139.0 172.6 L 142.9 177.9 L 146.8 182.7 L 150.7 187.2 L 154.6 191.2 L 158.5 195.0 L 162.4 198.5 L 166.3 201.7 L 170.2 204.8 L 174.1 207.6 L 177.9 210.3 L 181.8 212.8 L 185.7 215.2 L 189.6 217.5 L 193.5 219.6 L 197.4 221.6 L 201.3 223.5 L 205.2 225.4 L 209.1 227.1 L 213.0 228.8 L 216.9 230.4 L 220.8 231.9 L 224.7 233.4 L 228.6 234.8 L 232.5 236.2 L 236.4 237.5 L 240.3 238.7 L 244.2 239.9 L 248.1 241.1 L 252.0 242.2 L 255.9 243.3 L 259.8 244.4 L 263.7 245.4 L 267.6 246.4 L 271.5 247.4 L 275.4 248.3 L 279.3 249.2 L 283.2 250.1 L 287.1 250.9 L 291.0 251.8 L 294.9 252.6 L 298.8 253.3 L 302.7 254.1 L 306.6 254.9 L 310.5 255.6 L 314.4 256.3 L 318.3 257.0 L 322.2 257.6 L 326.1 258.3 L 329.9 258.9 L 333.8 259.6 L 337.7 260.2 L 341.6 260.8 L 345.5 261.4 L 349.4 261.9 L 353.3 262.5 L 357.2 263.0 L 361.1 263.6 L 365.0 264.1 L 368.9 264.6 L 372.8 265.1 L 376.7 265.6 L 380.6 266.1 L 384.5 266.6 L 388.4 267.0 L 392.3 267.5 L 396.2 267.9 L 400.1 268.4 L 404.0 268.8 L 407.9 269.2 L 411.8 269.7 L 415.7 270.1 L 419.6 270.5 L 423.5 270.9 L 427.4 271.3 L 431.3 271.6 L 435.2 272.0 L 439.1 272.4 L 443.0 272.8 L 446.9 273.1 L 450.8 273.5 L 454.7 273.8 L 458.6 274.2 L 462.5 274.5 L 466.4 274.8 L 470.3 275.2 L 474.2 275.5 L 478.1 275.8 L 481.9 276.1 L 485.8 276.4 L 489.7 276.7 L 493.6 277.0 L 497.5 277.3 L 501.4 277.6 L 505.3 277.9 L 509.2 278.2 L 513.1 278.5 L 517.0 278.7 L 520.9 279.0 L 524.8 279.3 L 528.7 279.5 L 532.6 279.8 L 536.5 280.0 L 540.4 280.3 L 544.3 280.6 L 548.2 280.8 L 552.1 281.0 L 556.0 281.3 L 559.9 281.5 L 563.8 281.8 L 567.7 282.0 L 571.6 282.2 L 575.5 282.5 L 579.4 282.7 L 583.3 282.9 L 587.2 283.1 L 591.1 283.3 L 595.0 283.6 L 598.9 283.8 L 602.8 284.0 L 606.7 284.2 L 610.6 284.4 L 614.5 284.6 L 618.4 284.8 L 622.3 285.0 L 626.2 285.2 L 630.1 285.4 L 633.9 285.6 L 637.8 285.8 L 641.7 286.0 L 645.6 286.1 L 649.5 286.3 L 653.4 286.5 L 657.3 286.7 L 661.2 286.9 L 665.1 287.1 L 669.0 287.2 L 672.9 287.4 L 676.8 287.6 L 680.7 287.7 L 684.6 287.9 L 688.5 288.1 L 692.4 288.2 L 696.3 288.4 L 700.2 288.6 L 704.1 288.7 L 708.0 288.9 L 711.9 289.1 L 715.8 289.2 L 719.7 289.4 L 723.6 289.5 L 727.5 289.7 L 731.4 289.8 L 735.3 290.0 L 739.2 290.1 L 743.1 290.3 L 747.0 290.4 L 750.9 290.6 L 754.8 290.7 L 758.7 290.8 L 762.6 291.0 L 766.5 291.1 L 770.4 291.3 L 774.3 291.4 L 778.2 291.5 L 782.1 291.7 L 785.9 291.8 L 789.8 291.9 L 793.7 292.1 L 797.6 292.2 L 801.5 292.3 L 805.4 292.5 L 809.3 292.6 L 813.2 292.7 L 817.1 292.8 L 821.0 293.0 L 824.9 293.1 L 828.8 293.2 L 832.7 293.3 L 836.6 293.4 L 840.5 293.6 L 844.4 293.7 L 848.3 293.8 L 852.2 293.9 L 856.1 294.0 L 860.0 294.1" fill="none" stroke="var(--bp-teal, #4FA8A0)" stroke-width="6" stroke-linecap="round"/>
+  <g stroke="var(--bp-navy, #2A3F66)" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="7 7" fill="none">
+    <path d="M 177.9 210.3 L 177.9 340"/>
+    <path d="M 470.3 275.2 L 470.3 340"/>
+    <path d="M 100 210.3 L 177.9 210.3"/>
+    <path d="M 100 275.2 L 470.3 275.2"/>
+  </g>
+  <circle cx="177.9" cy="210.3" r="9" fill="var(--bp-teal, #4FA8A0)"/>
+  <circle cx="470.3" cy="275.2" r="9" fill="var(--bp-teal, #4FA8A0)"/>
+  <text x="177.9" y="368" text-anchor="middle" font-weight="700">n = 50</text>
+  <text x="470.3" y="368" text-anchor="middle" font-weight="700">n = 200</text>
+  <path d="M 88 210.3 L 76 210.3 L 76 275.2 L 88 275.2" fill="none" stroke="var(--bp-coral, #E27C5C)" stroke-width="3"/>
+  <text x="66" y="238.7" text-anchor="end" font-weight="700" fill="var(--bp-coral, #E27C5C)">halbe</text>
+  <text x="66" y="264.7" text-anchor="end" font-weight="700" fill="var(--bp-coral, #E27C5C)">Breite</text>
+  <path d="M 191.9 392 L 456.3 392" fill="none" stroke="var(--bp-coral, #E27C5C)" stroke-width="3" marker-end="url(#f3-p)"/>
+  <text x="324.1" y="386" text-anchor="middle" font-weight="700" fill="var(--bp-coral, #E27C5C)">vierfache Fälle</text>
+  <text x="700" y="372" font-size="20" opacity="0.7">Stichprobengröße n</text>
+  <text x="104" y="38" font-size="20" opacity="0.7">Breite des Intervalls</text>
+</g>
+</svg>

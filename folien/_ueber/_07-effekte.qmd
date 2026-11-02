@@ -1,57 +1,54 @@
 ## Antwort 01: Effekte berichten {data-qr="hub_effektgroessen" data-qr-cap="Effekte und Effektgrößen"}
 
-::: {.bp-zwei}
-
-::: {}
-**Unstandardisiert.** Die Größe in der Einheit der Sache:
-
-> die Therapie reduziert Depressionswerte im BDI-II um **4,2 Punkte**
-
-Das versteht die Praxis sofort. Es ist die Brücke von der Statistik in die
-Realität.
-
-**Standardisiert.** Die Größe auf gemeinsamer Skala:
-
-> **d = 0.42**, 95 % CI [0.18, 0.66]
-
-Vergleichbar über Studien und Skalen hinweg. Immer mit Intervall.
+::: {.bp-stats}
+::: {.bp-stat}
+[4,2 Punkte]{.bp-stat__num}
+[**Unstandardisiert**, in der Einheit der Sache: die Therapie senkt den BDI-II
+um 4,2 Punkte. Die Praxis versteht das sofort.]{.bp-stat__label}
+:::
+::: {.bp-stat}
+[d = 0.42]{.bp-stat__num}
+[**Standardisiert**, immer mit Intervall: 95 % CI [0.18, 0.66]. Vergleichbar
+über Studien und Skalen hinweg.]{.bp-stat__label}
+:::
 :::
 
-::: {}
 ::: {.bp-quote}
 The primary product of a research inquiry is one or more measures of effect
 size, not p values.
 :::
 [Jacob Cohen, 1994]{.bp-quote__author}
-:::
-
-:::
 
 ::: notes
-Beide Formen zeigen, und zwar in dieser Reihenfolge: erst unstandardisiert, dann
-standardisiert. Die Reihenfolge ist didaktisch wichtig, weil die unstandardisierte
-Form die ist, die für Entscheidungen zählt.
+**Typ** Aha · **Soll** 20:00 · **Dauer** 1:45 · kürzbar: nein
 
-Der 4,2-Punkte-Satz funktioniert, weil man sofort weiterfragen will: ist das viel?
-Genau diese Frage ist die richtige, und sie ist beim p-Wert nicht möglich.
+**Woher** Frage 01 ist gestellt: gibt es einen Effekt, und wie groß? Die Antwort
+sind zwei Zahlen, in dieser Reihenfolge.
 
-Das Intervall nicht als Beiwerk behandeln. Ein Punktschätzer ohne Intervall ist
-eine Behauptung ohne Fehlerangabe.
+**Hier** „Erst die Zahl in der Einheit der Sache. Dann die Zahl, die man
+vergleichen kann. Und nie ohne Intervall."
+Links zuerst: 4,2 Punkte. Der Satz funktioniert, weil jeder sofort fragt, ob
+das viel ist. Genau diese Frage ist die richtige, und bei p ist sie nicht
+möglich. Dann rechts: d = 0.42 mit Intervall. Ein Punktschätzer ohne Intervall
+ist eine Behauptung ohne Fehlerangabe.
+
+**Wohin** Die Faustregel-Folie, damit das neue Ritual nicht das alte ersetzt.
+Übergang: „Und jetzt fragt ihr: ist 0.42 viel? Vorsicht."
+
+**Wenn** Zeitdruck: Cohen-Zitat nicht vorlesen, es steht da. Nachfrage, warum
+nicht nur d: weil d die Einheit verliert, und mit ihr die
+Entscheidungsgrundlage. Deshalb beides.
 :::
 
 ## Aber Vorsicht mit den Faustregeln {data-qr="hub_effektgroessen" data-qr-cap="Benchmarks im Kontext"}
 
-Cohen schlug 1988 **klein 0.2 · mittel 0.5 · groß 0.8** vor, als grobe
-Orientierung, wenn keine fachspezifischen Vergleichswerte vorliegen.
-
-In der Praxis wird das häufig als Naturgesetz gelesen.
+Cohen 1988: **klein 0.2 · mittel 0.5 · groß 0.8**. Als Notlösung gedacht, wenn
+ein Feld keine eigenen Vergleichswerte hat.
 
 ::: {.bp-warn}
-**Domänenwissen schlägt Faustregel.** Ein d = 0.2 für eine
-Suizidpräventions-Intervention ist riesig. Ein d = 0.5 für ein neues Lernformat
-in einem etablierten Feld ist eher mittelmäßig.
-
-Vergleiche immer mit publizierten Effekten in deiner Subdisziplin.
+[{{< fa triangle-exclamation >}}]{.bp-icon} **Domänenwissen schlägt Faustregel.**
+d = 0.2 in der Suizidprävention ist riesig. d = 0.5 für ein neues Lernformat
+ist eher mittelmäßig.
 :::
 
 ::: {.bp-quelle}
@@ -60,15 +57,22 @@ research.* Frontiers in Psychology.
 :::
 
 ::: notes
-Diese Folie ist wichtiger als sie aussieht. Wer gerade gelernt hat, Effektgrößen
-zu berichten, ersetzt sonst nur ein Ritual durch ein anderes: statt p < .05
-sagt man dann "mittlerer Effekt nach Cohen". Das wäre nichts gewonnen.
+**Typ** Aha · **Soll** 21:45 · **Dauer** 1:15 · kürzbar: ja
 
-Das Suizidpräventions-Beispiel wirkt am stärksten. Ein kleiner Effekt auf eine
-Kennzahl, bei der jeder Prozentpunkt Menschenleben bedeutet, ist alles andere als
-klein.
+**Woher** Wer gerade gelernt hat, d zu berichten, ersetzt sonst nur ein Ritual
+durch ein anderes: statt „p kleiner .05" dann „mittlerer Effekt nach Cohen".
 
-Schäfer und Schwarz haben empirische Verteilungen von Effektstärken in der
-Psychologie ausgewertet. Nebenbei: Thomas Schäfer ist der Projektleiter dieses
-Vorhabens. Das kann man erwähnen, es macht den Bezug konkret.
+**Hier** „Vergleiche deinen Effekt mit deinem Feld, nicht mit Cohens
+Faustregel."
+Cohen selbst hat die Werte als Notlösung bezeichnet. Das Suizidpräventions-
+Beispiel trägt am stärksten: ein kleiner Effekt auf eine Kennzahl, bei der
+jeder Prozentpunkt Menschenleben bedeutet, ist alles andere als klein.
+
+**Wohin** Antwort 02, die Stichprobe. Übergang: „Die Zahl ist das eine. Ob sie
+überhaupt trägt, das andere."
+
+**Wenn** Schäfer und Schwarz haben empirische Verteilungen von Effektstärken
+ausgewertet. (persönlich: Thomas Schäfer leitet dieses Projekt, das darf man
+hier sagen.) Zeitdruck: Folie überspringen, der Hinweis steht in „Morgen
+anders" als Punkt 4.
 :::

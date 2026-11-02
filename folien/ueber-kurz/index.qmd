@@ -6,23 +6,25 @@ logo: ../assets/qr/hub.svg
 footer: "Beyond p-values · gefördert durch die VolkswagenStiftung"
 title-slide-attributes:
   data-background-color: "#F7F2EA"
+  data-background-image: ../assets/p_icon.png
+  data-background-size: 110px
+  data-background-position: right 60px bottom 60px
+#
+# Kurzfassung des Überblicks-Vortrags, ca. 15 Minuten. Als Aufschlag vor einem
+# Workshop-Tag oder zur Vorstellung gegenüber Institutionen.
+# Konzept, Folientypen, Notiz-Raster und Zeitgerüst: folien/KONZEPT.md.
+#
+# Es sind dieselben Include-Dateien wie in 00-ueber.qmd, nur eine Teilmenge, plus
+# eine einzige eigene Folie (_kurz-antworten.qmd), die die drei Antworten
+# verdichtet. Keine Inhalte werden doppelt gepflegt.
+#
+# Weggelassen gegenüber der Langfassung: Folgekette, zweite Mitmach-Runde,
+# Live-Demo, Projektteil und Anhang. Die Förderung läuft über Titel- und
+# Schlussfolie mit.
+#
+# Zeitgerüst: Titel und Mitlesen 1 · Quiz 4 · Kennzahlen 2 · Wende und drei
+# Antworten 3,5 · Angebot 2,5 · Morgen anders und Danke 2.
 ---
-
-<!--
-Kurzfassung des Überblicks-Vortrags, ca. 15 Minuten. Als Aufschlag vor einem
-Workshop-Tag oder zur Vorstellung gegenüber Institutionen.
-
-Es sind dieselben Include-Dateien wie in 00-ueber.qmd, nur eine Teilmenge, plus
-eine einzige eigene Folie (_kurz-antworten.qmd), die die drei Antworten
-verdichtet. Keine Inhalte werden doppelt gepflegt.
-
-Weggelassen gegenüber der Langfassung: Folgekette, zweite Mitmach-Runde,
-Live-Demo, Projektteil und Anhang. Die Förderung läuft über Titel- und
-Schlussfolie mit.
-
-Zeitgerüst: Titel 1 · Mitlesen 0,5 · Quiz 4 · Kennzahlen 2 · Wende 1 ·
-drei Antworten 3 · Angebot 2 · Schluss 1,5.
--->
 
 {{< include ../_shared/_mitlesen.qmd >}}
 
@@ -68,12 +70,20 @@ VolkswagenStiftung im Rahmen der Förderlinie Pioniervorhaben.
 :::
 
 ::: notes
-In der Kurzfassung ist diese Folie wichtiger als in der Langfassung, weil sie die
-einzige Stelle ist, an der das Angebot vollständig benannt wird. Die drei Zahlen
-nennen: drei Workshops, 18 Kapitel, kostenfrei.
+**Typ** Wegweiser · **Soll** 13:30 · **Dauer** bis zum Ende · kürzbar: nein
 
-Wenn die Kurzfassung als Aufschlag vor einem Workshop-Tag läuft, hier direkt in
-den Tagesablauf überleiten. Wenn sie als Vorstellung gegenüber einer Institution
-läuft, hier die Frage stellen, welcher Bereich für die Einrichtung am
-interessantesten ist.
+**Woher** In der Kurzfassung ist das die einzige Folie, auf der das Angebot
+vollständig steht.
+
+**Hier** „Drei Workshops, 18 Kapitel, kostenfrei, ohne Anmeldung, im Browser.
+Alles ab heute Abend."
+Die drei Zahlen nennen, dann den Kontakt. Die Folie stehen lassen, der QR ist
+groß.
+
+**Wohin** Als Aufschlag vor einem Workshop-Tag: direkt in den Tagesablauf
+überleiten. Als Vorstellung gegenüber einer Institution: fragen, welcher Bereich
+für die Einrichtung am interessantesten ist.
+
+**Wenn** Nachfrage nach geführten Sessions: in Planung, noch nicht buchbar.
+Interesse wird gesammelt, der Kontakt steht auf der Folie.
 :::

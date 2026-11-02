@@ -203,7 +203,7 @@ extra:
   folien:
     - slug: "ueber"
       title: "Überblick"
-      note: "ca. 30 min"
+      note: "ca. 45 min"
     - slug: "ueber-kurz"
       title: "Überblick, Kurzfassung"
       note: "ca. 15 min"

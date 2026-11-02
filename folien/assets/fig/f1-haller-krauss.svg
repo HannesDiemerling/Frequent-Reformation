@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-label="Anteil mit mindestens einer Fehlinterpretation des p-Werts: Studierende 100 Prozent, Forschende 90 Prozent, Methoden-Lehrende 80 Prozent">
+<!--
+  F1, Folie "Alle sechs sind falsch".
+  Quelle: Haller, H. und Krauss, S. (2002). Misinterpretations of significance:
+  A problem students share with their teachers? Methods of Psychological Research
+  Online, 7(1). Anteil der Befragten mit mindestens einer falschen Zustimmung zu
+  sechs Aussagen ueber p = .01: Studierende 100 %, Forschende 89,7 %,
+  Methoden-Lehrende 80 %.
+  Von Hand gesetzt. Balkenlaenge: 5,3 px je Prozentpunkt, Start bei x = 330.
+  Farben ueber CSS-Variablen des Themes, Fallback die Markenwerte.
+  Wird inline eingebunden (include), damit Schrift und Farben vom Theme kommen.
+-->
+<g font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="26" fill="var(--bp-ink, #1B2436)">
+  <text x="300" y="70" text-anchor="end">Studierende</text>
+  <rect x="330" y="36" width="530" height="56" rx="10" fill="var(--bp-coral, #E27C5C)" opacity="0.55"/>
+  <text x="346" y="73" font-weight="800" fill="#fff">100 %</text>
+  <text x="300" y="160" text-anchor="end">Forschende</text>
+  <rect x="330" y="126" width="475" height="56" rx="10" fill="var(--bp-coral, #E27C5C)" opacity="0.55"/>
+  <text x="346" y="163" font-weight="800" fill="#fff">90 %</text>
+  <text x="300" y="250" text-anchor="end" font-weight="700">Methoden-Lehrende</text>
+  <rect x="330" y="216" width="424" height="56" rx="10" fill="var(--bp-coral, #E27C5C)"/>
+  <text x="346" y="253" font-weight="800" fill="#fff">80 %</text>
+</g>
+</svg>

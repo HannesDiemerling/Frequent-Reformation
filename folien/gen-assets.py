@@ -180,19 +180,15 @@ DEMO_TEMPLATE = """<!-- Erzeugt von folien/gen-assets.py. Nicht von Hand bearbei
 :::
 
 ::: notes
-Live-Demo, Kapitel {num}: {title}.
+**Typ** Demo · kein eigenes Soll · kürzbar: nein
 
-Vor dieser Folie mindestens 30 Sekunden reden. Die Anwendung startet erst, wenn
-die Folie in Reichweite kommt, und braucht bis zu einer halben Minute, bis sie
-rechnet.
+**Hier** Live-Demo, Kapitel {num}: {title}. Die Folie ist bedienbar: ein Klick
+landet in der Anwendung, nicht im Vortrag. Zum Weiterblättern neben die
+Anwendung klicken oder die Pfeiltasten benutzen.
 
-Plan B, falls das eingebettete Fenster nicht laedt: dasselbe Kapitel parallel in
-einem zweiten Browserfenster offen halten und dorthin wechseln. Der QR oben
-rechts fuehrt zur selben Seite, der Raum kann also sofort mitmachen.
-
-Nicht vergessen: die Folie ist bedienbar. Ein Klick landet in der Anwendung, nicht
-im Vortrag. Zum Weiterblattern zuerst neben die Anwendung klicken oder die
-Pfeiltasten benutzen.
+**Wenn** Lädt das Fenster nicht: das Kapitel liegt im zweiten Tab, dorthin
+wechseln. Der QR oben rechts führt zur selben Seite, der Raum kann sofort
+mitmachen. Lädt auch das nicht: die Folie danach zeigt das Ergebnis als Grafik.
 :::
 """
 
@@ -206,11 +202,13 @@ Live auf der Website · scrollbar und klickbar
 :::
 
 ::: notes
-Die echte Seite, eingebettet und bedienbar. Hier wirklich scrollen und klicken,
-nicht nur zeigen. Der Raum soll sehen, dass das kein Screenshot ist.
+**Typ** Demo · kein eigenes Soll · kürzbar: ja
 
-Falls die Einbettung nicht laedt: der QR oben rechts fuehrt zur selben Adresse,
-dann im Browser danebenlegen.
+**Hier** Die echte Seite, eingebettet und bedienbar. Wirklich scrollen und
+klicken, nicht nur zeigen. Der Raum soll sehen, dass das kein Screenshot ist.
+
+**Wenn** Lädt die Einbettung nicht: der QR oben rechts führt zur selben Adresse,
+dann im Browser danebenlegen. Zeitdruck: Folie überspringen.
 :::
 """
 

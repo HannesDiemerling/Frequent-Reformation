@@ -2,57 +2,75 @@
 
 [Die Wende]{.bp-eyebrow}
 
-Bessere Alternativen existieren seit Jahrzehnten. Sie sind technisch ausgereift,
-didaktisch gut beschrieben und in moderner Software niederschwellig verfügbar.
+Bessere Alternativen gibt es seit Jahrzehnten. Ausgereift, gut beschrieben, in
+moderner Software einen Klick entfernt.
 
-**Was fehlt, ist die flächendeckende Anwendung.**
+**Was fehlt, ist die Anwendung.**
 
-## Drei Fragen, die jede Studie beantworten sollte {data-qr="hub_methoden" data-qr-cap="Die drei Säulen"}
+::: notes
+**Typ** Trenner · **Soll** 17:30 · **Dauer** 0:30 · kürzbar: nein
+
+**Hier** „Die gute Nachricht: nichts von dem, was jetzt kommt, ist neu. Es ist
+nur nie flächendeckend angekommen."
+Hier atmet der Raum aus. Den Satz sagen, kurz warten, weiterklicken. Nicht
+schon die drei Antworten vorwegnehmen.
+:::
+
+## Drei Fragen, die jede Studie stellt {data-qr="hub_methoden" data-qr-cap="Die drei Säulen"}
 
 ::: {.bp-drei}
 
 ::: {.bp-pillar .tone-coral}
+[{{< fa ruler >}}]{.bp-icon}
 [Frage 01]{.bp-pillar__num}
 
 ### Gibt es einen Effekt, und wie groß?
 
-Antwort: **Effekte und Effektgrößen.** Der p-Wert kann das prinzipbedingt nicht.
+**Effekte und Effektgrößen.**
 :::
 
 ::: {.bp-pillar .tone-teal}
+[{{< fa users >}}]{.bp-icon}
 [Frage 02]{.bp-pillar__num}
 
 ### Wie verlässlich ist die Schätzung?
 
-Antwort: **Stichprobenqualität und Stichprobengröße.** Nicht jede pauschale
-Power-Tabelle.
+**Stichprobe: Qualität vor Größe.**
 :::
 
 ::: {.bp-pillar .tone-navy}
+[{{< fa dice >}}]{.bp-icon}
 [Frage 03]{.bp-pillar__num}
 
 ### Was sagen die Daten über die Hypothese?
 
-Antwort: **Bayesianische Datenanalyse.** Wahrscheinlichkeiten für Hypothesen
-statt Sieger-Verlierer-Schema.
+**Bayesianische Datenanalyse.**
 :::
 
 :::
 
 ::: {.bp-callout}
-Praktisch jede empirische Studie versucht, eine dieser drei Fragen zu beantworten.
-Der klassische Signifikanztest beantwortet keine davon vollständig.
+[{{< fa lightbulb >}}]{.bp-icon} Fast jede Studie stellt eine dieser drei Fragen.
+Der Signifikanztest beantwortet keine davon vollständig.
 :::
 
 ::: notes
-Das ist die Scharnierfolie des Vortrags und gleichzeitig die Gliederung der
-nächsten Minuten. Auch die Website ist genau so aufgebaut, das erwähne ich hier
-kurz, weil es später beim Zurechtfinden hilft.
+**Typ** Säulen · **Soll** 18:00 · **Dauer** 2:00 · kürzbar: nein
 
-Der Satz unten ist der wichtigste des ganzen Vortrags. Ihn wörtlich sagen, nicht
-paraphrasieren.
+**Woher** Die Wende ist angekündigt. Diese Folie ist das Rückgrat: die
+Gliederung der nächsten zehn Minuten und zugleich der Aufbau der Website.
 
-Die drei Farben sind nicht dekorativ: coral, teal und navy sind die Farben der
-drei Workshops. Wer die Website danach besucht, erkennt sie wieder. Das darf man
-ruhig einmal explizit machen.
+**Hier** „Fast jede Studie stellt eine dieser drei Fragen. Und der
+Signifikanztest beantwortet keine davon vollständig."
+Den Satz im Kasten wörtlich sagen, nicht paraphrasieren. Die drei Säulen als
+drei Fragen vortragen, je ein Satz. Dann einmal explizit: die Farben sind die
+der drei Workshops, Coral, Teal, Navy. Wer die Website besucht, erkennt sie
+wieder.
+
+**Wohin** Antwort 01, Effekte. Übergang: „Fangen wir mit der ersten Frage an.
+Sie ist die, bei der sich morgen am meisten ändern lässt."
+
+**Wenn** Jemand sagt, Frage 1 und 3 seien doch dasselbe: nein. Frage 1 fragt
+nach der Größe, Frage 3 nach der Wahrscheinlichkeit, dass eine Hypothese
+stimmt. Beides braucht man, p liefert keins.
 :::

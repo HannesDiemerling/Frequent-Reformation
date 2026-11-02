@@ -1,85 +1,123 @@
 ## Die Folgekette {data-qr="hub_pwerte" data-qr-cap="Warum das wichtig ist"}
 
-::: {.bp-drei}
-
-::: {.bp-pillar .tone-coral}
-[Schritt 01]{.bp-pillar__num}
-
-### Publikationsbias
-
-Signifikante Ergebnisse werden bevorzugt publiziert. Die Literatur verzerrt sich
-systematisch, Effekte werden im Mittel überschätzt.
-:::
-
-::: {.bp-pillar .tone-coral}
-[Schritt 02]{.bp-pillar__num}
-
-### Fragwürdige Praktiken
-
-Die Jagd nach p < .05 belohnt p-Hacking, optionales Weitertesten, selektives
-Reporting und HARKing.
-:::
-
-::: {.bp-pillar .tone-coral}
-[Schritt 03]{.bp-pillar__num}
-
-### Replikationen scheitern
-
-Weil sie mit realistischeren, also kleineren Effekten arbeiten als die
-Originalstudien behaupten.
-:::
-
+::: {.bp-fig}
+{{< include ../assets/fig/f2-folgekette.svg >}}
 :::
 
 ::: {.bp-warn}
-Simmons et al. (2011): durch übliche QRPs steigt die effektive
-Falsch-positiv-Rate **von 5 % auf bis zu 61 %**. Im Extremfall ein zwölffach
-erhöhter Falsch-positiv-Anteil.
+[{{< fa triangle-exclamation >}}]{.bp-icon} Simmons et al. (2011): aus nominal
+**5 %** werden bis zu **61 %** falsch-positive Befunde.
 :::
 
 ::: notes
-Die drei Schritte als Kreislauf erzählen, nicht als Liste. Publikationsbias
-erzeugt Anreize für QRPs, QRPs erzeugen falsche Befunde, falsche Befunde
-scheitern in der Replikation, und weil Nullbefunde nicht publiziert werden,
-bleibt der Kreislauf unsichtbar.
+**Typ** Abbildung · **Soll** 11:30 · **Dauer** 1:30 · kürzbar: nein
 
-Wichtig für die Glaubwürdigkeit: keine Betrugsvorwürfe. Alle drei Schritte
-funktionieren vollständig ohne böse Absicht. Das ist das eigentlich Beunruhigende.
+**Woher** Die vier Zahlen stehen. Jetzt, wie sie zusammenhängen: als Kreislauf,
+nicht als Liste.
 
-HARKing kurz erklären, falls nötig: Hypothesizing After the Results are Known.
-Also die Hypothese nachträglich so formulieren, dass sie zum gefundenen Ergebnis
-passt.
+**Hier** „Jeder dieser drei Schritte funktioniert vollständig ohne böse Absicht.
+Das ist das eigentlich Beunruhigende."
+Den Kreis einmal im Uhrzeigersinn abgehen, mit der Hand auf der Folie:
+Signifikantes wird bevorzugt publiziert, das belohnt fragwürdige Praktiken
+(p-Hacking, optionales Weitertesten, selektives Reporting), die erzeugen
+Fehlbefunde, Replikationen scheitern, und weil Nullbefunde nicht erscheinen,
+bleibt der Kreislauf unsichtbar. Dann die Mitte: alles ohne Vorsatz.
+
+**Wohin** Die nächste Folie zeigt den Preis außerhalb der Journals. Übergang:
+„Und das bleibt nicht in den Zeitschriften."
+
+**Wenn** Nachfrage nach HARKing: Hypothesizing After the Results are Known, die
+Hypothese nachträglich ans Ergebnis anpassen. Keine Betrugsvorwürfe, auch nicht
+auf Nachfrage: der Punkt ist, dass gute Absicht nicht schützt.
 :::
 
 ## Und das bleibt nicht im Journal {data-qr="hub_literatur" data-qr-cap="Schlüsselliteratur"}
 
+::: {.bp-zwei}
+
+::: {.bp-cover}
+![](../assets/fig/cult-of-statistical-significance.jpg)
+:::
+
+::: {}
 ::: {.bp-quote}
 The Cult of Statistical Significance: How the Standard Error Costs Us Jobs,
 Justice, and Lives.
 :::
 [Ziliak und McCloskey, 2008]{.bp-quote__author}
 
-Therapien, Maßnahmen und politische Entscheidungen stützen sich auf signifikante
-Ergebnisse, die in Wahrheit Zufallsbefunde sind oder Effekte beschreiben, die für
-die Praxis irrelevant klein sind.
+::: {.bp-quote .bp-quote--klein}
+… too often I suspect we waste a [great] deal of time, we grasp the shadow and
+lose the substance, we weaken our capacity to interpret data and to take
+reasonable decisions whatever the value of P. And far too often we deduce
+‘no difference' from ‘no significant difference'.
+:::
+[Austin Bradford Hill, 1965]{.bp-quote__author}
+:::
+
+:::
+
+::: notes
+**Typ** Aha · **Soll** 13:00 · **Dauer** 0:45 · kürzbar: ja
+
+**Woher** Der Kreislauf ist erklärt. Diese Folie ist der Tiefpunkt des Vortrags,
+und zwar absichtlich. Danach dreht es.
+
+**Hier** „Therapien, Maßnahmen und politische Entscheidungen stützen sich auf
+signifikante Ergebnisse, die Zufallsbefunde sind oder praktisch irrelevant
+klein."
+Den Buchtitel vorlesen, dann eine Sekunde schweigen, besonders nach „Jobs,
+Justice, and Lives". Hill danach nur mit dem letzten Satz: aus „nicht
+signifikant" wird „kein Unterschied". Hill ist der Epidemiologe der
+Bradford-Hill-Kriterien, 1965, also sechzig Jahre alt.
+
+**Wohin** Die nächste Folie zeigt, dass das keine Einzelmeinung ist. Übergang:
+„Und Hill war nicht allein."
+
+**Wenn** Kein Humor auf dieser Folie. Zeitdruck: Folie überspringen, der
+Meehl-Satz auf der nächsten reicht. (persönlich: wer ein eigenes Beispiel aus
+dem Gesundheitsbereich hat, bringt es hier, es trifft direkter.)
+:::
+
+## Seit sechzig Jahren gesagt {data-qr="hub_literatur" data-qr-cap="Schlüsselliteratur"}
 
 ::: {.bp-quote}
 … one of the worst things that ever happened in the history of psychology.
 :::
 [Paul Meehl über den Signifikanztest, 1978]{.bp-quote__author}
 
+::: {.bp-liste .bp-liste--zwei}
+- Rozeboom (1960). The Fallacy of the Null-Hypothesis Significance Test.
+- Carver (1978). The Case Against Statistical Significance Testing.
+- Salsburg (1985). The Religion of Statistics as Practiced in Medical Journals.
+- Cohen (1994). The Earth Is Round (p < .05).
+- Falk & Greenbaum (1995). Significance Tests Die Hard.
+- Hunter (1997). Needed: A Ban on the Significance Test.
+- Moran & Solomon (2004). A Farewell to P-Values?
+- Gigerenzer (2004). Mindless Statistics.
+- Goodman (2008). A Dirty Dozen: Twelve P-Value Misconceptions.
+- Stang, Poole & Kuss (2010). The Ongoing Tyranny of Statistical Significance Testing.
+:::
+
+::: {.bp-quelle}
+Kleine Auswahl aus einer langen Liste.
+:::
+
 ::: notes
-Diese Folie ist der emotionale Tiefpunkt des Vortrags, und das ist beabsichtigt.
-Danach dreht es.
+**Typ** Aha · **Soll** 13:45 · **Dauer** 0:45 · kürzbar: ja
 
-Der Ziliak-und-McCloskey-Titel wirkt am besten, wenn man ihn einfach vorliest und
-dann eine Sekunde schweigt. Besonders "Jobs, Justice, and Lives".
+**Woher** Hill 1965 war der Anfang. Diese Folie zeigt, dass die Kritik seit
+sechzig Jahren in den besten Zeitschriften steht und nichts geändert hat.
 
-Wenn das Publikum aus dem Gesundheitsbereich kommt, hier ein eigenes Beispiel
-einsetzen: eine Intervention, die als wirksam gilt, deren Effektstärke aber
-praktisch bedeutungslos ist. Das trifft dann direkt.
+**Hier** „Das ist eine kleine Auswahl. Rozeboom 1960, Cohen 1994, Gigerenzer
+2004, Goodman 2008. Alle sagen dasselbe, und das Ritual läuft weiter."
+Die Liste nicht vorlesen. Zwei oder drei Titel herausgreifen, die Jahreszahlen
+betonen: sechs Jahrzehnte. Meehl oben ist der stärkste Satz: kein Aktivist von
+heute, sondern einer der einflussreichsten Methodiker der Psychologie.
 
-Meehl 1978 ist deshalb stark, weil es kein Aktivist von heute ist, sondern einer
-der einflussreichsten Methodiker der Psychologie, und weil es fast 50 Jahre alt
-ist. Der Satz "wir wissen das seit Jahrzehnten" ist die Brücke zum Projektteil.
+**Wohin** Die Selbstprüfung: vom System zur eigenen Arbeit. Übergang: „Wir
+wissen das seit Jahrzehnten. Und trotzdem."
+
+**Wenn** Zeitdruck: Folie überspringen. Nachfrage nach der vollständigen Liste:
+der QR oben rechts führt zur Literaturseite im Hub.
 :::
