@@ -72,7 +72,7 @@ unterscheidet diesen Anlauf von allen früheren. Faktor 03 nimmt den Einwand
 Faktor 03 ausbauen.
 :::
 
-## Was wir tun
+## Was wir tun {data-qr="hub_ueber" data-qr-cap="Mission und Wirkungslogik"}
 
 ::: {.bp-drei}
 

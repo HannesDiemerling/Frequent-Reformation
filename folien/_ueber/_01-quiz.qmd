@@ -11,8 +11,7 @@ ableiten? Abstimmung per QR, niemand sieht deine Antwort.
 **Hier** „Bevor ich irgendetwas erkläre, ein kleiner Test. Anonym, per Handy.
 Niemand sieht, was ihr antwortet, auch ich nicht."
 Die Regel ansagen: QR scannen, sieben Aussagen lesen, ankreuzen, was aus dem
-p-Wert folgt. Dann weiterklicken, der QR steht auf der nächsten Folie oben
-rechts.
+p-Wert folgt. Dann weiterklicken, der QR steht groß auf der nächsten Folie.
 :::
 
 ## [{{< fa square-poll-vertical >}}]{.bp-icon} Was folgt aus diesem p-Wert? {data-qr="hub_pwerte" data-qr-cap="Nachlesen im Hub"}
@@ -59,7 +58,7 @@ aus diesem p-Wert ableiten?
 Vortrags: der Raum merkt am eigenen Leib, dass er p falsch liest, und zwar
 anonym, ohne Konformitäts- und Peinlichkeitseffekte.
 
-**Hier** „Scannt den QR oben rechts. Lest in Ruhe, kreuzt an. Zwei Minuten."
+**Hier** „Scannt den großen QR rechts. Lest in Ruhe, kreuzt an. Zwei Minuten."
 Die Aussagen nicht vorlesen, sie stehen in der Umfrage. Währenddessen still
 sein oder leise sagen: das ist die Originalformulierung aus einer Studie, die
 genau das mit Forschenden gemacht hat. Wenn die Antworten eingehen, das

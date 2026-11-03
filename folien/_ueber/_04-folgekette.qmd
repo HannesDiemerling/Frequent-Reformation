@@ -47,10 +47,10 @@ Justice, and Lives.
 [Ziliak und McCloskey, 2008]{.bp-quote__author}
 
 ::: {.bp-quote .bp-quote--klein}
-… too often I suspect we waste a [great] deal of time, we grasp the shadow and
-lose the substance, we weaken our capacity to interpret data and to take
-reasonable decisions whatever the value of P. And far too often we deduce
-‘no difference' from ‘no significant difference'.
+… too often I suspect we waste a deal of time, we grasp the shadow and lose the
+substance, we weaken our capacity to interpret the data and to take reasonable
+decisions whatever the value of P. And far too often we deduce ‘no difference’
+from ‘no significant difference’.
 :::
 [Austin Bradford Hill, 1965]{.bp-quote__author}
 :::
@@ -69,7 +69,7 @@ klein."
 Den Buchtitel vorlesen, dann eine Sekunde schweigen, besonders nach „Jobs,
 Justice, and Lives". Hill danach nur mit dem letzten Satz: aus „nicht
 signifikant" wird „kein Unterschied". Hill ist der Epidemiologe der
-Bradford-Hill-Kriterien, 1965, also sechzig Jahre alt.
+Bradford-Hill-Kriterien, 1965, also über sechzig Jahre alt.
 
 **Wohin** Die nächste Folie zeigt, dass das keine Einzelmeinung ist. Übergang:
 „Und Hill war nicht allein."
@@ -79,7 +79,7 @@ Meehl-Satz auf der nächsten reicht. (persönlich: wer ein eigenes Beispiel aus
 dem Gesundheitsbereich hat, bringt es hier, es trifft direkter.)
 :::
 
-## Seit sechzig Jahren gesagt {data-qr="hub_literatur" data-qr-cap="Schlüsselliteratur"}
+## Seit über sechzig Jahren gesagt {data-qr="hub_literatur" data-qr-cap="Schlüsselliteratur"}
 
 ::: {.bp-quote}
 … one of the worst things that ever happened in the history of psychology.
@@ -106,13 +106,14 @@ Kleine Auswahl aus einer langen Liste.
 ::: notes
 **Typ** Aha · **Soll** 13:45 · **Dauer** 0:45 · kürzbar: ja
 
-**Woher** Hill 1965 war der Anfang. Diese Folie zeigt, dass die Kritik seit
-sechzig Jahren in den besten Zeitschriften steht und nichts geändert hat.
+**Woher** Hill 1965 war nicht einmal der Anfang, Rozeboom steht schon 1960.
+Diese Folie zeigt, dass die Kritik seit über sechzig Jahren in den besten
+Zeitschriften steht und nichts geändert hat.
 
 **Hier** „Das ist eine kleine Auswahl. Rozeboom 1960, Cohen 1994, Gigerenzer
 2004, Goodman 2008. Alle sagen dasselbe, und das Ritual läuft weiter."
 Die Liste nicht vorlesen. Zwei oder drei Titel herausgreifen, die Jahreszahlen
-betonen: sechs Jahrzehnte. Meehl oben ist der stärkste Satz: kein Aktivist von
+betonen: über sechs Jahrzehnte. Meehl oben ist der stärkste Satz: kein Aktivist von
 heute, sondern einer der einflussreichsten Methodiker der Psychologie.
 
 **Wohin** Die Selbstprüfung: vom System zur eigenen Arbeit. Übergang: „Wir

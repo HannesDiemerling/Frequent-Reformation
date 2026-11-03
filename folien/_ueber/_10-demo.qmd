@@ -1,4 +1,4 @@
-## [{{< fa play >}}]{.bp-icon} Genug Theorie. Schauen wir zu.
+## [{{< fa play >}}]{.bp-icon} Genug Theorie. Schauen wir zu. {data-qr="ch-power2" data-qr-cap="Kapitel 2 mitschieben"}
 
 [Live-Demo]{.bp-eyebrow}
 

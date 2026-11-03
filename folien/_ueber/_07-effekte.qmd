@@ -17,7 +17,7 @@ um 4,2 Punkte. Die Praxis versteht das sofort.]{.bp-stat__label}
 The primary product of a research inquiry is one or more measures of effect
 size, not p values.
 :::
-[Jacob Cohen, 1994]{.bp-quote__author}
+[Jacob Cohen, 1990]{.bp-quote__author}
 
 ::: notes
 **Typ** Aha · **Soll** 20:00 · **Dauer** 1:45 · kürzbar: nein

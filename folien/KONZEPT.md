@@ -49,8 +49,9 @@ aufwärts. Wer die Selbstprüfung länger als drei Minuten laufen lässt, verlie
 
 ### Zeitgerüst 45 Minuten (lang)
 
-Annahme: 40 Minuten Vortrag, 5 Minuten Fragen. Wird nach Rückmeldung angepasst, siehe
-Abschnitt 12.
+40 Minuten Vortrag, 5 Minuten Fragen (Entscheidung, siehe Abschnitt 12). Die Soll-Zeiten
+in den Notizen der geteilten Folien gelten für die Langfassung; die Kurzfassung folgt
+der zweiten Tabelle.
 
 | Soll | Block | Folien | Dauer | Kürzbar |
 |---|---|---|---|---|
@@ -59,7 +60,7 @@ Abschnitt 12.
 | 06:30 | Was p ist, was p nicht sagt | 2 | 3:00 | nein |
 | 09:30 | Kein Randproblem | 1 | 2:00 | nein |
 | 11:30 | Folgekette, Preis, seit sechzig Jahren gesagt | 3 | 3:00 | Preis und Titel-Folie ja |
-| 14:30 | Selbstprüfung | 1 | 3:00 | nein |
+| 14:30 | Selbstprüfung | 1 | 2:30, plus 0:30 Puffer | nein |
 | 17:30 | Wende, drei Fragen | 2 | 2:30 | nein |
 | 20:00 | Antwort 01 Effekte | 2 | 3:00 | Faustregel-Folie ja |
 | 23:00 | Antwort 02 Stichprobe, Rechner vorstellen, Rechner live | 4 | 4:00 | Drei Wege und Rechner ja |
@@ -336,7 +337,7 @@ spricht die Hauptperson. Regeln:
 - **Fragen am Ende moderiert die Person, die zuletzt gesprochen hat.** Die andere
   ergänzt.
 
-Für den Vortrag am 5.11. (Hannes und Thomas): Hannes trägt Problem und Antworten,
+Für den Vortrag am 4.11. (Hannes und Thomas): Hannes trägt Problem und Antworten,
 Thomas übernimmt die Faustregel-Folie (seine Studie), den Stichprobenrechner (seine
 App) und den Projektteil (seine Leitung). Beim Quiz moderiert Hannes, Thomas zeigt das
 Menti-Ergebnis. Fragen: beide.
@@ -386,7 +387,7 @@ Inhalt blieb, Form wurde auf Abschnitt 4 gebracht, Notizen kamen ins Raster.
 | Folgekette | Abbildung | Der Kreislauf | Umbau: Abbildung F2 statt drei Säulen |
 | Sagt nichts über | Aha | Die Liste dessen, was wir wissen wollen | Bleibt, plus siebter Punkt „durch Zufall zustande gekommen" (Feedback) |
 | Nicht im Journal | Aha | Der Preis, Tiefpunkt | Umbau: Buchcover, Ziliak-Titel, Hill 1965 (Feedback). Meehl wandert auf die nächste Folie |
-| Seit sechzig Jahren gesagt | Aha | Keine Einzelmeinung | Neu (Feedback): Meehl 1978 plus zehn Titel von Rozeboom 1960 bis Stang 2010, kürzbar |
+| Seit über sechzig Jahren gesagt | Aha | Keine Einzelmeinung | Neu (Feedback): Meehl 1978 plus zehn Titel von Rozeboom 1960 bis Stang 2010, kürzbar |
 | Selbstprüfung | Frage | Der Spiegel | Umbau: still, ohne Handzeichen, jede Person zählt für sich. Fragments |
 | Wende Trenner | Trenner | Erleichterung | Bleibt |
 | Drei Fragen | Säulen | Das Rückgrat des Vortrags und der Website | Bleibt. Symbole je Säule, Text auf Frage plus Zwei-Wort-Antwort |

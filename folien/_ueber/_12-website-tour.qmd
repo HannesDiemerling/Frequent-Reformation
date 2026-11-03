@@ -66,8 +66,7 @@ betonen, das ist die Designentscheidung der Seite.
 **Wohin** Die Fragen-Seite live. Übergang: „So sieht das aus."
 
 **Wenn** Zeitdruck: die Live-Seite überspringen (nächste Folie), direkt zu den
-drei Workshops. Die Symbole sind dieselben wie auf der Website, das darf man
-einmal sagen.
+drei Workshops.
 :::
 
 {{< include ../_demo/site-hub_fragen.qmd >}}

@@ -11,7 +11,7 @@ Diese Folien gehören nicht in den Durchlauf. Sie sind für die Diskussion da.
 springen, wenn eine Frage darauf zielt. Danach mit `m` zurück zur Danke-Folie.
 :::
 
-## „Aber Priors sind doch subjektiv"
+## „Aber Priors sind doch subjektiv" {data-qr="hub_bayesian" data-qr-cap="Häufige Sorgen"}
 
 ::: {.bp-zwei}
 

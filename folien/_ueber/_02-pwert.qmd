@@ -34,7 +34,7 @@ an dem die Fehler messbar werden: die Definition.
 Hypothese."
 Die Definition langsam und wörtlich vorlesen. Dann die drei Symbole: nass zu
 sein, wenn es regnet, ist etwas anderes als Regen, wenn ich nass bin. Genau
-diese Verwechslung steckt in Aussage 1 und 5 des Quiz. Den Halbsatz „und alle
+diese Verwechslung steckt in Aussage 2, 4, 5 und 7 des Quiz. Den Halbsatz „und alle
 Modellannahmen zutreffen" nicht unterschlagen: bei verletzten Annahmen ist p
 nicht ungenau, sondern bedeutungslos.
 
@@ -82,5 +82,6 @@ sagen, das sei ein Randproblem. Ist es nicht."
 **Wenn** Nachfrage zum Zufall: p ist unter der Annahme gerechnet, dass nur der
 Zufall wirkt. Er kann diese Annahme nicht selbst prüfen, das wäre ein
 Zirkelschluss. Zeitdruck: die Liste in einem Zug einblenden (Taste Ende) und nur
-Punkt 3, 5 und 6 kommentieren, die kommen im Vortrag wieder.
+Punkt 3, 5 und 7 kommentieren, die kommen im Vortrag wieder: Effektgröße,
+Replikation, Evidenz für die Null.
 :::

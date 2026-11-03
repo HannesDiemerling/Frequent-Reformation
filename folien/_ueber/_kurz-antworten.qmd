@@ -57,5 +57,5 @@ für die Nullhypothese sprechen".
 die Workshops."
 
 **Wenn** Nicht versuchen, hier alles zu erklären. Die Folie soll neugierig
-machen. Zeitdruck: nur die drei fetten Sätze, nicht die Zitate.
+machen. Zeitdruck: nur die drei fetten Sätze, nicht die Beispielzeilen.
 :::

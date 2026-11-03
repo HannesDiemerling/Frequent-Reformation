@@ -66,8 +66,8 @@ Wissenschaft von Psychologie-Studierenden im zweiten Semester."
 :::
 
 ::: {.bp-quote .bp-quote--klein}
-Obviously the important thing … is to have a low real error, not to have a
-"significant" result at a particular station. The latter seems to me to be
+Obviously the important thing in such is to have a low real error, not to have
+a “significant” result at a particular station. The latter seems to me to be
 nearly valueless in itself.
 :::
 [William Sealy Gosset („Student"), 1937, an Egon Pearson]{.bp-quote__author}
@@ -85,7 +85,8 @@ kennt den Effekt nicht, also setzt man ein, was man sich wünscht, und bekommt
 systematisch zu kleine Stichproben. Weg 2: die Frage „wie genau will ich
 schätzen" ist inhaltlich beantwortbar. Dann Gosset: der Erfinder des t-Tests
 selbst sagt 1937, ein signifikantes Ergebnis sei „nearly valueless", worauf es
-ankomme, sei ein kleiner wahrer Fehler. Das ist Präzisionsplanung, 90 Jahre alt.
+ankomme, sei ein kleiner wahrer Fehler. Das ist Präzisionsplanung, fast 90
+Jahre alt.
 
 **Wohin** Der Stichprobenrechner, live. Übergang: „Und wie rechnet man das?
 Dafür gibt es ein Werkzeug."
@@ -132,7 +133,7 @@ Kein Konto, keine Installation. Python läuft direkt auf deinem Gerät.
 :::
 
 ::: {.bp-quelle}
-Diemerling & Schäfer, HMU Erfurt. Begleitend zum Lehrbuch Schäfer (2026),
+Diemerling & Schäfer, HMU Erfurt. Lehrbuch dazu: Schäfer (2026),
 Forschungsmethoden, Datenanalyse und Statistik, Springer.
 :::
 
