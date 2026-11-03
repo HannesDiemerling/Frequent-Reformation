@@ -39,6 +39,8 @@ aus diesem p-Wert ableiten?
    signifikantes Ergebnis erhalten.
 7. Sie kennen nun die Wahrscheinlichkeit, mit der das gefundene Ergebnis durch
    Zufall zustande gekommen ist.
+8. Alles von 1 bis 7 stimmt.
+9. Alles von 1 bis 7 ist falsch.
 :::
 
 ::: {.bp-qr .bp-qr--gross}
@@ -48,8 +50,6 @@ aus diesem p-Wert ableiten?
 :::
 
 :::
-
-[**8** Alles von 1 bis 7 stimmt. · **9** Alles von 1 bis 7 ist falsch.]{.bp-fig__satz}
 
 ::: notes
 **Typ** Frage · **Soll** 01:45 · **Dauer** 3:30 · kürzbar: nein · **Wer** Hannes moderiert, Thomas zeigt das Menti-Ergebnis
