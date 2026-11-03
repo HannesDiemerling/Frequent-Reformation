@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img" aria-label="Kreislauf: Publikationsbias belohnt fragwürdige Praktiken, die erzeugen Fehlbefunde, Replikationen scheitern, Nullbefunde bleiben unsichtbar, und das verstärkt den Publikationsbias">
+<!--
+  F2, Folie "Die Folgekette".
+  Drei Stationen als Kreislauf, weil die Rueckkopplung das Argument ist:
+  Publikationsbias -> fragwuerdige Praktiken -> gescheiterte Replikation -> und
+  weil Nullbefunde nicht erscheinen, zurueck zum Publikationsbias.
+  Von Hand gesetzt. Knoten 270 x 90, Pfeile als quadratische Bezier-Kurven.
+  Farben ueber CSS-Variablen des Themes, Fallback die Markenwerte.
+-->
+<defs>
+  <marker id="f2-pfeil" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--bp-coral, #E27C5C)"/>
+  </marker>
+</defs>
+<g font-family="Inter, 'Segoe UI', system-ui, sans-serif">
+  <!-- Pfeile -->
+  <g fill="none" stroke="var(--bp-coral, #E27C5C)" stroke-width="5" stroke-linecap="round" marker-end="url(#f2-pfeil)">
+    <path d="M 585 112 Q 770 150 735 280"/>
+    <path d="M 565 352 Q 450 430 335 352"/>
+    <path d="M 165 280 Q 130 150 315 112"/>
+  </g>
+  <!-- Pfeil-Beschriftung -->
+  <g font-size="22" fill="var(--bp-ink, #1B2436)" opacity="0.85">
+    <text x="745" y="205" text-anchor="start">belohnt</text>
+    <text x="450" y="425" text-anchor="middle">erzeugt Fehlbefunde</text>
+    <text x="150" y="205" text-anchor="end">bleibt unsichtbar</text>
+  </g>
+  <!-- Knoten -->
+  <g fill="var(--bp-coral, #E27C5C)">
+    <rect x="315" y="25" width="270" height="90" rx="18"/>
+    <rect x="565" y="285" width="270" height="90" rx="18"/>
+    <rect x="65" y="285" width="270" height="90" rx="18"/>
+  </g>
+  <g font-size="25" font-weight="700" fill="#fff" text-anchor="middle">
+    <text x="450" y="79">Publikationsbias</text>
+    <text x="700" y="321">Fragwürdige</text>
+    <text x="700" y="353">Praktiken (QRPs)</text>
+    <text x="200" y="321">Replikation</text>
+    <text x="200" y="353">scheitert</text>
+  </g>
+  <!-- Mitte -->
+  <text x="450" y="232" text-anchor="middle" font-size="30" font-weight="800" fill="var(--bp-navy, #2A3F66)">Alles ohne Vorsatz.</text>
+  <text x="450" y="266" text-anchor="middle" font-size="21" fill="var(--bp-ink, #1B2436)" opacity="0.75">Jeder Schritt ist für sich begründbar.</text>
+</g>
+</svg>
