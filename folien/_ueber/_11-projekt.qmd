@@ -8,7 +8,7 @@ Wissenschaft, die Evidenz wirklich beurteilt.
 [Beyond p-values, gefördert durch die VolkswagenStiftung]{.bp-quote__author}
 
 ::: notes
-**Typ** Trenner · **Soll** 33:30 · **Dauer** 0:15 · kürzbar: nein
+**Typ** Trenner · **Soll** 34:30 · **Dauer** 0:15 · kürzbar: nein · **Wer** Übergabe an Thomas
 
 **Hier** „Das ist der Satz aus dem Antrag. Und das ist, was wir tun."
 Den Satz vorlesen, weiterklicken. Der Wechsel von Inhalt zu Träger ist hier,
@@ -54,7 +54,7 @@ Moment ist jetzt.
 :::
 
 ::: notes
-**Typ** Säulen · **Soll** 33:45 · **Dauer** 1:00 · kürzbar: ja
+**Typ** Säulen · **Soll** 34:45 · **Dauer** 0:45 · kürzbar: ja · **Wer** Thomas
 
 **Woher** Meehl hat es 1978 gesagt, Cohen 1994. Warum sollte es diesmal
 klappen? Drei Gründe, einer pro Atemzug.
@@ -118,7 +118,7 @@ Disziplinen.
 :::
 
 ::: notes
-**Typ** Säulen · **Soll** 34:45 · **Dauer** 1:15 · kürzbar: nein
+**Typ** Säulen · **Soll** 35:30 · **Dauer** 1:00 · kürzbar: nein · **Wer** Thomas
 
 **Woher** Die Gründe sind benannt. Jetzt die Wirkungslogik: vier Stufen, die
 aufeinander aufbauen, keine Aktivitätenliste.
@@ -174,7 +174,7 @@ Verantwortung für den Inhalt liegt bei den Autorinnen und Autoren.
 :::
 
 ::: notes
-**Typ** Säulen · **Soll** 36:00 · **Dauer** 0:30 · kürzbar: nein
+**Typ** Säulen · **Soll** 36:30 · **Dauer** 0:30 · kürzbar: nein · **Wer** Thomas
 
 **Woher** Die Wirkungslogik steht. Diese Folie legitimiert: wer, wo, mit wessen
 Geld. Kurz halten, keine Inhaltsfolie.

@@ -78,7 +78,7 @@ wesentlich bessere Alternativen zur Verfügung stehen.
 :::
 
 ::: notes
-**Typ** Wegweiser · **Soll** 40:30 · **Dauer** bis zum Ende · kürzbar: nein
+**Typ** Wegweiser · **Soll** 40:30 · **Dauer** bis zum Ende · kürzbar: nein · **Wer** beide
 
 **Woher** Die fünf Punkte für morgen sind gesagt. Jetzt nur noch offen bleiben.
 

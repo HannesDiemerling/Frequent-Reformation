@@ -13,7 +13,7 @@ sich das, sobald neue Daten eintreffen?**
 angreifbar.]{.bp-fig__satz}
 
 ::: notes
-**Typ** Abbildung · **Soll** 26:00 · **Dauer** 2:00 · kürzbar: nein
+**Typ** Abbildung · **Soll** 27:00 · **Dauer** 2:00 · kürzbar: nein
 
 **Woher** Frage 03: was sagen die Daten über die Hypothese? Der p-Wert fragt
 umgekehrt, wie wahrscheinlich die Daten sind, wenn nichts los ist. Hier drehen
@@ -70,7 +70,7 @@ Stufen nach Lee & Wagenmakers (2013).
 :::
 
 ::: notes
-**Typ** Aha · **Soll** 28:00 · **Dauer** 1:30 · kürzbar: nein
+**Typ** Aha · **Soll** 29:00 · **Dauer** 1:30 · kürzbar: nein
 
 **Woher** Der Posterior ist erklärt. Jetzt der Nutzen in Sätzen, die man
 tatsächlich schreiben darf.

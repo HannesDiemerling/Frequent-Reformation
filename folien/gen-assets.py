@@ -214,6 +214,7 @@ dann im Browser danebenlegen. Zeitdruck: Folie überspringen.
 
 # Diese Hub-Seiten bekommen eine eingebettete Live-Folie fuer die Website-Tour.
 SITE_TITLES = {
+    "stichprobenrechner": "Mindeststichproben-Rechner",
     "hub": "Der Hub",
     "hub_workshops": "Die Workshops",
     "hub_fragen": "Starte mit deiner Frage",

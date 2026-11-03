@@ -189,6 +189,7 @@ extra:
     hub_methodik:        "https://hannesdiemerling.github.io/Frequent-Reformation/ueber/methodik/"
     hub_kontakt:         "https://hannesdiemerling.github.io/Frequent-Reformation/kontakt/"
     hub_nutzung:         "https://hannesdiemerling.github.io/Frequent-Reformation/rechtliches/nutzung/"
+    stichprobenrechner:  "https://stichprobenrechner.app/"
 
   # ============================================================
   # FOLIENSAETZE (Quarto Reveal.js, ausgeliefert unter /folien/)

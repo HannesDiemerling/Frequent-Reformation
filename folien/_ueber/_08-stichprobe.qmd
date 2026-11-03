@@ -95,3 +95,63 @@ Dafür gibt es ein Werkzeug."
 tausendmal, mit 10 bis 20 Zeilen Code. Der Gewinn ist, dass man seine Annahmen
 aufschreiben muss.
 :::
+
+## [{{< fa calculator >}}]{.bp-icon} Der Stichprobenrechner {data-qr="stichprobenrechner" data-qr-cap="Rechner öffnen"}
+
+[Weg 02 als Werkzeug]{.bp-eyebrow}
+
+::: {.bp-drei}
+
+::: {.bp-pillar .tone-teal}
+[{{< fa sliders >}}]{.bp-icon}
+[Eingabe]{.bp-pillar__num}
+
+### Wie genau soll es werden?
+
+Gewünschte Breite des Intervalls und erwartete Streuung. Keinen Effekt raten.
+:::
+
+::: {.bp-pillar .tone-teal}
+[{{< fa users >}}]{.bp-icon}
+[Ausgabe]{.bp-pillar__num}
+
+### Die Mindeststichprobe
+
+Wie viele Fälle es braucht, damit die Schätzung so genau wird. Mit Grafik.
+:::
+
+::: {.bp-pillar .tone-teal}
+[{{< fa globe >}}]{.bp-icon}
+[Zugang]{.bp-pillar__num}
+
+### Im Browser
+
+Kein Konto, keine Installation. Python läuft direkt auf deinem Gerät.
+:::
+
+:::
+
+::: {.bp-quelle}
+Diemerling & Schäfer, HMU Erfurt. Begleitend zum Lehrbuch Schäfer (2026),
+Forschungsmethoden, Datenanalyse und Statistik, Springer.
+:::
+
+::: notes
+**Typ** Säulen · **Soll** 25:45 · **Dauer** 0:45 · kürzbar: ja · **Wer** Thomas
+
+**Woher** Drei Wege sind erklärt, Gosset hat den zweiten empfohlen. Jetzt das
+Werkzeug dazu, aus dem eigenen Haus. Diese Folie kauft der nächsten Ladezeit:
+mindestens 30 Sekunden hier bleiben, die App startet im Hintergrund.
+
+**Hier** „Ihr gebt ein, wie genau ihr schätzen wollt. Nicht, wie groß der Effekt
+ist. Den kennt ihr ja nicht."
+Die drei Säulen je ein Satz. Der Punkt in der ersten Säule ist der Unterschied
+zur Power-Analyse: die Eingabe ist inhaltlich entscheidbar.
+
+**Wohin** Der Rechner live. Übergang: „Schauen wir rein."
+
+**Wenn** Zeitdruck: diese und die nächste Folie überspringen, der QR oben rechts
+reicht als Hinweis. Nachfrage nach dem Lehrbuch: erscheint 2026 bei Springer.
+:::
+
+{{< include ../_demo/site-stichprobenrechner.qmd >}}

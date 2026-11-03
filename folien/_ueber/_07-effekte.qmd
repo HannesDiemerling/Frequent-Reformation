@@ -42,37 +42,43 @@ Entscheidungsgrundlage. Deshalb beides.
 
 ## Aber Vorsicht mit den Faustregeln {data-qr="hub_effektgroessen" data-qr-cap="Benchmarks im Kontext"}
 
-Cohen 1988: **klein 0.2 · mittel 0.5 · groß 0.8**. Als Notlösung gedacht, wenn
-ein Feld keine eigenen Vergleichswerte hat.
+Cohen 1988 für r: **klein .10 · mittel .30 · groß .50.** Als Notlösung gedacht.
+
+::: {.bp-fig .bp-fig--klein}
+![](../assets/fig/effektgroessen-verteilung.webp)
+:::
 
 ::: {.bp-warn}
 [{{< fa triangle-exclamation >}}]{.bp-icon} **Domänenwissen schlägt Faustregel.**
-d = 0.2 in der Suizidprävention ist riesig. d = 0.5 für ein neues Lernformat
-ist eher mittelmäßig.
+r = .30 ist in der Sozialpsychologie typisch, in der biologischen Psychologie
+klein.
 :::
 
 ::: {.bp-quelle}
-Schäfer & Schwarz (2019). *The meaningfulness of effect sizes in psychological
-research.* Frontiers in Psychology.
+Median der publizierten Effektstärken (r) je Teildisziplin, Linie: Gesamtmedian.
+Schäfer & Schwarz (2019), Frontiers in Psychology.
 :::
 
 ::: notes
-**Typ** Aha · **Soll** 21:45 · **Dauer** 1:15 · kürzbar: ja
+**Typ** Abbildung · **Soll** 21:45 · **Dauer** 1:15 · kürzbar: ja · **Wer** Thomas
 
 **Woher** Wer gerade gelernt hat, d zu berichten, ersetzt sonst nur ein Ritual
 durch ein anderes: statt „p kleiner .05" dann „mittlerer Effekt nach Cohen".
+Hier übernimmt Thomas, es ist seine Studie.
 
 **Hier** „Vergleiche deinen Effekt mit deinem Feld, nicht mit Cohens
 Faustregel."
-Cohen selbst hat die Werte als Notlösung bezeichnet. Das Suizidpräventions-
-Beispiel trägt am stärksten: ein kleiner Effekt auf eine Kennzahl, bei der
-jeder Prozentpunkt Menschenleben bedeutet, ist alles andere als klein.
+Die Grafik von oben nach unten: biologische Psychologie Median .49,
+Sozialpsychologie .30, Gesamtmedian .36. Ein r von .30 ist in der einen
+Disziplin unterdurchschnittlich, in der anderen typisch. Cohen hat seine Werte
+selbst als Notlösung bezeichnet, für Felder ohne eigene Vergleichswerte. Die
+gibt es jetzt.
 
 **Wohin** Antwort 02, die Stichprobe. Übergang: „Die Zahl ist das eine. Ob sie
 überhaupt trägt, das andere."
 
-**Wenn** Schäfer und Schwarz haben empirische Verteilungen von Effektstärken
-ausgewertet. (persönlich: Thomas Schäfer leitet dieses Projekt, das darf man
-hier sagen.) Zeitdruck: Folie überspringen, der Hinweis steht in „Morgen
-anders" als Punkt 4.
+**Wenn** Nachfrage nach der Datenbasis: publizierte Effekte, getrennt nach
+präregistriert und nicht präregistriert, die präregistrierten liegen deutlich
+niedriger. Das ist zugleich das Publikationsbias-Argument von vorhin mit Daten.
+Zeitdruck: Folie überspringen, der Hinweis steht in „Morgen anders" als Punkt 4.
 :::

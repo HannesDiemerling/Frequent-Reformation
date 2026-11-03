@@ -6,7 +6,7 @@ Alles, was jetzt kommt, ist offen zugänglich. Kostenfrei, ohne Anmeldung,
 vollständig im Browser.
 
 ::: notes
-**Typ** Trenner · **Soll** 36:30 · **Dauer** 0:15 · kürzbar: nein
+**Typ** Trenner · **Soll** 37:00 · **Dauer** 0:15 · kürzbar: nein
 
 **Hier** „Alles, was jetzt kommt, könnt ihr heute Abend benutzen."
 Weiterklicken. Die Landkarte kommt auf der nächsten Folie.
@@ -53,7 +53,7 @@ Wer systematisch lernen will, die Workshops.
 :::
 
 ::: notes
-**Typ** Wegweiser · **Soll** 36:45 · **Dauer** 0:45 · kürzbar: nein
+**Typ** Wegweiser · **Soll** 37:15 · **Dauer** 0:45 · kürzbar: nein
 
 **Woher** Das Angebot ist angekündigt. Diese Folie ist die Landkarte: wer sie
 verstanden hat, findet sich auf der Website zurecht.
@@ -129,7 +129,7 @@ Die Reihenfolge ist didaktisch: vom Problem (Effekte) über die Methodik
 :::
 
 ::: notes
-**Typ** Säulen · **Soll** 38:15 · **Dauer** 0:45 · kürzbar: nein
+**Typ** Säulen · **Soll** 38:30 · **Dauer** 0:30 · kürzbar: nein
 
 **Woher** Die Landkarte und die Live-Seite sind gezeigt. Jetzt das Angebot
 konkret: drei Workshops, dieselben drei Symbole wie bei den drei Fragen.

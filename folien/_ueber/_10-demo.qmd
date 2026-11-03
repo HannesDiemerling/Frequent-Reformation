@@ -19,7 +19,7 @@ alle Kapitel.
 :::
 
 ::: notes
-**Typ** Demo · **Soll** 29:30 · **Dauer** 0:45 · kürzbar: nein
+**Typ** Demo · **Soll** 30:30 · **Dauer** 0:45 · kürzbar: nein
 
 **Woher** Drei Antworten sind erklärt. Jetzt der Beweis, dass das kein
 Gedankenspiel ist. Diese Folie kauft der nächsten Ladezeit, also nicht hetzen.
@@ -53,7 +53,7 @@ p-Wert, sondern der Kontext.
 :::
 
 ::: notes
-**Typ** Abbildung · **Soll** 32:30 · **Dauer** 1:00 · kürzbar: nein
+**Typ** Abbildung · **Soll** 33:30 · **Dauer** 1:00 · kürzbar: nein
 
 **Woher** Die Demo lief. Jetzt die Auflösung in einem Bild, das auch ohne Demo
 funktioniert.

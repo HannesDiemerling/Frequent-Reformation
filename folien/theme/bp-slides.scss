@@ -889,3 +889,15 @@ $code-block-font-size: 0.62em !default;
 .reveal .bp-zwei--breit {
   grid-template-columns: 2fr 1fr;
 }
+
+// Gelieferte Rasterbilder in einer Abbildung (webp, jpg, png)
+.reveal .bp-fig img {
+  display: block;
+  max-height: 430px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.reveal .bp-fig--klein img {
+  max-height: 290px;
+}
