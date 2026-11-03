@@ -5,8 +5,9 @@
 :::
 
 ::: {.bp-warn}
-[{{< fa triangle-exclamation >}}]{.bp-icon} **Mehr Fälle heilen keine
-Verzerrung.** Sie machen den falschen Wert nur präziser.
+[{{< fa triangle-exclamation >}}]{.bp-icon} **Vierfache Fälle, halber Fehler.**
+Aber mehr Fälle heilen keine Verzerrung: sie machen den falschen Wert nur
+präziser.
 :::
 
 ::: notes
@@ -60,7 +61,8 @@ Wissenschaft von Psychologie-Studierenden im zweiten Semester."
 
 ### Bayes-Faktor-Design
 
-*Wie viele, damit BF ≥ 10 wird, falls H₁ stimmt?*
+*Wie viele, damit der Bayes-Faktor mindestens 10 wird, falls der Effekt
+existiert?*
 :::
 
 :::

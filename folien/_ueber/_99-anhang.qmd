@@ -53,7 +53,8 @@ bleibt. Freundlich stellen, nicht triumphierend.
 
 ## „Kann ich beides berichten?" {data-qr="hub_bayesian" data-qr-cap="Häufige Sorgen"}
 
-**Ja.** Gerade in einem Umfeld, das p-Werte erwartet, ist das oft sinnvoll.
+p-Wert und Bayes-Faktor nebeneinander? **Ja.** Gerade in einem Umfeld, das
+p-Werte erwartet, ist das oft sinnvoll.
 
 ::: {.bp-callout}
 [{{< fa lightbulb >}}]{.bp-icon} Widersprechen sich beide, liegt das meist

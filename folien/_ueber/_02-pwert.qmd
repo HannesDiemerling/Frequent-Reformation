@@ -1,9 +1,9 @@
 ## Was der p-Wert tatsächlich ist {data-qr="hub_pwerte" data-qr-cap="Probleme des p-Werts"}
 
 ::: {.bp-callout}
-[{{< fa lightbulb >}}]{.bp-icon} Die Wahrscheinlichkeit, **ein mindestens so
-extremes Ergebnis zu sehen, wenn die Nullhypothese wahr wäre** und alle
-Modellannahmen zutreffen.
+[{{< fa lightbulb >}}]{.bp-icon} Der p-Wert ist die Wahrscheinlichkeit, **ein
+mindestens so extremes Ergebnis zu sehen, wenn die Nullhypothese wahr wäre**
+und alle Modellannahmen zutreffen.
 :::
 
 ::: {.bp-icons}

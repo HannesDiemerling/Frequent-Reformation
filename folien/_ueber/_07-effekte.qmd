@@ -3,13 +3,14 @@
 ::: {.bp-stats}
 ::: {.bp-stat}
 [4,2 Punkte]{.bp-stat__num}
-[**Unstandardisiert**, in der Einheit der Sache: die Therapie senkt den BDI-II
-um 4,2 Punkte. Die Praxis versteht das sofort.]{.bp-stat__label}
+[**Unstandardisiert**, in der Einheit der Sache: die Therapie senkt den
+Depressionswert (BDI-II) um 4,2 Punkte. Die Praxis versteht das
+sofort.]{.bp-stat__label}
 :::
 ::: {.bp-stat}
 [d = 0.42]{.bp-stat__num}
-[**Standardisiert**, immer mit Intervall: 95 % CI [0.18, 0.66]. Vergleichbar
-über Studien und Skalen hinweg.]{.bp-stat__label}
+[**Standardisiert**, immer mit Intervall: 95-%-Intervall [0.18, 0.66].
+Vergleichbar über Studien und Skalen hinweg.]{.bp-stat__label}
 :::
 :::
 
@@ -42,7 +43,8 @@ Entscheidungsgrundlage. Deshalb beides.
 
 ## Aber Vorsicht mit den Faustregeln {data-qr="hub_effektgroessen" data-qr-cap="Benchmarks im Kontext"}
 
-Cohen 1988 für r: **klein .10 · mittel .30 · groß .50.** Als Notlösung gedacht.
+Cohen 1988 für r: **klein .10 · mittel .30 · groß .50.** Von Cohen selbst als
+Notlösung gedacht, falls ein Feld keine eigenen Vergleichswerte hat.
 
 ::: {.bp-fig .bp-fig--klein}
 ![](../assets/fig/effektgroessen-verteilung.webp)

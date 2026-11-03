@@ -11,7 +11,7 @@
 **Effektgrößen berichten.** In der Einheit der Sache und standardisiert, immer
 mit Intervall.
 
-> 4,2 Punkte im BDI-II · d = 0.42, 95 % CI [0.18, 0.66]
+> 4,2 Punkte im Depressionswert (BDI-II) · d = 0.42, 95-%-Intervall [0.18, 0.66]
 :::
 
 ::: {.bp-pillar .tone-teal}
