@@ -42,7 +42,7 @@ title-slide-attributes:
 
 ## Danke
 
-::: {.bp-zwei}
+::: {.bp-zwei .bp-zwei--mitte}
 
 ::: {}
 **Alles kostenfrei, ohne Anmeldung, vollständig im Browser.**
@@ -52,7 +52,7 @@ Inhalte unter Creative Commons CC BY 4.0, nutzbar in eigener Lehre.
 
 Geführte Sessions für Institute und Teams sind **in Planung**.
 
-**Kontakt:** {{< meta contact.name >}} ·
+**Kontakt:** {{< meta contact.name >}}  
 [{{< meta contact.email >}}](mailto:{{< meta contact.email >}})
 :::
 

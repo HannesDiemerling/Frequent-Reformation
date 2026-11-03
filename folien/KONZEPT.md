@@ -96,8 +96,8 @@ Jede Folie ist genau ein Typ. Der Typ steht in der ersten Zeile der Notizen.
 | **Aha** | Eine Zahl, ein Satz, ein Zitat | `.bp-stats`, `.bp-quote`, `.bp-callout` | 12 Wörter Kern | 45 bis 90 s |
 | **Säulen** | Struktur zeigen | `.bp-drei` mit `.bp-pillar` und Symbol | je Säule: Symbol, Titel bis 4 Wörter, ein Satz | 1 bis 2 min |
 | **Abbildung** | Mechanismus zeigen | `![](../assets/fig/x.svg)` plus ein Satz | eine Grafik, eine Aussage | 1 bis 2 min |
-| **Demo** | Live zeigen | `_demo/*.qmd`, generiert | nichts, die App ist die Folie | 3 bis 4 min |
-| **Wegweiser** | Wo es weitergeht | QR groß, drei Wege | 3 Wege | 1 min |
+| **Demo** | Live zeigen, nur in den Workshop-Decks | `_demo/*.qmd`, generiert | nichts, die App ist die Folie | 3 bis 4 min |
+| **Wegweiser** | Wo es weitergeht, oder: eine Seite live zeigen | QR groß, Adresse, ein Satz. Im Überblick ersetzt das die Einbettung: Klick auf die Adresse öffnet die Seite im zweiten Fenster, und das PDF bleibt vollständig | 3 Wege oder eine Adresse | 0:30 bis 2 min |
 | **Anhang** | Reserve für Fragen | beliebig | wie Aha oder Säulen | nie im Durchlauf |
 
 Vor jeder **Demo**-Folie steht eine Folie, über die mindestens 30 Sekunden geredet wird.
@@ -117,6 +117,12 @@ Die App lädt währenddessen.
   Das Publikum erkennt die Farben später auf der Website wieder.
 - **Jede Folie passt bei 1280 × 720 ohne Überlauf.** Prüfung: die Seitenzahl des
   PDF-Exports ist gleich der Folienzahl. Ist sie größer, läuft eine Folie über.
+- **Anordnung von der Mitte aus, nicht vom oberen Rand.** Die Überschrift bleibt oben
+  als fester Anker. Der Inhalt darunter sitzt vertikal mittig im Restraum, die
+  Fußzeile bleibt frei. Text in den Blöcken ist linksbündig, aber Paare wie „Text
+  links, QR rechts" stehen als Gruppe in der Mitte (`.bp-zwei--mitte`). Das Theme
+  regelt das automatisch, eine Folie muss dafür nichts tun. Ausgenommen sind Titel,
+  Trenner und Vollflächen-Demos.
 - **Schrittweiser Aufbau (Fragments) nur, wenn die Reihenfolge Inhalt ist.** Die sechs
   Quiz-Aussagen, die fünf Praktiken, die Liste „sagt nichts über". Nicht als Effekt.
 - **Englische Zitate bleiben englisch**, mit Quelle. Alles andere deutsch, Du-Form,
@@ -299,8 +305,9 @@ Eine Folie ohne vollständiges Raster gilt als unfertig.
    Das Fenster mit den Folien auf den Beamer, den Speaker-View auf den Laptop. Oben im
    Speaker-View das Layout auf **Tall** oder **Notes only** stellen, dann ist das ganze
    Raster ohne Scrollen lesbar.
-2. Internet prüfen. Das Demo-Kapitel (Workshop 01, Kapitel 2) in einem **zweiten Tab**
-   öffnen und laden lassen. Das ist Plan B.
+2. Internet prüfen. Drei Seiten in einem **zweiten Fenster** vorladen: Workshop 01,
+   Kapitel 2 (die Shinylive-App braucht bis zu 30 Sekunden), den Stichprobenrechner
+   und die Fragen-Seite des Hubs. Die Link-Folien öffnen genau diese Adressen.
 3. Den QR der Mitlesen-Folie mit dem eigenen Handy scannen. Öffnet sich der Hub?
 4. Einmal `b` drücken (Tafel) und `c` (Stift), dann wieder `b`. Funktioniert, dann
    schließen.
@@ -317,9 +324,10 @@ Eine Folie ohne vollständiges Raster gilt als unfertig.
   vergleichen. Liegst du mehr als zwei Minuten hinten, die nächste kürzbare Folie
   überspringen. Welche das sind, steht im Zeitgerüst in Abschnitt 2 und in jeder
   Kopfzeile.
-- **Wenn die Demo nicht lädt:** zweiter Tab. Wenn auch der nicht lädt: zur nächsten Folie
-  gehen, dort steht die Abbildung F5 mit dem Ergebnis, und sagen, was die Demo gezeigt
-  hätte. Das steht unter „Wenn" in den Notizen der Demo-Folie.
+- **Wenn eine Seite nicht lädt:** bei Kapitel 2 zur nächsten Folie gehen, dort steht die
+  Abbildung F5 mit dem Ergebnis, und sagen, was die Demo gezeigt hätte. Beim Rechner
+  und der Fragen-Seite nur QR und Adresse zeigen und weiter. Das steht jeweils unter
+  „Wenn" in den Notizen.
 - **Wenn niemand die Hand hebt:** die Ersatzfrage unter „Wenn". Jede Frage-Folie hat eine.
 - **Nie kürzen:** Quiz, Selbstprüfung, Demo, Morgen anders, Förderhinweis.
 
@@ -395,11 +403,12 @@ Inhalt blieb, Form wurde auf Abschnitt 4 gebracht, Notizen kamen ins Raster.
 | Faustregeln | Abbildung | Das Ritual nicht ersetzen | Umbau (Feedback): Verteilungsgrafik aus Schäfer & Schwarz 2019, kürzbar |
 | Antwort 02 | Abbildung | Mehr Fälle heilen keine Verzerrung | Umbau: Kernsatz plus Abbildung F3 |
 | Drei Wege | Säulen | Power, Präzision, Bayes-Faktor | Bleibt, kürzbar. Je Säule nur die Frage, darunter Gosset 1937 (Feedback) |
-| Stichprobenrechner | Demo | Das Werkzeug zu Weg 02, live | Neu (Feedback): die App eingebettet, Drei Wege ist die Puffer-Folie, kürzbar |
+| Stichprobenrechner | Säulen | Das Werkzeug zu Weg 02 vorstellen | Neu (Feedback): Eingabe, Ausgabe, Zugang, kürzbar |
+| Stichprobenrechner, live | Wegweiser | Zugang zur App | Neu: QR und Adresse statt Einbettung, Klick öffnet die App im zweiten Fenster |
 | Antwort 03 | Abbildung | Die Frage umdrehen | Umbau: Satz im Kasten plus Abbildung F4, Formel klein |
 | Sagen dürfen | Aha | CI gegen HDI, Bayes-Faktor symmetrisch | Bleibt. BF-Tabelle bleibt, Fließtext halbieren |
 | Demo Puffer | Demo | Ladezeit kaufen, Frage stellen | Bleibt. Play-Symbol, Frage an den Raum mit Hand |
-| Demo | Demo | Live | Bleibt, generiert |
+| Kapitel 2, live | Wegweiser | Die Demo selbst | Umbau: QR und Adresse statt Einbettung. Im Vortrag öffnet der Klick das vorgeladene Kapitel, im PDF bleibt die Folie lesbar |
 | Gesehen | Abbildung | Die Auflösung | Umbau: Abbildung F5 als Plan B und PDF-Form |
 | Projekt Trenner | Trenner | Wechsel zum Träger | Bleibt |
 | Warum jetzt | Säulen | Drei Faktoren | Bleibt, kürzbar. Symbole |
@@ -407,7 +416,7 @@ Inhalt blieb, Form wurde auf Abschnitt 4 gebracht, Notizen kamen ins Raster.
 | Wer dahintersteht | Säulen | Legitimation, Förderhinweis | Bleibt. Pflicht |
 | Angebot Trenner | Trenner | Wechsel zum Angebot | Bleibt |
 | Drei Wege ins Material | Säulen | Die Landkarte der Website | Bleibt. Symbole |
-| Site Demo | Demo | Die Fragen-Seite live | Bleibt, kürzbar |
+| Starte mit deiner Frage | Wegweiser | Die Fragen-Seite live | Umbau: QR und Adresse statt Einbettung, kürzbar |
 | Drei Workshops | Säulen | Das Angebot konkret | Bleibt, kommt aus `mkdocs.yml` |
 | Morgen anders | Aha | Die Mitnahme | Bleibt. Fragments, Symbole je Punkt |
 | Danke | Wegweiser | Offen bleiben | Bleibt. Icon aufnehmen |

@@ -69,7 +69,46 @@ betonen, das ist die Designentscheidung der Seite.
 drei Workshops.
 :::
 
-{{< include ../_demo/site-hub_fragen.qmd >}}
+## Starte mit deiner Frage {data-qr="hub_fragen" data-qr-cap="Die Fragen-Seite"}
+
+[Der Hub, live]{.bp-eyebrow}
+
+::: {.bp-zwei .bp-zwei--mitte}
+
+::: {}
+Zehn Fragen, wie sie in der Praxis gestellt werden. Jede führt direkt in das
+Kapitel, das sie beantwortet.
+
+[**{{< meta links.hub_fragen >}}**]({{< meta links.hub_fragen >}}){.bp-url target="_blank" data-preview-link="false"}
+
+Klick auf die Adresse öffnet die Seite in einem neuen Fenster.
+:::
+
+::: {.bp-qr .bp-qr--gross}
+![](../assets/qr/hub_fragen.svg)
+
+[Fragen-Seite öffnen]{.bp-qr__cap}
+:::
+
+:::
+
+::: notes
+**Typ** Wegweiser · **Soll** 38:00 · **Dauer** 0:30 · kürzbar: ja
+
+**Woher** Die Landkarte hat die drei Wege gezeigt. Der zweite Weg, die Fragen,
+ist die Designentscheidung der Seite, deshalb einmal live.
+
+**Hier** „So sieht das aus."
+Auf die Adresse klicken, die Seite öffnet sich im zweiten Fenster. Einmal
+scrollen, eine Frage aufklappen, zeigen, dass sie ins Kapitel führt. Nicht
+länger als dreißig Sekunden.
+
+**Wohin** Die drei Workshops. Übergang: „Und wer lieber systematisch lernt,
+nimmt einen der drei."
+
+**Wenn** Zeitdruck: Folie überspringen, der QR oben rechts auf der nächsten
+Folie führt zu den Workshops. Kein WLAN: nur den QR zeigen und weiter.
+:::
 
 ## Die drei Workshops {data-qr="hub_workshops" data-qr-cap="Alle Workshops"}
 

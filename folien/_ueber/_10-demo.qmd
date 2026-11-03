@@ -38,7 +38,47 @@ nicht." Wer will, scannt den QR der nächsten Folie und schiebt selbst mit: dann
 ruft jemand im Raum eine Zahl, die man nicht kontrolliert, das ist gut so.
 :::
 
-{{< include ../_demo/power2.qmd >}}
+## Kapitel 2, live {data-qr="ch-power2" data-qr-cap="Kapitel 2 öffnen"}
+
+[Beyond Significance · Workshop 01]{.bp-eyebrow}
+
+::: {.bp-zwei .bp-zwei--mitte}
+
+::: {}
+**p-Wert und Stichprobengröße.** Ein Schieber für die Zahl der Testfahrten, der
+Effekt bleibt bei 12 Sekunden. Läuft vollständig im Browser, ohne Konto.
+
+[**{{< meta ch.power2.url >}}**]({{< meta ch.power2.url >}}){.bp-url target="_blank" data-preview-link="false"}
+
+Klick auf die Adresse öffnet das Kapitel in einem neuen Fenster.
+:::
+
+::: {.bp-qr .bp-qr--gross}
+![](../assets/qr/ch-power2.svg)
+
+[Selbst mitschieben]{.bp-qr__cap}
+:::
+
+:::
+
+::: notes
+**Typ** Wegweiser · **Soll** 31:15 · **Dauer** 2:15 · kürzbar: nein
+
+**Woher** Die Frage ist gestellt, der Raum hat getippt. Jetzt die Antwort aus
+der Anwendung selbst.
+
+**Hier** „Schauen wir nach."
+Auf die Adresse klicken, das Kapitel öffnet sich im zweiten Fenster (vorher
+geladen, siehe Checkliste). Den Schieber von 20 auf 5000 ziehen, den p-Wert laut
+mitlesen, dann auf den Effekt zeigen: unverändert. Wer mag, scannt den QR und
+schiebt selbst, dann ruft jemand im Raum eine Zahl, die man nicht kontrolliert.
+
+**Wohin** Zurück zu den Folien, die Auflösung als Grafik. Übergang: „Und das
+war kein Zufall. Das ist die Regel."
+
+**Wenn** Fenster lädt nicht oder kein WLAN: direkt zur nächsten Folie, dort
+steht die Kurve. Sagen: „Die Demo hätte genau das gezeigt."
+:::
 
 ## Was wir gerade gesehen haben {data-qr="ch-power2" data-qr-cap="Kapitel 2 selbst öffnen"}
 

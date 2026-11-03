@@ -55,7 +55,7 @@ title-slide-attributes:
 
 ## Danke
 
-::: {.bp-zwei}
+::: {.bp-zwei .bp-zwei--mitte}
 
 ::: {}
 ::: {.bp-quote}
@@ -65,7 +65,7 @@ wesentlich bessere Alternativen zur Verfügung stehen.
 :::
 [Aus dem Antrag zum Pioniervorhaben]{.bp-quote__author}
 
-**Kontakt:** {{< meta contact.name >}} ·
+**Kontakt:** {{< meta contact.name >}}  
 [{{< meta contact.email >}}](mailto:{{< meta contact.email >}})
 :::
 

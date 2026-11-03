@@ -157,4 +157,42 @@ zur Power-Analyse: die Eingabe ist inhaltlich entscheidbar.
 reicht als Hinweis. Nachfrage nach dem Lehrbuch: erscheint 2026 bei Springer.
 :::
 
-{{< include ../_demo/site-stichprobenrechner.qmd >}}
+## Der Stichprobenrechner, live {data-qr="stichprobenrechner" data-qr-cap="Rechner öffnen"}
+
+[Mindeststichproben-Rechner]{.bp-eyebrow}
+
+::: {.bp-zwei .bp-zwei--mitte}
+
+::: {}
+**Eingeben, wie genau. Ablesen, wie viele.** Präzisionsbasierte Planung der
+Mindeststichprobe, im Browser, ohne Konto.
+
+[**{{< meta links.stichprobenrechner >}}**]({{< meta links.stichprobenrechner >}}){.bp-url target="_blank" data-preview-link="false"}
+
+Klick auf die Adresse öffnet den Rechner in einem neuen Fenster.
+:::
+
+::: {.bp-qr .bp-qr--gross}
+![](../assets/qr/stichprobenrechner.svg)
+
+[Rechner öffnen]{.bp-qr__cap}
+:::
+
+:::
+
+::: notes
+**Typ** Wegweiser · **Soll** 26:30 · **Dauer** 0:30 · kürzbar: ja · **Wer** Thomas
+
+**Woher** Die drei Säulen haben erklärt, was der Rechner tut. Jetzt der Zugang.
+
+**Hier** „Hier ist er. Wer will, rechnet gleich mit."
+Auf die Adresse klicken, der Rechner öffnet sich im zweiten Fenster (vorher
+geladen). Ein Beispiel in dreißig Sekunden: gewünschte Breite eingeben, Streuung
+eingeben, Mindest-n ablesen. Nicht mehr, die Zeit ist knapp.
+
+**Wohin** Antwort 03, Bayes. Übergang: „Das war die zweite Frage. Die dritte
+dreht die Logik um."
+
+**Wenn** Zeitdruck: Folie überspringen, der QR oben rechts auf der Folie davor
+reicht. Kein WLAN: nur QR und Adresse zeigen.
+:::

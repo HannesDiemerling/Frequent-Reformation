@@ -1,6 +1,6 @@
 ## Alles zum Mitlesen {.bp-plain}
 
-::: {.bp-zwei}
+::: {.bp-zwei .bp-zwei--mitte}
 
 ::: {}
 [Alles, was heute kommt, steht dauerhaft online.]{.bp-eyebrow}

@@ -804,6 +804,7 @@ $code-block-font-size: 0.62em !default;
 // und CSS-Variablen des Themes erben. Das PPTX verliert sie, das PDF nicht.
 .reveal .bp-fig {
   margin: 0.3em auto;
+  width: 100%; // sonst kollabiert der Block als Flex-Element auf die SVG-Eigengroesse
   max-width: 1040px;
 
   svg {
@@ -837,6 +838,7 @@ $code-block-font-size: 0.62em !default;
   ol,
   ul {
     margin: 0;
+    padding-left: 1.6em;
   }
 
   li {
@@ -900,4 +902,54 @@ $code-block-font-size: 0.62em !default;
 }
 .reveal .bp-fig--klein img {
   max-height: 290px;
+}
+
+// =========================================================
+// Anordnung: Ueberschrift bleibt oben als Anker, der Inhalt darunter sitzt
+// vertikal mittig im Restraum, schmale Bloecke ruecken zur Mitte.
+// Siehe folien/KONZEPT.md, Abschnitt 4. Ausgenommen: Titel, Trenner,
+// Vollflaechen-Demos und Stack-Container.
+// =========================================================
+
+.reveal .slides section.level2:not(.stack):not(.bp-slide--full) {
+  display: flex !important;
+  flex-direction: column;
+  min-height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 84px !important; // Fusszeile freihalten; !important, weil Reveal im Druck padding: 0 !important setzt
+
+  > h2 {
+    order: -2;
+    flex: 0 0 auto;
+  }
+
+  // Zwei dehnbare Leerraeume: einer zwischen Ueberschrift und Inhalt,
+  // einer unter dem Inhalt. Bei vollen Folien schrumpfen beide auf null.
+  &::before,
+  &::after {
+    content: "";
+    flex: 1 1 0;
+    min-height: 0;
+  }
+
+  &::before {
+    order: -1;
+  }
+
+  &::after {
+    order: 99;
+  }
+}
+
+// Der grosse QR steht mittig in seiner Spalte, nicht am linken Rand
+.reveal .bp-zwei > .bp-qr--gross {
+  justify-self: center;
+}
+
+// Zweispalter als Gruppe in der Mitte: Textspalte begrenzt, QR daneben,
+// beide zusammen zentriert. Fuer Mitlesen, Danke und die Link-Folien.
+.reveal .bp-zwei--mitte {
+  grid-template-columns: minmax(0, 700px) auto;
+  justify-content: center;
+  gap: 3em;
 }
