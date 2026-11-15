@@ -52,3 +52,7 @@ publishes the site with `mkdocs gh-deploy` to the `gh-pages` branch.
 ## License
 
 Code: MIT (see `LICENSE`). Site content: CC BY 4.0, except the logo (all rights reserved).
+
+## Authors
+
+Hannes Diemerling ([GitHub](https://github.com/HannesDiemerling), ORCID [0009-0002-6027-9181](https://orcid.org/0009-0002-6027-9181)). Project lead: Prof. Dr. Thomas Schäfer.
