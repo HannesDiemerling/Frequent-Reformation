@@ -161,7 +161,7 @@ verstehen.
 
   <details>
     <summary>„Was sage ich Begutachtenden, die mit Bayes nicht vertraut sind?"</summary>
-    <p>Berichte Effektgröße und HDI immer in der intuitiven Sprache, biete den Bayes-Faktor zusätzlich an und verweise auf das ASA-Statement sowie das Editorial von <em>Basic and Applied Social Psychology</em>. Die <a href="../ressourcen/literatur/">Literaturseite</a> liefert die Referenzen.</p>
+    <p>Berichte Effektgröße und HDI immer in der intuitiven Sprache, biete den Bayes-Faktor zusätzlich an und verweise auf das ASA-Statement sowie das Editorial von <em>Basic and Applied Social Psychology</em>. Die <a href="../../ressourcen/literatur/">Literaturseite</a> liefert die Referenzen.</p>
   </details>
 
   <details>

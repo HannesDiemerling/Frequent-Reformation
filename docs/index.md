@@ -133,7 +133,7 @@ title: Beyond p-values · Hub für bessere Forschungspraxis
 
     {% for key in ["power", "reliability", "thinking"] %}
     {% set w = workshops[key] %}
-    <a class="bp-card" href="{{ w.slug }}/" style="text-decoration:none;color:inherit;">
+    <a class="bp-card" href="workshops/{{ w.slug }}/" style="text-decoration:none;color:inherit;">
       <span class="bp-card__num">{{ w.number }}</span>
       <span class="bp-card__tag">{{ w.eyebrow }}</span>
       <h3 class="bp-card__title">{{ w.title }}</h3>

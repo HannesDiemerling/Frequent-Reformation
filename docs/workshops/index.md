@@ -127,7 +127,7 @@ die über das Selbstlern-Material hinausgehen. Alles unter
     </div>
 
     <div class="bp-workshop__footer">
-      <a class="bp-section-head__link" href="../{{ w.slug }}/">
+      <a class="bp-section-head__link" href="{{ w.slug }}/">
         Mehr Details &amp; Kapitelübersicht →
       </a>
     </div>
